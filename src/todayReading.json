@@ -1,56 +1,66 @@
 {
   "date": "2026-04-20",
   "category": "Daily News",
-  "title": "Sample title",
+  "title": "US releases video of forces seizing Iranian ship",
   "source": "BBC RSS",
-  "passage": "Long reading passage goes here.",
+  "passage": "Today’s reading brings together several major developments from the latest international headlines. Rather than focusing on a single story, it helps the reader connect events, understand their wider significance, and identify the forces shaping public discussion. First, US releases video of forces seizing Iranian ship. The US has intercepted an Iranian-flagged cargo ship in the Gulf as part of its naval blockade, Donald Trump has said. This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities. Second, Spat at, threatened and kidnapped: British Jews tell of rising antisemitism. British Jews have described to BBC Panorama how they are experiencing a rise in antisemitism. This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities. Third, 'They told me he was dead': Children born near army base learn truth about UK soldier dads. A DNA and legal project has identified the fathers of 20 children born near a military base in Kenya. This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities. Taken together, these developments show that today’s world is deeply interconnected. Readers benefit not only from knowing what happened, but also from thinking about how different events influence one another across borders and sectors.",
   "sentences": [
     {
       "id": 1,
-      "text": "Original English sentence one.",
-      "literal": "영어 문장 하나의 직역.",
-      "backTranslationAnswer": "Original English sentence one."
+      "text": "Today’s reading brings together several major developments from the latest international headlines.",
+      "literal": "직역은 다음 단계에서 자동 생성하도록 연결할 예정입니다.",
+      "backTranslationAnswer": "Today’s reading brings together several major developments from the latest international headlines."
     },
     {
       "id": 2,
-      "text": "Original English sentence two.",
-      "literal": "영어 문장 둘의 직역.",
-      "backTranslationAnswer": "Original English sentence two."
+      "text": "British Jews have described to BBC Panorama how they are experiencing a rise in antisemitism.",
+      "literal": "직역은 다음 단계에서 자동 생성하도록 연결할 예정입니다.",
+      "backTranslationAnswer": "British Jews have described to BBC Panorama how they are experiencing a rise in antisemitism."
     },
     {
       "id": 3,
-      "text": "Original English sentence three.",
-      "literal": "영어 문장 셋의 직역.",
-      "backTranslationAnswer": "Original English sentence three."
+      "text": "Readers benefit not only from knowing what happened, but also from thinking about how different events influence one another across borders and sectors.",
+      "literal": "직역은 다음 단계에서 자동 생성하도록 연결할 예정입니다.",
+      "backTranslationAnswer": "Readers benefit not only from knowing what happened, but also from thinking about how different events influence one another across borders and sectors."
     }
   ],
   "questions": [
     {
       "id": 1,
-      "question": "What is this file for?",
+      "question": "What is the main purpose of this passage?",
       "options": [
-        "A sample reading placeholder",
-        "A photo album",
-        "A music player",
-        "A map file"
+        "To tell a fictional story",
+        "To connect several current news developments",
+        "To explain only one sports event",
+        "To teach grammar rules"
       ],
-      "answer": 0,
-      "explanation": "This is the initial placeholder reading data."
+      "answer": 1,
+      "explanation": "The passage combines several recent headlines into one reading."
     },
     {
       "id": 2,
-      "question": "How many key sentences are included here?",
-      "options": ["1", "2", "3", "4"],
+      "question": "How many recent stories are mainly used to build this reading?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Five"
+      ],
       "answer": 2,
-      "explanation": "There are three key sentences in the sample data."
+      "explanation": "The script uses the top three RSS items."
     },
     {
       "id": 3,
-      "question": "What source label is used in this sample?",
-      "options": ["Reuters", "BBC RSS", "AP", "CNN"],
-      "answer": 1,
-      "explanation": "The sample uses BBC RSS as the source label."
+      "question": "What does the conclusion emphasize?",
+      "options": [
+        "Events are isolated",
+        "Only technology matters",
+        "The world is interconnected",
+        "Readers should ignore context"
+      ],
+      "answer": 2,
+      "explanation": "The conclusion says current developments are deeply interconnected."
     }
   ],
-  "modelSummary": "This sample reading provides placeholder content for the app and shows how the daily reading data is structured."
+  "modelSummary": "The passage combines several recent news developments and argues that current events should be understood in a broader connected context. It emphasizes that political, economic, and social changes often influence one another across sectors and borders."
 }
