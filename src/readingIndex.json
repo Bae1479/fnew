@@ -1,1 +1,8 @@
-
+[
+  {
+    "date": "2026-04-21",
+    "title": "Today’s Global News Briefing",
+    "source": "BBC RSS",
+    "path": "https://raw.githubusercontent.com/Bae1479/fnew/main/src/todayReading.json"
+  }
+]
