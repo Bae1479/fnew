@@ -1,1 +1,56 @@
-
+{
+  "date": "2026-04-20",
+  "category": "Daily News",
+  "title": "Sample title",
+  "source": "BBC RSS",
+  "passage": "Long reading passage goes here.",
+  "sentences": [
+    {
+      "id": 1,
+      "text": "Original English sentence one.",
+      "literal": "영어 문장 하나의 직역.",
+      "backTranslationAnswer": "Original English sentence one."
+    },
+    {
+      "id": 2,
+      "text": "Original English sentence two.",
+      "literal": "영어 문장 둘의 직역.",
+      "backTranslationAnswer": "Original English sentence two."
+    },
+    {
+      "id": 3,
+      "text": "Original English sentence three.",
+      "literal": "영어 문장 셋의 직역.",
+      "backTranslationAnswer": "Original English sentence three."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is this file for?",
+      "options": [
+        "A sample reading placeholder",
+        "A photo album",
+        "A music player",
+        "A map file"
+      ],
+      "answer": 0,
+      "explanation": "This is the initial placeholder reading data."
+    },
+    {
+      "id": 2,
+      "question": "How many key sentences are included here?",
+      "options": ["1", "2", "3", "4"],
+      "answer": 2,
+      "explanation": "There are three key sentences in the sample data."
+    },
+    {
+      "id": 3,
+      "question": "What source label is used in this sample?",
+      "options": ["Reuters", "BBC RSS", "AP", "CNN"],
+      "answer": 1,
+      "explanation": "The sample uses BBC RSS as the source label."
+    }
+  ],
+  "modelSummary": "This sample reading provides placeholder content for the app and shows how the daily reading data is structured."
+}
