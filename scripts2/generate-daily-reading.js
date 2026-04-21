@@ -70,15 +70,6 @@ function splitSentences(text) {
     .filter((s) => s.length > 20);
 }
 
-function pickPracticeSentences(sentences) {
-  if (sentences.length <= 3) return sentences;
-  return [
-    sentences[0],
-    sentences[Math.floor(sentences.length / 2)],
-    sentences[sentences.length - 1],
-  ];
-}
-
 function ensureDir(dirPath) {
   if (!fs.existsSync(dirPath)) {
     fs.mkdirSync(dirPath, { recursive: true });
@@ -92,82 +83,6 @@ function readJsonSafe(filePath, fallback) {
   } catch {
     return fallback;
   }
-}
-
-function titleLiteral(title = "") {
-  let out = title;
-
-  const replacements = [
-    [/\bUS\b/g, "미국"],
-    [/\bUK\b/g, "영국"],
-    [/\bEU\b/g, "유럽연합"],
-    [/\bPM\b/g, "총리"],
-    [/\bAI\b/g, "AI"],
-    [/\bwarns?\b/gi, "경고"],
-    [/\bfaces?\b/gi, "직면"],
-    [/\breveals?\b/gi, "드러내다"],
-    [/\bslows?\b/gi, "둔화시키다"],
-    [/\bboosts?\b/gi, "끌어올리다"],
-    [/\bplans?\b/gi, "계획"],
-    [/\bseizes?\b/gi, "장악하다"],
-    [/\breleases?\b/gi, "공개하다"],
-  ];
-
-  replacements.forEach(([pattern, value]) => {
-    out = out.replace(pattern, value);
-  });
-
-  return `제목 직역: ${out}`;
-}
-
-function literalTranslate(sentence = "") {
-  let out = sentence.trim();
-
-  const replacements = [
-    [/\bToday’s reading\b/gi, "오늘의 리딩 글은"],
-    [/\bbrings together\b/gi, "함께 모은다"],
-    [/\bseveral\b/gi, "몇몇의"],
-    [/\bmajor developments\b/gi, "주요 전개들"],
-    [/\blatest international headlines\b/gi, "최신 국제 헤드라인들"],
-    [/\bRather than\b/gi, "~하기보다는"],
-    [/\bfocusing on\b/gi, "~에 초점을 맞추는 것"],
-    [/\ba single story\b/gi, "하나의 이야기"],
-    [/\bit helps the reader\b/gi, "그것은 독자를 돕는다"],
-    [/\bconnect events\b/gi, "사건들을 연결하다"],
-    [/\bunderstand\b/gi, "이해하다"],
-    [/\bwider significance\b/gi, "더 넓은 중요성"],
-    [/\bidentify\b/gi, "파악하다"],
-    [/\bThis story matters because\b/gi, "이 이야기가 중요한 이유는"],
-    [/\bindividual headlines\b/gi, "개별 헤드라인들이"],
-    [/\boften reflect\b/gi, "종종 반영하기 때문이다"],
-    [/\bbroader shifts\b/gi, "더 큰 변화들"],
-    [/\bTaken together\b/gi, "함께 놓고 보면"],
-    [/\bthese developments show that\b/gi, "이런 전개들은 ~을 보여준다"],
-    [/\btoday’s world\b/gi, "오늘날의 세계"],
-    [/\bdeeply interconnected\b/gi, "깊게 서로 연결되어 있다"],
-    [/\bReaders benefit\b/gi, "독자들은 도움을 얻는다"],
-    [/\bnot only from\b/gi, "~에서만이 아니라"],
-    [/\bknowing what happened\b/gi, "무슨 일이 일어났는지 아는 것"],
-    [/\bthinking about\b/gi, "~에 대해 생각하는 것"],
-    [/\bdifferent events\b/gi, "서로 다른 사건들"],
-    [/\binfluence one another\b/gi, "서로 영향을 주다"],
-    [/\bacross borders and sectors\b/gi, "국경과 분야를 가로질러"],
-    [/\bFirst\b/gi, "첫째"],
-    [/\bSecond\b/gi, "둘째"],
-    [/\bThird\b/gi, "셋째"],
-    [/\bpolitics\b/gi, "정치"],
-    [/\beconomics\b/gi, "경제"],
-    [/\btechnology\b/gi, "기술"],
-    [/\bpublic priorities\b/gi, "대중의 우선순위"],
-    [/\bglobal\b/gi, "세계적"],
-    [/\bcontext\b/gi, "맥락"],
-  ];
-
-  replacements.forEach(([pattern, value]) => {
-    out = out.replace(pattern, value);
-  });
-
-  return `직역: ${out}`;
 }
 
 function buildPassage(items) {
@@ -196,6 +111,55 @@ function buildSummary(items) {
   return `This reading combines three recent headlines and argues that current events should be understood in a broader global context. It suggests that stories such as ${a}, ${b}, and ${c} are not isolated developments, but parts of larger changes in politics, economics, technology, and public priorities.`;
 }
 
+// 제목 직역은 너무 억지로 번역하지 않고, 읽을 만한 수준으로만
+function makeTitleLiteral(title = "") {
+  if (!title) return "제목 직역 준비 중입니다.";
+
+  let t = title;
+
+  t = t.replace(/\bUS\b/g, "미국");
+  t = t.replace(/\bUK\b/g, "영국");
+  t = t.replace(/\bEU\b/g, "EU");
+  t = t.replace(/\bPM\b/g, "총리");
+  t = t.replace(/\bAI\b/g, "AI");
+
+  return `제목 직역: ${t}`;
+}
+
+// 핵심 3문장만 사람이 읽을 만하게 고정 템플릿으로
+function makePracticeSentences(items, title) {
+  const s1 = "Today’s reading brings together several major developments from the latest international headlines.";
+  const l1 = "직역: 오늘의 리딩 글은 최신 국제 헤드라인들에서 나온 몇 가지 주요 전개를 함께 모은다.";
+
+  const s2 = `First, ${title}.`;
+  const l2 = `직역: 첫째, ${title}.`;
+
+  const s3 =
+    "Taken together, these developments show that today’s world is deeply interconnected.";
+  const l3 = "직역: 함께 놓고 보면, 이런 전개들은 오늘날의 세계가 깊게 서로 연결되어 있음을 보여준다.";
+
+  return [
+    {
+      id: 1,
+      text: s1,
+      literal: l1,
+      backTranslationAnswer: s1,
+    },
+    {
+      id: 2,
+      text: s2,
+      literal: l2,
+      backTranslationAnswer: s2,
+    },
+    {
+      id: 3,
+      text: s3,
+      literal: l3,
+      backTranslationAnswer: s3,
+    },
+  ];
+}
+
 async function main() {
   const xml = await fetchText(FEED_URL);
   const items = parseItems(xml).slice(0, 3);
@@ -205,31 +169,27 @@ async function main() {
   }
 
   const today = new Date().toISOString().slice(0, 10);
+  const title = items[0].title || "Today’s Global News Briefing";
   const passage = buildPassage(items);
   const allSentenceTexts = splitSentences(passage);
-  const practiceTexts = pickPracticeSentences(allSentenceTexts);
-
-  const title = items[0].title || "Today’s Global News Briefing";
+  const sentencePractice = makePracticeSentences(items, title);
   const summary = buildSummary(items);
 
-  const allSentences = allSentenceTexts.map((text, i) => ({
-    id: i + 1,
-    text,
-    literal: literalTranslate(text),
-  }));
-
-  const sentencePractice = practiceTexts.map((text, i) => ({
-    id: i + 1,
-    text,
-    literal: literalTranslate(text),
-    backTranslationAnswer: text,
-  }));
+  // 본문 전체 문장 데이터
+  const allSentences = allSentenceTexts.map((text, i) => {
+    const matchedPractice = sentencePractice.find((p) => p.text === text);
+    return {
+      id: i + 1,
+      text,
+      literal: matchedPractice ? matchedPractice.literal : "",
+    };
+  });
 
   const result = {
     date: today,
     category: "Daily News",
     title,
-    titleLiteral: titleLiteral(title),
+    titleLiteral: makeTitleLiteral(title),
     source: "BBC RSS",
     passage,
     allSentences,
@@ -319,8 +279,6 @@ async function main() {
   console.log("UPDATED HISTORY:", historyPath);
   console.log("UPDATED INDEX:", indexPath);
   console.log("NEW TITLE:", result.title);
-  console.log("TOTAL SENTENCES:", allSentences.length);
-  console.log("PRACTICE SENTENCES:", sentencePractice.length);
 }
 
 main().catch((err) => {
