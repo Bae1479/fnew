@@ -1,9 +1,9 @@
 {
   "date": "2026-04-21",
   "category": "Daily News",
-  "title": "Officials deliberately withheld Mandelson vetting result from me, Starmer says",
+  "title": "Chris Mason: A chance for key aide to explain why he didn't tell Starmer",
   "source": "BBC RSS",
-  "passage": "Today’s reading brings together several major developments from the latest international headlines. Rather than focusing on a single story, it helps the reader connect events, understand their wider significance, and identify the forces shaping public discussion. First, Officials deliberately withheld Mandelson vetting result from me, Starmer says. The PM tells the Commons that if he had known the peer failed security vetting he would not have been appointed. This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities. Second, Key points from Starmer's Mandelson statement. The prime minister has been back in the Commons after it emerged the Labour peer failed vetting. This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities. Third, Trump says US will not lift Hormuz blockade until deal made with Iran. The US president's comments come amid uncertainty over whether Iran will attend peace talks in Pakistan this week. This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities. Taken together, these developments show that today’s world is deeply interconnected. Readers benefit not only from knowing what happened, but also from thinking about how different events influence one another across borders and sectors.",
+  "passage": "Today’s reading brings together several major developments from the latest international headlines. Rather than focusing on a single story, it helps the reader connect events, understand their wider significance, and identify the forces shaping public discussion. First, Chris Mason: A chance for key aide to explain why he didn't tell Starmer. Sir Olly Robbins is expected to defend his decision not to tell Sir Keir Starmer that Lord Mandelson failed vetting. This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities. Second, If Plaid win in Wales, that won't mean independence - at least not yet. In the Senedd campaign, are weighing up whether the issue of Welsh independence is a vote winner or loser. This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities. Third, UK unemployment rate sees surprise fall to 4.9%. Most analysts had predicted the rate would remain unchanged at 5.2%. This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities. Taken together, these developments show that today’s world is deeply interconnected. Readers benefit not only from knowing what happened, but also from thinking about how different events influence one another across borders and sectors.",
   "sentences": [
     {
       "id": 1,
@@ -13,9 +13,9 @@
     },
     {
       "id": 2,
-      "text": "The prime minister has been back in the Commons after it emerged the Labour peer failed vetting.",
+      "text": "In the Senedd campaign, are weighing up whether the issue of Welsh independence is a vote winner or loser.",
       "literal": "직역은 다음 단계에서 자동 생성하도록 연결할 예정입니다.",
-      "backTranslationAnswer": "The prime minister has been back in the Commons after it emerged the Labour peer failed vetting."
+      "backTranslationAnswer": "In the Senedd campaign, are weighing up whether the issue of Welsh independence is a vote winner or loser."
     },
     {
       "id": 3,
