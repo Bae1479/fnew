@@ -1,26 +1,27 @@
 {
   "date": "2026-04-21",
   "category": "Daily News",
-  "title": "Chris Mason: A chance for key aide to explain why he didn't tell Starmer",
+  "title": "Henry Zeffman: Robbins's revelations are a dangerous moment for Starmer",
+  "titleLiteral": "제목 직역: Henry Zeffman: Robbins's revelations are a dangerous moment for Starmer",
   "source": "BBC RSS",
-  "passage": "Today’s reading brings together several major developments from the latest international headlines. Rather than focusing on a single story, it helps the reader connect events, understand their wider significance, and identify the forces shaping public discussion. First, Chris Mason: A chance for key aide to explain why he didn't tell Starmer. Sir Olly Robbins is expected to defend his decision not to tell Sir Keir Starmer that Lord Mandelson failed vetting. This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities. Second, If Plaid win in Wales, that won't mean independence - at least not yet. In the Senedd campaign, are weighing up whether the issue of Welsh independence is a vote winner or loser. This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities. Third, UK unemployment rate sees surprise fall to 4.9%. Most analysts had predicted the rate would remain unchanged at 5.2%. This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities. Taken together, these developments show that today’s world is deeply interconnected. Readers benefit not only from knowing what happened, but also from thinking about how different events influence one another across borders and sectors.",
+  "passage": "Today’s reading brings together several major developments from the latest international headlines. Rather than focusing on a single story, it helps the reader connect events, understand their wider significance, and identify the forces shaping public discussion. First, Henry Zeffman: Robbins's revelations are a dangerous moment for Starmer. Drawing a line under Lord Mandelson's appointment is proving impossible for the prime minister. This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities. Second, Arrests over planned arson attack on Jewish community. Police made the arrests over an alleged plot to commit an arson attack on Jewish sites. This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities. Third, Unemployment rate unexpectedly falls as fewer students look for work. The drop has been largely driven by a rise in the number of people not actively seeking work. This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities. Taken together, these developments show that today’s world is deeply interconnected. Readers benefit not only from knowing what happened, but also from thinking about how different events influence one another across borders and sectors.",
   "sentences": [
     {
       "id": 1,
       "text": "Today’s reading brings together several major developments from the latest international headlines.",
-      "literal": "직역은 다음 단계에서 자동 생성하도록 연결할 예정입니다.",
+      "literal": "직역: 오늘의 읽기 글은 함께 모은다 several 주요 전개들 from the 최신 국제 헤드라인들.",
       "backTranslationAnswer": "Today’s reading brings together several major developments from the latest international headlines."
     },
     {
       "id": 2,
-      "text": "In the Senedd campaign, are weighing up whether the issue of Welsh independence is a vote winner or loser.",
-      "literal": "직역은 다음 단계에서 자동 생성하도록 연결할 예정입니다.",
-      "backTranslationAnswer": "In the Senedd campaign, are weighing up whether the issue of Welsh independence is a vote winner or loser."
+      "text": "Police made the arrests over an alleged plot to commit an arson attack on Jewish sites.",
+      "literal": "직역: Police made the arrests over an alleged plot to commit an arson attack on Jewish sites.",
+      "backTranslationAnswer": "Police made the arrests over an alleged plot to commit an arson attack on Jewish sites."
     },
     {
       "id": 3,
       "text": "Readers benefit not only from knowing what happened, but also from thinking about how different events influence one another across borders and sectors.",
-      "literal": "직역은 다음 단계에서 자동 생성하도록 연결할 예정입니다.",
+      "literal": "직역: 독자들은 이득을 얻는다 ~에서뿐 아니라 무슨 일이 일어났는지 아는 것, but also from ~에 대해 생각하는 것 how 서로 다른 사건들 서로에게 영향을 주다 국경과 분야를 가로질러.",
       "backTranslationAnswer": "Readers benefit not only from knowing what happened, but also from thinking about how different events influence one another across borders and sectors."
     }
   ],
@@ -86,5 +87,5 @@
       "explanation": "The reading is designed to connect developments across topics."
     }
   ],
-  "modelSummary": "The passage combines several recent news developments and argues that current events should be understood in a broader connected context. It emphasizes that political, economic, and social changes often influence one another across sectors and borders."
+  "modelSummary": "This reading combines three recent headlines and shows how separate events can be understood in a broader global context. It suggests that stories such as Henry Zeffman: Robbins's revelations are a dangerous moment for Starmer, Arrests over planned arson attack on Jewish community, and Unemployment rate unexpectedly falls as fewer students look for work are not isolated developments but part of larger changes in politics, economics, technology, and public priorities."
 }
