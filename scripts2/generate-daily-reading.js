@@ -1,4 +1,3 @@
-
 const fs = require("fs");
 const path = require("path");
 const https = require("https");
@@ -76,6 +75,21 @@ function pickKeySentences(sentences) {
   ];
 }
 
+function ensureDir(dirPath) {
+  if (!fs.existsSync(dirPath)) {
+    fs.mkdirSync(dirPath, { recursive: true });
+  }
+}
+
+function readJsonSafe(filePath, fallback) {
+  try {
+    if (!fs.existsSync(filePath)) return fallback;
+    return JSON.parse(fs.readFileSync(filePath, "utf-8"));
+  } catch {
+    return fallback;
+  }
+}
+
 async function main() {
   const xml = await fetchText(FEED_URL);
   const items = parseItems(xml).slice(0, 3);
@@ -83,6 +97,8 @@ async function main() {
   if (!items.length) {
     throw new Error("RSS items not found");
   }
+
+  const today = new Date().toISOString().slice(0, 10);
 
   const intro =
     "Today’s reading brings together several major developments from the latest international headlines. Rather than focusing on a single story, it helps the reader connect events, understand their wider significance, and identify the forces shaping public discussion.";
@@ -102,7 +118,7 @@ async function main() {
   const keySentences = pickKeySentences(sentenceList);
 
   const result = {
-    date: new Date().toISOString().slice(0, 10),
+    date: today,
     category: "Daily News",
     title: items[0].title || "Today’s Global News Briefing",
     source: "BBC RSS",
@@ -144,16 +160,60 @@ async function main() {
         ],
         answer: 2,
         explanation: "The conclusion says current developments are deeply interconnected."
+      },
+      {
+        id: 4,
+        question: "Which source is used to generate this reading?",
+        options: ["BBC RSS", "Netflix", "Wikipedia only", "A PDF file"],
+        answer: 0,
+        explanation: "The reading is built from BBC RSS headlines."
+      },
+      {
+        id: 5,
+        question: "Why does the passage group different headlines together?",
+        options: [
+          "To avoid reading any details",
+          "To show broader links across current events",
+          "To create a fictional dialogue",
+          "To focus only on entertainment"
+        ],
+        answer: 1,
+        explanation: "The reading is designed to connect developments across topics."
       }
     ],
     modelSummary:
       "The passage combines several recent news developments and argues that current events should be understood in a broader connected context. It emphasizes that political, economic, and social changes often influence one another across sectors and borders."
   };
 
-  const outputPath = path.join(process.cwd(), "src", "todayReading.json");
-  fs.writeFileSync(outputPath, JSON.stringify(result, null, 2), "utf-8");
+  const srcDir = path.join(process.cwd(), "src");
+  const historyDir = path.join(process.cwd(), "history");
+  const todayPath = path.join(srcDir, "todayReading.json");
+  const historyPath = path.join(historyDir, `${today}.json`);
+  const indexPath = path.join(srcDir, "readingIndex.json");
 
-  console.log("UPDATED:", outputPath);
+  ensureDir(srcDir);
+  ensureDir(historyDir);
+
+  fs.writeFileSync(todayPath, JSON.stringify(result, null, 2), "utf-8");
+  fs.writeFileSync(historyPath, JSON.stringify(result, null, 2), "utf-8");
+
+  const indexData = readJsonSafe(indexPath, []);
+
+  const newEntry = {
+    date: today,
+    title: result.title,
+    source: result.source,
+    path: `https://raw.githubusercontent.com/Bae1479/fnew/main/history/${today}.json`
+  };
+
+  const filtered = indexData.filter((item) => item.date !== today);
+  const updatedIndex = [newEntry, ...filtered];
+
+  fs.writeFileSync(indexPath, JSON.stringify(updatedIndex, null, 2), "utf-8");
+
+  console.log("UPDATED TODAY:", todayPath);
+  console.log("UPDATED HISTORY:", historyPath);
+  console.log("UPDATED INDEX:", indexPath);
   console.log("NEW TITLE:", result.title);
 }
 
