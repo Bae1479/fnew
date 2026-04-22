@@ -58,7 +58,7 @@ function getKSTDateString(dateInput) {
     .slice(0, 3);
 
   // 🔹 fallback (어제 뉴스 없으면 최신)
-  const finalItems = items.length ? items : allItems.slice(0, 3);
+  const finalItems = items.length >= 3 ? items : allItems.slice(0, 3);
 
   // 🔹 리딩 생성
   const intro =
