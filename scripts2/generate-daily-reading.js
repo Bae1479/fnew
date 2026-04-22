@@ -64,14 +64,12 @@ function getKSTDateString(dateInput) {
   const intro =
     "Today’s reading brings together several major developments from recent international headlines.";
 
-  const body = finalItems
-    .map(
-      (item, i) =>
-        `${i === 0 ? "First" : i === 1 ? "Second" : "Third"}, ${
-          item.description
-        } This event reflects broader global trends.`
-    )
-    .join(" ");
+const body = finalItems
+  .map((item, i) => {
+    const intro = i === 0 ? "First" : i === 1 ? "Second" : "Third";
+    return `${intro}, ${item.description} This development is important because it may influence broader political, economic, or social discussions. In this context, the story also shows how local events can have wider international significance.`;
+  })
+  .join(" ");
 
   const conclusion =
     "Overall, these developments show how interconnected global events are.";
