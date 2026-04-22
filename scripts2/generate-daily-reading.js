@@ -75,7 +75,7 @@ const body = finalItems
   "Overall, these developments show how interconnected global events are. They also suggest that readers should pay attention not only to individual headlines but also to the wider patterns that connect them. In many cases, political decisions, economic pressures, and diplomatic tensions do not remain isolated. Instead, they shape one another over time and influence how future events may unfold across different regions.";;
 
   const passage = `${intro} ${body} ${conclusion}`;
-const summary = `${intro} ${body.split(". ").slice(0, 2).join(". ")}. ${conclusion}`;
+const summary = `This reading explains several recent global developments and shows that they are interconnected. It highlights how political, economic, and social issues influence each other across different regions. Overall, it emphasizes the importance of understanding global events within a broader context.`;
   const allSentenceTexts = passage
     .split(". ")
     .map((s) => s.trim())
