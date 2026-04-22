@@ -67,7 +67,7 @@ function getKSTDateString(dateInput) {
 const body = finalItems
   .map((item, i) => {
     const intro = i === 0 ? "First" : i === 1 ? "Second" : "Third";
-    return `${intro}, ${item.description} This development is important because it may influence broader political, economic, or social discussions. In this context, the story also shows how local events can have wider international significance.`;
+    return `${intro}, ${item.description} This development is important because it may influence broader political, economic, or social discussions. In this context, the story also shows how local events can have wider international significance. It also suggests that recent developments should not be understood in isolation, because different events often reflect deeper patterns that shape public debate and policy choices. For readers, this means that a single headline can reveal much larger issues connected to diplomacy, economics, and society.`;
   })
   .join(" ");
 
