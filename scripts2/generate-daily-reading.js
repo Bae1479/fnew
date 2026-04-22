@@ -18,9 +18,13 @@ function parseItems(xml) {
   const matches = xml.match(/<item>([\s\S]*?)<\/item>/g);
 
   matches?.forEach((item) => {
-    const title = item.match(/<title>(.*?)<\/title>/)?.[1] || "";
-    const description =
-      item.match(/<description>(.*?)<\/description>/)?.[1] || "";
+    const clean = (str = "") =>
+  str.replace(/<!\[CDATA\[|\]\]>/g, "").replace(/<[^>]+>/g, "");
+
+const title = clean(item.match(/<title>(.*?)<\/title>/)?.[1] || "");
+const description = clean(
+  item.match(/<description>(.*?)<\/description>/)?.[1] || ""
+);
     const pubDate = item.match(/<pubDate>(.*?)<\/pubDate>/)?.[1] || "";
 
     items.push({ title, description, pubDate });
