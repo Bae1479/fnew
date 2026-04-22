@@ -22,9 +22,20 @@ const items = [
 ];
 
 // 🔹 본문 생성
-const passage = items
-  .map((item) => `${item.content} ${item.content}`)
+const intro =
+  "Today’s reading brings together several major developments from recent international headlines. Instead of treating each story as isolated, it encourages the reader to understand how events are connected within a broader global context and why these connections matter.";
+
+const body = items
+  .map(
+    (item, i) =>
+      `${i === 0 ? "First" : i === 1 ? "Second" : "Third"}, ${item.content} This development is important because it reflects larger trends that influence global society, economics, and political decisions.`
+  )
   .join(" ");
+
+const conclusion =
+  "Taken together, these developments show that today’s world is highly interconnected. Readers benefit not only from understanding individual events but also from recognizing how different issues influence one another across regions and sectors.";
+
+const passage = `${intro} ${body} ${conclusion}`;
 
 // 🔹 문장 분리
 const allSentenceTexts = passage
