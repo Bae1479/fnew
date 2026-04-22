@@ -178,7 +178,26 @@ const summary = `This reading explains several recent global developments and sh
 ]
   };
 
-  fs.writeFileSync("src/todayReading.json", JSON.stringify(result, null, 2));
+  const indexPath = "src/readingIndex.json";
+let readingIndex = [];
+
+if (fs.existsSync(indexPath)) {
+  readingIndex = JSON.parse(fs.readFileSync(indexPath, "utf-8"));
+}
+
+const newItem = {
+  date: result.date,
+  title: result.title,
+  source: "BBC RSS",
+  path: "https://raw.githubusercontent.com/Bae1479/fnew/main/src/todayReading.json"
+};
+
+readingIndex = [
+  newItem,
+  ...readingIndex.filter((item) => item.date !== result.date)
+];
+
+fs.writeFileSync(indexPath, JSON.stringify(readingIndex, null, 2));
 
   console.log("✅ DONE");
 })();
