@@ -50,15 +50,15 @@ const allSentences = allSentenceTexts.map((text, i) => ({
   literal: ""
 }));
 // 🔹 중심 문장 3개
-const sentencePractice = allSentenceTexts
-  .slice(0, 6)
-  .filter((_, i) => i % 2 === 0)
-  .slice(0, 3)
-  .map((s, i) => ({
-    id: i + 1,
-    text: s,
-    literal: "직역 준비 중입니다."
-  }));
+const sentencePractice = [
+  allSentenceTexts[0],
+  allSentenceTexts[Math.floor(allSentenceTexts.length / 2)],
+  allSentenceTexts[allSentenceTexts.length - 1],
+].map((s, i) => ({
+  id: i + 1,
+  text: s,
+  literal: "직역 준비 중입니다."
+}));
 
 // 🔹 제목
 const title = "Today's Global News Briefing";
