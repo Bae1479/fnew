@@ -1,8 +1,8 @@
 {
   "date": "2026-04-22",
-  "title": "McDonald's boss on abuse claims: 'I don't want to talk about the past'",
+  "title": "Graduate 'ghosted' by employers has applied for 400 jobs and had only three interviews",
   "titleLiteral": "오늘의 뉴스",
-  "passage": "Today’s reading brings together several major developments from recent international headlines. First, A BBC investigation in 2023 heard from more than 100 McDonald's workers in the UK claiming they faced sexual assault, harassment, racism, and bullying This development is important because it may influence broader political, economic, or social discussions. In this context, the story also shows how local events can have wider international significance. Second, The airline is the latest to cut flights as the US-Israel war with Iran sends jet fuel prices soaring. This development is important because it may influence broader political, economic, or social discussions. In this context, the story also shows how local events can have wider international significance. Third, Thousands of people have got in touch with BBC Your Voice over concerns about rising pet insurance costs and poor cover.   This development is important because it may influence broader political, economic, or social discussions. In this context, the story also shows how local events can have wider international significance. Overall, these developments show how interconnected global events are. They also suggest that readers should pay attention not only to individual headlines but also to the wider patterns that connect them. In many cases, political decisions, economic pressures, and diplomatic tensions do not remain isolated. Instead, they shape one another over time and influence how future events may unfold across different regions.",
+  "passage": "Today’s reading brings together several major developments from recent international headlines. First, The term ghosting is common in the dating world - but job applicants are increasingly reporting it. This development is important because it may influence broader political, economic, or social discussions. In this context, the story also shows how local events can have wider international significance. It also suggests that recent developments should not be understood in isolation, because different events often reflect deeper patterns that shape public debate and policy choices. For readers, this means that a single headline can reveal much larger issues connected to diplomacy, economics, and society. Second, The deadly shooting at a popular tourist site weeks before the World Cup has rocked Mexico. This development is important because it may influence broader political, economic, or social discussions. In this context, the story also shows how local events can have wider international significance. It also suggests that recent developments should not be understood in isolation, because different events often reflect deeper patterns that shape public debate and policy choices. For readers, this means that a single headline can reveal much larger issues connected to diplomacy, economics, and society. Third, How high could inflation get? And what could it mean for borrowers and savers around the country? This development is important because it may influence broader political, economic, or social discussions. In this context, the story also shows how local events can have wider international significance. It also suggests that recent developments should not be understood in isolation, because different events often reflect deeper patterns that shape public debate and policy choices. For readers, this means that a single headline can reveal much larger issues connected to diplomacy, economics, and society. Overall, these developments show how interconnected global events are. They also suggest that readers should pay attention not only to individual headlines but also to the wider patterns that connect them. In many cases, political decisions, economic pressures, and diplomatic tensions do not remain isolated. Instead, they shape one another over time and influence how future events may unfold across different regions.",
   "allSentences": [
     {
       "id": 1,
@@ -11,32 +11,32 @@
     },
     {
       "id": 2,
-      "text": "First, A BBC investigation in 2023 heard from more than 100 McDonald's workers in the UK claiming they faced sexual assault, harassment, racism, and bullying This development is important because it may influence broader political, economic, or social discussions.",
+      "text": "First, The term ghosting is common in the dating world - but job applicants are increasingly reporting it.",
       "literal": ""
     },
     {
       "id": 3,
-      "text": "In this context, the story also shows how local events can have wider international significance.",
-      "literal": ""
-    },
-    {
-      "id": 4,
-      "text": "Second, The airline is the latest to cut flights as the US-Israel war with Iran sends jet fuel prices soaring.",
-      "literal": ""
-    },
-    {
-      "id": 5,
       "text": "This development is important because it may influence broader political, economic, or social discussions.",
       "literal": ""
     },
     {
-      "id": 6,
+      "id": 4,
       "text": "In this context, the story also shows how local events can have wider international significance.",
       "literal": ""
     },
     {
+      "id": 5,
+      "text": "It also suggests that recent developments should not be understood in isolation, because different events often reflect deeper patterns that shape public debate and policy choices.",
+      "literal": ""
+    },
+    {
+      "id": 6,
+      "text": "For readers, this means that a single headline can reveal much larger issues connected to diplomacy, economics, and society.",
+      "literal": ""
+    },
+    {
       "id": 7,
-      "text": "Third, Thousands of people have got in touch with BBC Your Voice over concerns about rising pet insurance costs and poor cover.",
+      "text": "Second, The deadly shooting at a popular tourist site weeks before the World Cup has rocked Mexico.",
       "literal": ""
     },
     {
@@ -51,21 +51,51 @@
     },
     {
       "id": 10,
-      "text": "Overall, these developments show how interconnected global events are.",
+      "text": "It also suggests that recent developments should not be understood in isolation, because different events often reflect deeper patterns that shape public debate and policy choices.",
       "literal": ""
     },
     {
       "id": 11,
-      "text": "They also suggest that readers should pay attention not only to individual headlines but also to the wider patterns that connect them.",
+      "text": "For readers, this means that a single headline can reveal much larger issues connected to diplomacy, economics, and society.",
       "literal": ""
     },
     {
       "id": 12,
-      "text": "In many cases, political decisions, economic pressures, and diplomatic tensions do not remain isolated.",
+      "text": "Third, How high could inflation get? And what could it mean for borrowers and savers around the country? This development is important because it may influence broader political, economic, or social discussions.",
       "literal": ""
     },
     {
       "id": 13,
+      "text": "In this context, the story also shows how local events can have wider international significance.",
+      "literal": ""
+    },
+    {
+      "id": 14,
+      "text": "It also suggests that recent developments should not be understood in isolation, because different events often reflect deeper patterns that shape public debate and policy choices.",
+      "literal": ""
+    },
+    {
+      "id": 15,
+      "text": "For readers, this means that a single headline can reveal much larger issues connected to diplomacy, economics, and society.",
+      "literal": ""
+    },
+    {
+      "id": 16,
+      "text": "Overall, these developments show how interconnected global events are.",
+      "literal": ""
+    },
+    {
+      "id": 17,
+      "text": "They also suggest that readers should pay attention not only to individual headlines but also to the wider patterns that connect them.",
+      "literal": ""
+    },
+    {
+      "id": 18,
+      "text": "In many cases, political decisions, economic pressures, and diplomatic tensions do not remain isolated.",
+      "literal": ""
+    },
+    {
+      "id": 19,
       "text": "Instead, they shape one another over time and influence how future events may unfold across different regions.",
       "literal": ""
     }
@@ -78,7 +108,7 @@
     },
     {
       "id": 2,
-      "text": "Third, Thousands of people have got in touch with BBC Your Voice over concerns about rising pet insurance costs and poor cover.",
+      "text": "It also suggests that recent developments should not be understood in isolation, because different events often reflect deeper patterns that shape public debate and policy choices.",
       "literal": "직역 준비 중입니다."
     },
     {
@@ -95,32 +125,32 @@
     },
     {
       "id": 2,
-      "text": "First, A BBC investigation in 2023 heard from more than 100 McDonald's workers in the UK claiming they faced sexual assault, harassment, racism, and bullying This development is important because it may influence broader political, economic, or social discussions.",
+      "text": "First, The term ghosting is common in the dating world - but job applicants are increasingly reporting it.",
       "literal": ""
     },
     {
       "id": 3,
-      "text": "In this context, the story also shows how local events can have wider international significance.",
-      "literal": ""
-    },
-    {
-      "id": 4,
-      "text": "Second, The airline is the latest to cut flights as the US-Israel war with Iran sends jet fuel prices soaring.",
-      "literal": ""
-    },
-    {
-      "id": 5,
       "text": "This development is important because it may influence broader political, economic, or social discussions.",
       "literal": ""
     },
     {
-      "id": 6,
+      "id": 4,
       "text": "In this context, the story also shows how local events can have wider international significance.",
       "literal": ""
     },
     {
+      "id": 5,
+      "text": "It also suggests that recent developments should not be understood in isolation, because different events often reflect deeper patterns that shape public debate and policy choices.",
+      "literal": ""
+    },
+    {
+      "id": 6,
+      "text": "For readers, this means that a single headline can reveal much larger issues connected to diplomacy, economics, and society.",
+      "literal": ""
+    },
+    {
       "id": 7,
-      "text": "Third, Thousands of people have got in touch with BBC Your Voice over concerns about rising pet insurance costs and poor cover.",
+      "text": "Second, The deadly shooting at a popular tourist site weeks before the World Cup has rocked Mexico.",
       "literal": ""
     },
     {
@@ -135,21 +165,51 @@
     },
     {
       "id": 10,
-      "text": "Overall, these developments show how interconnected global events are.",
+      "text": "It also suggests that recent developments should not be understood in isolation, because different events often reflect deeper patterns that shape public debate and policy choices.",
       "literal": ""
     },
     {
       "id": 11,
-      "text": "They also suggest that readers should pay attention not only to individual headlines but also to the wider patterns that connect them.",
+      "text": "For readers, this means that a single headline can reveal much larger issues connected to diplomacy, economics, and society.",
       "literal": ""
     },
     {
       "id": 12,
-      "text": "In many cases, political decisions, economic pressures, and diplomatic tensions do not remain isolated.",
+      "text": "Third, How high could inflation get? And what could it mean for borrowers and savers around the country? This development is important because it may influence broader political, economic, or social discussions.",
       "literal": ""
     },
     {
       "id": 13,
+      "text": "In this context, the story also shows how local events can have wider international significance.",
+      "literal": ""
+    },
+    {
+      "id": 14,
+      "text": "It also suggests that recent developments should not be understood in isolation, because different events often reflect deeper patterns that shape public debate and policy choices.",
+      "literal": ""
+    },
+    {
+      "id": 15,
+      "text": "For readers, this means that a single headline can reveal much larger issues connected to diplomacy, economics, and society.",
+      "literal": ""
+    },
+    {
+      "id": 16,
+      "text": "Overall, these developments show how interconnected global events are.",
+      "literal": ""
+    },
+    {
+      "id": 17,
+      "text": "They also suggest that readers should pay attention not only to individual headlines but also to the wider patterns that connect them.",
+      "literal": ""
+    },
+    {
+      "id": 18,
+      "text": "In many cases, political decisions, economic pressures, and diplomatic tensions do not remain isolated.",
+      "literal": ""
+    },
+    {
+      "id": 19,
       "text": "Instead, they shape one another over time and influence how future events may unfold across different regions.",
       "literal": ""
     }
