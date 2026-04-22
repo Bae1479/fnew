@@ -193,7 +193,18 @@ async function main() {
     source: "BBC RSS",
     passage,
     allSentences,
-    sentencePractice,
+   sentencePractice,
+modelSummary: `This reading brings together three major recent headlines and encourages readers to think about current events in a broader global context.
+
+Rather than viewing news as isolated stories, it highlights how developments across different regions reflect deeper trends in politics, economics, and society.
+
+By connecting these events, the passage suggests that understanding relationships between issues is essential for interpreting modern news.
+
+Overall, it emphasizes that global events are interconnected and should be read with a wider perspective in mind.`,
+
+// App 호환용
+sentences: allSentences,
+questions: [
     // App 호환용
     sentences: allSentences,
     questions: [
