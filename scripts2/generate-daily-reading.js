@@ -109,7 +109,63 @@ const body = finalItems
 
     modelSummary: `This reading explains recent global events and shows that they are interconnected and reflect broader trends.`,
 
-    questions: []
+   questions: [
+  {
+    id: 1,
+    question: "What is the main purpose of this reading?",
+    options: [
+      "To describe one single event in detail",
+      "To connect several recent global developments",
+      "To explain only an economic theory",
+      "To criticize the media"
+    ],
+    answer: 1
+  },
+  {
+    id: 2,
+    question: "What does the passage suggest about current events?",
+    options: [
+      "They should be viewed separately",
+      "They are mostly unrelated",
+      "They are connected in a broader context",
+      "They are impossible to understand"
+    ],
+    answer: 2
+  },
+  {
+    id: 3,
+    question: "Why does the reading mention politics, economics, and diplomacy together?",
+    options: [
+      "To show that different issues influence one another",
+      "To increase the passage length only",
+      "To focus on one country",
+      "To avoid giving examples"
+    ],
+    answer: 0
+  },
+  {
+    id: 4,
+    question: "What is emphasized in the conclusion?",
+    options: [
+      "Only local events matter",
+      "Readers should ignore patterns",
+      "Global events are interconnected",
+      "Headlines are usually misleading"
+    ],
+    answer: 2
+  },
+  {
+    id: 5,
+    question: "What reading skill does this passage encourage?",
+    options: [
+      "Memorizing isolated facts",
+      "Understanding wider patterns and relationships",
+      "Skipping difficult ideas",
+      "Reading only short headlines"
+    ],
+    answer: 1
+  }
+]
   };
 
   fs.writeFileSync("src/todayReading.json", JSON.stringify(result, null, 2));
