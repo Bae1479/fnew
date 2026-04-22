@@ -2,7 +2,7 @@
   "date": "2026-04-22",
   "title": "The Global Story: How Pakistan became the peacemaker",
   "titleLiteral": "오늘의 뉴스",
-  "passage": "Today’s reading brings together several major developments from recent international headlines. First, Talks are expected between the US and Iran in Islamabad. This development is important because it may influence broader political, economic, or social discussions. In this context, the story also shows how local events can have wider international significance. Overall, these developments show how interconnected global events are.",
+  "passage": "Today’s reading brings together several major developments from recent international headlines. First, Talks are expected between the US and Iran in Islamabad. This development is important because it may influence broader political, economic, or social discussions. In this context, the story also shows how local events can have wider international significance. Overall, these developments show how interconnected global events are. They also suggest that readers should pay attention not only to individual headlines but also to the wider patterns that connect them. In many cases, political decisions, economic pressures, and diplomatic tensions do not remain isolated. Instead, they shape one another over time and influence how future events may unfold across different regions.",
   "allSentences": [
     {
       "id": 1,
@@ -28,6 +28,21 @@
       "id": 5,
       "text": "Overall, these developments show how interconnected global events are.",
       "literal": ""
+    },
+    {
+      "id": 6,
+      "text": "They also suggest that readers should pay attention not only to individual headlines but also to the wider patterns that connect them.",
+      "literal": ""
+    },
+    {
+      "id": 7,
+      "text": "In many cases, political decisions, economic pressures, and diplomatic tensions do not remain isolated.",
+      "literal": ""
+    },
+    {
+      "id": 8,
+      "text": "Instead, they shape one another over time and influence how future events may unfold across different regions.",
+      "literal": ""
     }
   ],
   "sentencePractice": [
@@ -38,12 +53,12 @@
     },
     {
       "id": 2,
-      "text": "This development is important because it may influence broader political, economic, or social discussions.",
+      "text": "Overall, these developments show how interconnected global events are.",
       "literal": "직역 준비 중입니다."
     },
     {
       "id": 3,
-      "text": "Overall, these developments show how interconnected global events are.",
+      "text": "Instead, they shape one another over time and influence how future events may unfold across different regions.",
       "literal": "직역 준비 중입니다."
     }
   ],
@@ -71,6 +86,21 @@
     {
       "id": 5,
       "text": "Overall, these developments show how interconnected global events are.",
+      "literal": ""
+    },
+    {
+      "id": 6,
+      "text": "They also suggest that readers should pay attention not only to individual headlines but also to the wider patterns that connect them.",
+      "literal": ""
+    },
+    {
+      "id": 7,
+      "text": "In many cases, political decisions, economic pressures, and diplomatic tensions do not remain isolated.",
+      "literal": ""
+    },
+    {
+      "id": 8,
+      "text": "Instead, they shape one another over time and influence how future events may unfold across different regions.",
       "literal": ""
     }
   ],
