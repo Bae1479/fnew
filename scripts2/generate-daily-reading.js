@@ -103,17 +103,6 @@ const summary = `This reading explains several recent global developments and sh
     .replace(/in/g, "~에서");
 };
 
-const literalMap = (text) => {
-  return text
-    .replace(/is/g, "이다")
-    .replace(/are/g, "이다")
-    .replace(/the/g, "")
-    .replace(/and/g, "그리고")
-    .replace(/of/g, "의")
-    .replace(/to/g, "~에")
-    .replace(/in/g, "~에서");
-};
-
 allSentences: allSentenceTexts.map((text, i) => ({
   id: i + 1,
   text,
