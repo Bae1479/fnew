@@ -1,235 +1,99 @@
 {
   "date": "2026-04-22",
   "category": "Daily News",
-  "title": "PM sends 'chill' through civil service, union boss says",
-  "titleLiteral": "제목 직역: 총리 sends 'chill' through civil service, union boss says",
+  "title": "Today's Global News Briefing",
+  "titleLiteral": "오늘의 글로벌 뉴스 브리핑",
   "source": "BBC RSS",
-  "passage": "Today’s reading brings together several major developments from the latest international headlines. Rather than focusing on a single story, it helps the reader connect events, understand their wider significance, and see how separate issues influence public discussion. First, PM sends 'chill' through civil service, union boss says. The 'chill' follows the sacking of lead civil servant at the Foreign Office Sir Olly Robbins by the prime minister. This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities. Second, I was left with an £8,000 vet bill when my insurer cancelled my pet policy. Thousands of people have got in touch with BBC Your Voice over concerns about rising pet insurance costs and poor cover. This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities. Third, How Leicester went from Premier League champions to League One in a decade. Ten years ago, Leicester were days away from winning the Premier League. Next season, they will play in League One. How? This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities. Taken together, these developments show that today’s world is deeply interconnected. Readers benefit not only from knowing what happened, but also from thinking about how different events influence one another across borders and sectors.",
+  "passage": "Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery. Experts point to rising interest rates and global uncertainty as key factors affecting growth. Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models. Competition is intensifying across the industry. World leaders gathered to discuss climate change emphasized the importance of immediate action. New agreements aim to reduce emissions and increase cooperation.",
   "allSentences": [
-    {
-      "id": 1,
-      "text": "Today’s reading brings together several major developments from the latest international headlines.",
-      "literal": "직역: 오늘의 리딩 글은 최신 국제 헤드라인들에서 나온 몇 가지 주요 전개를 함께 모은다."
-    },
-    {
-      "id": 2,
-      "text": "Rather than focusing on a single story, it helps the reader connect events, understand their wider significance, and see how separate issues influence public discussion.",
-      "literal": ""
-    },
-    {
-      "id": 3,
-      "text": "First, PM sends 'chill' through civil service, union boss says.",
-      "literal": "직역: 첫째, PM sends 'chill' through civil service, union boss says."
-    },
-    {
-      "id": 4,
-      "text": "The 'chill' follows the sacking of lead civil servant at the Foreign Office Sir Olly Robbins by the prime minister.",
-      "literal": ""
-    },
-    {
-      "id": 5,
-      "text": "This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities.",
-      "literal": ""
-    },
-    {
-      "id": 6,
-      "text": "Second, I was left with an £8,000 vet bill when my insurer cancelled my pet policy.",
-      "literal": ""
-    },
-    {
-      "id": 7,
-      "text": "Thousands of people have got in touch with BBC Your Voice over concerns about rising pet insurance costs and poor cover.",
-      "literal": ""
-    },
-    {
-      "id": 8,
-      "text": "This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities.",
-      "literal": ""
-    },
-    {
-      "id": 9,
-      "text": "Third, How Leicester went from Premier League champions to League One in a decade.",
-      "literal": ""
-    },
-    {
-      "id": 10,
-      "text": "Ten years ago, Leicester were days away from winning the Premier League.",
-      "literal": ""
-    },
-    {
-      "id": 11,
-      "text": "Next season, they will play in League One.",
-      "literal": ""
-    },
-    {
-      "id": 12,
-      "text": "This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities.",
-      "literal": ""
-    },
-    {
-      "id": 13,
-      "text": "Taken together, these developments show that today’s world is deeply interconnected.",
-      "literal": "직역: 함께 놓고 보면, 이런 전개들은 오늘날의 세계가 깊게 서로 연결되어 있음을 보여준다."
-    },
-    {
-      "id": 14,
-      "text": "Readers benefit not only from knowing what happened, but also from thinking about how different events influence one another across borders and sectors.",
-      "literal": ""
-    }
+    "Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery.",
+    "Experts point to rising interest rates and global uncertainty as key factors affecting growth.",
+    "Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models.",
+    "Competition is intensifying across the industry.",
+    "World leaders gathered to discuss climate change emphasized the importance of immediate action.",
+    "New agreements aim to reduce emissions and increase cooperation."
   ],
   "sentencePractice": [
     {
       "id": 1,
-      "text": "Today’s reading brings together several major developments from the latest international headlines.",
-      "literal": "직역: 오늘의 리딩 글은 최신 국제 헤드라인들에서 나온 몇 가지 주요 전개를 함께 모은다.",
-      "backTranslationAnswer": "Today’s reading brings together several major developments from the latest international headlines."
+      "text": "Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery.",
+      "literal": "직역 준비 중입니다."
     },
     {
       "id": 2,
-      "text": "First, PM sends 'chill' through civil service, union boss says.",
-      "literal": "직역: 첫째, PM sends 'chill' through civil service, union boss says.",
-      "backTranslationAnswer": "First, PM sends 'chill' through civil service, union boss says."
+      "text": "Experts point to rising interest rates and global uncertainty as key factors affecting growth.",
+      "literal": "직역 준비 중입니다."
     },
     {
       "id": 3,
-      "text": "Taken together, these developments show that today’s world is deeply interconnected.",
-      "literal": "직역: 함께 놓고 보면, 이런 전개들은 오늘날의 세계가 깊게 서로 연결되어 있음을 보여준다.",
-      "backTranslationAnswer": "Taken together, these developments show that today’s world is deeply interconnected."
+      "text": "Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models.",
+      "literal": "직역 준비 중입니다."
     }
   ],
+  "modelSummary": "This reading brings together three major recent headlines and encourages readers to think about current events in a broader global context.\n\nRather than viewing news as isolated stories, it highlights how developments across different regions reflect deeper trends in politics, economics, and society.\n\nBy connecting these events, the passage suggests that understanding relationships between issues is essential for interpreting modern news.\n\nOverall, it emphasizes that global events are interconnected and should be read with a wider perspective in mind.",
   "sentences": [
-    {
-      "id": 1,
-      "text": "Today’s reading brings together several major developments from the latest international headlines.",
-      "literal": "직역: 오늘의 리딩 글은 최신 국제 헤드라인들에서 나온 몇 가지 주요 전개를 함께 모은다."
-    },
-    {
-      "id": 2,
-      "text": "Rather than focusing on a single story, it helps the reader connect events, understand their wider significance, and see how separate issues influence public discussion.",
-      "literal": ""
-    },
-    {
-      "id": 3,
-      "text": "First, PM sends 'chill' through civil service, union boss says.",
-      "literal": "직역: 첫째, PM sends 'chill' through civil service, union boss says."
-    },
-    {
-      "id": 4,
-      "text": "The 'chill' follows the sacking of lead civil servant at the Foreign Office Sir Olly Robbins by the prime minister.",
-      "literal": ""
-    },
-    {
-      "id": 5,
-      "text": "This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities.",
-      "literal": ""
-    },
-    {
-      "id": 6,
-      "text": "Second, I was left with an £8,000 vet bill when my insurer cancelled my pet policy.",
-      "literal": ""
-    },
-    {
-      "id": 7,
-      "text": "Thousands of people have got in touch with BBC Your Voice over concerns about rising pet insurance costs and poor cover.",
-      "literal": ""
-    },
-    {
-      "id": 8,
-      "text": "This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities.",
-      "literal": ""
-    },
-    {
-      "id": 9,
-      "text": "Third, How Leicester went from Premier League champions to League One in a decade.",
-      "literal": ""
-    },
-    {
-      "id": 10,
-      "text": "Ten years ago, Leicester were days away from winning the Premier League.",
-      "literal": ""
-    },
-    {
-      "id": 11,
-      "text": "Next season, they will play in League One.",
-      "literal": ""
-    },
-    {
-      "id": 12,
-      "text": "This story matters because individual headlines often reflect broader shifts in politics, economics, technology, or public priorities.",
-      "literal": ""
-    },
-    {
-      "id": 13,
-      "text": "Taken together, these developments show that today’s world is deeply interconnected.",
-      "literal": "직역: 함께 놓고 보면, 이런 전개들은 오늘날의 세계가 깊게 서로 연결되어 있음을 보여준다."
-    },
-    {
-      "id": 14,
-      "text": "Readers benefit not only from knowing what happened, but also from thinking about how different events influence one another across borders and sectors.",
-      "literal": ""
-    }
+    "Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery.",
+    "Experts point to rising interest rates and global uncertainty as key factors affecting growth.",
+    "Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models.",
+    "Competition is intensifying across the industry.",
+    "World leaders gathered to discuss climate change emphasized the importance of immediate action.",
+    "New agreements aim to reduce emissions and increase cooperation."
   ],
   "questions": [
     {
       "id": 1,
       "question": "What is the main purpose of this passage?",
       "options": [
-        "To tell a fictional story",
-        "To connect several current news developments",
-        "To explain only one sports event",
-        "To teach grammar rules"
+        "To describe one specific news event in detail",
+        "To explain how different news events are connected",
+        "To criticize media coverage of global issues",
+        "To compare political systems across countries"
       ],
-      "answer": 1,
-      "explanation": "The passage combines several recent headlines into one reading."
+      "answer": 1
     },
     {
       "id": 2,
-      "question": "How many recent stories are mainly used to build this reading?",
+      "question": "What does the passage suggest about news stories?",
       "options": [
-        "One",
-        "Two",
-        "Three",
-        "Five"
+        "They should be read separately",
+        "They are mostly unrelated",
+        "They reflect broader global trends",
+        "They are difficult to understand"
       ],
-      "answer": 2,
-      "explanation": "The script uses the top three RSS items."
+      "answer": 2
     },
     {
       "id": 3,
-      "question": "What does the conclusion emphasize?",
+      "question": "Why is it important to connect different events?",
       "options": [
-        "Events are isolated",
-        "Only technology matters",
-        "The world is interconnected",
-        "Readers should ignore context"
+        "To make reading faster",
+        "To improve memory",
+        "To understand deeper meanings",
+        "To avoid confusion"
       ],
-      "answer": 2,
-      "explanation": "The conclusion says current developments are deeply interconnected."
+      "answer": 2
     },
     {
       "id": 4,
-      "question": "Which source is used to generate this reading?",
+      "question": "What does 'broader context' refer to?",
       "options": [
-        "BBC RSS",
-        "Netflix",
-        "Wikipedia only",
-        "A PDF file"
+        "Looking at events in isolation",
+        "Understanding wider relationships",
+        "Reading more articles",
+        "Focusing on details"
       ],
-      "answer": 0,
-      "explanation": "The reading is built from BBC RSS headlines."
+      "answer": 1
     },
     {
       "id": 5,
-      "question": "Why does the passage group different headlines together?",
+      "question": "What is the overall message of the passage?",
       "options": [
-        "To avoid reading any details",
-        "To show broader links across current events",
-        "To create a fictional dialogue",
-        "To focus only on entertainment"
+        "News is often misleading",
+        "Global events are interconnected",
+        "Politics is the most important topic",
+        "Readers should avoid complex topics"
       ],
-      "answer": 1,
-      "explanation": "The reading is designed to connect developments across topics."
+      "answer": 1
     }
-  ],
-  "modelSummary": "This reading combines three recent headlines and argues that current events should be understood in a broader global context. It suggests that stories such as PM sends 'chill' through civil service, union boss says, I was left with an £8,000 vet bill when my insurer cancelled my pet policy, and How Leicester went from Premier League champions to League One in a decade are not isolated developments, but parts of larger changes in politics, economics, technology, and public priorities."
+  ]
 }
