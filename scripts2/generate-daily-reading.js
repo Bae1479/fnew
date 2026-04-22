@@ -107,7 +107,7 @@ const summary = `${intro} ${body.split(". ").slice(0, 2).join(". ")}. ${conclusi
     sentencePractice,
     sentences: allSentences,
 
-    modelSummary: `This reading explains recent global events and shows that they are interconnected and reflect broader trends.`,
+    modelSummary: summary,
 
    questions: [
   {
