@@ -1,8 +1,8 @@
 {
   "date": "2026-04-22",
-  "title": "Graduate 'ghosted' by employers has applied for 400 jobs and had only three interviews",
+  "title": "No cartels involved - but Mexico's pyramid attack prompts new concerns",
   "titleLiteral": "오늘의 뉴스",
-  "passage": "Today’s reading brings together several major developments from recent international headlines. First, The term ghosting is common in the dating world - but job applicants are increasingly reporting it. This development is important because it may influence broader political, economic, or social discussions. Second, The deadly shooting at a popular tourist site weeks before the World Cup has rocked Mexico. In this context, the story highlights how local events can have wider international significance. Third, How high could inflation get? And what could it mean for borrowers and savers around the country? It also suggests that recent developments should not be understood in isolation. Overall, these developments show how interconnected global events are. They also suggest that readers should pay attention not only to individual headlines but also to the wider patterns that connect them. In many cases, political decisions, economic pressures, and diplomatic tensions do not remain isolated. Instead, they shape one another over time and influence how future events may unfold across different regions.",
+  "passage": "Today’s reading brings together several major developments from recent international headlines. First, The deadly shooting at a popular tourist site weeks before the World Cup has rocked Mexico. This development is important because it may influence broader political, economic, or social discussions. Second, How high could inflation get? And what could it mean for borrowers and savers around the country? In this context, the story highlights how local events can have wider international significance. Third, Symptoms are lasting for up to two weeks longer than in the 1990s, according to a major report - so what can you do about the pollen bomb? It also suggests that recent developments should not be understood in isolation. Overall, these developments show how interconnected global events are. They also suggest that readers should pay attention not only to individual headlines but also to the wider patterns that connect them. In many cases, political decisions, economic pressures, and diplomatic tensions do not remain isolated. Instead, they shape one another over time and influence how future events may unfold across different regions.",
   "allSentences": [
     {
       "id": 1,
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "text": "First, The term ghosting is common in the dating world - but job applicants are increasingly reporting it.",
+      "text": "First, The deadly shooting at a popular tourist site weeks before the World Cup has rocked Mexico.",
       "literal": ""
     },
     {
@@ -21,36 +21,31 @@
     },
     {
       "id": 4,
-      "text": "Second, The deadly shooting at a popular tourist site weeks before the World Cup has rocked Mexico.",
+      "text": "Second, How high could inflation get? And what could it mean for borrowers and savers around the country? In this context, the story highlights how local events can have wider international significance.",
       "literal": ""
     },
     {
       "id": 5,
-      "text": "In this context, the story highlights how local events can have wider international significance.",
+      "text": "Third, Symptoms are lasting for up to two weeks longer than in the 1990s, according to a major report - so what can you do about the pollen bomb? It also suggests that recent developments should not be understood in isolation.",
       "literal": ""
     },
     {
       "id": 6,
-      "text": "Third, How high could inflation get? And what could it mean for borrowers and savers around the country? It also suggests that recent developments should not be understood in isolation.",
-      "literal": ""
-    },
-    {
-      "id": 7,
       "text": "Overall, these developments show how interconnected global events are.",
       "literal": ""
     },
     {
-      "id": 8,
+      "id": 7,
       "text": "They also suggest that readers should pay attention not only to individual headlines but also to the wider patterns that connect them.",
       "literal": ""
     },
     {
-      "id": 9,
+      "id": 8,
       "text": "In many cases, political decisions, economic pressures, and diplomatic tensions do not remain isolated.",
       "literal": ""
     },
     {
-      "id": 10,
+      "id": 9,
       "text": "Instead, they shape one another over time and influence how future events may unfold across different regions.",
       "literal": ""
     }
@@ -63,7 +58,7 @@
     },
     {
       "id": 2,
-      "text": "Third, How high could inflation get? And what could it mean for borrowers and savers around the country? It also suggests that recent developments should not be understood in isolation.",
+      "text": "Third, Symptoms are lasting for up to two weeks longer than in the 1990s, according to a major report - so what can you do about the pollen bomb? It also suggests that recent developments should not be understood in isolation.",
       "literal": "직역 준비 중입니다."
     },
     {
@@ -80,7 +75,7 @@
     },
     {
       "id": 2,
-      "text": "First, The term ghosting is common in the dating world - but job applicants are increasingly reporting it.",
+      "text": "First, The deadly shooting at a popular tourist site weeks before the World Cup has rocked Mexico.",
       "literal": ""
     },
     {
@@ -90,36 +85,31 @@
     },
     {
       "id": 4,
-      "text": "Second, The deadly shooting at a popular tourist site weeks before the World Cup has rocked Mexico.",
+      "text": "Second, How high could inflation get? And what could it mean for borrowers and savers around the country? In this context, the story highlights how local events can have wider international significance.",
       "literal": ""
     },
     {
       "id": 5,
-      "text": "In this context, the story highlights how local events can have wider international significance.",
+      "text": "Third, Symptoms are lasting for up to two weeks longer than in the 1990s, according to a major report - so what can you do about the pollen bomb? It also suggests that recent developments should not be understood in isolation.",
       "literal": ""
     },
     {
       "id": 6,
-      "text": "Third, How high could inflation get? And what could it mean for borrowers and savers around the country? It also suggests that recent developments should not be understood in isolation.",
-      "literal": ""
-    },
-    {
-      "id": 7,
       "text": "Overall, these developments show how interconnected global events are.",
       "literal": ""
     },
     {
-      "id": 8,
+      "id": 7,
       "text": "They also suggest that readers should pay attention not only to individual headlines but also to the wider patterns that connect them.",
       "literal": ""
     },
     {
-      "id": 9,
+      "id": 8,
       "text": "In many cases, political decisions, economic pressures, and diplomatic tensions do not remain isolated.",
       "literal": ""
     },
     {
-      "id": 10,
+      "id": 9,
       "text": "Instead, they shape one another over time and influence how future events may unfold across different regions.",
       "literal": ""
     }
