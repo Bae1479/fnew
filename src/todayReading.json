@@ -4,21 +4,21 @@
   "title": "Today's Global News Briefing",
   "titleLiteral": "오늘의 글로벌 뉴스 브리핑",
   "source": "BBC RSS",
-  "passage": "Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery. Experts point to rising interest rates and global uncertainty as key factors affecting growth. Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery. Experts point to rising interest rates and global uncertainty as key factors affecting growth. Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models. Competition is intensifying across the industry. Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models. Competition is intensifying across the industry. World leaders gathered to discuss climate change emphasized the importance of immediate action. New agreements aim to reduce emissions and increase cooperation. World leaders gathered to discuss climate change emphasized the importance of immediate action. New agreements aim to reduce emissions and increase cooperation.",
+  "passage": "Today’s reading brings together several major developments from recent international headlines. Instead of treating each story as isolated, it encourages the reader to understand how events are connected within a broader global context and why these connections matter. First, Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery. Experts point to rising interest rates and global uncertainty as key factors affecting growth. This development is important because it reflects larger trends that influence global society, economics, and political decisions. Second, Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models. Competition is intensifying across the industry. This development is important because it reflects larger trends that influence global society, economics, and political decisions. Third, World leaders gathered to discuss climate change emphasized the importance of immediate action. New agreements aim to reduce emissions and increase cooperation. This development is important because it reflects larger trends that influence global society, economics, and political decisions. Taken together, these developments show that today’s world is highly interconnected. Readers benefit not only from understanding individual events but also from recognizing how different issues influence one another across regions and sectors.",
   "allSentences": [
     {
       "id": 1,
-      "text": "Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery.",
+      "text": "Today’s reading brings together several major developments from recent international headlines.",
       "literal": ""
     },
     {
       "id": 2,
-      "text": "Experts point to rising interest rates and global uncertainty as key factors affecting growth.",
+      "text": "Instead of treating each story as isolated, it encourages the reader to understand how events are connected within a broader global context and why these connections matter.",
       "literal": ""
     },
     {
       "id": 3,
-      "text": "Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery.",
+      "text": "First, Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery.",
       "literal": ""
     },
     {
@@ -28,27 +28,27 @@
     },
     {
       "id": 5,
-      "text": "Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models.",
+      "text": "This development is important because it reflects larger trends that influence global society, economics, and political decisions.",
       "literal": ""
     },
     {
       "id": 6,
-      "text": "Competition is intensifying across the industry.",
+      "text": "Second, Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models.",
       "literal": ""
     },
     {
       "id": 7,
-      "text": "Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models.",
-      "literal": ""
-    },
-    {
-      "id": 8,
       "text": "Competition is intensifying across the industry.",
       "literal": ""
     },
     {
+      "id": 8,
+      "text": "This development is important because it reflects larger trends that influence global society, economics, and political decisions.",
+      "literal": ""
+    },
+    {
       "id": 9,
-      "text": "World leaders gathered to discuss climate change emphasized the importance of immediate action.",
+      "text": "Third, World leaders gathered to discuss climate change emphasized the importance of immediate action.",
       "literal": ""
     },
     {
@@ -58,29 +58,34 @@
     },
     {
       "id": 11,
-      "text": "World leaders gathered to discuss climate change emphasized the importance of immediate action.",
+      "text": "This development is important because it reflects larger trends that influence global society, economics, and political decisions.",
       "literal": ""
     },
     {
       "id": 12,
-      "text": "New agreements aim to reduce emissions and increase cooperation.",
+      "text": "Taken together, these developments show that today’s world is highly interconnected.",
+      "literal": ""
+    },
+    {
+      "id": 13,
+      "text": "Readers benefit not only from understanding individual events but also from recognizing how different issues influence one another across regions and sectors.",
       "literal": ""
     }
   ],
   "sentencePractice": [
     {
       "id": 1,
-      "text": "Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery.",
+      "text": "Today’s reading brings together several major developments from recent international headlines.",
       "literal": "직역 준비 중입니다."
     },
     {
       "id": 2,
-      "text": "Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery.",
+      "text": "First, Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery.",
       "literal": "직역 준비 중입니다."
     },
     {
       "id": 3,
-      "text": "Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models.",
+      "text": "This development is important because it reflects larger trends that influence global society, economics, and political decisions.",
       "literal": "직역 준비 중입니다."
     }
   ],
@@ -88,17 +93,17 @@
   "sentences": [
     {
       "id": 1,
-      "text": "Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery.",
+      "text": "Today’s reading brings together several major developments from recent international headlines.",
       "literal": ""
     },
     {
       "id": 2,
-      "text": "Experts point to rising interest rates and global uncertainty as key factors affecting growth.",
+      "text": "Instead of treating each story as isolated, it encourages the reader to understand how events are connected within a broader global context and why these connections matter.",
       "literal": ""
     },
     {
       "id": 3,
-      "text": "Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery.",
+      "text": "First, Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery.",
       "literal": ""
     },
     {
@@ -108,27 +113,27 @@
     },
     {
       "id": 5,
-      "text": "Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models.",
+      "text": "This development is important because it reflects larger trends that influence global society, economics, and political decisions.",
       "literal": ""
     },
     {
       "id": 6,
-      "text": "Competition is intensifying across the industry.",
+      "text": "Second, Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models.",
       "literal": ""
     },
     {
       "id": 7,
-      "text": "Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models.",
-      "literal": ""
-    },
-    {
-      "id": 8,
       "text": "Competition is intensifying across the industry.",
       "literal": ""
     },
     {
+      "id": 8,
+      "text": "This development is important because it reflects larger trends that influence global society, economics, and political decisions.",
+      "literal": ""
+    },
+    {
       "id": 9,
-      "text": "World leaders gathered to discuss climate change emphasized the importance of immediate action.",
+      "text": "Third, World leaders gathered to discuss climate change emphasized the importance of immediate action.",
       "literal": ""
     },
     {
@@ -138,12 +143,17 @@
     },
     {
       "id": 11,
-      "text": "World leaders gathered to discuss climate change emphasized the importance of immediate action.",
+      "text": "This development is important because it reflects larger trends that influence global society, economics, and political decisions.",
       "literal": ""
     },
     {
       "id": 12,
-      "text": "New agreements aim to reduce emissions and increase cooperation.",
+      "text": "Taken together, these developments show that today’s world is highly interconnected.",
+      "literal": ""
+    },
+    {
+      "id": 13,
+      "text": "Readers benefit not only from understanding individual events but also from recognizing how different issues influence one another across regions and sectors.",
       "literal": ""
     }
   ],
