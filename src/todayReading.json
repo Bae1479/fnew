@@ -2,7 +2,7 @@
   "date": "2026-04-22",
   "title": "The Global Story: How Pakistan became the peacemaker",
   "titleLiteral": "오늘의 뉴스",
-  "passage": "Today’s reading brings together several major developments from recent international headlines. First, Talks are expected between the US and Iran in Islamabad. This event reflects broader global trends. Overall, these developments show how interconnected global events are.",
+  "passage": "Today’s reading brings together several major developments from recent international headlines. First, Talks are expected between the US and Iran in Islamabad. This development is important because it may influence broader political, economic, or social discussions. In this context, the story also shows how local events can have wider international significance. Overall, these developments show how interconnected global events are.",
   "allSentences": [
     {
       "id": 1,
@@ -16,11 +16,16 @@
     },
     {
       "id": 3,
-      "text": "This event reflects broader global trends.",
+      "text": "This development is important because it may influence broader political, economic, or social discussions.",
       "literal": ""
     },
     {
       "id": 4,
+      "text": "In this context, the story also shows how local events can have wider international significance.",
+      "literal": ""
+    },
+    {
+      "id": 5,
       "text": "Overall, these developments show how interconnected global events are.",
       "literal": ""
     }
@@ -33,7 +38,7 @@
     },
     {
       "id": 2,
-      "text": "This event reflects broader global trends.",
+      "text": "This development is important because it may influence broader political, economic, or social discussions.",
       "literal": "직역 준비 중입니다."
     },
     {
@@ -55,11 +60,16 @@
     },
     {
       "id": 3,
-      "text": "This event reflects broader global trends.",
+      "text": "This development is important because it may influence broader political, economic, or social discussions.",
       "literal": ""
     },
     {
       "id": 4,
+      "text": "In this context, the story also shows how local events can have wider international significance.",
+      "literal": ""
+    },
+    {
+      "id": 5,
       "text": "Overall, these developments show how interconnected global events are.",
       "literal": ""
     }
