@@ -37,7 +37,7 @@ const allSentences = allSentenceTexts.map((text, i) => ({
   literal: ""
 }));
 // 🔹 중심 문장 3개
-const sentencePractice = allSentences.slice(0, 3).map((s, i) => ({
+const sentencePractice = allSentenceTexts.slice(0, 3).map((s, i) => ({
   id: i + 1,
   text: s,
   literal: "직역 준비 중입니다."
