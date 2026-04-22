@@ -40,29 +40,17 @@
   "sentencePractice": [
     {
       "id": 1,
-      "text": {
-        "id": 1,
-        "text": "Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery.",
-        "literal": ""
-      },
+      "text": "Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery.",
       "literal": "직역 준비 중입니다."
     },
     {
       "id": 2,
-      "text": {
-        "id": 2,
-        "text": "Experts point to rising interest rates and global uncertainty as key factors affecting growth.",
-        "literal": ""
-      },
+      "text": "Experts point to rising interest rates and global uncertainty as key factors affecting growth.",
       "literal": "직역 준비 중입니다."
     },
     {
       "id": 3,
-      "text": {
-        "id": 3,
-        "text": "Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models.",
-        "literal": ""
-      },
+      "text": "Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models.",
       "literal": "직역 준비 중입니다."
     }
   ],
