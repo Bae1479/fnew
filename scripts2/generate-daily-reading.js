@@ -72,7 +72,7 @@ const body = finalItems
   .join(" ");
 
   const conclusion =
-    "Overall, these developments show how interconnected global events are.";
+  "Overall, these developments show how interconnected global events are. They also suggest that readers should pay attention not only to individual headlines but also to the wider patterns that connect them. In many cases, political decisions, economic pressures, and diplomatic tensions do not remain isolated. Instead, they shape one another over time and influence how future events may unfold across different regions.";;
 
   const passage = `${intro} ${body} ${conclusion}`;
 
