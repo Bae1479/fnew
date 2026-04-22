@@ -6,38 +6,98 @@
   "source": "BBC RSS",
   "passage": "Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery. Experts point to rising interest rates and global uncertainty as key factors affecting growth. Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models. Competition is intensifying across the industry. World leaders gathered to discuss climate change emphasized the importance of immediate action. New agreements aim to reduce emissions and increase cooperation.",
   "allSentences": [
-    "Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery.",
-    "Experts point to rising interest rates and global uncertainty as key factors affecting growth.",
-    "Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models.",
-    "Competition is intensifying across the industry.",
-    "World leaders gathered to discuss climate change emphasized the importance of immediate action.",
-    "New agreements aim to reduce emissions and increase cooperation."
-  ],
-  "sentencePractice": [
     {
       "id": 1,
       "text": "Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery.",
-      "literal": "직역 준비 중입니다."
+      "literal": ""
     },
     {
       "id": 2,
       "text": "Experts point to rising interest rates and global uncertainty as key factors affecting growth.",
-      "literal": "직역 준비 중입니다."
+      "literal": ""
     },
     {
       "id": 3,
       "text": "Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models.",
+      "literal": ""
+    },
+    {
+      "id": 4,
+      "text": "Competition is intensifying across the industry.",
+      "literal": ""
+    },
+    {
+      "id": 5,
+      "text": "World leaders gathered to discuss climate change emphasized the importance of immediate action.",
+      "literal": ""
+    },
+    {
+      "id": 6,
+      "text": "New agreements aim to reduce emissions and increase cooperation.",
+      "literal": ""
+    }
+  ],
+  "sentencePractice": [
+    {
+      "id": 1,
+      "text": {
+        "id": 1,
+        "text": "Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery.",
+        "literal": ""
+      },
+      "literal": "직역 준비 중입니다."
+    },
+    {
+      "id": 2,
+      "text": {
+        "id": 2,
+        "text": "Experts point to rising interest rates and global uncertainty as key factors affecting growth.",
+        "literal": ""
+      },
+      "literal": "직역 준비 중입니다."
+    },
+    {
+      "id": 3,
+      "text": {
+        "id": 3,
+        "text": "Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models.",
+        "literal": ""
+      },
       "literal": "직역 준비 중입니다."
     }
   ],
   "modelSummary": "This reading brings together three major recent headlines and encourages readers to think about current events in a broader global context.\n\nRather than viewing news as isolated stories, it highlights how developments across different regions reflect deeper trends in politics, economics, and society.\n\nBy connecting these events, the passage suggests that understanding relationships between issues is essential for interpreting modern news.\n\nOverall, it emphasizes that global events are interconnected and should be read with a wider perspective in mind.",
   "sentences": [
-    "Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery.",
-    "Experts point to rising interest rates and global uncertainty as key factors affecting growth.",
-    "Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models.",
-    "Competition is intensifying across the industry.",
-    "World leaders gathered to discuss climate change emphasized the importance of immediate action.",
-    "New agreements aim to reduce emissions and increase cooperation."
+    {
+      "id": 1,
+      "text": "Recent data suggests that the UK economy is beginning to slow after a period of rapid recovery.",
+      "literal": ""
+    },
+    {
+      "id": 2,
+      "text": "Experts point to rising interest rates and global uncertainty as key factors affecting growth.",
+      "literal": ""
+    },
+    {
+      "id": 3,
+      "text": "Major technology firms are investing heavily in artificial intelligence, aiming to build more advanced and efficient models.",
+      "literal": ""
+    },
+    {
+      "id": 4,
+      "text": "Competition is intensifying across the industry.",
+      "literal": ""
+    },
+    {
+      "id": 5,
+      "text": "World leaders gathered to discuss climate change emphasized the importance of immediate action.",
+      "literal": ""
+    },
+    {
+      "id": 6,
+      "text": "New agreements aim to reduce emissions and increase cooperation.",
+      "literal": ""
+    }
   ],
   "questions": [
     {
