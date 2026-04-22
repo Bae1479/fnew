@@ -25,12 +25,17 @@ const items = [
 const passage = items.map((item) => item.content).join(" ");
 
 // 🔹 문장 분리
-const allSentences = passage
+const allSentenceTexts = passage
   .split(". ")
   .map((s) => s.trim())
   .filter(Boolean)
   .map((s) => (s.endsWith(".") ? s : s + "."));
 
+const allSentences = allSentenceTexts.map((text, i) => ({
+  id: i + 1,
+  text,
+  literal: ""
+}));
 // 🔹 중심 문장 3개
 const sentencePractice = allSentences.slice(0, 3).map((s, i) => ({
   id: i + 1,
