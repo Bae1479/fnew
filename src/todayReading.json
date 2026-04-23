@@ -1,175 +1,105 @@
 {
-  "date": "2026-04-22",
-  "title": "No cartels involved - but Mexico's pyramid attack prompts new concerns",
-  "titleLiteral": "오늘의 뉴스",
-  "passage": "Today’s reading brings together several major developments from recent international headlines. First, The deadly shooting at a popular tourist site weeks before the World Cup has rocked Mexico. This development is important because it may influence broader political, economic, or social discussions. Second, How high could inflation get? And what could it mean for borrowers and savers around the country? In this context, the story highlights how local events can have wider international significance. Third, Symptoms are lasting for up to two weeks longer than in the 1990s, according to a major report - so what can you do about the pollen bomb? It also suggests that recent developments should not be understood in isolation. Overall, these developments show how interconnected global events are. They also suggest that readers should pay attention not only to individual headlines but also to the wider patterns that connect them. In many cases, political decisions, economic pressures, and diplomatic tensions do not remain isolated. Instead, they shape one another over time and influence how future events may unfold across different regions.",
+  "date": "2026-04-23",
+  "title": "Global Developments Overview",
+  "passage": "Today's reading brings together several major developments from recent international headlines. First, Talks are expected between the US and Iran in Islamabad. This development is important because it may influence broader discussions. Second, Global inflation continues to affect borrowing costs worldwide. This situation reflects wider global trends across regions. Third, AI investment is rapidly increasing across major economies. It also shows how different events are interconnected. Overall, these stories show how global events are connected across politics, economics, and society.",
+  "modelSummary": "This reading explains that global events are interconnected and influence each other across different areas.",
   "allSentences": [
     {
       "id": 1,
-      "text": "Today’s reading brings together several major developments from recent international headlines.",
-      "literal": ""
+      "text": "Today's reading brings together several major developments from recent international headlines.",
+      "literal": "~에day's read~에서g br~에서gs ~에ger several major developments from recent ~에서ternational headl~에서es."
     },
     {
       "id": 2,
-      "text": "First, The deadly shooting at a popular tourist site weeks before the World Cup has rocked Mexico.",
-      "literal": ""
+      "text": "First, Talks are expected between the US and Iran in Islamabad.",
+      "literal": "First, Talks 이다 expected between  US 그리고 Iran ~에서 이다lamabad."
     },
     {
       "id": 3,
-      "text": "This development is important because it may influence broader political, economic, or social discussions.",
-      "literal": ""
+      "text": "This development is important because it may influence broader discussions.",
+      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions."
     },
     {
       "id": 4,
-      "text": "Second, How high could inflation get? And what could it mean for borrowers and savers around the country? In this context, the story highlights how local events can have wider international significance.",
-      "literal": ""
+      "text": "Second, Global inflation continues to affect borrowing costs worldwide.",
+      "literal": "Second, Global ~에서flation cont~에서ues ~에 affect borrow~에서g costs worldwide."
     },
     {
       "id": 5,
-      "text": "Third, Symptoms are lasting for up to two weeks longer than in the 1990s, according to a major report - so what can you do about the pollen bomb? It also suggests that recent developments should not be understood in isolation.",
-      "literal": ""
+      "text": "This situation reflects wider global trends across regions.",
+      "literal": "Th이다 situation reflects wider global trends across regions."
     },
     {
       "id": 6,
-      "text": "Overall, these developments show how interconnected global events are.",
-      "literal": ""
+      "text": "Third, AI investment is rapidly increasing across major economies.",
+      "literal": "Third, AI ~에서vestment 이다 rapidly ~에서creas~에서g across major economies."
     },
     {
       "id": 7,
-      "text": "They also suggest that readers should pay attention not only to individual headlines but also to the wider patterns that connect them.",
-      "literal": ""
+      "text": "It also shows how different events are interconnected.",
+      "literal": "It also shows how different events 이다 ~에서terconnected."
     },
     {
       "id": 8,
-      "text": "In many cases, political decisions, economic pressures, and diplomatic tensions do not remain isolated.",
-      "literal": ""
-    },
-    {
-      "id": 9,
-      "text": "Instead, they shape one another over time and influence how future events may unfold across different regions.",
-      "literal": ""
+      "text": "Overall, these stories show how global events are connected across politics, economics, and society.",
+      "literal": "Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
     }
   ],
-  "sentencePractice": [
-    {
-      "id": 1,
-      "text": "Today’s reading brings together several major developments from recent international headlines.",
-      "literal": "직역 준비 중입니다."
-    },
-    {
-      "id": 2,
-      "text": "Third, Symptoms are lasting for up to two weeks longer than in the 1990s, according to a major report - so what can you do about the pollen bomb? It also suggests that recent developments should not be understood in isolation.",
-      "literal": "직역 준비 중입니다."
-    },
-    {
-      "id": 3,
-      "text": "Instead, they shape one another over time and influence how future events may unfold across different regions.",
-      "literal": "직역 준비 중입니다."
-    }
-  ],
-  "sentences": [
-    {
-      "id": 1,
-      "text": "Today’s reading brings together several major developments from recent international headlines.",
-      "literal": ""
-    },
-    {
-      "id": 2,
-      "text": "First, The deadly shooting at a popular tourist site weeks before the World Cup has rocked Mexico.",
-      "literal": ""
-    },
-    {
-      "id": 3,
-      "text": "This development is important because it may influence broader political, economic, or social discussions.",
-      "literal": ""
-    },
-    {
-      "id": 4,
-      "text": "Second, How high could inflation get? And what could it mean for borrowers and savers around the country? In this context, the story highlights how local events can have wider international significance.",
-      "literal": ""
-    },
-    {
-      "id": 5,
-      "text": "Third, Symptoms are lasting for up to two weeks longer than in the 1990s, according to a major report - so what can you do about the pollen bomb? It also suggests that recent developments should not be understood in isolation.",
-      "literal": ""
-    },
-    {
-      "id": 6,
-      "text": "Overall, these developments show how interconnected global events are.",
-      "literal": ""
-    },
-    {
-      "id": 7,
-      "text": "They also suggest that readers should pay attention not only to individual headlines but also to the wider patterns that connect them.",
-      "literal": ""
-    },
-    {
-      "id": 8,
-      "text": "In many cases, political decisions, economic pressures, and diplomatic tensions do not remain isolated.",
-      "literal": ""
-    },
-    {
-      "id": 9,
-      "text": "Instead, they shape one another over time and influence how future events may unfold across different regions.",
-      "literal": ""
-    }
-  ],
-  "modelSummary": "This reading explains several recent global developments and shows that they are interconnected. It highlights how political, economic, and social issues influence each other across different regions. Overall, it emphasizes the importance of understanding global events within a broader context.",
   "questions": [
     {
       "id": 1,
       "question": "What is the main purpose of this reading?",
       "options": [
-        "To describe one single event in detail",
-        "To connect several recent global developments",
-        "To explain only an economic theory",
-        "To criticize the media"
+        "To describe one event",
+        "To connect multiple global developments",
+        "To explain only economics",
+        "To criticize media"
       ],
       "answer": 1
     },
     {
       "id": 2,
-      "question": "What does the passage suggest about current events?",
+      "question": "What does the passage suggest about global events?",
       "options": [
-        "They should be viewed separately",
-        "They are mostly unrelated",
-        "They are connected in a broader context",
-        "They are impossible to understand"
+        "They are unrelated",
+        "They are connected",
+        "They are simple",
+        "They are local only"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "id": 3,
-      "question": "Why does the reading mention politics, economics, and diplomacy together?",
+      "question": "What is mentioned about inflation?",
       "options": [
-        "To show that different issues influence one another",
-        "To increase the passage length only",
-        "To focus on one country",
-        "To avoid giving examples"
+        "It disappeared",
+        "It affects borrowing",
+        "It is local only",
+        "It has no impact"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "id": 4,
-      "question": "What is emphasized in the conclusion?",
+      "question": "What is happening with AI investment?",
       "options": [
-        "Only local events matter",
-        "Readers should ignore patterns",
-        "Global events are interconnected",
-        "Headlines are usually misleading"
+        "Decreasing",
+        "Stable",
+        "Increasing",
+        "Ending"
       ],
       "answer": 2
     },
     {
       "id": 5,
-      "question": "What reading skill does this passage encourage?",
+      "question": "What is the overall message?",
       "options": [
-        "Memorizing isolated facts",
-        "Understanding wider patterns and relationships",
-        "Skipping difficult ideas",
-        "Reading only short headlines"
+        "Events are isolated",
+        "Everything is random",
+        "Events are interconnected",
+        "Nothing matters"
       ],
-      "answer": 1
+      "answer": 2
     }
   ]
 }
