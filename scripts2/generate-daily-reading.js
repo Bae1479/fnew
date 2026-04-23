@@ -125,6 +125,12 @@ const result = {
   passage,
   modelSummary,
   allSentences,
+  sentences: allSentences,
+sentencePractice: [
+  allSentences[0],
+  allSentences[Math.floor(allSentences.length / 2)],
+  allSentences[allSentences.length - 1]
+],
   questions
 };
 
