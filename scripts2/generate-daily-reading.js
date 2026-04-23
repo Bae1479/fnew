@@ -1,6 +1,6 @@
 import fs from "fs";
 
-// 👉 리딩 본문 (완성형)literal: `[해석 필요] ${text}`
+// 👉 리딩 본문
 const passage = `
 Today's reading brings together several major developments from recent international news, offering a broader view of how global events are interconnected. Rather than focusing on isolated headlines, it encourages readers to think about the underlying patterns that link politics, economics, and technology.
 
@@ -20,7 +20,32 @@ const allSentenceTexts = passage
   .split(". ")
   .map((s) => (s.endsWith(".") ? s : s + "."));
 
-// 👉 결과 구조 (고정)
+// 👉 간단 자연스러운 번역 (문장 단위)
+const translate = (text) => {
+  if (text.includes("Today's reading brings together")) {
+    return "오늘의 글은 최근 국제 뉴스의 주요 흐름을 종합하여, 세계 사건들이 어떻게 연결되어 있는지를 보여준다.";
+  }
+  if (text.includes("Rather than focusing on isolated headlines")) {
+    return "개별 뉴스에 집중하기보다, 정치·경제·기술을 연결하는 흐름을 이해하도록 돕는다.";
+  }
+  if (text.includes("talks are expected between the United States and Iran")) {
+    return "미국과 이란 간의 회담이 이슬라마바드에서 열릴 것으로 예상된다.";
+  }
+  if (text.includes("global inflation")) {
+    return "글로벌 인플레이션은 여전히 경제 전반에 영향을 미치고 있다.";
+  }
+  if (text.includes("artificial intelligence")) {
+    return "인공지능 투자가 주요 국가에서 빠르게 확대되고 있다.";
+  }
+  if (text.includes("Overall")) {
+    return "전반적으로 이 글은 세계 사건들이 서로 긴밀하게 연결되어 있음을 강조한다.";
+  }
+
+  // 👉 기본 fallback (너무 어색한 직역 방지)
+  return "이 문장은 현재 번역이 준비 중입니다.";
+};
+
+// 👉 결과
 const result = {
   date: new Date().toISOString().slice(0, 10),
   title: "Global Developments Overview",
@@ -29,25 +54,25 @@ const result = {
   allSentences: allSentenceTexts.map((text, i) => ({
     id: i + 1,
     text,
-literal: `[해석 필요] ${text}`
-  }),
+    literal: translate(text),
+  })),
 
   sentencePractice: [
     {
       id: 1,
       text: allSentenceTexts[0],
-      literal: ""
+      literal: translate(allSentenceTexts[0]),
     },
     {
       id: 2,
       text: allSentenceTexts[Math.floor(allSentenceTexts.length / 2)],
-      literal: ""
+      literal: translate(allSentenceTexts[Math.floor(allSentenceTexts.length / 2)]),
     },
     {
       id: 3,
       text: allSentenceTexts[allSentenceTexts.length - 1],
-      literal: ""
-    }
+      literal: translate(allSentenceTexts[allSentenceTexts.length - 1]),
+    },
   ],
 
   questions: [
@@ -58,9 +83,9 @@ literal: `[해석 필요] ${text}`
         "To explain a single event",
         "To show how global events are connected",
         "To focus on local news",
-        "To describe only economic issues"
+        "To describe only economic issues",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 2,
@@ -69,9 +94,9 @@ literal: `[해석 필요] ${text}`
         "They affect technology",
         "They influence regional stability",
         "They reduce AI investment",
-        "They increase inflation"
+        "They increase inflation",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 3,
@@ -80,9 +105,9 @@ literal: `[해석 필요] ${text}`
         "Lower prices",
         "Higher borrowing costs",
         "Less global trade",
-        "More AI usage"
+        "More AI usage",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 4,
@@ -91,9 +116,9 @@ literal: `[해석 필요] ${text}`
         "Due to energy shortages",
         "Because of government pressure",
         "To build infrastructure and computing systems",
-        "To reduce global tension"
+        "To reduce global tension",
       ],
-      answer: 2
+      answer: 2,
     },
     {
       id: 5,
@@ -102,17 +127,17 @@ literal: `[해석 필요] ${text}`
         "Local issues",
         "Single events",
         "Global connections",
-        "Technology only"
+        "Technology only",
       ],
-      answer: 2
-    }
+      answer: 2,
+    },
   ],
 
   modelSummary:
-    "This reading explains how major global developments in politics, economics, and technology are interconnected. It highlights the importance of understanding broader patterns rather than focusing on individual events."
+    "This reading explains how major global developments in politics, economics, and technology are interconnected and why understanding broader patterns is important.",
 };
 
 // 👉 저장
 fs.writeFileSync("src/todayReading.json", JSON.stringify(result, null, 2));
 
-console.log("✅ daily reading generated");
+console.log("✅ done");
