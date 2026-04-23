@@ -1,7 +1,7 @@
 {
   "date": "2026-04-23",
   "title": "Global Developments Overview",
-  "passage": "Today's reading brings together several major developments from recent international headlines. First, Talks are expected between the US and Iran in Islamabad. This development is important because it may influence broader discussions across regions. This situation reflects wider global trends that continue to evolve over time. It also shows how different events are interconnected in complex ways. Second, Global inflation continues to affect borrowing costs worldwide. This situation reflects wider global trends that continue to evolve over time. It also shows how different events are interconnected in complex ways. These changes may have long-term effects on economic and political stability. Additionally, AI investment is rapidly increasing across major economies. It also shows how different events are interconnected in complex ways. These changes may have long-term effects on economic and political stability. Experts suggest that these patterns are becoming more significant in global analysis. Additionally, Energy infrastructure is becoming a critical issue in AI development. These changes may have long-term effects on economic and political stability. Experts suggest that these patterns are becoming more significant in global analysis. This development is important because it may influence broader discussions across regions. Additionally, Semiconductor demand is rising due to advances in technology. Experts suggest that these patterns are becoming more significant in global analysis. This development is important because it may influence broader discussions across regions. This situation reflects wider global trends that continue to evolve over time. Additionally, Geopolitical tensions are influencing global supply chains. This development is important because it may influence broader discussions across regions. This situation reflects wider global trends that continue to evolve over time. It also shows how different events are interconnected in complex ways. Additionally, Central banks are continuing to monitor inflation and growth risks. This situation reflects wider global trends that continue to evolve over time. It also shows how different events are interconnected in complex ways. These changes may have long-term effects on economic and political stability. Additionally, Technology companies are investing more heavily in data centers and chips. It also shows how different events are interconnected in complex ways. These changes may have long-term effects on economic and political stability. Experts suggest that these patterns are becoming more significant in global analysis. Additionally, Governments are trying to balance economic growth with rising security concerns. These changes may have long-term effects on economic and political stability. Experts suggest that these patterns are becoming more significant in global analysis. This development is important because it may influence broader discussions across regions. Additionally, Financial markets are reacting to uncertainty in trade, energy, and monetary policy. Experts suggest that these patterns are becoming more significant in global analysis. This development is important because it may influence broader discussions across regions. This situation reflects wider global trends that continue to evolve over time. Additionally, The spread of AI tools is increasing demand for electricity and computing power. This development is important because it may influence broader discussions across regions. This situation reflects wider global trends that continue to evolve over time. It also shows how different events are interconnected in complex ways. Additionally, Global companies are adjusting their strategies in response to changing supply chains. This situation reflects wider global trends that continue to evolve over time. It also shows how different events are interconnected in complex ways. These changes may have long-term effects on economic and political stability. Additionally, Political leaders are facing pressure to respond to both domestic and global challenges. It also shows how different events are interconnected in complex ways. These changes may have long-term effects on economic and political stability. Experts suggest that these patterns are becoming more significant in global analysis. Additionally, Investors are paying closer attention to infrastructure, energy, and semiconductor trends. These changes may have long-term effects on economic and political stability. Experts suggest that these patterns are becoming more significant in global analysis. This development is important because it may influence broader discussions across regions. Additionally, Recent developments suggest that international events increasingly affect one another. Experts suggest that these patterns are becoming more significant in global analysis. This development is important because it may influence broader discussions across regions. This situation reflects wider global trends that continue to evolve over time. Additionally, As a result, understanding world news requires attention to broader patterns and connections. This development is important because it may influence broader discussions across regions. This situation reflects wider global trends that continue to evolve over time. It also shows how different events are interconnected in complex ways. Additionally, Diplomatic negotiations continue to shape expectations about regional stability. This situation reflects wider global trends that continue to evolve over time. It also shows how different events are interconnected in complex ways. These changes may have long-term effects on economic and political stability. Additionally, At the same time, economic uncertainty is affecting consumer confidence and investment decisions. It also shows how different events are interconnected in complex ways. These changes may have long-term effects on economic and political stability. Experts suggest that these patterns are becoming more significant in global analysis. Overall, these stories show how global events are connected across politics, economics, and society.",
+  "passage": "Today's reading brings together several major developments from recent international headlines. \nToday's reading explores several important global developments that are shaping current events. These stories highlight how politics, economics, and technology are closely connected.\n\nFirst, talks are expected between the United States and Iran in Islamabad. These discussions are being closely watched because they could influence regional stability and diplomatic relations. If progress is made, it may reduce tensions and create new opportunities for cooperation. However, many uncertainties remain, and the outcome is still unclear.\n\nSecond, global inflation continues to affect borrowing costs around the world. As prices rise, central banks are forced to adjust interest rates to control economic pressure. This has a direct impact on consumers, businesses, and investment decisions. Many countries are now trying to balance growth with financial stability.\n\nThird, investment in artificial intelligence is rapidly increasing across major economies. Companies are spending heavily on data centers, semiconductors, and energy infrastructure to support AI development. This trend is creating new opportunities but also raising concerns about energy consumption and long-term sustainability.\n\nOverall, these developments show that global events are deeply interconnected. Understanding them requires looking beyond individual headlines and recognizing broader patterns.\n Overall, these stories show how global events are connected across politics, economics, and society.",
   "modelSummary": "This reading brings together several recent global developments and explains how they are connected within a broader context. It shows that political, economic, and social events are not isolated, but instead influence one another in meaningful ways. By examining these relationships, the passage highlights the importance of understanding patterns and connections rather than focusing on single events.",
   "allSentences": [
     {
@@ -11,368 +11,58 @@
     },
     {
       "id": 2,
-      "text": "First, Talks are expected between the US and Iran in Islamabad.",
-      "literal": "First, Talks 이다 expected between  US 그리고 Iran ~에서 이다lamabad."
+      "text": "\nToday's reading explores several important global developments that are shaping current events.",
+      "literal": "\n~에day's read~에서g explores several important global developments that 이다 shap~에서g current events."
     },
     {
       "id": 3,
-      "text": "This development is important because it may influence broader discussions across regions.",
-      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions across regions."
+      "text": "These stories highlight how politics, economics, and technology are closely connected.\n\nFirst, talks are expected between the United States and Iran in Islamabad.",
+      "literal": "se s~에ries highlight how politics, economics, 그리고 technology 이다 closely connected.\n\nFirst, talks 이다 expected between  United States 그리고 Iran ~에서 이다lamabad."
     },
     {
       "id": 4,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
+      "text": "These discussions are being closely watched because they could influence regional stability and diplomatic relations.",
+      "literal": "se d이다cussions 이다 be~에서g closely watched because y could ~에서fluence regional stability 그리고 diplomatic relations."
     },
     {
       "id": 5,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
+      "text": "If progress is made, it may reduce tensions and create new opportunities for cooperation.",
+      "literal": "If progress 이다 made, it may reduce tensions 그리고 create new opportunities for cooperation."
     },
     {
       "id": 6,
-      "text": "Second, Global inflation continues to affect borrowing costs worldwide.",
-      "literal": "Second, Global ~에서flation cont~에서ues ~에 affect borrow~에서g costs worldwide."
+      "text": "However, many uncertainties remain, and the outcome is still unclear.\n\nSecond, global inflation continues to affect borrowing costs around the world.",
+      "literal": "However, many uncerta~에서ties rema~에서, 그리고  outcome 이다 still unclear.\n\nSecond, global ~에서flation cont~에서ues ~에 affect borrow~에서g costs around  world."
     },
     {
       "id": 7,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
+      "text": "As prices rise, central banks are forced to adjust interest rates to control economic pressure.",
+      "literal": "As prices r이다e, central banks 이다 forced ~에 adjust ~에서terest rates ~에 control economic pressure."
     },
     {
       "id": 8,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
+      "text": "This has a direct impact on consumers, businesses, and investment decisions.",
+      "literal": "Th이다 has a direct impact on consumers, bus~에서esses, 그리고 ~에서vestment dec이다ions."
     },
     {
       "id": 9,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
+      "text": "Many countries are now trying to balance growth with financial stability.\n\nThird, investment in artificial intelligence is rapidly increasing across major economies.",
+      "literal": "Many countries 이다 now try~에서g ~에 balance growth with f~에서ancial stability.\n\nThird, ~에서vestment ~에서 artificial ~에서telligence 이다 rapidly ~에서creas~에서g across major economies."
     },
     {
       "id": 10,
-      "text": "Additionally, AI investment is rapidly increasing across major economies.",
-      "literal": "Additionally, AI ~에서vestment 이다 rapidly ~에서creas~에서g across major economies."
+      "text": "Companies are spending heavily on data centers, semiconductors, and energy infrastructure to support AI development.",
+      "literal": "Companies 이다 spend~에서g heavily on data centers, semiconduc~에rs, 그리고 energy ~에서frastructure ~에 support AI development."
     },
     {
       "id": 11,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
+      "text": "This trend is creating new opportunities but also raising concerns about energy consumption and long-term sustainability.\n\nOverall, these developments show that global events are deeply interconnected.",
+      "literal": "Th이다 trend 이다 creat~에서g new opportunities but also ra이다~에서g concerns about energy consumption 그리고 long-term susta~에서ability.\n\nOverall, se developments show that global events 이다 deeply ~에서terconnected."
     },
     {
       "id": 12,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
-    },
-    {
-      "id": 13,
-      "text": "Experts suggest that these patterns are becoming more significant in global analysis.",
-      "literal": "Experts suggest that se patterns 이다 becom~에서g more significant ~에서 global analys이다."
-    },
-    {
-      "id": 14,
-      "text": "Additionally, Energy infrastructure is becoming a critical issue in AI development.",
-      "literal": "Additionally, Energy ~에서frastructure 이다 becom~에서g a critical 이다sue ~에서 AI development."
-    },
-    {
-      "id": 15,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
-    },
-    {
-      "id": 16,
-      "text": "Experts suggest that these patterns are becoming more significant in global analysis.",
-      "literal": "Experts suggest that se patterns 이다 becom~에서g more significant ~에서 global analys이다."
-    },
-    {
-      "id": 17,
-      "text": "This development is important because it may influence broader discussions across regions.",
-      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions across regions."
-    },
-    {
-      "id": 18,
-      "text": "Additionally, Semiconductor demand is rising due to advances in technology.",
-      "literal": "Additionally, Semiconduc~에r dem그리고 이다 r이다~에서g due ~에 advances ~에서 technology."
-    },
-    {
-      "id": 19,
-      "text": "Experts suggest that these patterns are becoming more significant in global analysis.",
-      "literal": "Experts suggest that se patterns 이다 becom~에서g more significant ~에서 global analys이다."
-    },
-    {
-      "id": 20,
-      "text": "This development is important because it may influence broader discussions across regions.",
-      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions across regions."
-    },
-    {
-      "id": 21,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
-    },
-    {
-      "id": 22,
-      "text": "Additionally, Geopolitical tensions are influencing global supply chains.",
-      "literal": "Additionally, Geopolitical tensions 이다 ~에서fluenc~에서g global supply cha~에서s."
-    },
-    {
-      "id": 23,
-      "text": "This development is important because it may influence broader discussions across regions.",
-      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions across regions."
-    },
-    {
-      "id": 24,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
-    },
-    {
-      "id": 25,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
-    },
-    {
-      "id": 26,
-      "text": "Additionally, Central banks are continuing to monitor inflation and growth risks.",
-      "literal": "Additionally, Central banks 이다 cont~에서u~에서g ~에 moni~에r ~에서flation 그리고 growth r이다ks."
-    },
-    {
-      "id": 27,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
-    },
-    {
-      "id": 28,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
-    },
-    {
-      "id": 29,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
-    },
-    {
-      "id": 30,
-      "text": "Additionally, Technology companies are investing more heavily in data centers and chips.",
-      "literal": "Additionally, Technology companies 이다 ~에서vest~에서g more heavily ~에서 data centers 그리고 chips."
-    },
-    {
-      "id": 31,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
-    },
-    {
-      "id": 32,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
-    },
-    {
-      "id": 33,
-      "text": "Experts suggest that these patterns are becoming more significant in global analysis.",
-      "literal": "Experts suggest that se patterns 이다 becom~에서g more significant ~에서 global analys이다."
-    },
-    {
-      "id": 34,
-      "text": "Additionally, Governments are trying to balance economic growth with rising security concerns.",
-      "literal": "Additionally, Governments 이다 try~에서g ~에 balance economic growth with r이다~에서g security concerns."
-    },
-    {
-      "id": 35,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
-    },
-    {
-      "id": 36,
-      "text": "Experts suggest that these patterns are becoming more significant in global analysis.",
-      "literal": "Experts suggest that se patterns 이다 becom~에서g more significant ~에서 global analys이다."
-    },
-    {
-      "id": 37,
-      "text": "This development is important because it may influence broader discussions across regions.",
-      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions across regions."
-    },
-    {
-      "id": 38,
-      "text": "Additionally, Financial markets are reacting to uncertainty in trade, energy, and monetary policy.",
-      "literal": "Additionally, F~에서ancial markets 이다 react~에서g ~에 uncerta~에서ty ~에서 trade, energy, 그리고 monetary policy."
-    },
-    {
-      "id": 39,
-      "text": "Experts suggest that these patterns are becoming more significant in global analysis.",
-      "literal": "Experts suggest that se patterns 이다 becom~에서g more significant ~에서 global analys이다."
-    },
-    {
-      "id": 40,
-      "text": "This development is important because it may influence broader discussions across regions.",
-      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions across regions."
-    },
-    {
-      "id": 41,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
-    },
-    {
-      "id": 42,
-      "text": "Additionally, The spread of AI tools is increasing demand for electricity and computing power.",
-      "literal": "Additionally,  spread 의 AI ~에ols 이다 ~에서creas~에서g dem그리고 for electricity 그리고 comput~에서g power."
-    },
-    {
-      "id": 43,
-      "text": "This development is important because it may influence broader discussions across regions.",
-      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions across regions."
-    },
-    {
-      "id": 44,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
-    },
-    {
-      "id": 45,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
-    },
-    {
-      "id": 46,
-      "text": "Additionally, Global companies are adjusting their strategies in response to changing supply chains.",
-      "literal": "Additionally, Global companies 이다 adjust~에서g ir strategies ~에서 response ~에 chang~에서g supply cha~에서s."
-    },
-    {
-      "id": 47,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
-    },
-    {
-      "id": 48,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
-    },
-    {
-      "id": 49,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
-    },
-    {
-      "id": 50,
-      "text": "Additionally, Political leaders are facing pressure to respond to both domestic and global challenges.",
-      "literal": "Additionally, Political leaders 이다 fac~에서g pressure ~에 respond ~에 both domestic 그리고 global challenges."
-    },
-    {
-      "id": 51,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
-    },
-    {
-      "id": 52,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
-    },
-    {
-      "id": 53,
-      "text": "Experts suggest that these patterns are becoming more significant in global analysis.",
-      "literal": "Experts suggest that se patterns 이다 becom~에서g more significant ~에서 global analys이다."
-    },
-    {
-      "id": 54,
-      "text": "Additionally, Investors are paying closer attention to infrastructure, energy, and semiconductor trends.",
-      "literal": "Additionally, ~에서ves~에rs 이다 pay~에서g closer attention ~에 ~에서frastructure, energy, 그리고 semiconduc~에r trends."
-    },
-    {
-      "id": 55,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
-    },
-    {
-      "id": 56,
-      "text": "Experts suggest that these patterns are becoming more significant in global analysis.",
-      "literal": "Experts suggest that se patterns 이다 becom~에서g more significant ~에서 global analys이다."
-    },
-    {
-      "id": 57,
-      "text": "This development is important because it may influence broader discussions across regions.",
-      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions across regions."
-    },
-    {
-      "id": 58,
-      "text": "Additionally, Recent developments suggest that international events increasingly affect one another.",
-      "literal": "Additionally, Recent developments suggest that ~에서ternational events ~에서creas~에서gly affect one anor."
-    },
-    {
-      "id": 59,
-      "text": "Experts suggest that these patterns are becoming more significant in global analysis.",
-      "literal": "Experts suggest that se patterns 이다 becom~에서g more significant ~에서 global analys이다."
-    },
-    {
-      "id": 60,
-      "text": "This development is important because it may influence broader discussions across regions.",
-      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions across regions."
-    },
-    {
-      "id": 61,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
-    },
-    {
-      "id": 62,
-      "text": "Additionally, As a result, understanding world news requires attention to broader patterns and connections.",
-      "literal": "Additionally, As a result, underst그리고~에서g world news requires attention ~에 broader patterns 그리고 connections."
-    },
-    {
-      "id": 63,
-      "text": "This development is important because it may influence broader discussions across regions.",
-      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions across regions."
-    },
-    {
-      "id": 64,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
-    },
-    {
-      "id": 65,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
-    },
-    {
-      "id": 66,
-      "text": "Additionally, Diplomatic negotiations continue to shape expectations about regional stability.",
-      "literal": "Additionally, Diplomatic negotiations cont~에서ue ~에 shape expectations about regional stability."
-    },
-    {
-      "id": 67,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
-    },
-    {
-      "id": 68,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
-    },
-    {
-      "id": 69,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
-    },
-    {
-      "id": 70,
-      "text": "Additionally, At the same time, economic uncertainty is affecting consumer confidence and investment decisions.",
-      "literal": "Additionally, At  same time, economic uncerta~에서ty 이다 affect~에서g consumer confidence 그리고 ~에서vestment dec이다ions."
-    },
-    {
-      "id": 71,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
-    },
-    {
-      "id": 72,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
-    },
-    {
-      "id": 73,
-      "text": "Experts suggest that these patterns are becoming more significant in global analysis.",
-      "literal": "Experts suggest that se patterns 이다 becom~에서g more significant ~에서 global analys이다."
-    },
-    {
-      "id": 74,
-      "text": "Overall, these stories show how global events are connected across politics, economics, and society.",
-      "literal": "Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
+      "text": "Understanding them requires looking beyond individual headlines and recognizing broader patterns.\n Overall, these stories show how global events are connected across politics, economics, and society.",
+      "literal": "Underst그리고~에서g m requires look~에서g beyond ~에서dividual headl~에서es 그리고 recogniz~에서g broader patterns.\n Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
     }
   ],
   "sentences": [
@@ -383,368 +73,58 @@
     },
     {
       "id": 2,
-      "text": "First, Talks are expected between the US and Iran in Islamabad.",
-      "literal": "First, Talks 이다 expected between  US 그리고 Iran ~에서 이다lamabad."
+      "text": "\nToday's reading explores several important global developments that are shaping current events.",
+      "literal": "\n~에day's read~에서g explores several important global developments that 이다 shap~에서g current events."
     },
     {
       "id": 3,
-      "text": "This development is important because it may influence broader discussions across regions.",
-      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions across regions."
+      "text": "These stories highlight how politics, economics, and technology are closely connected.\n\nFirst, talks are expected between the United States and Iran in Islamabad.",
+      "literal": "se s~에ries highlight how politics, economics, 그리고 technology 이다 closely connected.\n\nFirst, talks 이다 expected between  United States 그리고 Iran ~에서 이다lamabad."
     },
     {
       "id": 4,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
+      "text": "These discussions are being closely watched because they could influence regional stability and diplomatic relations.",
+      "literal": "se d이다cussions 이다 be~에서g closely watched because y could ~에서fluence regional stability 그리고 diplomatic relations."
     },
     {
       "id": 5,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
+      "text": "If progress is made, it may reduce tensions and create new opportunities for cooperation.",
+      "literal": "If progress 이다 made, it may reduce tensions 그리고 create new opportunities for cooperation."
     },
     {
       "id": 6,
-      "text": "Second, Global inflation continues to affect borrowing costs worldwide.",
-      "literal": "Second, Global ~에서flation cont~에서ues ~에 affect borrow~에서g costs worldwide."
+      "text": "However, many uncertainties remain, and the outcome is still unclear.\n\nSecond, global inflation continues to affect borrowing costs around the world.",
+      "literal": "However, many uncerta~에서ties rema~에서, 그리고  outcome 이다 still unclear.\n\nSecond, global ~에서flation cont~에서ues ~에 affect borrow~에서g costs around  world."
     },
     {
       "id": 7,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
+      "text": "As prices rise, central banks are forced to adjust interest rates to control economic pressure.",
+      "literal": "As prices r이다e, central banks 이다 forced ~에 adjust ~에서terest rates ~에 control economic pressure."
     },
     {
       "id": 8,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
+      "text": "This has a direct impact on consumers, businesses, and investment decisions.",
+      "literal": "Th이다 has a direct impact on consumers, bus~에서esses, 그리고 ~에서vestment dec이다ions."
     },
     {
       "id": 9,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
+      "text": "Many countries are now trying to balance growth with financial stability.\n\nThird, investment in artificial intelligence is rapidly increasing across major economies.",
+      "literal": "Many countries 이다 now try~에서g ~에 balance growth with f~에서ancial stability.\n\nThird, ~에서vestment ~에서 artificial ~에서telligence 이다 rapidly ~에서creas~에서g across major economies."
     },
     {
       "id": 10,
-      "text": "Additionally, AI investment is rapidly increasing across major economies.",
-      "literal": "Additionally, AI ~에서vestment 이다 rapidly ~에서creas~에서g across major economies."
+      "text": "Companies are spending heavily on data centers, semiconductors, and energy infrastructure to support AI development.",
+      "literal": "Companies 이다 spend~에서g heavily on data centers, semiconduc~에rs, 그리고 energy ~에서frastructure ~에 support AI development."
     },
     {
       "id": 11,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
+      "text": "This trend is creating new opportunities but also raising concerns about energy consumption and long-term sustainability.\n\nOverall, these developments show that global events are deeply interconnected.",
+      "literal": "Th이다 trend 이다 creat~에서g new opportunities but also ra이다~에서g concerns about energy consumption 그리고 long-term susta~에서ability.\n\nOverall, se developments show that global events 이다 deeply ~에서terconnected."
     },
     {
       "id": 12,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
-    },
-    {
-      "id": 13,
-      "text": "Experts suggest that these patterns are becoming more significant in global analysis.",
-      "literal": "Experts suggest that se patterns 이다 becom~에서g more significant ~에서 global analys이다."
-    },
-    {
-      "id": 14,
-      "text": "Additionally, Energy infrastructure is becoming a critical issue in AI development.",
-      "literal": "Additionally, Energy ~에서frastructure 이다 becom~에서g a critical 이다sue ~에서 AI development."
-    },
-    {
-      "id": 15,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
-    },
-    {
-      "id": 16,
-      "text": "Experts suggest that these patterns are becoming more significant in global analysis.",
-      "literal": "Experts suggest that se patterns 이다 becom~에서g more significant ~에서 global analys이다."
-    },
-    {
-      "id": 17,
-      "text": "This development is important because it may influence broader discussions across regions.",
-      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions across regions."
-    },
-    {
-      "id": 18,
-      "text": "Additionally, Semiconductor demand is rising due to advances in technology.",
-      "literal": "Additionally, Semiconduc~에r dem그리고 이다 r이다~에서g due ~에 advances ~에서 technology."
-    },
-    {
-      "id": 19,
-      "text": "Experts suggest that these patterns are becoming more significant in global analysis.",
-      "literal": "Experts suggest that se patterns 이다 becom~에서g more significant ~에서 global analys이다."
-    },
-    {
-      "id": 20,
-      "text": "This development is important because it may influence broader discussions across regions.",
-      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions across regions."
-    },
-    {
-      "id": 21,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
-    },
-    {
-      "id": 22,
-      "text": "Additionally, Geopolitical tensions are influencing global supply chains.",
-      "literal": "Additionally, Geopolitical tensions 이다 ~에서fluenc~에서g global supply cha~에서s."
-    },
-    {
-      "id": 23,
-      "text": "This development is important because it may influence broader discussions across regions.",
-      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions across regions."
-    },
-    {
-      "id": 24,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
-    },
-    {
-      "id": 25,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
-    },
-    {
-      "id": 26,
-      "text": "Additionally, Central banks are continuing to monitor inflation and growth risks.",
-      "literal": "Additionally, Central banks 이다 cont~에서u~에서g ~에 moni~에r ~에서flation 그리고 growth r이다ks."
-    },
-    {
-      "id": 27,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
-    },
-    {
-      "id": 28,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
-    },
-    {
-      "id": 29,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
-    },
-    {
-      "id": 30,
-      "text": "Additionally, Technology companies are investing more heavily in data centers and chips.",
-      "literal": "Additionally, Technology companies 이다 ~에서vest~에서g more heavily ~에서 data centers 그리고 chips."
-    },
-    {
-      "id": 31,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
-    },
-    {
-      "id": 32,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
-    },
-    {
-      "id": 33,
-      "text": "Experts suggest that these patterns are becoming more significant in global analysis.",
-      "literal": "Experts suggest that se patterns 이다 becom~에서g more significant ~에서 global analys이다."
-    },
-    {
-      "id": 34,
-      "text": "Additionally, Governments are trying to balance economic growth with rising security concerns.",
-      "literal": "Additionally, Governments 이다 try~에서g ~에 balance economic growth with r이다~에서g security concerns."
-    },
-    {
-      "id": 35,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
-    },
-    {
-      "id": 36,
-      "text": "Experts suggest that these patterns are becoming more significant in global analysis.",
-      "literal": "Experts suggest that se patterns 이다 becom~에서g more significant ~에서 global analys이다."
-    },
-    {
-      "id": 37,
-      "text": "This development is important because it may influence broader discussions across regions.",
-      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions across regions."
-    },
-    {
-      "id": 38,
-      "text": "Additionally, Financial markets are reacting to uncertainty in trade, energy, and monetary policy.",
-      "literal": "Additionally, F~에서ancial markets 이다 react~에서g ~에 uncerta~에서ty ~에서 trade, energy, 그리고 monetary policy."
-    },
-    {
-      "id": 39,
-      "text": "Experts suggest that these patterns are becoming more significant in global analysis.",
-      "literal": "Experts suggest that se patterns 이다 becom~에서g more significant ~에서 global analys이다."
-    },
-    {
-      "id": 40,
-      "text": "This development is important because it may influence broader discussions across regions.",
-      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions across regions."
-    },
-    {
-      "id": 41,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
-    },
-    {
-      "id": 42,
-      "text": "Additionally, The spread of AI tools is increasing demand for electricity and computing power.",
-      "literal": "Additionally,  spread 의 AI ~에ols 이다 ~에서creas~에서g dem그리고 for electricity 그리고 comput~에서g power."
-    },
-    {
-      "id": 43,
-      "text": "This development is important because it may influence broader discussions across regions.",
-      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions across regions."
-    },
-    {
-      "id": 44,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
-    },
-    {
-      "id": 45,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
-    },
-    {
-      "id": 46,
-      "text": "Additionally, Global companies are adjusting their strategies in response to changing supply chains.",
-      "literal": "Additionally, Global companies 이다 adjust~에서g ir strategies ~에서 response ~에 chang~에서g supply cha~에서s."
-    },
-    {
-      "id": 47,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
-    },
-    {
-      "id": 48,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
-    },
-    {
-      "id": 49,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
-    },
-    {
-      "id": 50,
-      "text": "Additionally, Political leaders are facing pressure to respond to both domestic and global challenges.",
-      "literal": "Additionally, Political leaders 이다 fac~에서g pressure ~에 respond ~에 both domestic 그리고 global challenges."
-    },
-    {
-      "id": 51,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
-    },
-    {
-      "id": 52,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
-    },
-    {
-      "id": 53,
-      "text": "Experts suggest that these patterns are becoming more significant in global analysis.",
-      "literal": "Experts suggest that se patterns 이다 becom~에서g more significant ~에서 global analys이다."
-    },
-    {
-      "id": 54,
-      "text": "Additionally, Investors are paying closer attention to infrastructure, energy, and semiconductor trends.",
-      "literal": "Additionally, ~에서ves~에rs 이다 pay~에서g closer attention ~에 ~에서frastructure, energy, 그리고 semiconduc~에r trends."
-    },
-    {
-      "id": 55,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
-    },
-    {
-      "id": 56,
-      "text": "Experts suggest that these patterns are becoming more significant in global analysis.",
-      "literal": "Experts suggest that se patterns 이다 becom~에서g more significant ~에서 global analys이다."
-    },
-    {
-      "id": 57,
-      "text": "This development is important because it may influence broader discussions across regions.",
-      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions across regions."
-    },
-    {
-      "id": 58,
-      "text": "Additionally, Recent developments suggest that international events increasingly affect one another.",
-      "literal": "Additionally, Recent developments suggest that ~에서ternational events ~에서creas~에서gly affect one anor."
-    },
-    {
-      "id": 59,
-      "text": "Experts suggest that these patterns are becoming more significant in global analysis.",
-      "literal": "Experts suggest that se patterns 이다 becom~에서g more significant ~에서 global analys이다."
-    },
-    {
-      "id": 60,
-      "text": "This development is important because it may influence broader discussions across regions.",
-      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions across regions."
-    },
-    {
-      "id": 61,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
-    },
-    {
-      "id": 62,
-      "text": "Additionally, As a result, understanding world news requires attention to broader patterns and connections.",
-      "literal": "Additionally, As a result, underst그리고~에서g world news requires attention ~에 broader patterns 그리고 connections."
-    },
-    {
-      "id": 63,
-      "text": "This development is important because it may influence broader discussions across regions.",
-      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions across regions."
-    },
-    {
-      "id": 64,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
-    },
-    {
-      "id": 65,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
-    },
-    {
-      "id": 66,
-      "text": "Additionally, Diplomatic negotiations continue to shape expectations about regional stability.",
-      "literal": "Additionally, Diplomatic negotiations cont~에서ue ~에 shape expectations about regional stability."
-    },
-    {
-      "id": 67,
-      "text": "This situation reflects wider global trends that continue to evolve over time.",
-      "literal": "Th이다 situation reflects wider global trends that cont~에서ue ~에 evolve over time."
-    },
-    {
-      "id": 68,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
-    },
-    {
-      "id": 69,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
-    },
-    {
-      "id": 70,
-      "text": "Additionally, At the same time, economic uncertainty is affecting consumer confidence and investment decisions.",
-      "literal": "Additionally, At  same time, economic uncerta~에서ty 이다 affect~에서g consumer confidence 그리고 ~에서vestment dec이다ions."
-    },
-    {
-      "id": 71,
-      "text": "It also shows how different events are interconnected in complex ways.",
-      "literal": "It also shows how different events 이다 ~에서terconnected ~에서 complex ways."
-    },
-    {
-      "id": 72,
-      "text": "These changes may have long-term effects on economic and political stability.",
-      "literal": "se changes may have long-term effects on economic 그리고 political stability."
-    },
-    {
-      "id": 73,
-      "text": "Experts suggest that these patterns are becoming more significant in global analysis.",
-      "literal": "Experts suggest that se patterns 이다 becom~에서g more significant ~에서 global analys이다."
-    },
-    {
-      "id": 74,
-      "text": "Overall, these stories show how global events are connected across politics, economics, and society.",
-      "literal": "Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
+      "text": "Understanding them requires looking beyond individual headlines and recognizing broader patterns.\n Overall, these stories show how global events are connected across politics, economics, and society.",
+      "literal": "Underst그리고~에서g m requires look~에서g beyond ~에서dividual headl~에서es 그리고 recogniz~에서g broader patterns.\n Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
     }
   ],
   "sentencePractice": [
@@ -754,14 +134,14 @@
       "literal": "~에day's read~에서g br~에서gs ~에ger several major developments from recent ~에서ternational headl~에서es."
     },
     {
-      "id": 38,
-      "text": "Additionally, Financial markets are reacting to uncertainty in trade, energy, and monetary policy.",
-      "literal": "Additionally, F~에서ancial markets 이다 react~에서g ~에 uncerta~에서ty ~에서 trade, energy, 그리고 monetary policy."
+      "id": 7,
+      "text": "As prices rise, central banks are forced to adjust interest rates to control economic pressure.",
+      "literal": "As prices r이다e, central banks 이다 forced ~에 adjust ~에서terest rates ~에 control economic pressure."
     },
     {
-      "id": 74,
-      "text": "Overall, these stories show how global events are connected across politics, economics, and society.",
-      "literal": "Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
+      "id": 12,
+      "text": "Understanding them requires looking beyond individual headlines and recognizing broader patterns.\n Overall, these stories show how global events are connected across politics, economics, and society.",
+      "literal": "Underst그리고~에서g m requires look~에서g beyond ~에서dividual headl~에서es 그리고 recogniz~에서g broader patterns.\n Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
     }
   ],
   "questions": [
