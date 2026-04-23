@@ -16,7 +16,10 @@ const literalMap = (text) => {
 const items = [
   "Talks are expected between the US and Iran in Islamabad.",
   "Global inflation continues to affect borrowing costs worldwide.",
-  "AI investment is rapidly increasing across major economies."
+  "AI investment is rapidly increasing across major economies.",
+  "Energy infrastructure is becoming a critical issue in AI development.",
+  "Semiconductor demand is rising due to advances in technology.",
+  "Geopolitical tensions are influencing global supply chains."
 ];
 
 // 👉 리딩 생성
