@@ -1,103 +1,125 @@
 {
-  "date": "2026-04-23T18:17:23.984Z",
+  "date": "2026-04-23T23:27:50.684Z",
   "source": "PBS News RSS",
-  "headline": "Ex-Philippine president Duterte to face trial on crimes against humanity charges",
-  "reading": "Today’s reading is based on several major international headlines. This passage connects key developments to help you understand the global context.\n\nStory 1: Ex-Philippine president Duterte to face trial on crimes against humanity charges. Duterte, who served as president from 2016 to 2022, was arrested in the Philippines last year and flown to the Hague. He denies the charges against him. This story shows how global events can quickly affect people across countries.\n\nStory 2: Pope wraps up an Africa visit for the history books with a Mass in Equatorial Guinea. Leo departed for Rome after a farewell ceremony at the Malabo airport, ending an 11-day, four-nation voyage that took him from Algeria in the north of Africa to Angola in the south and Cameroon in between. This story shows how global events can quickly affect people across countries.\n\nStory 3: Trump's threats against Iran are a boon for prediction markets, including some backed by his son. Traders flocked to Polymarket this month to bet on whether Trump really was going bomb Iran back to the Stone Age or just call a ceasefire. This story shows how global events can quickly affect people across countries.\n\nStory 4: Highlights of Pope Leo's trip to Africa. History's first American pope visited Africa against the backdrop of his calls for peace that have sparked a feud with U.S. President Donald Trump over the war in Iran. This story shows how global events can quickly affect people across countries.\n\nStory 5: Michael Tilson Thomas, renowned conductor and composer, dies at 81. Michael Tilson Thomas, a leading American conductor for a half-century who headed orchestras in Buffalo, Miami, London and San Francisco while also composing, died Wednesday. He was 81. This story shows how global events can quickly affect people across countries.\n\nTaken together, these developments show that the modern world is highly interconnected. Reading real news helps you build vocabulary and understand global issues in context.\n\n[Sources]\n1. https://www.pbs.org/newshour/world/ex-philippine-president-duterte-to-face-trial-on-crimes-against-humanity-charges\n2. https://www.pbs.org/newshour/world/pope-wraps-up-an-africa-visit-for-the-history-books-with-a-mass-in-equatorial-guinea\n3. https://www.pbs.org/newshour/politics/trumps-threats-against-iran-are-a-boon-for-prediction-markets-including-some-backed-by-his-son\n4. https://www.pbs.org/newshour/world/highlights-of-pope-leos-trip-to-africa\n5. https://www.pbs.org/newshour/arts/michael-tilson-thomas-renowned-conductor-and-composer-dies-at-81",
+  "headline": "Kalshi fines and suspends 3 congressional candidates for betting on their own elections",
+  "reading": "Kalshi fines and suspends 3 congressional candidates for betting on their own elections. Three congressional candidates wagered on the outcome of their own elections on Kalshi, according to the prediction market, which said Wednesday that it fined and suspended the men from their platform for five years.\n\nWATCH: Trump announces Israel and Lebanon have agreed to 3-week ceasefire extension. President Donald Trump said Israel and Lebanon have agreed to extend a ceasefire between Israel and Hezbollah by three weeks after talks at the White House on Thursday.\n\nTrump in no rush to set deadline on Iran ceasefire extension. Two days after President Trump extended his two-week ceasefire with Iran, the prospect of talks is giving way to more tensions and brinksmanship from both sides. Iran released video of forces taking control of two vessels in the Strait of Hormuz, and President Trump wrote that he ordered the Navy to \"shoot and kill any boat\" that threatens the strait by laying mines. Stephanie Sy reports.",
   "quiz": [
     {
-      "q": "What is the main purpose of this passage?",
+      "q": "Which headline appeared in today’s reading?",
       "options": [
-        "To describe fiction",
-        "To connect real news stories",
-        "To teach grammar only",
-        "To advertise"
-      ],
-      "answer": 1
-    },
-    {
-      "q": "Why do these stories matter?",
-      "options": [
-        "They affect only one city",
-        "They influence people globally",
-        "They are only for fun",
-        "They are outdated"
-      ],
-      "answer": 1
-    },
-    {
-      "q": "Which headline appeared?",
-      "options": [
-        "Ex-Philippine president Duterte to face trial on crimes against humanity charges",
-        "School sports day",
-        "Food blog review",
-        "Novel release"
+        "Kalshi fines and suspends 3 congressional candidates for betting on their own elections",
+        "A local school festival",
+        "A restaurant review",
+        "A fictional movie release"
       ],
       "answer": 0
     },
     {
-      "q": "What is a benefit of reading news?",
+      "q": "How many news stories are mainly included in the reading?",
       "options": [
-        "No need to study",
-        "Build vocabulary",
-        "Perfect pronunciation",
-        "Skip learning"
+        "One",
+        "Two",
+        "Three",
+        "Five"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Which of the following also appeared in the reading?",
+      "options": [
+        "WATCH: Trump announces Israel and Lebanon have agreed to 3-week ceasefire extension",
+        "A travel diary entry",
+        "A recipe update",
+        "A sports rumor"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is the reading mainly made of?",
+      "options": [
+        "General commentary",
+        "News summaries",
+        "Grammar explanations",
+        "Fictional scenes"
       ],
       "answer": 1
     },
     {
-      "q": "The world is described as:",
+      "q": "What kind of article is prioritized among the three stories?",
       "options": [
-        "Isolated",
-        "Interconnected",
-        "Simple",
-        "Static"
+        "Entertainment",
+        "Sports",
+        "Economy-related news",
+        "Weather only"
       ],
-      "answer": 1
+      "answer": 2
     }
   ],
-  "summary": "The passage highlights how global events are (interconnected). Reading real news helps improve (vocabulary) and understand major (issues) within a broader (context).",
+  "summary": "Kalshi fines and suspends 3 congressional candidates for betting on their own elections. Three congressional candidates wagered on the outcome of their own elections on Kalshi, according to the prediction market, which said Wednesday that it fined and suspended the men from their platform for five years. WATCH: (trump) announces (israel) and Lebanon have agreed to 3-week (ceasefire) extension.",
+  "summaryQuiz": [
+    {
+      "blank": 1,
+      "answer": "trump",
+      "options": [
+        "kalshi",
+        "iran",
+        "president",
+        "trump"
+      ]
+    },
+    {
+      "blank": 2,
+      "answer": "ceasefire",
+      "options": [
+        "congressional",
+        "elections",
+        "candidates",
+        "ceasefire"
+      ]
+    },
+    {
+      "blank": 3,
+      "answer": "israel",
+      "options": [
+        "three",
+        "lebanon",
+        "israel",
+        "said"
+      ]
+    }
+  ],
   "sentences": [
     {
       "id": 1,
-      "korean": "오늘의 리딩은 여러 국제 뉴스 핵심 이슈를 바탕으로 구성되어 있다.",
-      "english": "This passage connects key developments to help you understand the global context."
+      "korean": "첫 번째 핵심 뉴스 문장을 영어로 써 보세요.",
+      "english": "Kalshi fines and suspends 3 congressional candidates for betting on their own elections."
     },
     {
       "id": 2,
-      "korean": "이 뉴스는 한 국가를 넘어 많은 사람들에게 영향을 줄 수 있다.",
-      "english": "Duterte, who served as president from 2016 to 2022, was arrested in the Philippines last year and flown to the Hague."
+      "korean": "두 번째 핵심 뉴스 문장을 영어로 써 보세요.",
+      "english": "WATCH: Trump announces Israel and Lebanon have agreed to 3-week ceasefire extension."
     },
     {
       "id": 3,
-      "korean": "실제 뉴스를 읽는 것은 어휘와 배경지식을 함께 키우는 데 도움이 된다.",
-      "english": "Story 2: Pope wraps up an Africa visit for the history books with a Mass in Equatorial Guinea."
+      "korean": "세 번째 핵심 뉴스 문장을 영어로 써 보세요.",
+      "english": "Two days after President Trump extended his two-week ceasefire with Iran, the prospect of talks is giving way to more tensions and brinksmanship from both sides."
     }
   ],
   "newsItems": [
     {
-      "title": "Ex-Philippine president Duterte to face trial on crimes against humanity charges",
-      "link": "https://www.pbs.org/newshour/world/ex-philippine-president-duterte-to-face-trial-on-crimes-against-humanity-charges",
-      "pubDate": "Thu, 23 Apr 2026 12:27:09 -0400"
+      "title": "Kalshi fines and suspends 3 congressional candidates for betting on their own elections",
+      "link": "https://www.pbs.org/newshour/politics/kalshi-fines-and-suspends-3-congressional-candidates-for-betting-on-their-own-elections",
+      "pubDate": "Thu, 23 Apr 2026 19:05:03 -0400"
     },
     {
-      "title": "Pope wraps up an Africa visit for the history books with a Mass in Equatorial Guinea",
-      "link": "https://www.pbs.org/newshour/world/pope-wraps-up-an-africa-visit-for-the-history-books-with-a-mass-in-equatorial-guinea",
-      "pubDate": "Thu, 23 Apr 2026 12:14:04 -0400"
+      "title": "WATCH: Trump announces Israel and Lebanon have agreed to 3-week ceasefire extension",
+      "link": "https://www.pbs.org/newshour/politics/watch-trump-announces-israel-and-lebanon-have-agreed-to-3-week-ceasefire-extension",
+      "pubDate": "Thu, 23 Apr 2026 19:13:56 -0400"
     },
     {
-      "title": "Trump's threats against Iran are a boon for prediction markets, including some backed by his son",
-      "link": "https://www.pbs.org/newshour/politics/trumps-threats-against-iran-are-a-boon-for-prediction-markets-including-some-backed-by-his-son",
-      "pubDate": "Thu, 23 Apr 2026 12:10:31 -0400"
-    },
-    {
-      "title": "Highlights of Pope Leo's trip to Africa",
-      "link": "https://www.pbs.org/newshour/world/highlights-of-pope-leos-trip-to-africa",
-      "pubDate": "Thu, 23 Apr 2026 11:57:39 -0400"
-    },
-    {
-      "title": "Michael Tilson Thomas, renowned conductor and composer, dies at 81",
-      "link": "https://www.pbs.org/newshour/arts/michael-tilson-thomas-renowned-conductor-and-composer-dies-at-81",
-      "pubDate": "Thu, 23 Apr 2026 11:51:43 -0400"
+      "title": "Trump in no rush to set deadline on Iran ceasefire extension",
+      "link": "https://www.pbs.org/newshour/show/trump-in-no-rush-to-set-deadline-on-iran-ceasefire-extension",
+      "pubDate": "Thu, 23 Apr 2026 18:55:43 -0400"
     }
   ]
 }
