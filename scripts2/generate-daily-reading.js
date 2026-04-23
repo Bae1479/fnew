@@ -19,7 +19,19 @@ const items = [
   "AI investment is rapidly increasing across major economies.",
   "Energy infrastructure is becoming a critical issue in AI development.",
   "Semiconductor demand is rising due to advances in technology.",
-  "Geopolitical tensions are influencing global supply chains."
+  "Geopolitical tensions are influencing global supply chains.",
+  "Central banks are continuing to monitor inflation and growth risks.",
+  "Technology companies are investing more heavily in data centers and chips.",
+  "Governments are trying to balance economic growth with rising security concerns.",
+  "Financial markets are reacting to uncertainty in trade, energy, and monetary policy.",
+  "The spread of AI tools is increasing demand for electricity and computing power.",
+  "Global companies are adjusting their strategies in response to changing supply chains.",
+  "Political leaders are facing pressure to respond to both domestic and global challenges.",
+  "Investors are paying closer attention to infrastructure, energy, and semiconductor trends.",
+  "Recent developments suggest that international events increasingly affect one another.",
+  "As a result, understanding world news requires attention to broader patterns and connections.",
+  "Diplomatic negotiations continue to shape expectations about regional stability.",
+  "At the same time, economic uncertainty is affecting consumer confidence and investment decisions."
 ];
 
 // 👉 리딩 생성
