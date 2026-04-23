@@ -9,7 +9,7 @@ const parser = new Parser({
 });
 
 const FEEDS = {
-  top: "https://apnews.com/index.rss"
+  top: "https://www.pbs.org/newshour/feeds/rss/headlines"
 };
 
 function cleanText(text = "") {
@@ -167,7 +167,7 @@ async function build() {
 
   const data = {
     date: new Date().toISOString(),
-    source: "AP News RSS",
+    source: "PBS News RSS",
     headline: cleanText(items[0].title),
     reading,
     quiz,
