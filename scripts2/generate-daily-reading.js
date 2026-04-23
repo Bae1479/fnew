@@ -116,7 +116,7 @@ const questions = [
 
 // 👉 summary
 const modelSummary =
-  "This reading explains that global events are interconnected and influence each other across different areas.";
+  "This reading brings together several recent global developments and explains how they are connected within a broader context. It shows that political, economic, and social events are not isolated, but instead influence one another in meaningful ways. By examining these relationships, the passage highlights the importance of understanding patterns and connections rather than focusing on single events.";
 
 // 👉 결과
 const result = {
