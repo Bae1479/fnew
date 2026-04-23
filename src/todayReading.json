@@ -1,7 +1,7 @@
 {
   "date": "2026-04-23",
   "title": "Global Developments Overview",
-  "passage": "Today's reading brings together several major developments from recent international headlines. \nToday's reading explores several important global developments that are shaping current events. These stories highlight how politics, economics, and technology are closely connected.\n\nFirst, talks are expected between the United States and Iran in Islamabad. These discussions are being closely watched because they could influence regional stability and diplomatic relations. If progress is made, it may reduce tensions and create new opportunities for cooperation. However, many uncertainties remain, and the outcome is still unclear.\n\nSecond, global inflation continues to affect borrowing costs around the world. As prices rise, central banks are forced to adjust interest rates to control economic pressure. This has a direct impact on consumers, businesses, and investment decisions. Many countries are now trying to balance growth with financial stability.\n\nThird, investment in artificial intelligence is rapidly increasing across major economies. Companies are spending heavily on data centers, semiconductors, and energy infrastructure to support AI development. This trend is creating new opportunities but also raising concerns about energy consumption and long-term sustainability.\n\nOverall, these developments show that global events are deeply interconnected. Understanding them requires looking beyond individual headlines and recognizing broader patterns.\n Overall, these stories show how global events are connected across politics, economics, and society.",
+  "passage": "Today's reading brings together several major developments from recent international headlines. \nToday's reading brings together several major developments from recent international news, offering a broader view of how global events are interconnected. Rather than focusing on isolated headlines, it encourages readers to think about the underlying patterns that link politics, economics, and technology.\n\nTo begin with, talks are expected between the United States and Iran in Islamabad. These discussions are attracting significant attention from the international community, as they may influence regional stability and diplomatic relations in the Middle East. If the negotiations lead to progress, they could ease tensions that have persisted for years. However, there is also skepticism about whether both sides are willing to make meaningful compromises, making the outcome uncertain.\n\nAnother important issue is the continued impact of global inflation. Rising prices have forced central banks around the world to adjust interest rates in an attempt to control economic pressure. These decisions affect not only large financial institutions but also ordinary consumers, influencing borrowing costs, housing markets, and overall spending behavior. As a result, many countries are now facing the challenge of balancing economic growth with financial stability in an increasingly uncertain environment.\n\nIn addition, investment in artificial intelligence is expanding rapidly across major economies. Companies are allocating significant resources to build data centers, develop advanced semiconductors, and secure the energy needed to support large-scale computing systems. While this surge in investment is driving innovation, it is also raising important questions about energy consumption, environmental impact, and long-term sustainability. Governments and industry leaders are beginning to recognize that the growth of AI must be managed carefully to avoid unintended consequences.\n\nThese developments are not independent of one another. Diplomatic tensions can influence economic decisions, while technological advances can reshape both political strategies and financial markets. This interconnectedness means that understanding global events requires more than simply following individual stories; it requires a broader perspective that considers how different forces interact over time.\n\nOverall, the reading highlights the importance of looking beyond immediate headlines and developing a deeper awareness of global patterns. By doing so, readers can better understand not only what is happening in the world, but also why these events matter and how they may shape the future.\n Overall, these stories show how global events are connected across politics, economics, and society.",
   "modelSummary": "This reading brings together several recent global developments and explains how they are connected within a broader context. It shows that political, economic, and social events are not isolated, but instead influence one another in meaningful ways. By examining these relationships, the passage highlights the importance of understanding patterns and connections rather than focusing on single events.",
   "allSentences": [
     {
@@ -11,58 +11,73 @@
     },
     {
       "id": 2,
-      "text": "\nToday's reading explores several important global developments that are shaping current events.",
-      "literal": "\n~에day's read~에서g explores several important global developments that 이다 shap~에서g current events."
+      "text": "\nToday's reading brings together several major developments from recent international news, offering a broader view of how global events are interconnected.",
+      "literal": "\n~에day's read~에서g br~에서gs ~에ger several major developments from recent ~에서ternational news, 의fer~에서g a broader view 의 how global events 이다 ~에서terconnected."
     },
     {
       "id": 3,
-      "text": "These stories highlight how politics, economics, and technology are closely connected.\n\nFirst, talks are expected between the United States and Iran in Islamabad.",
-      "literal": "se s~에ries highlight how politics, economics, 그리고 technology 이다 closely connected.\n\nFirst, talks 이다 expected between  United States 그리고 Iran ~에서 이다lamabad."
+      "text": "Rather than focusing on isolated headlines, it encourages readers to think about the underlying patterns that link politics, economics, and technology.\n\nTo begin with, talks are expected between the United States and Iran in Islamabad.",
+      "literal": "Rar than focus~에서g on 이다olated headl~에서es, it encourages readers ~에 th~에서k about  underly~에서g patterns that l~에서k politics, economics, 그리고 technology.\n\n~에 beg~에서 with, talks 이다 expected between  United States 그리고 Iran ~에서 이다lamabad."
     },
     {
       "id": 4,
-      "text": "These discussions are being closely watched because they could influence regional stability and diplomatic relations.",
-      "literal": "se d이다cussions 이다 be~에서g closely watched because y could ~에서fluence regional stability 그리고 diplomatic relations."
+      "text": "These discussions are attracting significant attention from the international community, as they may influence regional stability and diplomatic relations in the Middle East.",
+      "literal": "se d이다cussions 이다 attract~에서g significant attention from  ~에서ternational community, as y may ~에서fluence regional stability 그리고 diplomatic relations ~에서  Middle East."
     },
     {
       "id": 5,
-      "text": "If progress is made, it may reduce tensions and create new opportunities for cooperation.",
-      "literal": "If progress 이다 made, it may reduce tensions 그리고 create new opportunities for cooperation."
+      "text": "If the negotiations lead to progress, they could ease tensions that have persisted for years.",
+      "literal": "If  negotiations lead ~에 progress, y could ease tensions that have pers이다ted for years."
     },
     {
       "id": 6,
-      "text": "However, many uncertainties remain, and the outcome is still unclear.\n\nSecond, global inflation continues to affect borrowing costs around the world.",
-      "literal": "However, many uncerta~에서ties rema~에서, 그리고  outcome 이다 still unclear.\n\nSecond, global ~에서flation cont~에서ues ~에 affect borrow~에서g costs around  world."
+      "text": "However, there is also skepticism about whether both sides are willing to make meaningful compromises, making the outcome uncertain.\n\nAnother important issue is the continued impact of global inflation.",
+      "literal": "However, re 이다 also skeptic이다m about wher both sides 이다 will~에서g ~에 make mean~에서gful comprom이다es, mak~에서g  outcome uncerta~에서.\n\nAnor important 이다sue 이다  cont~에서ued impact 의 global ~에서flation."
     },
     {
       "id": 7,
-      "text": "As prices rise, central banks are forced to adjust interest rates to control economic pressure.",
-      "literal": "As prices r이다e, central banks 이다 forced ~에 adjust ~에서terest rates ~에 control economic pressure."
+      "text": "Rising prices have forced central banks around the world to adjust interest rates in an attempt to control economic pressure.",
+      "literal": "R이다~에서g prices have forced central banks around  world ~에 adjust ~에서terest rates ~에서 an attempt ~에 control economic pressure."
     },
     {
       "id": 8,
-      "text": "This has a direct impact on consumers, businesses, and investment decisions.",
-      "literal": "Th이다 has a direct impact on consumers, bus~에서esses, 그리고 ~에서vestment dec이다ions."
+      "text": "These decisions affect not only large financial institutions but also ordinary consumers, influencing borrowing costs, housing markets, and overall spending behavior.",
+      "literal": "se dec이다ions affect not only large f~에서ancial ~에서stitutions but also ord~에서ary consumers, ~에서fluenc~에서g borrow~에서g costs, hous~에서g markets, 그리고 overall spend~에서g behavior."
     },
     {
       "id": 9,
-      "text": "Many countries are now trying to balance growth with financial stability.\n\nThird, investment in artificial intelligence is rapidly increasing across major economies.",
-      "literal": "Many countries 이다 now try~에서g ~에 balance growth with f~에서ancial stability.\n\nThird, ~에서vestment ~에서 artificial ~에서telligence 이다 rapidly ~에서creas~에서g across major economies."
+      "text": "As a result, many countries are now facing the challenge of balancing economic growth with financial stability in an increasingly uncertain environment.\n\nIn addition, investment in artificial intelligence is expanding rapidly across major economies.",
+      "literal": "As a result, many countries 이다 now fac~에서g  challenge 의 balanc~에서g economic growth with f~에서ancial stability ~에서 an ~에서creas~에서gly uncerta~에서 environment.\n\n~에서 addition, ~에서vestment ~에서 artificial ~에서telligence 이다 exp그리고~에서g rapidly across major economies."
     },
     {
       "id": 10,
-      "text": "Companies are spending heavily on data centers, semiconductors, and energy infrastructure to support AI development.",
-      "literal": "Companies 이다 spend~에서g heavily on data centers, semiconduc~에rs, 그리고 energy ~에서frastructure ~에 support AI development."
+      "text": "Companies are allocating significant resources to build data centers, develop advanced semiconductors, and secure the energy needed to support large-scale computing systems.",
+      "literal": "Companies 이다 allocat~에서g significant resources ~에 build data centers, develop advanced semiconduc~에rs, 그리고 secure  energy needed ~에 support large-scale comput~에서g systems."
     },
     {
       "id": 11,
-      "text": "This trend is creating new opportunities but also raising concerns about energy consumption and long-term sustainability.\n\nOverall, these developments show that global events are deeply interconnected.",
-      "literal": "Th이다 trend 이다 creat~에서g new opportunities but also ra이다~에서g concerns about energy consumption 그리고 long-term susta~에서ability.\n\nOverall, se developments show that global events 이다 deeply ~에서terconnected."
+      "text": "While this surge in investment is driving innovation, it is also raising important questions about energy consumption, environmental impact, and long-term sustainability.",
+      "literal": "While th이다 surge ~에서 ~에서vestment 이다 driv~에서g ~에서novation, it 이다 also ra이다~에서g important questions about energy consumption, environmental impact, 그리고 long-term susta~에서ability."
     },
     {
       "id": 12,
-      "text": "Understanding them requires looking beyond individual headlines and recognizing broader patterns.\n Overall, these stories show how global events are connected across politics, economics, and society.",
-      "literal": "Underst그리고~에서g m requires look~에서g beyond ~에서dividual headl~에서es 그리고 recogniz~에서g broader patterns.\n Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
+      "text": "Governments and industry leaders are beginning to recognize that the growth of AI must be managed carefully to avoid unintended consequences.\n\nThese developments are not independent of one another.",
+      "literal": "Governments 그리고 ~에서dustry leaders 이다 beg~에서n~에서g ~에 recognize that  growth 의 AI must be managed c이다fully ~에 avoid un~에서tended consequences.\n\nse developments 이다 not ~에서dependent 의 one anor."
+    },
+    {
+      "id": 13,
+      "text": "Diplomatic tensions can influence economic decisions, while technological advances can reshape both political strategies and financial markets.",
+      "literal": "Diplomatic tensions can ~에서fluence economic dec이다ions, while technological advances can reshape both political strategies 그리고 f~에서ancial markets."
+    },
+    {
+      "id": 14,
+      "text": "This interconnectedness means that understanding global events requires more than simply following individual stories; it requires a broader perspective that considers how different forces interact over time.\n\nOverall, the reading highlights the importance of looking beyond immediate headlines and developing a deeper awareness of global patterns.",
+      "literal": "Th이다 ~에서terconnectedness means that underst그리고~에서g global events requires more than simply follow~에서g ~에서dividual s~에ries; it requires a broader perspective that considers how different forces ~에서teract over time.\n\nOverall,  read~에서g highlights  importance 의 look~에서g beyond immediate headl~에서es 그리고 develop~에서g a deeper aw이다ness 의 global patterns."
+    },
+    {
+      "id": 15,
+      "text": "By doing so, readers can better understand not only what is happening in the world, but also why these events matter and how they may shape the future.\n Overall, these stories show how global events are connected across politics, economics, and society.",
+      "literal": "By do~에서g so, readers can better underst그리고 not only what 이다 happen~에서g ~에서  world, but also why se events matter 그리고 how y may shape  future.\n Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
     }
   ],
   "sentences": [
@@ -73,58 +88,73 @@
     },
     {
       "id": 2,
-      "text": "\nToday's reading explores several important global developments that are shaping current events.",
-      "literal": "\n~에day's read~에서g explores several important global developments that 이다 shap~에서g current events."
+      "text": "\nToday's reading brings together several major developments from recent international news, offering a broader view of how global events are interconnected.",
+      "literal": "\n~에day's read~에서g br~에서gs ~에ger several major developments from recent ~에서ternational news, 의fer~에서g a broader view 의 how global events 이다 ~에서terconnected."
     },
     {
       "id": 3,
-      "text": "These stories highlight how politics, economics, and technology are closely connected.\n\nFirst, talks are expected between the United States and Iran in Islamabad.",
-      "literal": "se s~에ries highlight how politics, economics, 그리고 technology 이다 closely connected.\n\nFirst, talks 이다 expected between  United States 그리고 Iran ~에서 이다lamabad."
+      "text": "Rather than focusing on isolated headlines, it encourages readers to think about the underlying patterns that link politics, economics, and technology.\n\nTo begin with, talks are expected between the United States and Iran in Islamabad.",
+      "literal": "Rar than focus~에서g on 이다olated headl~에서es, it encourages readers ~에 th~에서k about  underly~에서g patterns that l~에서k politics, economics, 그리고 technology.\n\n~에 beg~에서 with, talks 이다 expected between  United States 그리고 Iran ~에서 이다lamabad."
     },
     {
       "id": 4,
-      "text": "These discussions are being closely watched because they could influence regional stability and diplomatic relations.",
-      "literal": "se d이다cussions 이다 be~에서g closely watched because y could ~에서fluence regional stability 그리고 diplomatic relations."
+      "text": "These discussions are attracting significant attention from the international community, as they may influence regional stability and diplomatic relations in the Middle East.",
+      "literal": "se d이다cussions 이다 attract~에서g significant attention from  ~에서ternational community, as y may ~에서fluence regional stability 그리고 diplomatic relations ~에서  Middle East."
     },
     {
       "id": 5,
-      "text": "If progress is made, it may reduce tensions and create new opportunities for cooperation.",
-      "literal": "If progress 이다 made, it may reduce tensions 그리고 create new opportunities for cooperation."
+      "text": "If the negotiations lead to progress, they could ease tensions that have persisted for years.",
+      "literal": "If  negotiations lead ~에 progress, y could ease tensions that have pers이다ted for years."
     },
     {
       "id": 6,
-      "text": "However, many uncertainties remain, and the outcome is still unclear.\n\nSecond, global inflation continues to affect borrowing costs around the world.",
-      "literal": "However, many uncerta~에서ties rema~에서, 그리고  outcome 이다 still unclear.\n\nSecond, global ~에서flation cont~에서ues ~에 affect borrow~에서g costs around  world."
+      "text": "However, there is also skepticism about whether both sides are willing to make meaningful compromises, making the outcome uncertain.\n\nAnother important issue is the continued impact of global inflation.",
+      "literal": "However, re 이다 also skeptic이다m about wher both sides 이다 will~에서g ~에 make mean~에서gful comprom이다es, mak~에서g  outcome uncerta~에서.\n\nAnor important 이다sue 이다  cont~에서ued impact 의 global ~에서flation."
     },
     {
       "id": 7,
-      "text": "As prices rise, central banks are forced to adjust interest rates to control economic pressure.",
-      "literal": "As prices r이다e, central banks 이다 forced ~에 adjust ~에서terest rates ~에 control economic pressure."
+      "text": "Rising prices have forced central banks around the world to adjust interest rates in an attempt to control economic pressure.",
+      "literal": "R이다~에서g prices have forced central banks around  world ~에 adjust ~에서terest rates ~에서 an attempt ~에 control economic pressure."
     },
     {
       "id": 8,
-      "text": "This has a direct impact on consumers, businesses, and investment decisions.",
-      "literal": "Th이다 has a direct impact on consumers, bus~에서esses, 그리고 ~에서vestment dec이다ions."
+      "text": "These decisions affect not only large financial institutions but also ordinary consumers, influencing borrowing costs, housing markets, and overall spending behavior.",
+      "literal": "se dec이다ions affect not only large f~에서ancial ~에서stitutions but also ord~에서ary consumers, ~에서fluenc~에서g borrow~에서g costs, hous~에서g markets, 그리고 overall spend~에서g behavior."
     },
     {
       "id": 9,
-      "text": "Many countries are now trying to balance growth with financial stability.\n\nThird, investment in artificial intelligence is rapidly increasing across major economies.",
-      "literal": "Many countries 이다 now try~에서g ~에 balance growth with f~에서ancial stability.\n\nThird, ~에서vestment ~에서 artificial ~에서telligence 이다 rapidly ~에서creas~에서g across major economies."
+      "text": "As a result, many countries are now facing the challenge of balancing economic growth with financial stability in an increasingly uncertain environment.\n\nIn addition, investment in artificial intelligence is expanding rapidly across major economies.",
+      "literal": "As a result, many countries 이다 now fac~에서g  challenge 의 balanc~에서g economic growth with f~에서ancial stability ~에서 an ~에서creas~에서gly uncerta~에서 environment.\n\n~에서 addition, ~에서vestment ~에서 artificial ~에서telligence 이다 exp그리고~에서g rapidly across major economies."
     },
     {
       "id": 10,
-      "text": "Companies are spending heavily on data centers, semiconductors, and energy infrastructure to support AI development.",
-      "literal": "Companies 이다 spend~에서g heavily on data centers, semiconduc~에rs, 그리고 energy ~에서frastructure ~에 support AI development."
+      "text": "Companies are allocating significant resources to build data centers, develop advanced semiconductors, and secure the energy needed to support large-scale computing systems.",
+      "literal": "Companies 이다 allocat~에서g significant resources ~에 build data centers, develop advanced semiconduc~에rs, 그리고 secure  energy needed ~에 support large-scale comput~에서g systems."
     },
     {
       "id": 11,
-      "text": "This trend is creating new opportunities but also raising concerns about energy consumption and long-term sustainability.\n\nOverall, these developments show that global events are deeply interconnected.",
-      "literal": "Th이다 trend 이다 creat~에서g new opportunities but also ra이다~에서g concerns about energy consumption 그리고 long-term susta~에서ability.\n\nOverall, se developments show that global events 이다 deeply ~에서terconnected."
+      "text": "While this surge in investment is driving innovation, it is also raising important questions about energy consumption, environmental impact, and long-term sustainability.",
+      "literal": "While th이다 surge ~에서 ~에서vestment 이다 driv~에서g ~에서novation, it 이다 also ra이다~에서g important questions about energy consumption, environmental impact, 그리고 long-term susta~에서ability."
     },
     {
       "id": 12,
-      "text": "Understanding them requires looking beyond individual headlines and recognizing broader patterns.\n Overall, these stories show how global events are connected across politics, economics, and society.",
-      "literal": "Underst그리고~에서g m requires look~에서g beyond ~에서dividual headl~에서es 그리고 recogniz~에서g broader patterns.\n Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
+      "text": "Governments and industry leaders are beginning to recognize that the growth of AI must be managed carefully to avoid unintended consequences.\n\nThese developments are not independent of one another.",
+      "literal": "Governments 그리고 ~에서dustry leaders 이다 beg~에서n~에서g ~에 recognize that  growth 의 AI must be managed c이다fully ~에 avoid un~에서tended consequences.\n\nse developments 이다 not ~에서dependent 의 one anor."
+    },
+    {
+      "id": 13,
+      "text": "Diplomatic tensions can influence economic decisions, while technological advances can reshape both political strategies and financial markets.",
+      "literal": "Diplomatic tensions can ~에서fluence economic dec이다ions, while technological advances can reshape both political strategies 그리고 f~에서ancial markets."
+    },
+    {
+      "id": 14,
+      "text": "This interconnectedness means that understanding global events requires more than simply following individual stories; it requires a broader perspective that considers how different forces interact over time.\n\nOverall, the reading highlights the importance of looking beyond immediate headlines and developing a deeper awareness of global patterns.",
+      "literal": "Th이다 ~에서terconnectedness means that underst그리고~에서g global events requires more than simply follow~에서g ~에서dividual s~에ries; it requires a broader perspective that considers how different forces ~에서teract over time.\n\nOverall,  read~에서g highlights  importance 의 look~에서g beyond immediate headl~에서es 그리고 develop~에서g a deeper aw이다ness 의 global patterns."
+    },
+    {
+      "id": 15,
+      "text": "By doing so, readers can better understand not only what is happening in the world, but also why these events matter and how they may shape the future.\n Overall, these stories show how global events are connected across politics, economics, and society.",
+      "literal": "By do~에서g so, readers can better underst그리고 not only what 이다 happen~에서g ~에서  world, but also why se events matter 그리고 how y may shape  future.\n Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
     }
   ],
   "sentencePractice": [
@@ -134,14 +164,14 @@
       "literal": "~에day's read~에서g br~에서gs ~에ger several major developments from recent ~에서ternational headl~에서es."
     },
     {
-      "id": 7,
-      "text": "As prices rise, central banks are forced to adjust interest rates to control economic pressure.",
-      "literal": "As prices r이다e, central banks 이다 forced ~에 adjust ~에서terest rates ~에 control economic pressure."
+      "id": 8,
+      "text": "These decisions affect not only large financial institutions but also ordinary consumers, influencing borrowing costs, housing markets, and overall spending behavior.",
+      "literal": "se dec이다ions affect not only large f~에서ancial ~에서stitutions but also ord~에서ary consumers, ~에서fluenc~에서g borrow~에서g costs, hous~에서g markets, 그리고 overall spend~에서g behavior."
     },
     {
-      "id": 12,
-      "text": "Understanding them requires looking beyond individual headlines and recognizing broader patterns.\n Overall, these stories show how global events are connected across politics, economics, and society.",
-      "literal": "Underst그리고~에서g m requires look~에서g beyond ~에서dividual headl~에서es 그리고 recogniz~에서g broader patterns.\n Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
+      "id": 15,
+      "text": "By doing so, readers can better understand not only what is happening in the world, but also why these events matter and how they may shape the future.\n Overall, these stories show how global events are connected across politics, economics, and society.",
+      "literal": "By do~에서g so, readers can better underst그리고 not only what 이다 happen~에서g ~에서  world, but also why se events matter 그리고 how y may shape  future.\n Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
     }
   ],
   "questions": [
