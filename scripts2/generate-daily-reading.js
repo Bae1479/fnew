@@ -37,25 +37,17 @@ const items = [
 // 👉 리딩 생성
 const intro = "Today's reading brings together several major developments from recent international headlines.";
 
-const body = items
-  .map((text, i) => {
-    const label = i === 0 ? "First" : i === 1 ? "Second" : "Additionally";
+const body = `
+Today's reading explores several important global developments that are shaping current events. These stories highlight how politics, economics, and technology are closely connected.
 
-    const extras = [
-      "This development is important because it may influence broader discussions across regions.",
-      "This situation reflects wider global trends that continue to evolve over time.",
-      "It also shows how different events are interconnected in complex ways.",
-      "These changes may have long-term effects on economic and political stability.",
-      "Experts suggest that these patterns are becoming more significant in global analysis."
-    ];
+First, talks are expected between the United States and Iran in Islamabad. These discussions are being closely watched because they could influence regional stability and diplomatic relations. If progress is made, it may reduce tensions and create new opportunities for cooperation. However, many uncertainties remain, and the outcome is still unclear.
 
-    const extra = extras[i % extras.length];
-    const extra2 = extras[(i + 1) % extras.length];
-    const extra3 = extras[(i + 2) % extras.length];
+Second, global inflation continues to affect borrowing costs around the world. As prices rise, central banks are forced to adjust interest rates to control economic pressure. This has a direct impact on consumers, businesses, and investment decisions. Many countries are now trying to balance growth with financial stability.
 
-    return `${label}, ${text} ${extra} ${extra2} ${extra3}`;
-  })
-  .join(" ");
+Third, investment in artificial intelligence is rapidly increasing across major economies. Companies are spending heavily on data centers, semiconductors, and energy infrastructure to support AI development. This trend is creating new opportunities but also raising concerns about energy consumption and long-term sustainability.
+
+Overall, these developments show that global events are deeply interconnected. Understanding them requires looking beyond individual headlines and recognizing broader patterns.
+`;
 
 const conclusion =
   "Overall, these stories show how global events are connected across politics, economics, and society.";
