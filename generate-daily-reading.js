@@ -1,10 +1,15 @@
 const fs = require("fs");
 const Parser = require("rss-parser");
 
-const parser = new Parser();
+const parser = new Parser({
+  timeout: 15000,
+  headers: {
+    "User-Agent": "Mozilla/5.0"
+  }
+});
 
 const FEEDS = {
-  top: "https://apnews.com/hub/apf-topnews?format=rss&p=4"
+  top: "https://apnews.com/index.rss"
 };
 
 function cleanText(text = "") {
@@ -18,7 +23,7 @@ function cleanText(text = "") {
     .trim();
 }
 
-function splitSentences(text) {
+function splitSentences(text = "") {
   return text
     .split(/(?<=[.!?])\s+/)
     .map((s) => s.trim())
@@ -33,7 +38,7 @@ function buildReadingFromItems(items) {
   const body = items
     .map((item, index) => {
       const title = cleanText(item.title || "");
-      const summary = cleanText(item.contentSnippet || "");
+      const summary = cleanText(item.contentSnippet || item.content || "");
 
       return (
         `Story ${index + 1}: ${title}. ` +
@@ -47,16 +52,14 @@ function buildReadingFromItems(items) {
     "Taken together, these developments show that the modern world is highly interconnected. " +
     "Reading real news helps you build vocabulary and understand global issues in context.";
 
-  const sources = items
-    .map((item, i) => `${i + 1}. ${item.link}`)
-    .join("\n");
+  const sources = items.map((item, i) => `${i + 1}. ${item.link}`).join("\n");
 
   return `${intro}\n\n${body}\n\n${closing}\n\n[Sources]\n${sources}`;
 }
 
 function pickBackTranslationSentences(reading) {
   const raw = splitSentences(reading).filter(
-    (s) => s.length > 50 && !s.includes("http")
+    (s) => s.length > 50 && !s.includes("http") && !s.startsWith("[Sources]")
   );
 
   const selected = [raw[1], raw[3], raw[5]].filter(Boolean).slice(0, 3);
@@ -69,7 +72,7 @@ function pickBackTranslationSentences(reading) {
 
   return selected.map((en, i) => ({
     id: i + 1,
-    korean: korean[i],
+    korean: korean[i] || "다음 문장을 영어로 바꿔 보세요.",
     english: en
   }));
 }
@@ -143,11 +146,13 @@ async function fetchNewsItems() {
       title: item.title || "",
       link: item.link || "",
       pubDate: item.pubDate || "",
-      contentSnippet: item.contentSnippet || item.content || ""
+      contentSnippet: item.contentSnippet || item.content || item.summary || ""
     }))
     .filter((i) => i.title && i.link);
 
-  if (!items.length) throw new Error("No news found");
+  if (!items.length) {
+    throw new Error("No news found");
+  }
 
   return items;
 }
@@ -162,7 +167,7 @@ async function build() {
 
   const data = {
     date: new Date().toISOString(),
-    source: "AP News",
+    source: "AP News RSS",
     headline: cleanText(items[0].title),
     reading,
     quiz,
@@ -175,7 +180,7 @@ async function build() {
     }))
   };
 
-  fs.writeFileSync("todayReading.json", JSON.stringify(data, null, 2));
+  fs.writeFileSync("todayReading.json", JSON.stringify(data, null, 2), "utf8");
   console.log("✅ todayReading.json updated");
 }
 
