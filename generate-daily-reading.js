@@ -22,17 +22,26 @@ function cleanText(text = "") {
     .replace(/\s+/g, " ")
     .trim();
 }
-function removeRepeatedSentences(text = "") {
-  const sentences = text
+
+function splitSentences(text = "") {
+  return cleanText(text)
     .split(/(?<=[.!?])\s+/)
     .map((s) => s.trim())
     .filter(Boolean);
+}
 
+function removeRepeatedSentences(text = "") {
   const seen = new Set();
   const result = [];
 
-  for (const sentence of sentences) {
-    const normalized = sentence.toLowerCase();
+  for (const sentence of splitSentences(text)) {
+    const normalized = sentence
+      .toLowerCase()
+      .replace(/["'“”‘’]/g, "")
+      .replace(/[^a-z0-9\s]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+
     if (!seen.has(normalized)) {
       seen.add(normalized);
       result.push(sentence);
@@ -41,135 +50,269 @@ function removeRepeatedSentences(text = "") {
 
   return result.join(" ");
 }
-function splitSentences(text = "") {
+
+function normalizeForCompare(text = "") {
   return text
-    .split(/(?<=[.!?])\s+/)
-    .map((s) => s.trim())
-    .filter(Boolean);
+    .toLowerCase()
+    .replace(/["'“”‘’]/g, "")
+    .replace(/[^a-z0-9\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function uniqueItems(items) {
+  const seen = new Set();
+  const result = [];
+
+  for (const item of items) {
+    const key = normalizeForCompare(item.title || "");
+    if (!key || seen.has(key)) continue;
+    seen.add(key);
+    result.push(item);
+  }
+
+  return result;
+}
+
+function isEconomyLike(item) {
+  const text = `${item.title || ""} ${item.contentSnippet || ""}`.toLowerCase();
+
+  const keywords = [
+    "economy",
+    "economic",
+    "market",
+    "markets",
+    "inflation",
+    "interest rate",
+    "federal reserve",
+    "fed",
+    "tariff",
+    "trade",
+    "jobs",
+    "labor",
+    "oil",
+    "stocks",
+    "stock",
+    "bond",
+    "bonds",
+    "consumer",
+    "prices",
+    "gdp",
+    "business",
+    "budget",
+    "bank",
+    "banks",
+    "currency",
+    "exports",
+    "imports"
+  ];
+
+  return keywords.some((keyword) => text.includes(keyword));
+}
+
+function chooseThreeItems(items) {
+  const economyItems = items.filter(isEconomyLike);
+  const others = items.filter((item) => !isEconomyLike(item));
+  const picked = [];
+
+  if (economyItems.length > 0) picked.push(economyItems[0]);
+
+  for (const item of [...others, ...economyItems.slice(1)]) {
+    if (picked.length >= 3) break;
+    if (!picked.find((p) => p.link === item.link)) {
+      picked.push(item);
+    }
+  }
+
+  return picked.slice(0, 3);
+}
+
+function shortenSummary(text = "", maxSentences = 4) {
+  return splitSentences(text).slice(0, maxSentences).join(" ");
+}
+
+function mergeTitleAndSummary(item) {
+  const title = cleanText(item.title || "");
+  const summary = shortenSummary(
+    item.contentSnippet || item.content || item.summary || "",
+    4
+  );
+
+  if (!summary) return title;
+
+  const titleNormalized = normalizeForCompare(title);
+  const summaryNormalized = normalizeForCompare(summary);
+
+  if (titleNormalized && summaryNormalized.includes(titleNormalized)) {
+    return removeRepeatedSentences(summary);
+  }
+
+  return removeRepeatedSentences(`${title}. ${summary}`);
 }
 
 function buildReadingFromItems(items) {
-  const intro =
-    "Today’s reading is based on several major international headlines. " +
-    "This passage connects key developments to help you understand the global context.";
+  const selected = chooseThreeItems(items);
 
-  const body = items
-  .map((item, index) => {
-    const title = cleanText(item.title || "");
-    const summary = cleanText(item.contentSnippet || item.content || "");
-
-    const titleIncluded =
-      summary.toLowerCase().includes(title.toLowerCase());
-
-    const baseText = titleIncluded
-      ? `${summary} This story shows how global events can quickly affect people across countries.`
-      : `${title}. ${summary} This story shows how global events can quickly affect people across countries.`;
-
-    return `Story ${index + 1}: ${removeRepeatedSentences(baseText)}`;
-  })
-  .join("\n\n");
-
-  const closing =
-    "Taken together, these developments show that the modern world is highly interconnected. " +
-    "Reading real news helps you build vocabulary and understand global issues in context.";
-
-  const sources = items.map((item, i) => `${i + 1}. ${item.link}`).join("\n");
-
-  return `${intro}\n\n${body}\n\n${closing}\n\n[Sources]\n${sources}`;
+  return selected
+    .map((item) => mergeTitleAndSummary(item))
+    .filter(Boolean)
+    .join("\n\n");
 }
 
-function pickBackTranslationSentences(reading) {
-  const raw = splitSentences(reading).filter(
-    (s) => s.length > 50 && !s.includes("http") && !s.startsWith("[Sources]")
-  );
+function buildBackTranslationSentences(reading) {
+  const candidates = splitSentences(reading).filter((sentence) => sentence.length > 70);
+  const selected = [candidates[0], candidates[2], candidates[4]]
+    .filter(Boolean)
+    .slice(0, 3);
 
-  const selected = [raw[1], raw[3], raw[5]].filter(Boolean).slice(0, 3);
-
-  const korean = [
-    "오늘의 리딩은 여러 국제 뉴스 핵심 이슈를 바탕으로 구성되어 있다.",
-    "이 뉴스는 한 국가를 넘어 많은 사람들에게 영향을 줄 수 있다.",
-    "실제 뉴스를 읽는 것은 어휘와 배경지식을 함께 키우는 데 도움이 된다."
+  const koreanPrompts = [
+    "첫 번째 핵심 뉴스 문장을 영어로 써 보세요.",
+    "두 번째 핵심 뉴스 문장을 영어로 써 보세요.",
+    "세 번째 핵심 뉴스 문장을 영어로 써 보세요."
   ];
 
-  return selected.map((en, i) => ({
-    id: i + 1,
-    korean: korean[i] || "다음 문장을 영어로 바꿔 보세요.",
-    english: en
+  return selected.map((english, index) => ({
+    id: index + 1,
+    korean: koreanPrompts[index],
+    english
   }));
 }
 
+function pickSummaryWords(reading) {
+  const words = cleanText(reading)
+    .toLowerCase()
+    .match(/[a-z][a-z-]{3,}/g) || [];
+
+  const banned = new Set([
+    "that","with","from","this","have","will","they","their","about","into",
+    "after","before","while","where","which","across","would","could","should",
+    "there","because","through","today","major","headline","headlines"
+  ]);
+
+  const freq = new Map();
+
+  for (const word of words) {
+    if (banned.has(word)) continue;
+    freq.set(word, (freq.get(word) || 0) + 1);
+  }
+
+  return [...freq.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([word]) => word)
+    .slice(0, 12);
+}
+
+function buildSummaryData(reading) {
+  const sentences = splitSentences(reading);
+  const summaryBase = sentences.slice(0, 3).join(" ");
+  const pool = pickSummaryWords(reading);
+
+  const answers = [];
+  let clozeText = summaryBase;
+
+  for (const word of pool) {
+    const regex = new RegExp(`\\b${word}\\b`, "i");
+    if (answers.length >= 3) break;
+    if (regex.test(clozeText)) {
+      clozeText = clozeText.replace(regex, `(${word})`);
+      answers.push(word);
+    }
+  }
+
+  const fallbackAnswers = answers.length ? answers : pool.slice(0, 3);
+
+  const distractorPool = pool.filter((word) => !fallbackAnswers.includes(word));
+  const summaryQuiz = fallbackAnswers.map((answer, index) => {
+    const wrongs = distractorPool
+      .filter((w) => w !== answer)
+      .slice(index * 3, index * 3 + 3);
+
+    const options = [answer, ...wrongs].slice(0, 4);
+
+    while (options.length < 4) {
+      options.push(`option${options.length + 1}`);
+    }
+
+    return {
+      blank: index + 1,
+      answer,
+      options: options.sort(() => Math.random() - 0.5)
+    };
+  });
+
+  return {
+    text: clozeText,
+    quiz: summaryQuiz
+  };
+}
+
 function buildQuiz(items) {
-  const firstTitle = cleanText(items[0]?.title || "the main headline");
+  const chosen = chooseThreeItems(items);
+  const firstTitle = cleanText(chosen[0]?.title || "the first headline");
+  const secondTitle = cleanText(chosen[1]?.title || "the second headline");
 
   return [
     {
-      q: "What is the main purpose of this passage?",
-      options: [
-        "To describe fiction",
-        "To connect real news stories",
-        "To teach grammar only",
-        "To advertise"
-      ],
-      answer: 1
-    },
-    {
-      q: "Why do these stories matter?",
-      options: [
-        "They affect only one city",
-        "They influence people globally",
-        "They are only for fun",
-        "They are outdated"
-      ],
-      answer: 1
-    },
-    {
-      q: "Which headline appeared?",
+      q: "Which headline appeared in today’s reading?",
       options: [
         firstTitle,
-        "School sports day",
-        "Food blog review",
-        "Novel release"
+        "A local school festival",
+        "A restaurant review",
+        "A fictional movie release"
       ],
       answer: 0
     },
     {
-      q: "What is a benefit of reading news?",
+      q: "How many news stories are mainly included in the reading?",
+      options: ["One", "Two", "Three", "Five"],
+      answer: 2
+    },
+    {
+      q: "Which of the following also appeared in the reading?",
       options: [
-        "No need to study",
-        "Build vocabulary",
-        "Perfect pronunciation",
-        "Skip learning"
+        secondTitle,
+        "A travel diary entry",
+        "A recipe update",
+        "A sports rumor"
+      ],
+      answer: 0
+    },
+    {
+      q: "What is the reading mainly made of?",
+      options: [
+        "General commentary",
+        "News summaries",
+        "Grammar explanations",
+        "Fictional scenes"
       ],
       answer: 1
     },
     {
-      q: "The world is described as:",
-      options: ["Isolated", "Interconnected", "Simple", "Static"],
-      answer: 1
+      q: "What kind of article is prioritized among the three stories?",
+      options: [
+        "Entertainment",
+        "Sports",
+        "Economy-related news",
+        "Weather only"
+      ],
+      answer: 2
     }
   ];
-}
-
-function buildSummary() {
-  return (
-    "The passage highlights how global events are (interconnected). " +
-    "Reading real news helps improve (vocabulary) and understand major (issues) " +
-    "within a broader (context)."
-  );
 }
 
 async function fetchNewsItems() {
   const feed = await parser.parseURL(FEEDS.top);
 
-  const items = (feed.items || [])
-    .slice(0, 5)
-    .map((item) => ({
-      title: item.title || "",
-      link: item.link || "",
-      pubDate: item.pubDate || "",
-      contentSnippet: item.contentSnippet || item.content || item.summary || ""
-    }))
-    .filter((i) => i.title && i.link);
+  const rawItems = (feed.items || []).map((item) => ({
+    title: item.title || "",
+    link: item.link || "",
+    pubDate: item.pubDate || "",
+    contentSnippet: item.contentSnippet || item.content || item.summary || ""
+  }));
+
+  const items = uniqueItems(rawItems)
+    .filter((item) => item.title && item.link)
+    .slice(0, 8);
 
   if (!items.length) {
     throw new Error("No news found");
@@ -180,24 +323,25 @@ async function fetchNewsItems() {
 
 async function build() {
   const items = await fetchNewsItems();
-
+  const chosen = chooseThreeItems(items);
   const reading = buildReadingFromItems(items);
-  const sentences = pickBackTranslationSentences(reading);
+  const summaryData = buildSummaryData(reading);
+  const sentences = buildBackTranslationSentences(reading);
   const quiz = buildQuiz(items);
-  const summary = buildSummary();
 
   const data = {
     date: new Date().toISOString(),
     source: "PBS News RSS",
-    headline: cleanText(items[0].title),
+    headline: cleanText(chosen[0]?.title || items[0]?.title || "Daily News"),
     reading,
     quiz,
-    summary,
+    summary: summaryData.text,
+    summaryQuiz: summaryData.quiz,
     sentences,
-    newsItems: items.map((i) => ({
-      title: cleanText(i.title),
-      link: i.link,
-      pubDate: i.pubDate
+    newsItems: chosen.map((item) => ({
+      title: cleanText(item.title),
+      link: item.link,
+      pubDate: item.pubDate
     }))
   };
 
