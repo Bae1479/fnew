@@ -45,6 +45,65 @@
       "literal": "Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
     }
   ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "Today's reading brings together several major developments from recent international headlines.",
+      "literal": "~에day's read~에서g br~에서gs ~에ger several major developments from recent ~에서ternational headl~에서es."
+    },
+    {
+      "id": 2,
+      "text": "First, Talks are expected between the US and Iran in Islamabad.",
+      "literal": "First, Talks 이다 expected between  US 그리고 Iran ~에서 이다lamabad."
+    },
+    {
+      "id": 3,
+      "text": "This development is important because it may influence broader discussions.",
+      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions."
+    },
+    {
+      "id": 4,
+      "text": "Second, Global inflation continues to affect borrowing costs worldwide.",
+      "literal": "Second, Global ~에서flation cont~에서ues ~에 affect borrow~에서g costs worldwide."
+    },
+    {
+      "id": 5,
+      "text": "This situation reflects wider global trends across regions.",
+      "literal": "Th이다 situation reflects wider global trends across regions."
+    },
+    {
+      "id": 6,
+      "text": "Third, AI investment is rapidly increasing across major economies.",
+      "literal": "Third, AI ~에서vestment 이다 rapidly ~에서creas~에서g across major economies."
+    },
+    {
+      "id": 7,
+      "text": "It also shows how different events are interconnected.",
+      "literal": "It also shows how different events 이다 ~에서terconnected."
+    },
+    {
+      "id": 8,
+      "text": "Overall, these stories show how global events are connected across politics, economics, and society.",
+      "literal": "Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
+    }
+  ],
+  "sentencePractice": [
+    {
+      "id": 1,
+      "text": "Today's reading brings together several major developments from recent international headlines.",
+      "literal": "~에day's read~에서g br~에서gs ~에ger several major developments from recent ~에서ternational headl~에서es."
+    },
+    {
+      "id": 5,
+      "text": "This situation reflects wider global trends across regions.",
+      "literal": "Th이다 situation reflects wider global trends across regions."
+    },
+    {
+      "id": 8,
+      "text": "Overall, these stories show how global events are connected across politics, economics, and society.",
+      "literal": "Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
+    }
+  ],
   "questions": [
     {
       "id": 1,
