@@ -29,7 +29,7 @@ const result = {
   allSentences: allSentenceTexts.map((text, i) => ({
     id: i + 1,
     text,
-    literal: "" // 👉 번역 비활성 (안정화)
+ literal: `[해석 필요] ${text}` 👉 번역 비활성 (안정화)
   })),
 
   sentencePractice: [
