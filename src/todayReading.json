@@ -1,7 +1,7 @@
 {
   "date": "2026-04-23",
   "title": "Global Developments Overview",
-  "passage": "Today's reading brings together several major developments from recent international headlines. First, Talks are expected between the US and Iran in Islamabad. This development is important because it may influence broader discussions. Second, Global inflation continues to affect borrowing costs worldwide. This situation reflects wider global trends across regions. Third, AI investment is rapidly increasing across major economies. It also shows how different events are interconnected. Overall, these stories show how global events are connected across politics, economics, and society.",
+  "passage": "Today's reading brings together several major developments from recent international headlines. First, Talks are expected between the US and Iran in Islamabad. This development is important because it may influence broader discussions. Second, Global inflation continues to affect borrowing costs worldwide. This situation reflects wider global trends across regions. Third, AI investment is rapidly increasing across major economies. It also shows how different events are interconnected. Third, Energy infrastructure is becoming a critical issue in AI development. This development is important because it may influence broader discussions. Third, Semiconductor demand is rising due to advances in technology. This situation reflects wider global trends across regions. Third, Geopolitical tensions are influencing global supply chains. It also shows how different events are interconnected. Overall, these stories show how global events are connected across politics, economics, and society.",
   "modelSummary": "This reading brings together several recent global developments and explains how they are connected within a broader context. It shows that political, economic, and social events are not isolated, but instead influence one another in meaningful ways. By examining these relationships, the passage highlights the importance of understanding patterns and connections rather than focusing on single events.",
   "allSentences": [
     {
@@ -41,6 +41,36 @@
     },
     {
       "id": 8,
+      "text": "Third, Energy infrastructure is becoming a critical issue in AI development.",
+      "literal": "Third, Energy ~에서frastructure 이다 becom~에서g a critical 이다sue ~에서 AI development."
+    },
+    {
+      "id": 9,
+      "text": "This development is important because it may influence broader discussions.",
+      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions."
+    },
+    {
+      "id": 10,
+      "text": "Third, Semiconductor demand is rising due to advances in technology.",
+      "literal": "Third, Semiconduc~에r dem그리고 이다 r이다~에서g due ~에 advances ~에서 technology."
+    },
+    {
+      "id": 11,
+      "text": "This situation reflects wider global trends across regions.",
+      "literal": "Th이다 situation reflects wider global trends across regions."
+    },
+    {
+      "id": 12,
+      "text": "Third, Geopolitical tensions are influencing global supply chains.",
+      "literal": "Third, Geopolitical tensions 이다 ~에서fluenc~에서g global supply cha~에서s."
+    },
+    {
+      "id": 13,
+      "text": "It also shows how different events are interconnected.",
+      "literal": "It also shows how different events 이다 ~에서terconnected."
+    },
+    {
+      "id": 14,
       "text": "Overall, these stories show how global events are connected across politics, economics, and society.",
       "literal": "Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
     }
@@ -83,6 +113,36 @@
     },
     {
       "id": 8,
+      "text": "Third, Energy infrastructure is becoming a critical issue in AI development.",
+      "literal": "Third, Energy ~에서frastructure 이다 becom~에서g a critical 이다sue ~에서 AI development."
+    },
+    {
+      "id": 9,
+      "text": "This development is important because it may influence broader discussions.",
+      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions."
+    },
+    {
+      "id": 10,
+      "text": "Third, Semiconductor demand is rising due to advances in technology.",
+      "literal": "Third, Semiconduc~에r dem그리고 이다 r이다~에서g due ~에 advances ~에서 technology."
+    },
+    {
+      "id": 11,
+      "text": "This situation reflects wider global trends across regions.",
+      "literal": "Th이다 situation reflects wider global trends across regions."
+    },
+    {
+      "id": 12,
+      "text": "Third, Geopolitical tensions are influencing global supply chains.",
+      "literal": "Third, Geopolitical tensions 이다 ~에서fluenc~에서g global supply cha~에서s."
+    },
+    {
+      "id": 13,
+      "text": "It also shows how different events are interconnected.",
+      "literal": "It also shows how different events 이다 ~에서terconnected."
+    },
+    {
+      "id": 14,
       "text": "Overall, these stories show how global events are connected across politics, economics, and society.",
       "literal": "Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
     }
@@ -94,12 +154,12 @@
       "literal": "~에day's read~에서g br~에서gs ~에ger several major developments from recent ~에서ternational headl~에서es."
     },
     {
-      "id": 5,
-      "text": "This situation reflects wider global trends across regions.",
-      "literal": "Th이다 situation reflects wider global trends across regions."
+      "id": 8,
+      "text": "Third, Energy infrastructure is becoming a critical issue in AI development.",
+      "literal": "Third, Energy ~에서frastructure 이다 becom~에서g a critical 이다sue ~에서 AI development."
     },
     {
-      "id": 8,
+      "id": 14,
       "text": "Overall, these stories show how global events are connected across politics, economics, and society.",
       "literal": "Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
     }
