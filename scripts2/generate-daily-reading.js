@@ -47,7 +47,7 @@ const body = items
       "It also shows how different events are interconnected."
     ];
 
-    const extra = extras[i % extras.length];
+    const extra3 = extras[(i + 2) % extras.length];
 
     return `const extra2 = extras[(i + 1) % extras.length];
 const extra3 = extras[(i + 2) % extras.length];
