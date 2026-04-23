@@ -1,6 +1,6 @@
 import fs from "fs";
 
-// 👉 리딩 본문 (완성형)
+// 👉 리딩 본문 (완성형)literal: `[해석 필요] ${text}`
 const passage = `
 Today's reading brings together several major developments from recent international news, offering a broader view of how global events are interconnected. Rather than focusing on isolated headlines, it encourages readers to think about the underlying patterns that link politics, economics, and technology.
 
@@ -29,8 +29,8 @@ const result = {
   allSentences: allSentenceTexts.map((text, i) => ({
     id: i + 1,
     text,
- literal: `[해석 필요] ${text}` 👉 번역 비활성 (안정화)
-  })),
+literal: `[해석 필요] ${text}`
+  }),
 
   sentencePractice: [
     {
