@@ -1,7 +1,26 @@
 import fs from "fs";
 
 // 👉 직역 함수 (파일 최상단에 1번만)
-const literalMap = (text) => {
+const translate = (text) => {
+  const map = {
+    "Today's reading brings together several major developments from recent international news, offering a broader view of how global events are interconnected.":
+      "오늘의 글은 최근 국제 뉴스의 주요 흐름들을 모아, 세계 사건들이 어떻게 서로 연결되어 있는지 더 넓은 시각에서 보여준다.",
+
+    "Rather than focusing on isolated headlines, it encourages readers to think about the underlying patterns that link politics, economics, and technology.":
+      "개별적인 뉴스에만 집중하기보다는, 정치·경제·기술을 연결하는 근본적인 흐름을 생각해보도록 독자를 이끈다.",
+
+    "To begin with, talks are expected between the United States and Iran in Islamabad.":
+      "먼저, 미국과 이란 간의 회담이 이슬라마바드에서 열릴 것으로 예상된다.",
+
+    "These discussions are being closely watched because they may influence regional stability and diplomatic relations in the Middle East.":
+      "이 논의는 중동 지역의 안정과 외교 관계에 영향을 줄 수 있기 때문에 국제 사회의 주목을 받고 있다.",
+
+    "Overall, these developments show that global events are deeply interconnected.":
+      "전반적으로 이러한 흐름은 세계 사건들이 깊게 연결되어 있음을 보여준다."
+  };
+
+  return map[text] || text;
+};
   // 간단한 자연어 해석 (구조 유지)
   return text
     .replace(/^To begin with, /, "먼저, ")
