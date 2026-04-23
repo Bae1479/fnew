@@ -39,20 +39,21 @@ const intro = "Today's reading brings together several major developments from r
 
 const body = items
   .map((text, i) => {
-    const label = i === 0 ? "First" : i === 1 ? "Second" : "Third";
+    const label = i === 0 ? "First" : i === 1 ? "Second" : "Additionally";
 
     const extras = [
-      "This development is important because it may influence broader discussions.",
-      "This situation reflects wider global trends across regions.",
-      "It also shows how different events are interconnected."
+      "This development is important because it may influence broader discussions across regions.",
+      "This situation reflects wider global trends that continue to evolve over time.",
+      "It also shows how different events are interconnected in complex ways.",
+      "These changes may have long-term effects on economic and political stability.",
+      "Experts suggest that these patterns are becoming more significant in global analysis."
     ];
 
+    const extra = extras[i % extras.length];
+    const extra2 = extras[(i + 1) % extras.length];
     const extra3 = extras[(i + 2) % extras.length];
 
-    return `const extra2 = extras[(i + 1) % extras.length];
-const extra3 = extras[(i + 2) % extras.length];
-
-return `${label}, ${text} ${extra} ${extra2} ${extra3}`;
+    return `${label}, ${text} ${extra} ${extra2} ${extra3}`;
   })
   .join(" ");
 
