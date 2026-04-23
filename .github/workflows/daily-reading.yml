@@ -21,7 +21,7 @@ jobs:
           node-version: "20"
 
       - name: Run generator
-        run: node scripts2/generate-daily-reading.js
+        srun: node generate-daily-reading.js
 
       - name: Commit updated JSON
         run: |
