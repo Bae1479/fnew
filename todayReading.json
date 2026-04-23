@@ -1,0 +1,103 @@
+{
+  "date": "2026-04-23T13:27:44.362Z",
+  "source": "PBS News RSS",
+  "headline": "UK Parliament passes bill that will ban cigarette purchases for younger generations",
+  "reading": "Today’s reading is based on several major international headlines. This passage connects key developments to help you understand the global context.\n\nStory 1: UK Parliament passes bill that will ban cigarette purchases for younger generations. Children born after Dec. 31, 2008 will be banned from ever buying cigarettes under the Tobacco and Vapes Bill. This story shows how global events can quickly affect people across countries.\n\nStory 2: Searchers find body of 1 of 6 missing crew from U.S.-registered ship hit by Typhoon Sinlaku. U.S. Air Force divers used an underwater drone on Tuesday to search inside the overturned ship, the U.S. Coast Guard said in a news release. Divers from Japan's coast guard further examined the ship, called the Mariana, but didn't find the other five, it said. This story shows how global events can quickly affect people across countries.\n\nStory 3: Trump Media replaces Nunes as Truth Social CEO after stock plunge that wiped out billions. The Trump business behind Truth Social is replacing a former congressman and big supporter of the U.S. president as the leader of the social media platform after a stock collapse that wiped out billions in investor wealth. This story shows how global events can quickly affect people across countries.\n\nStory 4: Pope Leo calls for better prison conditions during Equatorial Guinea visit at end of Africa tour. Leo's stop, at the end of his four-nation African tour, took on added significance after it emerged that Equatorial Guinea was one of several African nations that have been paid millions of dollars in controversial deals with the Trump administration to receive migrants deported from the U.S. to countries other than their own. This story shows how global events can quickly affect people across countries.\n\nStory 5: 4 takeaways from Health Secretary RFK Jr.'s gauntlet of congressional hearings. In his testimony to various committees in the Senate and the House over multiple days, Kennedy was tasked with defending President Donald Trump's proposed 2027 budget, which would boost defense spending while cutting more than 12% of funding from the Department of Health and Human Services. This story shows how global events can quickly affect people across countries.\n\nTaken together, these developments show that the modern world is highly interconnected. Reading real news helps you build vocabulary and understand global issues in context.\n\n[Sources]\n1. https://www.pbs.org/newshour/world/uk-parliament-passes-bill-that-will-ban-cigarette-purchases-for-younger-generations\n2. https://www.pbs.org/newshour/world/searchers-find-body-of-1-of-6-missing-crew-from-u-s-registered-ship-hit-by-typhoon-sinlaku\n3. https://www.pbs.org/newshour/politics/trump-media-replaces-nunes-as-truth-social-ceo-after-stock-plunge-that-wiped-out-billions\n4. https://www.pbs.org/newshour/world/pope-leo-calls-for-better-prison-conditions-during-equatorial-guinea-visit-at-end-of-africa-tour\n5. https://www.pbs.org/newshour/politics/4-takeaways-from-health-secretary-kennedys-gauntlet-of-congressional-hearings",
+  "quiz": [
+    {
+      "q": "What is the main purpose of this passage?",
+      "options": [
+        "To describe fiction",
+        "To connect real news stories",
+        "To teach grammar only",
+        "To advertise"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why do these stories matter?",
+      "options": [
+        "They affect only one city",
+        "They influence people globally",
+        "They are only for fun",
+        "They are outdated"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Which headline appeared?",
+      "options": [
+        "UK Parliament passes bill that will ban cigarette purchases for younger generations",
+        "School sports day",
+        "Food blog review",
+        "Novel release"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is a benefit of reading news?",
+      "options": [
+        "No need to study",
+        "Build vocabulary",
+        "Perfect pronunciation",
+        "Skip learning"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "The world is described as:",
+      "options": [
+        "Isolated",
+        "Interconnected",
+        "Simple",
+        "Static"
+      ],
+      "answer": 1
+    }
+  ],
+  "summary": "The passage highlights how global events are (interconnected). Reading real news helps improve (vocabulary) and understand major (issues) within a broader (context).",
+  "sentences": [
+    {
+      "id": 1,
+      "korean": "오늘의 리딩은 여러 국제 뉴스 핵심 이슈를 바탕으로 구성되어 있다.",
+      "english": "This passage connects key developments to help you understand the global context."
+    },
+    {
+      "id": 2,
+      "korean": "이 뉴스는 한 국가를 넘어 많은 사람들에게 영향을 줄 수 있다.",
+      "english": "31, 2008 will be banned from ever buying cigarettes under the Tobacco and Vapes Bill."
+    },
+    {
+      "id": 3,
+      "korean": "실제 뉴스를 읽는 것은 어휘와 배경지식을 함께 키우는 데 도움이 된다.",
+      "english": "Story 2: Searchers find body of 1 of 6 missing crew from U.S.-registered ship hit by Typhoon Sinlaku."
+    }
+  ],
+  "newsItems": [
+    {
+      "title": "UK Parliament passes bill that will ban cigarette purchases for younger generations",
+      "link": "https://www.pbs.org/newshour/world/uk-parliament-passes-bill-that-will-ban-cigarette-purchases-for-younger-generations",
+      "pubDate": "Wed, 22 Apr 2026 20:26:22 -0400"
+    },
+    {
+      "title": "Searchers find body of 1 of 6 missing crew from U.S.-registered ship hit by Typhoon Sinlaku",
+      "link": "https://www.pbs.org/newshour/world/searchers-find-body-of-1-of-6-missing-crew-from-u-s-registered-ship-hit-by-typhoon-sinlaku",
+      "pubDate": "Wed, 22 Apr 2026 20:19:57 -0400"
+    },
+    {
+      "title": "Trump Media replaces Nunes as Truth Social CEO after stock plunge that wiped out billions",
+      "link": "https://www.pbs.org/newshour/politics/trump-media-replaces-nunes-as-truth-social-ceo-after-stock-plunge-that-wiped-out-billions",
+      "pubDate": "Wed, 22 Apr 2026 20:00:09 -0400"
+    },
+    {
+      "title": "Pope Leo calls for better prison conditions during Equatorial Guinea visit at end of Africa tour",
+      "link": "https://www.pbs.org/newshour/world/pope-leo-calls-for-better-prison-conditions-during-equatorial-guinea-visit-at-end-of-africa-tour",
+      "pubDate": "Wed, 22 Apr 2026 19:43:01 -0400"
+    },
+    {
+      "title": "4 takeaways from Health Secretary RFK Jr.'s gauntlet of congressional hearings",
+      "link": "https://www.pbs.org/newshour/politics/4-takeaways-from-health-secretary-kennedys-gauntlet-of-congressional-hearings",
+      "pubDate": "Wed, 22 Apr 2026 19:20:33 -0400"
+    }
+  ]
+}
