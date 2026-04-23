@@ -49,7 +49,10 @@ const body = items
 
     const extra = extras[i % extras.length];
 
-    return `${label}, ${text} ${extra}`;
+    return `const extra2 = extras[(i + 1) % extras.length];
+const extra3 = extras[(i + 2) % extras.length];
+
+return `${label}, ${text} ${extra} ${extra2} ${extra3}`;
   })
   .join(" ");
 
