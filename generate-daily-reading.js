@@ -54,17 +54,20 @@ function buildReadingFromItems(items) {
     "This passage connects key developments to help you understand the global context.";
 
   const body = items
-    .map((item, index) => {
-      const title = cleanText(item.title || "");
-      const summary = cleanText(item.contentSnippet || item.content || "");
+  .map((item, index) => {
+    const title = cleanText(item.title || "");
+    const summary = cleanText(item.contentSnippet || item.content || "");
 
-      return (
-        `Story ${index + 1}: ${title}. ` +
-        `${summary} ` +
-        "This story shows how global events can quickly affect people across countries."
-      );
-    })
-    .join("\n\n");
+    const titleIncluded =
+      summary.toLowerCase().includes(title.toLowerCase());
+
+    const baseText = titleIncluded
+      ? `${summary} This story shows how global events can quickly affect people across countries.`
+      : `${title}. ${summary} This story shows how global events can quickly affect people across countries.`;
+
+    return `Story ${index + 1}: ${removeRepeatedSentences(baseText)}`;
+  })
+  .join("\n\n");
 
   const closing =
     "Taken together, these developments show that the modern world is highly interconnected. " +
