@@ -1,7 +1,7 @@
 {
   "date": "2026-04-23",
   "title": "Global Developments Overview",
-  "passage": "Today's reading brings together several major developments from recent international headlines. First, Talks are expected between the US and Iran in Islamabad. This development is important because it may influence broader discussions. Second, Global inflation continues to affect borrowing costs worldwide. This situation reflects wider global trends across regions. Third, AI investment is rapidly increasing across major economies. It also shows how different events are interconnected. Third, Energy infrastructure is becoming a critical issue in AI development. This development is important because it may influence broader discussions. Third, Semiconductor demand is rising due to advances in technology. This situation reflects wider global trends across regions. Third, Geopolitical tensions are influencing global supply chains. It also shows how different events are interconnected. Overall, these stories show how global events are connected across politics, economics, and society.",
+  "passage": "Today's reading brings together several major developments from recent international headlines. First, Talks are expected between the US and Iran in Islamabad. This development is important because it may influence broader discussions. Second, Global inflation continues to affect borrowing costs worldwide. This situation reflects wider global trends across regions. Third, AI investment is rapidly increasing across major economies. It also shows how different events are interconnected. Third, Energy infrastructure is becoming a critical issue in AI development. This development is important because it may influence broader discussions. Third, Semiconductor demand is rising due to advances in technology. This situation reflects wider global trends across regions. Third, Geopolitical tensions are influencing global supply chains. It also shows how different events are interconnected. Third, Central banks are continuing to monitor inflation and growth risks. This development is important because it may influence broader discussions. Third, Technology companies are investing more heavily in data centers and chips. This situation reflects wider global trends across regions. Third, Governments are trying to balance economic growth with rising security concerns. It also shows how different events are interconnected. Third, Financial markets are reacting to uncertainty in trade, energy, and monetary policy. This development is important because it may influence broader discussions. Third, The spread of AI tools is increasing demand for electricity and computing power. This situation reflects wider global trends across regions. Third, Global companies are adjusting their strategies in response to changing supply chains. It also shows how different events are interconnected. Third, Political leaders are facing pressure to respond to both domestic and global challenges. This development is important because it may influence broader discussions. Third, Investors are paying closer attention to infrastructure, energy, and semiconductor trends. This situation reflects wider global trends across regions. Third, Recent developments suggest that international events increasingly affect one another. It also shows how different events are interconnected. Third, As a result, understanding world news requires attention to broader patterns and connections. This development is important because it may influence broader discussions. Third, Diplomatic negotiations continue to shape expectations about regional stability. This situation reflects wider global trends across regions. Third, At the same time, economic uncertainty is affecting consumer confidence and investment decisions. It also shows how different events are interconnected. Overall, these stories show how global events are connected across politics, economics, and society.",
   "modelSummary": "This reading brings together several recent global developments and explains how they are connected within a broader context. It shows that political, economic, and social events are not isolated, but instead influence one another in meaningful ways. By examining these relationships, the passage highlights the importance of understanding patterns and connections rather than focusing on single events.",
   "allSentences": [
     {
@@ -71,6 +71,126 @@
     },
     {
       "id": 14,
+      "text": "Third, Central banks are continuing to monitor inflation and growth risks.",
+      "literal": "Third, Central banks 이다 cont~에서u~에서g ~에 moni~에r ~에서flation 그리고 growth r이다ks."
+    },
+    {
+      "id": 15,
+      "text": "This development is important because it may influence broader discussions.",
+      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions."
+    },
+    {
+      "id": 16,
+      "text": "Third, Technology companies are investing more heavily in data centers and chips.",
+      "literal": "Third, Technology companies 이다 ~에서vest~에서g more heavily ~에서 data centers 그리고 chips."
+    },
+    {
+      "id": 17,
+      "text": "This situation reflects wider global trends across regions.",
+      "literal": "Th이다 situation reflects wider global trends across regions."
+    },
+    {
+      "id": 18,
+      "text": "Third, Governments are trying to balance economic growth with rising security concerns.",
+      "literal": "Third, Governments 이다 try~에서g ~에 balance economic growth with r이다~에서g security concerns."
+    },
+    {
+      "id": 19,
+      "text": "It also shows how different events are interconnected.",
+      "literal": "It also shows how different events 이다 ~에서terconnected."
+    },
+    {
+      "id": 20,
+      "text": "Third, Financial markets are reacting to uncertainty in trade, energy, and monetary policy.",
+      "literal": "Third, F~에서ancial markets 이다 react~에서g ~에 uncerta~에서ty ~에서 trade, energy, 그리고 monetary policy."
+    },
+    {
+      "id": 21,
+      "text": "This development is important because it may influence broader discussions.",
+      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions."
+    },
+    {
+      "id": 22,
+      "text": "Third, The spread of AI tools is increasing demand for electricity and computing power.",
+      "literal": "Third,  spread 의 AI ~에ols 이다 ~에서creas~에서g dem그리고 for electricity 그리고 comput~에서g power."
+    },
+    {
+      "id": 23,
+      "text": "This situation reflects wider global trends across regions.",
+      "literal": "Th이다 situation reflects wider global trends across regions."
+    },
+    {
+      "id": 24,
+      "text": "Third, Global companies are adjusting their strategies in response to changing supply chains.",
+      "literal": "Third, Global companies 이다 adjust~에서g ir strategies ~에서 response ~에 chang~에서g supply cha~에서s."
+    },
+    {
+      "id": 25,
+      "text": "It also shows how different events are interconnected.",
+      "literal": "It also shows how different events 이다 ~에서terconnected."
+    },
+    {
+      "id": 26,
+      "text": "Third, Political leaders are facing pressure to respond to both domestic and global challenges.",
+      "literal": "Third, Political leaders 이다 fac~에서g pressure ~에 respond ~에 both domestic 그리고 global challenges."
+    },
+    {
+      "id": 27,
+      "text": "This development is important because it may influence broader discussions.",
+      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions."
+    },
+    {
+      "id": 28,
+      "text": "Third, Investors are paying closer attention to infrastructure, energy, and semiconductor trends.",
+      "literal": "Third, ~에서ves~에rs 이다 pay~에서g closer attention ~에 ~에서frastructure, energy, 그리고 semiconduc~에r trends."
+    },
+    {
+      "id": 29,
+      "text": "This situation reflects wider global trends across regions.",
+      "literal": "Th이다 situation reflects wider global trends across regions."
+    },
+    {
+      "id": 30,
+      "text": "Third, Recent developments suggest that international events increasingly affect one another.",
+      "literal": "Third, Recent developments suggest that ~에서ternational events ~에서creas~에서gly affect one anor."
+    },
+    {
+      "id": 31,
+      "text": "It also shows how different events are interconnected.",
+      "literal": "It also shows how different events 이다 ~에서terconnected."
+    },
+    {
+      "id": 32,
+      "text": "Third, As a result, understanding world news requires attention to broader patterns and connections.",
+      "literal": "Third, As a result, underst그리고~에서g world news requires attention ~에 broader patterns 그리고 connections."
+    },
+    {
+      "id": 33,
+      "text": "This development is important because it may influence broader discussions.",
+      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions."
+    },
+    {
+      "id": 34,
+      "text": "Third, Diplomatic negotiations continue to shape expectations about regional stability.",
+      "literal": "Third, Diplomatic negotiations cont~에서ue ~에 shape expectations about regional stability."
+    },
+    {
+      "id": 35,
+      "text": "This situation reflects wider global trends across regions.",
+      "literal": "Th이다 situation reflects wider global trends across regions."
+    },
+    {
+      "id": 36,
+      "text": "Third, At the same time, economic uncertainty is affecting consumer confidence and investment decisions.",
+      "literal": "Third, At  same time, economic uncerta~에서ty 이다 affect~에서g consumer confidence 그리고 ~에서vestment dec이다ions."
+    },
+    {
+      "id": 37,
+      "text": "It also shows how different events are interconnected.",
+      "literal": "It also shows how different events 이다 ~에서terconnected."
+    },
+    {
+      "id": 38,
       "text": "Overall, these stories show how global events are connected across politics, economics, and society.",
       "literal": "Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
     }
@@ -143,6 +263,126 @@
     },
     {
       "id": 14,
+      "text": "Third, Central banks are continuing to monitor inflation and growth risks.",
+      "literal": "Third, Central banks 이다 cont~에서u~에서g ~에 moni~에r ~에서flation 그리고 growth r이다ks."
+    },
+    {
+      "id": 15,
+      "text": "This development is important because it may influence broader discussions.",
+      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions."
+    },
+    {
+      "id": 16,
+      "text": "Third, Technology companies are investing more heavily in data centers and chips.",
+      "literal": "Third, Technology companies 이다 ~에서vest~에서g more heavily ~에서 data centers 그리고 chips."
+    },
+    {
+      "id": 17,
+      "text": "This situation reflects wider global trends across regions.",
+      "literal": "Th이다 situation reflects wider global trends across regions."
+    },
+    {
+      "id": 18,
+      "text": "Third, Governments are trying to balance economic growth with rising security concerns.",
+      "literal": "Third, Governments 이다 try~에서g ~에 balance economic growth with r이다~에서g security concerns."
+    },
+    {
+      "id": 19,
+      "text": "It also shows how different events are interconnected.",
+      "literal": "It also shows how different events 이다 ~에서terconnected."
+    },
+    {
+      "id": 20,
+      "text": "Third, Financial markets are reacting to uncertainty in trade, energy, and monetary policy.",
+      "literal": "Third, F~에서ancial markets 이다 react~에서g ~에 uncerta~에서ty ~에서 trade, energy, 그리고 monetary policy."
+    },
+    {
+      "id": 21,
+      "text": "This development is important because it may influence broader discussions.",
+      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions."
+    },
+    {
+      "id": 22,
+      "text": "Third, The spread of AI tools is increasing demand for electricity and computing power.",
+      "literal": "Third,  spread 의 AI ~에ols 이다 ~에서creas~에서g dem그리고 for electricity 그리고 comput~에서g power."
+    },
+    {
+      "id": 23,
+      "text": "This situation reflects wider global trends across regions.",
+      "literal": "Th이다 situation reflects wider global trends across regions."
+    },
+    {
+      "id": 24,
+      "text": "Third, Global companies are adjusting their strategies in response to changing supply chains.",
+      "literal": "Third, Global companies 이다 adjust~에서g ir strategies ~에서 response ~에 chang~에서g supply cha~에서s."
+    },
+    {
+      "id": 25,
+      "text": "It also shows how different events are interconnected.",
+      "literal": "It also shows how different events 이다 ~에서terconnected."
+    },
+    {
+      "id": 26,
+      "text": "Third, Political leaders are facing pressure to respond to both domestic and global challenges.",
+      "literal": "Third, Political leaders 이다 fac~에서g pressure ~에 respond ~에 both domestic 그리고 global challenges."
+    },
+    {
+      "id": 27,
+      "text": "This development is important because it may influence broader discussions.",
+      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions."
+    },
+    {
+      "id": 28,
+      "text": "Third, Investors are paying closer attention to infrastructure, energy, and semiconductor trends.",
+      "literal": "Third, ~에서ves~에rs 이다 pay~에서g closer attention ~에 ~에서frastructure, energy, 그리고 semiconduc~에r trends."
+    },
+    {
+      "id": 29,
+      "text": "This situation reflects wider global trends across regions.",
+      "literal": "Th이다 situation reflects wider global trends across regions."
+    },
+    {
+      "id": 30,
+      "text": "Third, Recent developments suggest that international events increasingly affect one another.",
+      "literal": "Third, Recent developments suggest that ~에서ternational events ~에서creas~에서gly affect one anor."
+    },
+    {
+      "id": 31,
+      "text": "It also shows how different events are interconnected.",
+      "literal": "It also shows how different events 이다 ~에서terconnected."
+    },
+    {
+      "id": 32,
+      "text": "Third, As a result, understanding world news requires attention to broader patterns and connections.",
+      "literal": "Third, As a result, underst그리고~에서g world news requires attention ~에 broader patterns 그리고 connections."
+    },
+    {
+      "id": 33,
+      "text": "This development is important because it may influence broader discussions.",
+      "literal": "Th이다 development 이다 important because it may ~에서fluence broader d이다cussions."
+    },
+    {
+      "id": 34,
+      "text": "Third, Diplomatic negotiations continue to shape expectations about regional stability.",
+      "literal": "Third, Diplomatic negotiations cont~에서ue ~에 shape expectations about regional stability."
+    },
+    {
+      "id": 35,
+      "text": "This situation reflects wider global trends across regions.",
+      "literal": "Th이다 situation reflects wider global trends across regions."
+    },
+    {
+      "id": 36,
+      "text": "Third, At the same time, economic uncertainty is affecting consumer confidence and investment decisions.",
+      "literal": "Third, At  same time, economic uncerta~에서ty 이다 affect~에서g consumer confidence 그리고 ~에서vestment dec이다ions."
+    },
+    {
+      "id": 37,
+      "text": "It also shows how different events are interconnected.",
+      "literal": "It also shows how different events 이다 ~에서terconnected."
+    },
+    {
+      "id": 38,
       "text": "Overall, these stories show how global events are connected across politics, economics, and society.",
       "literal": "Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
     }
@@ -154,12 +394,12 @@
       "literal": "~에day's read~에서g br~에서gs ~에ger several major developments from recent ~에서ternational headl~에서es."
     },
     {
-      "id": 8,
-      "text": "Third, Energy infrastructure is becoming a critical issue in AI development.",
-      "literal": "Third, Energy ~에서frastructure 이다 becom~에서g a critical 이다sue ~에서 AI development."
+      "id": 20,
+      "text": "Third, Financial markets are reacting to uncertainty in trade, energy, and monetary policy.",
+      "literal": "Third, F~에서ancial markets 이다 react~에서g ~에 uncerta~에서ty ~에서 trade, energy, 그리고 monetary policy."
     },
     {
-      "id": 14,
+      "id": 38,
       "text": "Overall, these stories show how global events are connected across politics, economics, and society.",
       "literal": "Overall, se s~에ries show how global events 이다 connected across politics, economics, 그리고 society."
     }
