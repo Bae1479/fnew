@@ -22,7 +22,25 @@ function cleanText(text = "") {
     .replace(/\s+/g, " ")
     .trim();
 }
+function removeRepeatedSentences(text = "") {
+  const sentences = text
+    .split(/(?<=[.!?])\s+/)
+    .map((s) => s.trim())
+    .filter(Boolean);
 
+  const seen = new Set();
+  const result = [];
+
+  for (const sentence of sentences) {
+    const normalized = sentence.toLowerCase();
+    if (!seen.has(normalized)) {
+      seen.add(normalized);
+      result.push(sentence);
+    }
+  }
+
+  return result.join(" ");
+}
 function splitSentences(text = "") {
   return text
     .split(/(?<=[.!?])\s+/)
