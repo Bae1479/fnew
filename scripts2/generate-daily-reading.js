@@ -2,14 +2,25 @@ import fs from "fs";
 
 // 👉 직역 함수 (파일 최상단에 1번만)
 const literalMap = (text) => {
+  // 간단한 자연어 해석 (구조 유지)
   return text
-    .replace(/is/gi, "이다")
-    .replace(/are/gi, "이다")
-    .replace(/the/gi, "")
-    .replace(/and/gi, "그리고")
-    .replace(/of/gi, "의")
-    .replace(/to/gi, "~에")
-    .replace(/in/gi, "~에서");
+    .replace(/^To begin with, /, "먼저, ")
+    .replace(/^Another important issue is /, "또 다른 중요한 문제는 ")
+    .replace(/^In addition, /, "또한, ")
+    .replace(/^Overall, /, "전반적으로, ")
+    .replace(/^These developments are not independent of one another\./, "이러한 발전들은 서로 독립적인 것이 아니다.")
+    .replace(/are expected to/g, "것으로 예상된다")
+    .replace(/are being/g, "진행되고 있다")
+    .replace(/is expanding/g, "확대되고 있다")
+    .replace(/are forced to/g, "어쩔 수 없이 ~해야 한다")
+    .replace(/have a direct impact on/g, "직접적인 영향을 미친다")
+    .replace(/continue to/g, "계속해서 ~하고 있다")
+    .replace(/is attracting/g, "주목을 받고 있다")
+    .replace(/may influence/g, "영향을 미칠 수 있다")
+    .replace(/suggest that/g, "시사한다")
+    .replace(/means that/g, "의미한다")
+    .replace(/requires/g, "요구한다")
+    .replace(/\.$/, "다.");
 };
 
 // 👉 샘플 데이터 (여기 나중에 RSS로 바꿔도 됨)
