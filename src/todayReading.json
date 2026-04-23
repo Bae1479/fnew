@@ -6,84 +6,84 @@
     {
       "id": 1,
       "text": "\nToday's reading brings together several major developments from recent international news, offering a broader view of how global events are interconnected.",
-      "literal": ""
+      "literal": "오늘의 글은 최근 국제 뉴스의 주요 흐름을 종합하여, 세계 사건들이 어떻게 연결되어 있는지를 보여준다."
     },
     {
       "id": 2,
       "text": "Rather than focusing on isolated headlines, it encourages readers to think about the underlying patterns that link politics, economics, and technology.\n\nTo begin with, talks are expected between the United States and Iran in Islamabad.",
-      "literal": ""
+      "literal": "개별 뉴스에 집중하기보다, 정치·경제·기술을 연결하는 흐름을 이해하도록 돕는다."
     },
     {
       "id": 3,
       "text": "These discussions are being closely watched because they could influence regional stability and diplomatic relations in the Middle East.",
-      "literal": ""
+      "literal": "이 문장은 현재 번역이 준비 중입니다."
     },
     {
       "id": 4,
       "text": "If progress is made, it may reduce tensions and create new opportunities for cooperation.",
-      "literal": ""
+      "literal": "이 문장은 현재 번역이 준비 중입니다."
     },
     {
       "id": 5,
       "text": "However, many uncertainties remain, and the outcome is still unclear.\n\nAnother important issue is the continued impact of global inflation.",
-      "literal": ""
+      "literal": "글로벌 인플레이션은 여전히 경제 전반에 영향을 미치고 있다."
     },
     {
       "id": 6,
       "text": "Rising prices have forced central banks around the world to adjust interest rates in an attempt to control economic pressure.",
-      "literal": ""
+      "literal": "이 문장은 현재 번역이 준비 중입니다."
     },
     {
       "id": 7,
       "text": "These decisions affect not only large financial institutions but also ordinary consumers, influencing borrowing costs, housing markets, and overall spending behavior.",
-      "literal": ""
+      "literal": "이 문장은 현재 번역이 준비 중입니다."
     },
     {
       "id": 8,
       "text": "As a result, many countries are now facing the challenge of balancing economic growth with financial stability.\n\nIn addition, investment in artificial intelligence is expanding rapidly across major economies.",
-      "literal": ""
+      "literal": "인공지능 투자가 주요 국가에서 빠르게 확대되고 있다."
     },
     {
       "id": 9,
       "text": "Companies are allocating significant resources to build data centers, develop advanced semiconductors, and secure the energy needed to support large-scale computing systems.",
-      "literal": ""
+      "literal": "이 문장은 현재 번역이 준비 중입니다."
     },
     {
       "id": 10,
       "text": "While this surge in investment is driving innovation, it is also raising important questions about energy consumption and long-term sustainability.\n\nThese developments are not independent of one another.",
-      "literal": ""
+      "literal": "이 문장은 현재 번역이 준비 중입니다."
     },
     {
       "id": 11,
       "text": "Diplomatic tensions can influence economic decisions, while technological advances can reshape both political strategies and financial markets.",
-      "literal": ""
+      "literal": "이 문장은 현재 번역이 준비 중입니다."
     },
     {
       "id": 12,
       "text": "This interconnectedness means that understanding global events requires more than simply following individual stories.\n\nOverall, the reading highlights the importance of looking beyond immediate headlines and developing a deeper awareness of global patterns.",
-      "literal": ""
+      "literal": "전반적으로 이 글은 세계 사건들이 서로 긴밀하게 연결되어 있음을 강조한다."
     },
     {
       "id": 13,
       "text": "By doing so, readers can better understand not only what is happening in the world, but also why these events matter and how they may shape the future.\n.",
-      "literal": ""
+      "literal": "이 문장은 현재 번역이 준비 중입니다."
     }
   ],
   "sentencePractice": [
     {
       "id": 1,
       "text": "\nToday's reading brings together several major developments from recent international news, offering a broader view of how global events are interconnected.",
-      "literal": ""
+      "literal": "오늘의 글은 최근 국제 뉴스의 주요 흐름을 종합하여, 세계 사건들이 어떻게 연결되어 있는지를 보여준다."
     },
     {
       "id": 2,
       "text": "These decisions affect not only large financial institutions but also ordinary consumers, influencing borrowing costs, housing markets, and overall spending behavior.",
-      "literal": ""
+      "literal": "이 문장은 현재 번역이 준비 중입니다."
     },
     {
       "id": 3,
       "text": "By doing so, readers can better understand not only what is happening in the world, but also why these events matter and how they may shape the future.\n.",
-      "literal": ""
+      "literal": "이 문장은 현재 번역이 준비 중입니다."
     }
   ],
   "questions": [
@@ -143,5 +143,5 @@
       "answer": 2
     }
   ],
-  "modelSummary": "This reading explains how major global developments in politics, economics, and technology are interconnected. It highlights the importance of understanding broader patterns rather than focusing on individual events."
+  "modelSummary": "This reading explains how major global developments in politics, economics, and technology are interconnected and why understanding broader patterns is important."
 }
