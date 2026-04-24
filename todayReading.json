@@ -1,13 +1,13 @@
 {
-  "date": "2026-04-23T23:27:50.684Z",
+  "date": "2026-04-24T17:55:59.023Z",
   "source": "PBS News RSS",
-  "headline": "Kalshi fines and suspends 3 congressional candidates for betting on their own elections",
-  "reading": "Kalshi fines and suspends 3 congressional candidates for betting on their own elections. Three congressional candidates wagered on the outcome of their own elections on Kalshi, according to the prediction market, which said Wednesday that it fined and suspended the men from their platform for five years.\n\nWATCH: Trump announces Israel and Lebanon have agreed to 3-week ceasefire extension. President Donald Trump said Israel and Lebanon have agreed to extend a ceasefire between Israel and Hezbollah by three weeks after talks at the White House on Thursday.\n\nTrump in no rush to set deadline on Iran ceasefire extension. Two days after President Trump extended his two-week ceasefire with Iran, the prospect of talks is giving way to more tensions and brinksmanship from both sides. Iran released video of forces taking control of two vessels in the Strait of Hormuz, and President Trump wrote that he ordered the Navy to \"shoot and kill any boat\" that threatens the strait by laying mines. Stephanie Sy reports.",
+  "headline": "Trump administration vows crackdown on Chinese companies 'exploiting' AI models made in U.S.",
+  "reading": "Trump administration vows crackdown on Chinese companies 'exploiting' AI models made in U.S.. The memo arrives at a time when China is challenging U.S. dominance in artificial intelligence, an area where the White House says the U.S. must prevail to set global standards and reap economic and military benefits.\n\nTornado barrels through Oklahoma, damaging 40 homes and shutting down roads. Communities began cleaning up Friday after a powerful tornado in Oklahoma damaged at least 40 homes, ripping roofs off of some and reducing others to rubble in a rural community as emergency crews rescued trapped residents, authorities said.\n\nWATCH: Hegseth calls U.S. war in Iran a 'gift to the world'. Speaking to reporters at the Pentagon, Defense Secretary Pete Hegseth said the U.S. blockade of Iranian shipping will continue \"as long as it takes\" to accomplish America's \"bold and dangerous\" mission to end Iran's threat to global security.",
   "quiz": [
     {
       "q": "Which headline appeared in today’s reading?",
       "options": [
-        "Kalshi fines and suspends 3 congressional candidates for betting on their own elections",
+        "Trump administration vows crackdown on Chinese companies 'exploiting' AI models made in U.S.",
         "A local school festival",
         "A restaurant review",
         "A fictional movie release"
@@ -27,7 +27,7 @@
     {
       "q": "Which of the following also appeared in the reading?",
       "options": [
-        "WATCH: Trump announces Israel and Lebanon have agreed to 3-week ceasefire extension",
+        "Tornado barrels through Oklahoma, damaging 40 homes and shutting down roads",
         "A travel diary entry",
         "A recipe update",
         "A sports rumor"
@@ -55,36 +55,36 @@
       "answer": 2
     }
   ],
-  "summary": "Kalshi fines and suspends 3 congressional candidates for betting on their own elections. Three congressional candidates wagered on the outcome of their own elections on Kalshi, according to the prediction market, which said Wednesday that it fined and suspended the men from their platform for five years. WATCH: (trump) announces (israel) and Lebanon have agreed to 3-week (ceasefire) extension.",
+  "summary": "(trump) (administration) (vows) crackdown on Chinese companies 'exploiting' AI models made in U.S.. The memo arrives at a time when China is challenging U.S. dominance in artificial intelligence, an area where the White House says the U.S.",
   "summaryQuiz": [
     {
       "blank": 1,
       "answer": "trump",
       "options": [
-        "kalshi",
-        "iran",
-        "president",
+        "oklahoma",
+        "tornado",
+        "global",
         "trump"
       ]
     },
     {
       "blank": 2,
-      "answer": "ceasefire",
+      "answer": "administration",
       "options": [
-        "congressional",
-        "elections",
-        "candidates",
-        "ceasefire"
+        "administration",
+        "homes",
+        "said",
+        "hegseth"
       ]
     },
     {
       "blank": 3,
-      "answer": "israel",
+      "answer": "vows",
       "options": [
-        "three",
-        "lebanon",
-        "israel",
-        "said"
+        "chinese",
+        "crackdown",
+        "iran",
+        "vows"
       ]
     }
   ],
@@ -92,34 +92,34 @@
     {
       "id": 1,
       "korean": "첫 번째 핵심 뉴스 문장을 영어로 써 보세요.",
-      "english": "Kalshi fines and suspends 3 congressional candidates for betting on their own elections."
+      "english": "Trump administration vows crackdown on Chinese companies 'exploiting' AI models made in U.S.."
     },
     {
       "id": 2,
       "korean": "두 번째 핵심 뉴스 문장을 영어로 써 보세요.",
-      "english": "WATCH: Trump announces Israel and Lebanon have agreed to 3-week ceasefire extension."
+      "english": "must prevail to set global standards and reap economic and military benefits."
     },
     {
       "id": 3,
       "korean": "세 번째 핵심 뉴스 문장을 영어로 써 보세요.",
-      "english": "Two days after President Trump extended his two-week ceasefire with Iran, the prospect of talks is giving way to more tensions and brinksmanship from both sides."
+      "english": "Communities began cleaning up Friday after a powerful tornado in Oklahoma damaged at least 40 homes, ripping roofs off of some and reducing others to rubble in a rural community as emergency crews rescued trapped residents, authorities said."
     }
   ],
   "newsItems": [
     {
-      "title": "Kalshi fines and suspends 3 congressional candidates for betting on their own elections",
-      "link": "https://www.pbs.org/newshour/politics/kalshi-fines-and-suspends-3-congressional-candidates-for-betting-on-their-own-elections",
-      "pubDate": "Thu, 23 Apr 2026 19:05:03 -0400"
+      "title": "Trump administration vows crackdown on Chinese companies 'exploiting' AI models made in U.S.",
+      "link": "https://www.pbs.org/newshour/world/trump-administration-vows-crackdown-on-chinese-companies-exploiting-ai-models-made-in-u-s",
+      "pubDate": "Fri, 24 Apr 2026 12:37:58 -0400"
     },
     {
-      "title": "WATCH: Trump announces Israel and Lebanon have agreed to 3-week ceasefire extension",
-      "link": "https://www.pbs.org/newshour/politics/watch-trump-announces-israel-and-lebanon-have-agreed-to-3-week-ceasefire-extension",
-      "pubDate": "Thu, 23 Apr 2026 19:13:56 -0400"
+      "title": "Tornado barrels through Oklahoma, damaging 40 homes and shutting down roads",
+      "link": "https://www.pbs.org/newshour/nation/tornado-barrels-through-oklahoma-damaging-40-homes-and-shutting-down-roads",
+      "pubDate": "Fri, 24 Apr 2026 13:42:09 -0400"
     },
     {
-      "title": "Trump in no rush to set deadline on Iran ceasefire extension",
-      "link": "https://www.pbs.org/newshour/show/trump-in-no-rush-to-set-deadline-on-iran-ceasefire-extension",
-      "pubDate": "Thu, 23 Apr 2026 18:55:43 -0400"
+      "title": "WATCH: Hegseth calls U.S. war in Iran a 'gift to the world'",
+      "link": "https://www.pbs.org/newshour/world/watch-hegseth-calls-u-s-war-in-iran-a-gift-to-the-world",
+      "pubDate": "Fri, 24 Apr 2026 11:40:57 -0400"
     }
   ]
 }
