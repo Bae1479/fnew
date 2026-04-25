@@ -167,34 +167,146 @@ function buildBackTranslationSentences(reading) {
 }
 
 function buildSummaryData(reading) {
-  const sentences = splitSentences(reading);
-  let summary = sentences.slice(0, 4).join(" ");
+  const sentences = splitSentences(reading).filter((sentence) => {
+    const wordCount = sentence.split(/\s+/).length;
+    return wordCount >= 9 && wordCount <= 28;
+  });
 
-  const words = summary.match(/[a-zA-Z]{5,}/g) || [];
   const banned = new Set([
     "today", "reading", "focus", "these", "factors", "central", "issue",
-    "because", "which", "their", "people", "about", "often", "other"
+    "because", "which", "their", "people", "about", "often", "other",
+    "this", "that", "when", "where", "while", "with", "from", "into",
+    "there", "have", "will", "would", "could", "should", "also",
+    "more", "only", "some", "many", "area", "areas", "important"
   ]);
 
-  const unique = [...new Set(words.map((w) => w.toLowerCase()))].filter(
-    (w) => !banned.has(w)
+  const priorityWords = [
+    "inflation",
+    "rates",
+    "markets",
+    "borrowing",
+    "spending",
+    "expectations",
+    "consumers",
+    "policy",
+    "trust",
+    "institutions",
+    "decisions",
+    "technology",
+    "innovation",
+    "research",
+    "communication",
+    "diplomacy",
+    "conflict",
+    "security",
+    "governments",
+    "pressure"
+  ];
+
+  function getCandidateWords(sentence) {
+    const words = sentence.match(/\b[a-zA-Z][a-zA-Z-]{4,}\b/g) || [];
+
+    return words
+      .map((word) => word.toLowerCase())
+      .filter((word, index, arr) => arr.indexOf(word) === index)
+      .filter((word) => !banned.has(word))
+      .filter((word) => {
+        const position = sentence.toLowerCase().indexOf(word);
+        const ratio = position / Math.max(sentence.length, 1);
+        return ratio > 0.18 && ratio < 0.82;
+      })
+      .sort((a, b) => {
+        const aPriority = priorityWords.includes(a) ? 1 : 0;
+        const bPriority = priorityWords.includes(b) ? 1 : 0;
+        return bPriority - aPriority;
+      });
+  }
+
+  const chosen = [];
+  const usedWords = new Set();
+
+  for (const sentence of sentences) {
+    if (chosen.length >= 3) break;
+
+    const candidates = getCandidateWords(sentence);
+    const word = candidates.find((candidate) => !usedWords.has(candidate));
+
+    if (!word) continue;
+
+    chosen.push({
+      sentence,
+      answer: word
+    });
+
+    usedWords.add(word);
+  }
+
+  const fallbackSentences = splitSentences(reading).slice(0, 3);
+
+  while (chosen.length < 3 && fallbackSentences[chosen.length]) {
+    const sentence = fallbackSentences[chosen.length];
+    const candidates = getCandidateWords(sentence);
+    const word = candidates.find((candidate) => !usedWords.has(candidate));
+
+    if (word) {
+      chosen.push({
+        sentence,
+        answer: word
+      });
+      usedWords.add(word);
+    } else {
+      break;
+    }
+  }
+
+  const summarySentences = chosen.map((item) =>
+    item.sentence.replace(
+      new RegExp(`\\b${item.answer}\\b`, "i"),
+      `(${item.answer})`
+    )
   );
 
-  const answers = unique.slice(0, 3);
+  const allCandidateWords = sentences
+    .flatMap(getCandidateWords)
+    .filter((word, index, arr) => arr.indexOf(word) === index)
+    .filter((word) => !usedWords.has(word));
 
-  answers.forEach((word) => {
-    summary = summary.replace(new RegExp(`\\b${word}\\b`, "i"), `(${word})`);
+  const fallbackOptions = [
+    "policy",
+    "market",
+    "public",
+    "change",
+    "pressure",
+    "decision",
+    "growth",
+    "system",
+    "future"
+  ];
+
+  const summaryQuiz = chosen.map((item, index) => {
+    const distractors = allCandidateWords
+      .filter((word) => word !== item.answer)
+      .slice(index * 3, index * 3 + 3);
+
+    const options = [item.answer, ...distractors].slice(0, 4);
+
+    for (const fallback of fallbackOptions) {
+      if (options.length >= 4) break;
+      if (!options.includes(fallback) && fallback !== item.answer) {
+        options.push(fallback);
+      }
+    }
+
+    return {
+      blank: index + 1,
+      answer: item.answer,
+      options: options.sort(() => Math.random() - 0.5)
+    };
   });
 
   return {
-    text: summary,
-    quiz: answers.map((a, i) => ({
-      blank: i + 1,
-      answer: a,
-      options: [a, ...unique.filter((w) => w !== a).slice(i + 1, i + 4)]
-        .slice(0, 4)
-        .sort(() => Math.random() - 0.5)
-    }))
+    text: summarySentences.join(" "),
+    quiz: summaryQuiz
   };
 }
 
