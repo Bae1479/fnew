@@ -357,58 +357,222 @@ function buildBackTranslationSentences(reading, topic) {
   ];
 }
 
+function shuffleOptions(options, correctText) {
+  const shuffled = [...options].sort(() => Math.random() - 0.5);
+  return {
+    options: shuffled,
+    answer: shuffled.indexOf(correctText)
+  };
+}
+
+function makeQuestion(q, correctText, wrongOptions) {
+  const allOptions = [correctText, ...wrongOptions].slice(0, 4);
+  const result = shuffleOptions(allOptions, correctText);
+
+  return {
+    q,
+    options: result.options,
+    answer: result.answer
+  };
+}
+
 function buildQuiz(topic) {
+  if (topic.key === "economy") {
+    return [
+      makeQuestion(
+        "What is the main idea of today’s reading?",
+        "Interest rates, inflation, and market expectations are connected.",
+        [
+          "Movie reviews can influence central-bank policy.",
+          "Weather patterns are the main cause of market movement.",
+          "Consumers no longer respond to changes in prices."
+        ]
+      ),
+      makeQuestion(
+        "Why do rate expectations matter before an official decision is made?",
+        "Markets often react to what investors believe will happen next.",
+        [
+          "Interest rates only matter after they disappear.",
+          "Consumers stop spending whenever markets open.",
+          "Central banks do not influence borrowing costs."
+        ]
+      ),
+      makeQuestion(
+        "According to the reading, why can strong economic data sometimes worry investors?",
+        "It may suggest that inflation pressure could continue.",
+        [
+          "It proves that prices are already falling everywhere.",
+          "It means borrowing costs no longer matter.",
+          "It always guarantees immediate rate cuts."
+        ]
+      ),
+      makeQuestion(
+        "What can be inferred about inflation from the passage?",
+        "Even slower inflation can still leave consumers feeling pressure.",
+        [
+          "Inflation affects only professional investors.",
+          "Lower inflation always means all prices return to old levels.",
+          "Inflation has no connection to daily life."
+        ]
+      ),
+      makeQuestion(
+        "How is the reading organized?",
+        "It explains one economic issue through causes, effects, and expectations.",
+        [
+          "It lists unrelated entertainment headlines.",
+          "It gives only definitions without examples.",
+          "It tells a fictional story about investors."
+        ]
+      )
+    ];
+  }
+
+  if (topic.key === "society") {
+    return [
+      makeQuestion(
+        "What is the main idea of today’s reading?",
+        "Public trust depends on how institutions respond to social pressure.",
+        [
+          "Social issues are always caused by one person.",
+          "Policy decisions never affect daily life.",
+          "Public opinion is unrelated to institutions."
+        ]
+      ),
+      makeQuestion(
+        "Why do social issues often become emotional?",
+        "People judge whether systems seem fair and responsive.",
+        [
+          "People only care about entertainment news.",
+          "Institutions never make public decisions.",
+          "Social problems are solved immediately."
+        ]
+      ),
+      makeQuestion(
+        "What does the reading suggest about policy decisions?",
+        "They can affect communities, families, and daily routines.",
+        [
+          "They only matter inside government buildings.",
+          "They have no effect after they are announced.",
+          "They are always understood in the same way by everyone."
+        ]
+      ),
+      makeQuestion(
+        "What can be inferred about institutional response?",
+        "Clear explanations can help reduce resistance.",
+        [
+          "Fast action is always wrong.",
+          "Slow action is always trusted.",
+          "Public explanation does not matter."
+        ]
+      ),
+      makeQuestion(
+        "How is the reading organized?",
+        "It develops one social issue through trust, pressure, policy, and response.",
+        [
+          "It compares unrelated sports results.",
+          "It presents only a list of laws.",
+          "It avoids discussing public reaction."
+        ]
+      )
+    ];
+  }
+
+  if (topic.key === "science") {
+    return [
+      makeQuestion(
+        "What is the main idea of today’s reading?",
+        "Scientific and technological change matters when it affects public life.",
+        [
+          "Technology stays only inside laboratories.",
+          "Research never affects policy or society.",
+          "Science is mainly about movie production."
+        ]
+      ),
+      makeQuestion(
+        "What is the gap mentioned in the reading?",
+        "Innovation can move faster than laws and communities can adapt.",
+        [
+          "Scientists no longer conduct research.",
+          "Technology always waits for regulation.",
+          "Public trust has no role in science."
+        ]
+      ),
+      makeQuestion(
+        "Why does the reading mention health and medicine?",
+        "To show that promising research still needs testing and explanation.",
+        [
+          "To argue that evidence is unnecessary.",
+          "To say medical studies always give immediate solutions.",
+          "To claim that public understanding never matters."
+        ]
+      ),
+      makeQuestion(
+        "What can be inferred about public trust?",
+        "People are more likely to accept technology when it is clearly explained.",
+        [
+          "People trust every new tool automatically.",
+          "Companies should never explain technology.",
+          "Uncertainty makes communication unnecessary."
+        ]
+      ),
+      makeQuestion(
+        "How is the reading organized?",
+        "It explains one technology-related issue through innovation, risk, and public use.",
+        [
+          "It lists unrelated celebrity stories.",
+          "It describes only one laboratory experiment.",
+          "It avoids discussing real-world impact."
+        ]
+      )
+    ];
+  }
+
   return [
-    {
-      q: "What is the main focus of today’s reading?",
-      options: [
-        topic.label,
-        "A fictional diary",
-        "Grammar rules only",
-        "Movie reviews"
-      ],
-      answer: 0
-    },
-    {
-      q: "How is the reading organized?",
-      options: [
-        "As one topic developed across several paragraphs",
-        "As unrelated headlines",
-        "As vocabulary only",
-        "As a fictional dialogue"
-      ],
-      answer: 0
-    },
-    {
-      q: "Where does the analysis appear?",
-      options: [
-        "At the end in one sentence",
-        "In every paragraph",
-        "Only in the title",
-        "It does not appear"
-      ],
-      answer: 0
-    },
-    {
-      q: "What should readers follow in the passage?",
-      options: [
-        "The development of one central issue",
-        "Only the first sentence",
-        "Random entertainment news",
-        "A list of unrelated facts"
-      ],
-      answer: 0
-    },
-    {
-      q: "What kind of reading is this?",
-      options: [
-        "A news-style reading with a single topic",
-        "A recipe",
-        "A poem",
-        "A personal diary"
-      ],
-      answer: 0
-    }
+    makeQuestion(
+      "What is the main idea of today’s reading?",
+      "International tension depends on diplomacy, government response, and wider consequences.",
+      [
+        "World issues are only about weather changes.",
+        "Diplomacy has no effect on international events.",
+        "Foreign policy never affects ordinary people."
+      ]
+    ),
+    makeQuestion(
+      "Why does diplomacy matter in the passage?",
+      "It can create space between conflict and escalation.",
+      [
+        "It guarantees that all conflicts end immediately.",
+        "It prevents governments from communicating.",
+        "It has no connection to security risks."
+      ]
+    ),
+    makeQuestion(
+      "How can international tension affect ordinary people?",
+      "It can influence migration, prices, supplies, and daily life.",
+      [
+        "It only changes speeches by leaders.",
+        "It never affects people outside the conflict zone.",
+        "It is unrelated to trade or migration."
+      ]
+    ),
+    makeQuestion(
+      "What can be inferred about alliances?",
+      "Countries often consider how partners and rivals will respond.",
+      [
+        "Countries always act alone in crises.",
+        "Alliances remove all uncertainty.",
+        "International organizations never matter."
+      ]
+    ),
+    makeQuestion(
+      "How is the reading organized?",
+      "It develops one world issue through tension, diplomacy, impact, and alliances.",
+      [
+        "It lists unrelated movie plots.",
+        "It focuses only on grammar rules.",
+        "It avoids discussing government decisions."
+      ]
+    )
   ];
 }
 
