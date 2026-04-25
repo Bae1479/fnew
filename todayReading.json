@@ -1,10 +1,10 @@
 {
-  "date": "2026-04-25T04:13:06.915Z",
+  "date": "2026-04-25T04:18:33.980Z",
   "category": "economy",
   "categoryLabel": "Economy",
   "source": "PBS News RSS",
   "headline": "Economy: interest rates, inflation, and market expectations",
-  "reading": "Economy is the focus of today’s reading, especially the issue of interest rates, inflation, and market expectations. Recent news points to one main question: how this situation is changing and why people are paying attention to it now.\n\nThe background of the issue is becoming clearer. News Wrap: DOJ drops criminal probe into Jerome Powell. In our news wrap Friday, the Justice Department is dropping its criminal probe into Federal Reserve Chair Jerome Powell, a federal appeals court ruled that President Trump's executive order banning asylum claims at the U.S. southern border is illegal and the FDA said it will fast-track reviews for three psychedelic drugs aimed at treating mental health conditions. The main point is not that many unrelated events happened, but that the same pressure is appearing in different parts of the same topic. This gives readers a reason to look beyond a single headline and follow the wider direction of the story.\n\nThe issue matters because it can influence decisions and expectations. Companies are paying millions to cross Panama Canal during Strait of Hormuz chokehold. Businesses have doled out as much as $4 million for last-minute plans to move boats through the Panama Canal in recent weeks, the Panama Canal Authority says, as Iran war's effective closure of the Strait of Hormuz generates a seismic shift in global trade flows. When this kind of development appears, people often begin to adjust their plans, whether they are officials, companies, investors, families, or ordinary citizens. That is why the topic is important as a continuing news story rather than as a short update.\n\nThe recent details also show that the situation is still moving. Soldier's arrest over Polymarket bet on Maduro raid fuels insider trading concerns. A Special Forces soldier who helped plan the capture of Venezuelan President Nicolas Maduro was indicted for allegedly using classified information about the raid to make prediction market bets. It is raising new concerns about insider trading and the need for regulation. The central question is whether the pressure will ease, remain stable, or create new problems. Readers should pay attention to the way each new detail changes the larger picture.\n\nAnother useful point is the effect this issue may have beyond the immediate event. Brooks and Capehart on the partisan redistricting battle. David Brooks of The Atlantic and Jonathan Capehart of MS NOW join Geoff Bennett to discuss the week in politics, including the Justice Department dropping its probe into Fed Chair Jerome Powell after admitting it lacked evidence, voters in Virginia approving a redistricting effort benefiting Democrats and President Trump saying he's in no rush to end the Iran war. Even when the news begins with one decision or one announcement, the consequences can spread through policy, markets, public opinion, or daily life. This is what makes the topic worth following carefully.\n\nThis suggests that interest rates, inflation, and market expectations may remain an important issue in the near term.",
+  "reading": "Interest rates, inflation, and market expectations are the focus of today’s reading. When people talk about the economy, they often focus on one number at a time, such as the price of oil, the level of inflation, or the decision of a central bank. However, these numbers are connected. Interest rates influence borrowing costs, borrowing costs affect consumer spending, and consumer spending can change the direction of business activity. For that reason, a discussion about interest rates is also a discussion about prices, jobs, investment, and confidence.\n\nThe central issue is whether inflation is falling quickly enough for policymakers to feel comfortable lowering rates. If inflation remains high, central banks may keep rates elevated for longer. Higher rates make loans more expensive for households and businesses. A family thinking about a mortgage, a company planning a new investment, or a consumer using a credit card can all feel the effect. This is why rate expectations matter even before an official decision is made. Markets often move based on what investors believe will happen next, not only on what has already happened.\n\nMarket expectations can also change quickly when new data appears. A stronger jobs report may suggest that the economy is still resilient, but it may also make investors worry that inflation pressure will continue. A weaker consumer report may suggest that demand is slowing, but it may also raise concerns about future growth. This creates a difficult balance. Good news can sometimes be interpreted as bad news for rate cuts, while weaker news can sometimes support hopes for easier policy. That is why economic headlines often seem confusing at first.\n\nInflation is especially important because it affects everyday life directly. When prices rise faster than wages, people feel that their money does not go as far. Even if inflation slows, many prices may remain higher than they were before. This difference between slower inflation and lower prices is important. Policymakers may say that inflation is improving, while consumers may still feel pressure at the grocery store, in rent payments, or in transportation costs. The gap between official data and daily experience can shape public opinion about the economy.\n\nFor investors, the question is how long uncertainty will last. Stock markets may rise when traders expect lower interest rates, because cheaper borrowing can support business growth. Bond markets may react differently, especially if investors expect rates to remain higher for longer. Currency values can also move as rate expectations change. These reactions show that interest rates are not just a technical policy tool. They are a signal that influences how people judge the future direction of the economy.\n\nThis suggests that markets may remain cautious until inflation, employment, and central-bank signals point more clearly in the same direction.",
   "quiz": [
     {
       "q": "What is the main focus of today’s reading?",
@@ -17,32 +17,12 @@
       "answer": 0
     },
     {
-      "q": "Which headline helped shape today’s reading?",
-      "options": [
-        "News Wrap: DOJ drops criminal probe into Jerome Powell",
-        "A restaurant review",
-        "A school concert",
-        "A fantasy novel"
-      ],
-      "answer": 0
-    },
-    {
       "q": "How is the reading organized?",
       "options": [
-        "As one topic developed through related details",
-        "As random vocabulary only",
-        "As a fictional dialogue",
-        "As unrelated jokes"
-      ],
-      "answer": 0
-    },
-    {
-      "q": "What should readers pay attention to?",
-      "options": [
-        "How new details change the larger picture",
-        "Only the first sentence",
-        "Only the title",
-        "Unrelated entertainment news"
+        "As one topic developed across several paragraphs",
+        "As unrelated headlines",
+        "As vocabulary only",
+        "As a fictional dialogue"
       ],
       "answer": 0
     },
@@ -55,56 +35,76 @@
         "It does not appear"
       ],
       "answer": 0
+    },
+    {
+      "q": "What should readers follow in the passage?",
+      "options": [
+        "The development of one central issue",
+        "Only the first sentence",
+        "Random entertainment news",
+        "A list of unrelated facts"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What kind of reading is this?",
+      "options": [
+        "A news-style reading with a single topic",
+        "A recipe",
+        "A poem",
+        "A personal diary"
+      ],
+      "answer": 0
     }
   ],
-  "summary": "Economy is the focus of today’s reading, especially the issue of interest rates, inflation, and market expectations. Recent news points to one main question: how this situation is changing and why people are paying attention to it now. The background of the issue is becoming clearer. News Wrap: DOJ drops criminal (probe) into (jerome) (powell). In our news wrap Friday, the Justice Department is dropping its criminal probe into Federal Reserve Chair Jerome Powell, a federal appeals court ruled that President Trump's executive order banning asylum claims at the U.S.",
+  "summary": "(interest) (rates), (inflation), and market expectations are the focus of today’s reading. When people talk about the economy, they often focus on one number at a time, such as the price of oil, the level of inflation, or the decision of a central bank. However, these numbers are connected. Interest rates influence borrowing costs, borrowing costs affect consumer spending, and consumer spending can change the direction of business activity. For that reason, a discussion about interest rates is also a discussion about prices, jobs, investment, and confidence.",
   "summaryQuiz": [
     {
       "blank": 1,
-      "answer": "probe",
+      "answer": "rates",
       "options": [
-        "probe",
-        "market",
         "expectations",
-        "recent"
+        "consumer",
+        "rates",
+        "economy"
       ]
     },
     {
       "blank": 2,
-      "answer": "jerome",
+      "answer": "inflation",
       "options": [
-        "jerome",
-        "president",
-        "federal",
-        "criminal"
+        "prices",
+        "costs",
+        "borrowing",
+        "inflation"
       ]
     },
     {
       "blank": 3,
-      "answer": "powell",
+      "answer": "interest",
       "options": [
         "interest",
-        "powell",
-        "inflation",
-        "rates"
+        "people",
+        "often",
+        "central"
       ]
     }
   ],
   "sentences": [
     {
       "id": 1,
-      "korean": "이 문제는 하나의 고립된 사건이 아니라 더 넓은 흐름으로 보아야 한다.",
-      "english": "Recent news points to one main question: how this situation is changing and why people are paying attention to it now."
+      "korean": "금리는 차입 비용에 영향을 주고, 차입 비용은 소비 지출에 영향을 준다.",
+      "english": "Interest rates influence borrowing costs, and borrowing costs affect consumer spending."
     },
     {
       "id": 2,
-      "korean": "사람들은 새로운 변화가 나타나면 자신들의 계획을 조정하기 시작한다.",
-      "english": "southern border is illegal and the FDA said it will fast-track reviews for three psychedelic drugs aimed at treating mental health conditions."
+      "korean": "시장은 이미 일어난 일뿐만 아니라 앞으로 일어날 일에 대한 기대를 바탕으로 움직인다.",
+      "english": "Markets often move based on what investors believe will happen next, not only on what has already happened."
     },
     {
       "id": 3,
-      "korean": "독자는 새로운 세부 내용이 전체 그림을 어떻게 바꾸는지 살펴보아야 한다.",
-      "english": "This gives readers a reason to look beyond a single headline and follow the wider direction of the story."
+      "korean": "인플레이션은 일상생활에 직접적인 영향을 주기 때문에 특히 중요하다.",
+      "english": "Inflation is especially important because it affects everyday life directly."
     }
   ],
   "newsItems": [
