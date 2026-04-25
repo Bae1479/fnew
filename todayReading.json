@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-25T04:18:33.980Z",
+  "date": "2026-04-25T04:23:53.856Z",
   "category": "economy",
   "categoryLabel": "Economy",
   "source": "PBS News RSS",
@@ -7,54 +7,54 @@
   "reading": "Interest rates, inflation, and market expectations are the focus of today’s reading. When people talk about the economy, they often focus on one number at a time, such as the price of oil, the level of inflation, or the decision of a central bank. However, these numbers are connected. Interest rates influence borrowing costs, borrowing costs affect consumer spending, and consumer spending can change the direction of business activity. For that reason, a discussion about interest rates is also a discussion about prices, jobs, investment, and confidence.\n\nThe central issue is whether inflation is falling quickly enough for policymakers to feel comfortable lowering rates. If inflation remains high, central banks may keep rates elevated for longer. Higher rates make loans more expensive for households and businesses. A family thinking about a mortgage, a company planning a new investment, or a consumer using a credit card can all feel the effect. This is why rate expectations matter even before an official decision is made. Markets often move based on what investors believe will happen next, not only on what has already happened.\n\nMarket expectations can also change quickly when new data appears. A stronger jobs report may suggest that the economy is still resilient, but it may also make investors worry that inflation pressure will continue. A weaker consumer report may suggest that demand is slowing, but it may also raise concerns about future growth. This creates a difficult balance. Good news can sometimes be interpreted as bad news for rate cuts, while weaker news can sometimes support hopes for easier policy. That is why economic headlines often seem confusing at first.\n\nInflation is especially important because it affects everyday life directly. When prices rise faster than wages, people feel that their money does not go as far. Even if inflation slows, many prices may remain higher than they were before. This difference between slower inflation and lower prices is important. Policymakers may say that inflation is improving, while consumers may still feel pressure at the grocery store, in rent payments, or in transportation costs. The gap between official data and daily experience can shape public opinion about the economy.\n\nFor investors, the question is how long uncertainty will last. Stock markets may rise when traders expect lower interest rates, because cheaper borrowing can support business growth. Bond markets may react differently, especially if investors expect rates to remain higher for longer. Currency values can also move as rate expectations change. These reactions show that interest rates are not just a technical policy tool. They are a signal that influences how people judge the future direction of the economy.\n\nThis suggests that markets may remain cautious until inflation, employment, and central-bank signals point more clearly in the same direction.",
   "quiz": [
     {
-      "q": "What is the main focus of today’s reading?",
+      "q": "What is the main idea of today’s reading?",
       "options": [
-        "Economy",
-        "A fictional diary",
-        "Grammar rules only",
-        "Movie reviews"
+        "Interest rates, inflation, and market expectations are connected.",
+        "Movie reviews can influence central-bank policy.",
+        "Weather patterns are the main cause of market movement.",
+        "Consumers no longer respond to changes in prices."
       ],
       "answer": 0
+    },
+    {
+      "q": "Why do rate expectations matter before an official decision is made?",
+      "options": [
+        "Central banks do not influence borrowing costs.",
+        "Consumers stop spending whenever markets open.",
+        "Markets often react to what investors believe will happen next.",
+        "Interest rates only matter after they disappear."
+      ],
+      "answer": 2
+    },
+    {
+      "q": "According to the reading, why can strong economic data sometimes worry investors?",
+      "options": [
+        "It proves that prices are already falling everywhere.",
+        "It always guarantees immediate rate cuts.",
+        "It may suggest that inflation pressure could continue.",
+        "It means borrowing costs no longer matter."
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What can be inferred about inflation from the passage?",
+      "options": [
+        "Inflation has no connection to daily life.",
+        "Lower inflation always means all prices return to old levels.",
+        "Inflation affects only professional investors.",
+        "Even slower inflation can still leave consumers feeling pressure."
+      ],
+      "answer": 3
     },
     {
       "q": "How is the reading organized?",
       "options": [
-        "As one topic developed across several paragraphs",
-        "As unrelated headlines",
-        "As vocabulary only",
-        "As a fictional dialogue"
+        "It gives only definitions without examples.",
+        "It tells a fictional story about investors.",
+        "It lists unrelated entertainment headlines.",
+        "It explains one economic issue through causes, effects, and expectations."
       ],
-      "answer": 0
-    },
-    {
-      "q": "Where does the analysis appear?",
-      "options": [
-        "At the end in one sentence",
-        "In every paragraph",
-        "Only in the title",
-        "It does not appear"
-      ],
-      "answer": 0
-    },
-    {
-      "q": "What should readers follow in the passage?",
-      "options": [
-        "The development of one central issue",
-        "Only the first sentence",
-        "Random entertainment news",
-        "A list of unrelated facts"
-      ],
-      "answer": 0
-    },
-    {
-      "q": "What kind of reading is this?",
-      "options": [
-        "A news-style reading with a single topic",
-        "A recipe",
-        "A poem",
-        "A personal diary"
-      ],
-      "answer": 0
+      "answer": 3
     }
   ],
   "summary": "(interest) (rates), (inflation), and market expectations are the focus of today’s reading. When people talk about the economy, they often focus on one number at a time, such as the price of oil, the level of inflation, or the decision of a central bank. However, these numbers are connected. Interest rates influence borrowing costs, borrowing costs affect consumer spending, and consumer spending can change the direction of business activity. For that reason, a discussion about interest rates is also a discussion about prices, jobs, investment, and confidence.",
@@ -63,8 +63,8 @@
       "blank": 1,
       "answer": "rates",
       "options": [
-        "expectations",
         "consumer",
+        "expectations",
         "rates",
         "economy"
       ]
@@ -83,10 +83,10 @@
       "blank": 3,
       "answer": "interest",
       "options": [
-        "interest",
         "people",
+        "central",
         "often",
-        "central"
+        "interest"
       ]
     }
   ],
