@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-25T07:58:08.244Z",
+  "date": "2026-04-25T14:10:20.873Z",
   "category": "economy",
   "categoryLabel": "Economy",
   "subtopic": "markets",
@@ -9,52 +9,52 @@
     {
       "q": "What is the main idea of today’s reading?",
       "options": [
+        "The passage presents unrelated entertainment news.",
         "The passage focuses only on grammar rules.",
         "The passage mainly discusses a fictional personal story.",
-        "Economy: Markets and Investor Expectations is the central topic.",
-        "The passage presents unrelated entertainment news."
-      ],
-      "answer": 2
-    },
-    {
-      "q": "How is the reading organized?",
-      "options": [
-        "It tells a fictional dialogue.",
-        "It gives only vocabulary definitions.",
-        "It lists unrelated facts without explanation.",
-        "It develops one issue across several connected paragraphs."
+        "Economy: Markets and Investor Expectations is the central topic."
       ],
       "answer": 3
     },
     {
-      "q": "What should readers follow while reading?",
+      "q": "How is the reading organized?",
       "options": [
-        "How the central issue develops and affects decisions.",
-        "The order of random headlines.",
-        "A list of unrelated names.",
-        "Only the first word of each paragraph."
+        "It develops one issue across several connected paragraphs.",
+        "It lists unrelated facts without explanation.",
+        "It gives only vocabulary definitions.",
+        "It tells a fictional dialogue."
       ],
       "answer": 0
     },
     {
-      "q": "What kind of reading is this?",
+      "q": "What should readers follow while reading?",
       "options": [
-        "A recipe.",
-        "A poem.",
-        "A news-style reading focused on one topic.",
-        "A travel diary."
+        "A list of unrelated names.",
+        "The order of random headlines.",
+        "How the central issue develops and affects decisions.",
+        "Only the first word of each paragraph."
       ],
       "answer": 2
     },
     {
+      "q": "What kind of reading is this?",
+      "options": [
+        "A travel diary.",
+        "A poem.",
+        "A recipe.",
+        "A news-style reading focused on one topic."
+      ],
+      "answer": 3
+    },
+    {
       "q": "Where does the final analysis appear?",
       "options": [
-        "Only in the title.",
-        "At the end of the reading.",
+        "It does not appear anywhere.",
         "In a separate translation section.",
-        "It does not appear anywhere."
+        "Only in the title.",
+        "At the end of the reading."
       ],
-      "answer": 1
+      "answer": 3
     }
   ],
   "summary": "Market (expectations) are the focus of today’s reading. Financial markets often move before official decisions are made because (investors) try to predict what will happen next. Stocks, bonds, and currencies can all react to expectations about (inflation), interest rates, growth, and central-bank policy.",
@@ -63,20 +63,20 @@
       "blank": 1,
       "answer": "expectations",
       "options": [
-        "markets",
-        "expectations",
         "market",
-        "financial"
+        "markets",
+        "financial",
+        "expectations"
       ]
     },
     {
       "blank": 2,
       "answer": "investors",
       "options": [
-        "economic",
-        "policy",
+        "investors",
         "growth",
-        "investors"
+        "policy",
+        "economic"
       ]
     },
     {
@@ -85,8 +85,8 @@
       "options": [
         "inflation",
         "report",
-        "before",
-        "sometimes"
+        "sometimes",
+        "before"
       ]
     }
   ],
