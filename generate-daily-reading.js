@@ -18,13 +18,13 @@ const TOPIC_ROTATION = [
 ];
 
 function cleanText(text = "") {
-  return text.replace(/\s+/g, " ").trim();
+  return String(text).replace(/\s+/g, " ").trim();
 }
 
 function splitSentences(text = "") {
-  return text
+  return cleanText(text)
     .split(/(?<=[.!?])\s+/)
-    .map(s => s.trim())
+    .map((s) => s.trim())
     .filter(Boolean);
 }
 
@@ -33,9 +33,6 @@ function getTodayTopic() {
   return TOPIC_ROTATION[dayNumber % TOPIC_ROTATION.length];
 }
 
-/* --------------------------
-   🔥 핵심: 리딩 (완전 고정 구조)
--------------------------- */
 function buildReadingFromTopic(topic) {
   if (topic.key === "economy") {
     return [
@@ -76,44 +73,117 @@ function buildReadingFromTopic(topic) {
   ].join("\n\n");
 }
 
-/* --------------------------
-   🔥 핵심: 리딩 기반 문장 자동 추출
--------------------------- */
+function sentenceToNaturalKorean(sentence = "") {
+  const s = sentence.toLowerCase();
+
+  if (s.includes("interest rates influence borrowing costs")) {
+    return "금리는 차입 비용에 영향을 주고, 차입 비용은 소비 지출에 영향을 준다.";
+  }
+  if (s.includes("markets do not wait for official decisions")) {
+    return "시장은 공식 결정이 나올 때까지 기다리지 않는다.";
+  }
+  if (s.includes("investors often react based on what they expect")) {
+    return "투자자들은 이미 일어난 일뿐만 아니라 앞으로 일어날 일에 대한 기대를 바탕으로 반응한다.";
+  }
+  if (s.includes("inflation is especially important")) {
+    return "인플레이션은 일상생활에 직접적인 영향을 주기 때문에 특히 중요하다.";
+  }
+
+  if (s.includes("social issues often develop")) {
+    return "사회 문제는 사람들이 제도가 기대한 대로 작동하지 않는다고 느낄 때 자주 생겨난다.";
+  }
+  if (s.includes("trust can increase")) {
+    return "결정이 명확하고 일관적이면 신뢰는 높아질 수 있다.";
+  }
+  if (s.includes("policy decisions can also have long-term effects")) {
+    return "정책 결정은 장기적인 영향을 가질 수도 있다.";
+  }
+  if (s.includes("public trust depends")) {
+    return "공공의 신뢰는 결정 자체뿐만 아니라 그 결정이 어떻게 설명되고 이해되는지에도 달려 있다.";
+  }
+
+  if (s.includes("technology can develop faster")) {
+    return "기술은 제도가 적응하는 속도보다 더 빠르게 발전할 수 있다.";
+  }
+  if (s.includes("new discoveries can create hope")) {
+    return "새로운 발견은 희망을 줄 수 있지만, 검증과 설명도 필요하다.";
+  }
+  if (s.includes("public trust plays an important role")) {
+    return "새로운 기술이 받아들여지는 데에는 공공의 신뢰가 중요한 역할을 한다.";
+  }
+  if (s.includes("impact of technology depends")) {
+    return "기술의 영향은 혁신뿐만 아니라 소통과 신뢰에도 달려 있다.";
+  }
+
+  if (s.includes("diplomacy is important")) {
+    return "외교는 소통의 공간을 만들기 때문에 중요하다.";
+  }
+  if (s.includes("leaders must consider")) {
+    return "지도자들은 결정을 내릴 때 국내 요인과 국제 요인을 모두 고려해야 한다.";
+  }
+  if (s.includes("global issues also affect everyday life")) {
+    return "세계적인 이슈는 일상생활에도 영향을 준다.";
+  }
+  if (s.includes("international situations depend")) {
+    return "국제 상황은 정치적 결정과 지속적인 소통에 달려 있다.";
+  }
+
+  return makeFallbackKorean(sentence);
+}
+
+function makeFallbackKorean(sentence = "") {
+  const s = sentence.toLowerCase();
+
+  if (s.includes("interest") || s.includes("inflation") || s.includes("market")) {
+    return "이 문장은 금리, 인플레이션, 시장 기대가 서로 연결되어 있다는 내용을 담고 있다.";
+  }
+  if (s.includes("trust") || s.includes("institution") || s.includes("policy")) {
+    return "이 문장은 제도적 대응과 공공의 신뢰가 서로 연결되어 있다는 내용을 담고 있다.";
+  }
+  if (s.includes("technology") || s.includes("science") || s.includes("research")) {
+    return "이 문장은 과학기술의 발전이 사회에 어떤 영향을 주는지를 설명한다.";
+  }
+  if (s.includes("government") || s.includes("diplomacy") || s.includes("international")) {
+    return "이 문장은 정부의 대응과 외교가 국제 상황에 영향을 준다는 내용을 담고 있다.";
+  }
+
+  return "이 문장은 오늘 리딩의 핵심 내용을 설명한다.";
+}
+
 function buildBackTranslationSentences(reading) {
-  const sentences = splitSentences(reading);
+  const sentences = splitSentences(reading)
+    .filter((s) => s.length >= 65)
+    .filter((s) => !s.toLowerCase().startsWith("this suggests"));
 
-  const filtered = sentences.filter(s =>
-    s.length > 80 &&
-    !s.toLowerCase().includes("this suggests")
-  );
+  const selected = [sentences[1], sentences[3], sentences[5]]
+    .filter(Boolean)
+    .slice(0, 3);
 
-  const selected = [
-    filtered[1],
-    filtered[2],
-    filtered[3]
-  ].filter(Boolean);
-
-  return selected.map((sentence, index) => ({
+  return selected.map((english, index) => ({
     id: index + 1,
-    korean: "다음 문장을 영어로 써 보세요.",
-    english: sentence
+    korean: sentenceToNaturalKorean(english),
+    english
   }));
 }
 
-/* --------------------------
-   요약
--------------------------- */
 function buildSummaryData(reading) {
   const sentences = splitSentences(reading);
   let summary = sentences.slice(0, 4).join(" ");
 
   const words = summary.match(/[a-zA-Z]{5,}/g) || [];
-  const unique = [...new Set(words.map(w => w.toLowerCase()))];
+  const banned = new Set([
+    "today", "reading", "focus", "these", "factors", "central", "issue",
+    "because", "which", "their", "people", "about", "often", "other"
+  ]);
+
+  const unique = [...new Set(words.map((w) => w.toLowerCase()))].filter(
+    (w) => !banned.has(w)
+  );
 
   const answers = unique.slice(0, 3);
 
-  answers.forEach(word => {
-    summary = summary.replace(new RegExp(word, "i"), `(${word})`);
+  answers.forEach((word) => {
+    summary = summary.replace(new RegExp(`\\b${word}\\b`, "i"), `(${word})`);
   });
 
   return {
@@ -121,14 +191,13 @@ function buildSummaryData(reading) {
     quiz: answers.map((a, i) => ({
       blank: i + 1,
       answer: a,
-      options: [a, ...unique.slice(i + 1, i + 4)].sort(() => Math.random() - 0.5)
+      options: [a, ...unique.filter((w) => w !== a).slice(i + 1, i + 4)]
+        .slice(0, 4)
+        .sort(() => Math.random() - 0.5)
     }))
   };
 }
 
-/* --------------------------
-   퀴즈 (이미 만든 버전 유지)
--------------------------- */
 function shuffleOptions(options, correctText) {
   const shuffled = [...options].sort(() => Math.random() - 0.5);
   return {
@@ -140,7 +209,6 @@ function shuffleOptions(options, correctText) {
 function makeQuestion(q, correctText, wrongOptions) {
   const allOptions = [correctText, ...wrongOptions].slice(0, 4);
   const result = shuffleOptions(allOptions, correctText);
-
   return {
     q,
     options: result.options,
@@ -149,6 +217,56 @@ function makeQuestion(q, correctText, wrongOptions) {
 }
 
 function buildQuiz(topic) {
+  if (topic.key === "economy") {
+    return [
+      makeQuestion(
+        "What is the main idea of today’s reading?",
+        "Interest rates, inflation, and market expectations are connected.",
+        [
+          "Movie reviews can influence central-bank policy.",
+          "Weather patterns are the main cause of market movement.",
+          "Consumers no longer respond to changes in prices."
+        ]
+      ),
+      makeQuestion(
+        "Why do rate expectations matter before an official decision is made?",
+        "Markets often react to what investors believe will happen next.",
+        [
+          "Interest rates only matter after they disappear.",
+          "Consumers stop spending whenever markets open.",
+          "Central banks do not influence borrowing costs."
+        ]
+      ),
+      makeQuestion(
+        "According to the reading, why can strong economic data sometimes worry investors?",
+        "It may suggest that inflation pressure could continue.",
+        [
+          "It proves that prices are already falling everywhere.",
+          "It means borrowing costs no longer matter.",
+          "It always guarantees immediate rate cuts."
+        ]
+      ),
+      makeQuestion(
+        "What can be inferred about inflation from the passage?",
+        "Even slower inflation can still leave consumers feeling pressure.",
+        [
+          "Inflation affects only professional investors.",
+          "Lower inflation always means all prices return to old levels.",
+          "Inflation has no connection to daily life."
+        ]
+      ),
+      makeQuestion(
+        "How is the reading organized?",
+        "It explains one economic issue through causes, effects, and expectations.",
+        [
+          "It lists unrelated entertainment headlines.",
+          "It gives only definitions without examples.",
+          "It tells a fictional story about investors."
+        ]
+      )
+    ];
+  }
+
   return [
     makeQuestion(
       "What is the main idea of today’s reading?",
@@ -198,22 +316,16 @@ function buildQuiz(topic) {
   ];
 }
 
-/* --------------------------
-   뉴스 (참고용)
--------------------------- */
 async function fetchNewsItems() {
   const feed = await parser.parseURL(FEEDS.top);
 
-  return (feed.items || []).slice(0, 5).map(item => ({
+  return (feed.items || []).slice(0, 5).map((item) => ({
     title: item.title,
     link: item.link,
     pubDate: item.pubDate
   }));
 }
 
-/* --------------------------
-   실행
--------------------------- */
 async function build() {
   const topic = getTodayTopic();
   const reading = buildReadingFromTopic(topic);
@@ -232,8 +344,11 @@ async function build() {
     newsItems: await fetchNewsItems()
   };
 
-  fs.writeFileSync("todayReading.json", JSON.stringify(data, null, 2));
+  fs.writeFileSync("todayReading.json", JSON.stringify(data, null, 2), "utf8");
   console.log("✅ DONE");
 }
 
-build();
+build().catch((err) => {
+  console.error("❌ ERROR:", err);
+  process.exit(1);
+});
