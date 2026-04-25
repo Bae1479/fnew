@@ -167,27 +167,17 @@ function buildBackTranslationSentences(reading) {
 }
 
 function buildSummaryData(reading) {
-  const sentences = splitSentences(reading).filter((sentence) => {
-    const wordCount = sentence.split(/\s+/).length;
-    return wordCount >= 9 && wordCount <= 28;
-  });
-
-  const banned = new Set([
-    "today", "reading", "focus", "these", "factors", "central", "issue",
-    "because", "which", "their", "people", "about", "often", "other",
-    "this", "that", "when", "where", "while", "with", "from", "into",
-    "there", "have", "will", "would", "could", "should", "also",
-    "more", "only", "some", "many", "area", "areas", "important"
-  ]);
+  const sentences = splitSentences(reading);
 
   const priorityWords = [
     "inflation",
     "rates",
     "markets",
+    "expectations",
     "borrowing",
     "spending",
-    "expectations",
     "consumers",
+    "policymakers",
     "policy",
     "trust",
     "institutions",
@@ -202,6 +192,149 @@ function buildSummaryData(reading) {
     "governments",
     "pressure"
   ];
+
+  const banned = new Set([
+    "today",
+    "reading",
+    "focus",
+    "these",
+    "those",
+    "factors",
+    "central",
+    "issue",
+    "because",
+    "which",
+    "their",
+    "people",
+    "about",
+    "often",
+    "other",
+    "this",
+    "that",
+    "when",
+    "where",
+    "while",
+    "with",
+    "from",
+    "into",
+    "there",
+    "have",
+    "will",
+    "would",
+    "could",
+    "should",
+    "also",
+    "more",
+    "only",
+    "some",
+    "many",
+    "area",
+    "areas",
+    "important",
+    "closely",
+    "quickly",
+    "directly",
+    "especially",
+    "enough",
+    "future"
+  ]);
+
+  const selected = [];
+  const usedSentenceIndexes = new Set();
+  const usedWords = new Set();
+
+  for (const word of priorityWords) {
+    if (selected.length >= 3) break;
+
+    const sentenceIndex = sentences.findIndex((sentence, index) => {
+      if (usedSentenceIndexes.has(index)) return false;
+      return new RegExp(`\\b${word}\\b`, "i").test(sentence);
+    });
+
+    if (sentenceIndex === -1) continue;
+
+    selected.push({
+      sentence: sentences[sentenceIndex],
+      answer: word
+    });
+
+    usedSentenceIndexes.add(sentenceIndex);
+    usedWords.add(word);
+  }
+
+  if (selected.length < 3) {
+    for (let i = 0; i < sentences.length; i++) {
+      if (selected.length >= 3) break;
+      if (usedSentenceIndexes.has(i)) continue;
+
+      const words =
+        sentences[i].match(/\b[a-zA-Z][a-zA-Z-]{4,}\b/g) || [];
+
+      const candidate = words
+        .map((word) => word.toLowerCase())
+        .find((word) => !banned.has(word) && !usedWords.has(word));
+
+      if (!candidate) continue;
+
+      selected.push({
+        sentence: sentences[i],
+        answer: candidate
+      });
+
+      usedSentenceIndexes.add(i);
+      usedWords.add(candidate);
+    }
+  }
+
+  const summarySentences = selected.map((item) =>
+    item.sentence.replace(
+      new RegExp(`\\b${item.answer}\\b`, "i"),
+      `(${item.answer})`
+    )
+  );
+
+  const distractorPool = priorityWords.filter(
+    (word) => !usedWords.has(word)
+  );
+
+  const fallbackOptions = [
+    "policy",
+    "market",
+    "public",
+    "change",
+    "pressure",
+    "decision",
+    "growth",
+    "system",
+    "future"
+  ];
+
+  const summaryQuiz = selected.map((item, index) => {
+    const distractors = distractorPool
+      .filter((word) => word !== item.answer)
+      .slice(index * 3, index * 3 + 3);
+
+    const options = [item.answer, ...distractors].slice(0, 4);
+
+    for (const fallback of fallbackOptions) {
+      if (options.length >= 4) break;
+      if (!options.includes(fallback) && fallback !== item.answer) {
+        options.push(fallback);
+      }
+    }
+
+    return {
+      blank: index + 1,
+      answer: item.answer,
+      options: options.sort(() => Math.random() - 0.5)
+    };
+  });
+
+  return {
+    text: summarySentences.join(" "),
+    quiz: summaryQuiz
+  };
+}
 
   function getCandidateWords(sentence) {
     const words = sentence.match(/\b[a-zA-Z][a-zA-Z-]{4,}\b/g) || [];
