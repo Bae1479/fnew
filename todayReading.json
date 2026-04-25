@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-25T04:34:22.730Z",
+  "date": "2026-04-25T04:58:23.478Z",
   "category": "economy",
   "categoryLabel": "Economy",
   "headline": "Economy Reading",
@@ -8,50 +8,50 @@
     {
       "q": "What is the main idea of today’s reading?",
       "options": [
-        "It discusses unrelated topics.",
-        "It focuses only on vocabulary.",
-        "It describes a fictional story.",
-        "It explains one central issue in a structured way."
+        "Weather patterns are the main cause of market movement.",
+        "Movie reviews can influence central-bank policy.",
+        "Interest rates, inflation, and market expectations are connected.",
+        "Consumers no longer respond to changes in prices."
       ],
-      "answer": 3
+      "answer": 2
     },
     {
-      "q": "What is the central issue discussed?",
+      "q": "Why do rate expectations matter before an official decision is made?",
       "options": [
-        "A personal diary.",
-        "Only entertainment news.",
-        "A random event with no impact.",
-        "A key topic that affects decisions and expectations."
-      ],
-      "answer": 3
-    },
-    {
-      "q": "Why is the topic important?",
-      "options": [
-        "It influences real-world behavior and decisions.",
-        "It is unrelated to society.",
-        "It has no effect on daily life.",
-        "It is only theoretical."
+        "Markets often react to what investors believe will happen next.",
+        "Interest rates only matter after they disappear.",
+        "Central banks do not influence borrowing costs.",
+        "Consumers stop spending whenever markets open."
       ],
       "answer": 0
     },
     {
-      "q": "What can be inferred from the passage?",
+      "q": "According to the reading, why can strong economic data sometimes worry investors?",
       "options": [
-        "Nothing will change in the future.",
-        "The situation may continue to develop over time.",
-        "The issue has already ended completely.",
-        "The topic is not important."
+        "It proves that prices are already falling everywhere.",
+        "It means borrowing costs no longer matter.",
+        "It may suggest that inflation pressure could continue.",
+        "It always guarantees immediate rate cuts."
       ],
-      "answer": 1
+      "answer": 2
     },
     {
-      "q": "How is the passage structured?",
+      "q": "What can be inferred about inflation from the passage?",
       "options": [
-        "It develops one idea step by step.",
-        "It tells a fictional story.",
-        "It lists unrelated facts.",
-        "It avoids explanation."
+        "Even slower inflation can still leave consumers feeling pressure.",
+        "Inflation affects only professional investors.",
+        "Lower inflation always means all prices return to old levels.",
+        "Inflation has no connection to daily life."
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How is the reading organized?",
+      "options": [
+        "It explains one economic issue through causes, effects, and expectations.",
+        "It lists unrelated entertainment headlines.",
+        "It gives only definitions without examples.",
+        "It tells a fictional story about investors."
       ],
       "answer": 0
     }
@@ -62,48 +62,48 @@
       "blank": 1,
       "answer": "interest",
       "options": [
-        "market",
+        "inflation",
+        "expectations",
         "interest",
-        "rates",
-        "inflation"
+        "market"
       ]
     },
     {
       "blank": 2,
       "answer": "rates",
       "options": [
-        "rates",
-        "inflation",
+        "expectations",
         "market",
-        "expectations"
+        "rates",
+        "closely"
       ]
     },
     {
       "blank": 3,
       "answer": "inflation",
       "options": [
-        "focus",
+        "connected",
         "inflation",
-        "market",
-        "expectations"
+        "expectations",
+        "closely"
       ]
     }
   ],
   "sentences": [
     {
       "id": 1,
-      "korean": "다음 문장을 영어로 써 보세요.",
+      "korean": "이 문장은 오늘 리딩의 핵심 내용을 설명한다.",
       "english": "These factors are closely connected, and changes in one area can quickly influence the others."
     },
     {
       "id": 2,
-      "korean": "다음 문장을 영어로 써 보세요.",
-      "english": "When central banks adjust interest rates, the cost of borrowing changes, and this affects how people spend, invest, and plan for the future."
+      "korean": "이 문장은 금리, 인플레이션, 시장 기대가 서로 연결되어 있다는 내용을 담고 있다.",
+      "english": "If inflation remains high, policymakers may keep interest rates elevated."
     },
     {
       "id": 3,
-      "korean": "다음 문장을 영어로 써 보세요.",
-      "english": "Higher rates make loans more expensive, which can reduce spending and slow economic activity."
+      "korean": "이 문장은 오늘 리딩의 핵심 내용을 설명한다.",
+      "english": "This creates a complex situation in which the same data can be interpreted in different ways."
     }
   ],
   "newsItems": [
