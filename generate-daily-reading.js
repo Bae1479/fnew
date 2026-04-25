@@ -164,35 +164,37 @@ function buildReadingFromItems(items, topic) {
   const selected = chooseTopicItems(items, topic).slice(0, 4);
   const cores = selected.map(getArticleCore).filter(Boolean);
 
+  const topicName = topic.label.toLowerCase();
+
   const opening =
-    `${topic.label} is the focus of today’s reading. Recent reports point to a wider story that is not limited to one headline. The main issue is how several related developments are shaping expectations, decisions, and public reactions in the same field.`;
+    `${topic.label} is the focus of today’s reading. The main story is not one isolated headline, but a broader pattern that appears across several recent reports. Together, these reports show how pressure is building, how institutions are responding, and why the topic may continue to matter in the days ahead.`;
 
-  const paragraph1 =
-    `${cores[0] || ""} This report gives the reading its starting point. It shows the immediate development and introduces the pressure that people, institutions, or markets are now trying to understand.`;
+  const background =
+    `The first point to understand is the background behind the issue. ${cores[0] || ""} This gives the reading its starting point because it shows the immediate event or decision that brought the topic into focus. It also gives readers a concrete example before the passage moves into wider analysis.`;
 
-  const paragraph2 =
-    `${cores[1] || ""} This second report adds another layer to the same topic. Rather than standing apart, it helps explain why the first development matters and why the issue may continue to influence decisions beyond the original event.`;
+  const development =
+    `The second part of the story shows how the issue is developing. ${cores[1] || ""} This matters because a single report rarely explains the whole situation. When another related report appears, it can reveal whether the issue is spreading, whether pressure is increasing, or whether public and institutional reactions are beginning to change.`;
 
-  const paragraph3 =
-    `${cores[2] || ""} A third related report shows how the story is spreading into a broader conversation. It suggests that the issue is not only about one announcement or one group of people, but about how different parts of society, policy, or the economy respond to changing conditions.`;
+  const consequence =
+    `The third part of the reading is about possible consequences. ${cores[2] || ""} This report helps explain why the topic is not only a short-term news item. It may affect decisions, expectations, and future behavior. In that sense, the story is not just about what happened, but also about what people may do next.`;
 
-  const paragraph4 =
+  const widerContext =
     cores[3]
-      ? `${cores[3]} This additional report gives the reading more context. It helps connect short-term news with longer-term questions about risk, confidence, and the direction of the topic.`
-      : `The available reports also show that the issue is still developing. Readers should pay attention not only to the facts already reported, but also to the reactions that follow.`;
+      ? `A final related report adds wider context. ${cores[3]} This detail helps connect the earlier points and makes the reading feel less like separate news summaries. It suggests that the same theme is appearing in more than one place, which is why the topic deserves a longer reading.`
+      : `A final point is that the issue is still developing. Even when the available reports do not provide every answer, they show enough movement to make the topic worth watching. The important task for readers is to connect the details rather than memorize each headline separately.`;
 
   const analysis =
-    `Taken together, these reports form one connected news picture. The useful point is not simply that several events happened on the same day. The useful point is that each report adds a different angle: one shows the event, another shows the response, another shows the possible consequence, and another gives context. That is why today’s reading should be read as one longer article about ${topic.label.toLowerCase()}, not as a list of unrelated summaries.`;
+    `Taken together, the reports create one connected article about ${topicName}. One paragraph introduces the event, another shows development, another explains possible consequences, and another adds context. This structure is useful because it helps readers follow the logic of the news instead of jumping from headline to headline.`;
 
   const closing =
-    `For English practice, this kind of reading is helpful because it uses real news while still giving the reader a clear structure. The topic develops across several paragraphs, so the reader has to follow repeated ideas, compare details, and notice how the meaning becomes clearer as the article continues.`;
+    `The larger meaning is that ${topicName} should be read as a continuing story. The details may change, but the pattern is what matters most: pressure builds, decisions follow, and people respond. For English practice, this kind of reading is useful because it combines real news with a clear structure, allowing learners to build vocabulary while also following a longer argument.`;
 
   return [
     opening,
-    paragraph1,
-    paragraph2,
-    paragraph3,
-    paragraph4,
+    background,
+    development,
+    consequence,
+    widerContext,
     analysis,
     closing
   ]
@@ -209,7 +211,8 @@ function pickWordsForSummary(reading) {
     "other", "rather", "reading", "report", "reports", "several",
     "should", "story", "stories", "their", "there", "these", "today",
     "together", "which", "while", "with", "would", "following",
-    "useful", "point"
+    "useful", "point", "points", "topic", "headline", "headlines",
+    "paragraph", "article"
   ]);
 
   const freq = new Map();
@@ -222,23 +225,44 @@ function pickWordsForSummary(reading) {
   return [...freq.entries()]
     .sort((a, b) => b[1] - a[1])
     .map(([word]) => word)
-    .slice(0, 16);
+    .slice(0, 20);
 }
 
 function buildSummaryData(reading) {
-  const base = splitSentences(reading).slice(0, 5).join(" ");
-  const words = pickWordsForSummary(base + " " + reading);
-  const answers = words.slice(0, 3);
+  const sentences = splitSentences(reading);
 
-  let text = base;
+  let summaryText = sentences.slice(0, 6).join(" ");
+  const candidateWords = pickWordsForSummary(summaryText + " " + reading);
 
-  for (const answer of answers) {
-    text = text.replace(new RegExp(`\\b${answer}\\b`, "i"), `(${answer})`);
+  const answers = [];
+  const usedSentenceIndexes = new Set();
+
+  for (const word of candidateWords) {
+    if (answers.length >= 3) break;
+
+    const sentenceIndex = sentences.findIndex((sentence, idx) => {
+      if (usedSentenceIndexes.has(idx)) return false;
+      return new RegExp(`\\b${word}\\b`, "i").test(sentence);
+    });
+
+    if (sentenceIndex === -1) continue;
+
+    answers.push({ word, sentenceIndex });
+    usedSentenceIndexes.add(sentenceIndex);
   }
 
-  const distractors = words.filter((word) => !answers.includes(word));
+  const finalAnswers = answers.map((a) => a.word);
 
-  const summaryQuiz = answers.map((answer, index) => {
+  for (const answer of finalAnswers) {
+    summaryText = summaryText.replace(
+      new RegExp(`\\b${answer}\\b`, "i"),
+      `(${answer})`
+    );
+  }
+
+  const distractors = candidateWords.filter((word) => !finalAnswers.includes(word));
+
+  const summaryQuiz = finalAnswers.map((answer, index) => {
     const wrongs = distractors.slice(index * 3, index * 3 + 3);
     const options = [answer, ...wrongs].slice(0, 4);
 
@@ -258,24 +282,24 @@ function buildSummaryData(reading) {
     };
   });
 
-  return { text, quiz: summaryQuiz };
+  return { text: summaryText, quiz: summaryQuiz };
 }
 
 function buildBackTranslationSentences(reading) {
-  const candidates = splitSentences(reading).filter((s) => s.length > 80);
-  const selected = [candidates[2], candidates[5], candidates[8]]
+  const candidates = splitSentences(reading).filter((s) => s.length > 70);
+  const selected = [candidates[1], candidates[4], candidates[7]]
     .filter(Boolean)
     .slice(0, 3);
 
-  const koreanPrompts = [
-    "첫 번째 핵심 뉴스 문장을 영어로 써 보세요.",
-    "두 번째 핵심 뉴스 문장을 영어로 써 보세요.",
-    "세 번째 핵심 뉴스 문장을 영어로 써 보세요."
+  const koreanByIndex = [
+    "이 뉴스는 하나의 고립된 사건이 아니라 더 넓은 흐름으로 읽어야 한다.",
+    "관련 보도가 하나 더 나오면 그 문제가 확산되고 있는지 알 수 있다.",
+    "독자는 각각의 헤드라인을 따로 외우기보다 세부 내용을 연결해야 한다."
   ];
 
   return selected.map((english, index) => ({
     id: index + 1,
-    korean: koreanPrompts[index] || "다음 문장을 영어로 바꿔 보세요.",
+    korean: koreanByIndex[index] || "다음 문장을 영어로 써 보세요.",
     english
   }));
 }
@@ -299,10 +323,10 @@ function buildQuiz(items, topic) {
     {
       q: "How is the reading organized?",
       options: [
-        "Around one topic using related news reports",
-        "As one random sentence",
-        "As vocabulary only",
-        "As a fictional dialogue"
+        "As one topic developed through related reports",
+        "As random vocabulary only",
+        "As a fictional dialogue",
+        "As unrelated jokes"
       ],
       answer: 0
     },
@@ -314,10 +338,10 @@ function buildQuiz(items, topic) {
     {
       q: "What should readers do with the reports?",
       options: [
-        "Compare them to understand a wider pattern",
+        "Connect the details to understand the wider pattern",
         "Ignore the details",
         "Read only the title",
-        "Treat them as unrelated jokes"
+        "Treat them as unrelated"
       ],
       answer: 0
     }
