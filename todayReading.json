@@ -1,40 +1,40 @@
 {
-  "date": "2026-04-25T14:10:20.873Z",
+  "date": "2026-04-25T17:11:26.084Z",
   "category": "economy",
   "categoryLabel": "Economy",
-  "subtopic": "markets",
-  "headline": "Economy: Markets and Investor Expectations",
-  "reading": "Market expectations are the focus of today’s reading. Financial markets often move before official decisions are made because investors try to predict what will happen next. Stocks, bonds, and currencies can all react to expectations about inflation, interest rates, growth, and central-bank policy.\n\nThe central issue is that markets do not simply respond to current facts. They respond to changing expectations. A strong economic report may look positive, but investors may worry that it will keep inflation pressure high. A weaker report may raise concerns about growth, but it can also increase hopes for future rate cuts.\n\nThis is why market reactions can seem confusing. Good news can sometimes push markets down, while bad news can sometimes support them. The reaction depends on what investors believe the data means for future policy and economic conditions.\n\nExpectations can also change quickly. A speech from a central banker, a surprise inflation number, or a shift in employment data can alter the mood of the market. This makes financial markets sensitive to both information and interpretation.\n\nThis suggests that investors are not only watching what is happening now, but also trying to price the next stage of the economy.",
+  "subtopic": "consumers",
+  "headline": "Economy: Consumer Spending and Household Pressure",
+  "reading": "Consumer spending is the focus of today’s reading. It matters because household activity is a major part of the economy. When people spend confidently, businesses can grow, hire, and invest. When consumers pull back, companies may become more cautious.\n\nThe central issue is whether households can continue spending while facing high prices and borrowing costs. Many consumers still need to pay for food, housing, transportation, and healthcare. If wages do not rise fast enough, families may feel squeezed even when the broader economy appears stable.\n\nCredit conditions also matter. Higher interest rates make credit cards, car loans, and mortgages more expensive. This can limit how much people are willing or able to borrow. Over time, weaker borrowing can reduce demand and slow economic growth.\n\nBusinesses watch consumer behavior carefully. If shoppers become more selective, companies may adjust prices, reduce inventory, or change hiring plans. This means household pressure can eventually affect the wider economy.\n\nThis suggests that consumer behavior will remain one of the clearest signs of whether the economy is strong or under strain.",
   "quiz": [
     {
       "q": "What is the main idea of today’s reading?",
       "options": [
-        "The passage presents unrelated entertainment news.",
         "The passage focuses only on grammar rules.",
         "The passage mainly discusses a fictional personal story.",
-        "Economy: Markets and Investor Expectations is the central topic."
+        "Economy: Consumer Spending and Household Pressure is the central topic.",
+        "The passage presents unrelated entertainment news."
       ],
-      "answer": 3
+      "answer": 2
     },
     {
       "q": "How is the reading organized?",
       "options": [
         "It develops one issue across several connected paragraphs.",
+        "It tells a fictional dialogue.",
         "It lists unrelated facts without explanation.",
-        "It gives only vocabulary definitions.",
-        "It tells a fictional dialogue."
+        "It gives only vocabulary definitions."
       ],
       "answer": 0
     },
     {
       "q": "What should readers follow while reading?",
       "options": [
-        "A list of unrelated names.",
-        "The order of random headlines.",
+        "Only the first word of each paragraph.",
         "How the central issue develops and affects decisions.",
-        "Only the first word of each paragraph."
+        "The order of random headlines.",
+        "A list of unrelated names."
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "q": "What kind of reading is this?",
@@ -50,47 +50,57 @@
       "q": "Where does the final analysis appear?",
       "options": [
         "It does not appear anywhere.",
-        "In a separate translation section.",
+        "At the end of the reading.",
         "Only in the title.",
-        "At the end of the reading."
+        "In a separate translation section."
       ],
-      "answer": 3
+      "answer": 1
     }
   ],
-  "summary": "Market (expectations) are the focus of today’s reading. Financial markets often move before official decisions are made because (investors) try to predict what will happen next. Stocks, bonds, and currencies can all react to expectations about (inflation), interest rates, growth, and central-bank policy.",
+  "summary": "(consumer) spending is the focus of today’s reading. It matters because (household) activity is a major part of the economy. When people spend (confidently), businesses can grow, hire, and invest.",
   "summaryQuiz": [
     {
       "blank": 1,
-      "answer": "expectations",
+      "answer": "consumer",
       "options": [
-        "market",
-        "markets",
-        "financial",
-        "expectations"
+        "consumer",
+        "economy",
+        "spending",
+        "consumers"
       ]
     },
     {
       "blank": 2,
-      "answer": "investors",
+      "answer": "household",
       "options": [
-        "investors",
-        "growth",
-        "policy",
-        "economic"
+        "household",
+        "companies",
+        "whether",
+        "become"
       ]
     },
     {
       "blank": 3,
-      "answer": "inflation",
+      "answer": "confidently",
       "options": [
-        "inflation",
-        "report",
-        "sometimes",
-        "before"
+        "confidently",
+        "reduce",
+        "prices",
+        "borrowing"
       ]
     }
   ],
   "newsItems": [
+    {
+      "title": "U.S. says it's clearing Iranian mines in latest push to open the Strait of Hormuz",
+      "link": "https://www.pbs.org/newshour/world/u-s-says-its-clearing-iranian-mines-in-latest-push-to-open-the-strait-of-hormuz",
+      "pubDate": "Sat, 25 Apr 2026 12:25:07 -0400"
+    },
+    {
+      "title": "Palestinians vote in the first Gaza elections held in more than 20 years",
+      "link": "https://www.pbs.org/newshour/world/palestinians-vote-in-the-first-gaza-elections-held-in-more-than-20-years",
+      "pubDate": "Sat, 25 Apr 2026 11:40:10 -0400"
+    },
     {
       "title": "U.S., Iranian delegations head to Pakistan, renewing hopes for diplomatic end to war",
       "link": "https://www.pbs.org/newshour/show/u-s-iranian-delegations-head-to-pakistan-renewing-hopes-for-diplomatic-end-to-war",
@@ -105,16 +115,6 @@
       "title": "Soldier's arrest over Polymarket bet on Maduro raid fuels insider trading concerns",
       "link": "https://www.pbs.org/newshour/show/soldiers-arrest-over-polymarket-bet-on-maduro-raid-fuels-insider-trading-concerns",
       "pubDate": "Fri, 24 Apr 2026 18:45:33 -0400"
-    },
-    {
-      "title": "Southern Lebanon weighs losses from Israeli strikes as ceasefire hangs by a thread",
-      "link": "https://www.pbs.org/newshour/show/southern-lebanon-weighs-losses-from-israeli-strikes-as-ceasefire-hangs-by-a-thread",
-      "pubDate": "Fri, 24 Apr 2026 18:40:28 -0400"
-    },
-    {
-      "title": "Brooks and Capehart on the partisan redistricting battle",
-      "link": "https://www.pbs.org/newshour/show/brooks-and-capehart-on-the-partisan-redistricting-battle",
-      "pubDate": "Fri, 24 Apr 2026 18:35:22 -0400"
     }
   ]
 }
