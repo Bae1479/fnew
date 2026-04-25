@@ -1,127 +1,131 @@
 {
-  "date": "2026-04-25T04:23:53.856Z",
+  "date": "2026-04-25T04:34:22.730Z",
   "category": "economy",
   "categoryLabel": "Economy",
-  "source": "PBS News RSS",
-  "headline": "Economy: interest rates, inflation, and market expectations",
-  "reading": "Interest rates, inflation, and market expectations are the focus of today’s reading. When people talk about the economy, they often focus on one number at a time, such as the price of oil, the level of inflation, or the decision of a central bank. However, these numbers are connected. Interest rates influence borrowing costs, borrowing costs affect consumer spending, and consumer spending can change the direction of business activity. For that reason, a discussion about interest rates is also a discussion about prices, jobs, investment, and confidence.\n\nThe central issue is whether inflation is falling quickly enough for policymakers to feel comfortable lowering rates. If inflation remains high, central banks may keep rates elevated for longer. Higher rates make loans more expensive for households and businesses. A family thinking about a mortgage, a company planning a new investment, or a consumer using a credit card can all feel the effect. This is why rate expectations matter even before an official decision is made. Markets often move based on what investors believe will happen next, not only on what has already happened.\n\nMarket expectations can also change quickly when new data appears. A stronger jobs report may suggest that the economy is still resilient, but it may also make investors worry that inflation pressure will continue. A weaker consumer report may suggest that demand is slowing, but it may also raise concerns about future growth. This creates a difficult balance. Good news can sometimes be interpreted as bad news for rate cuts, while weaker news can sometimes support hopes for easier policy. That is why economic headlines often seem confusing at first.\n\nInflation is especially important because it affects everyday life directly. When prices rise faster than wages, people feel that their money does not go as far. Even if inflation slows, many prices may remain higher than they were before. This difference between slower inflation and lower prices is important. Policymakers may say that inflation is improving, while consumers may still feel pressure at the grocery store, in rent payments, or in transportation costs. The gap between official data and daily experience can shape public opinion about the economy.\n\nFor investors, the question is how long uncertainty will last. Stock markets may rise when traders expect lower interest rates, because cheaper borrowing can support business growth. Bond markets may react differently, especially if investors expect rates to remain higher for longer. Currency values can also move as rate expectations change. These reactions show that interest rates are not just a technical policy tool. They are a signal that influences how people judge the future direction of the economy.\n\nThis suggests that markets may remain cautious until inflation, employment, and central-bank signals point more clearly in the same direction.",
+  "headline": "Economy Reading",
+  "reading": "Interest rates, inflation, and market expectations are the focus of today’s reading. These factors are closely connected, and changes in one area can quickly influence the others. When central banks adjust interest rates, the cost of borrowing changes, and this affects how people spend, invest, and plan for the future.\n\nThe central issue is whether inflation is slowing down enough. If inflation remains high, policymakers may keep interest rates elevated. Higher rates make loans more expensive, which can reduce spending and slow economic activity. At the same time, markets do not wait for official decisions. Investors often react based on what they expect to happen next.\n\nThis creates a complex situation in which the same data can be interpreted in different ways. Strong economic data may suggest growth, but it may also increase concerns about inflation. Weak data may raise concerns about the economy, but it may also increase expectations for lower rates. As a result, market reactions can appear inconsistent.\n\nInflation is especially important because it directly affects everyday life. Even when inflation slows, prices may remain higher than before, and this can continue to create pressure on consumers. This gap between economic data and daily experience often shapes how people feel about the economy.\n\nThis suggests that markets may remain cautious as long as uncertainty about inflation and interest rates continues.",
   "quiz": [
     {
       "q": "What is the main idea of today’s reading?",
       "options": [
-        "Interest rates, inflation, and market expectations are connected.",
-        "Movie reviews can influence central-bank policy.",
-        "Weather patterns are the main cause of market movement.",
-        "Consumers no longer respond to changes in prices."
+        "It discusses unrelated topics.",
+        "It focuses only on vocabulary.",
+        "It describes a fictional story.",
+        "It explains one central issue in a structured way."
+      ],
+      "answer": 3
+    },
+    {
+      "q": "What is the central issue discussed?",
+      "options": [
+        "A personal diary.",
+        "Only entertainment news.",
+        "A random event with no impact.",
+        "A key topic that affects decisions and expectations."
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Why is the topic important?",
+      "options": [
+        "It influences real-world behavior and decisions.",
+        "It is unrelated to society.",
+        "It has no effect on daily life.",
+        "It is only theoretical."
       ],
       "answer": 0
     },
     {
-      "q": "Why do rate expectations matter before an official decision is made?",
+      "q": "What can be inferred from the passage?",
       "options": [
-        "Central banks do not influence borrowing costs.",
-        "Consumers stop spending whenever markets open.",
-        "Markets often react to what investors believe will happen next.",
-        "Interest rates only matter after they disappear."
+        "Nothing will change in the future.",
+        "The situation may continue to develop over time.",
+        "The issue has already ended completely.",
+        "The topic is not important."
       ],
-      "answer": 2
+      "answer": 1
     },
     {
-      "q": "According to the reading, why can strong economic data sometimes worry investors?",
+      "q": "How is the passage structured?",
       "options": [
-        "It proves that prices are already falling everywhere.",
-        "It always guarantees immediate rate cuts.",
-        "It may suggest that inflation pressure could continue.",
-        "It means borrowing costs no longer matter."
+        "It develops one idea step by step.",
+        "It tells a fictional story.",
+        "It lists unrelated facts.",
+        "It avoids explanation."
       ],
-      "answer": 2
-    },
-    {
-      "q": "What can be inferred about inflation from the passage?",
-      "options": [
-        "Inflation has no connection to daily life.",
-        "Lower inflation always means all prices return to old levels.",
-        "Inflation affects only professional investors.",
-        "Even slower inflation can still leave consumers feeling pressure."
-      ],
-      "answer": 3
-    },
-    {
-      "q": "How is the reading organized?",
-      "options": [
-        "It gives only definitions without examples.",
-        "It tells a fictional story about investors.",
-        "It lists unrelated entertainment headlines.",
-        "It explains one economic issue through causes, effects, and expectations."
-      ],
-      "answer": 3
+      "answer": 0
     }
   ],
-  "summary": "(interest) (rates), (inflation), and market expectations are the focus of today’s reading. When people talk about the economy, they often focus on one number at a time, such as the price of oil, the level of inflation, or the decision of a central bank. However, these numbers are connected. Interest rates influence borrowing costs, borrowing costs affect consumer spending, and consumer spending can change the direction of business activity. For that reason, a discussion about interest rates is also a discussion about prices, jobs, investment, and confidence.",
+  "summary": "(interest) (rates), (inflation), and market expectations are the focus of today’s reading. These factors are closely connected, and changes in one area can quickly influence the others. When central banks adjust interest rates, the cost of borrowing changes, and this affects how people spend, invest, and plan for the future. The central issue is whether inflation is slowing down enough.",
   "summaryQuiz": [
     {
       "blank": 1,
-      "answer": "rates",
+      "answer": "interest",
       "options": [
-        "consumer",
-        "expectations",
+        "market",
+        "interest",
         "rates",
-        "economy"
-      ]
-    },
-    {
-      "blank": 2,
-      "answer": "inflation",
-      "options": [
-        "prices",
-        "costs",
-        "borrowing",
         "inflation"
       ]
     },
     {
-      "blank": 3,
-      "answer": "interest",
+      "blank": 2,
+      "answer": "rates",
       "options": [
-        "people",
-        "central",
-        "often",
-        "interest"
+        "rates",
+        "inflation",
+        "market",
+        "expectations"
+      ]
+    },
+    {
+      "blank": 3,
+      "answer": "inflation",
+      "options": [
+        "focus",
+        "inflation",
+        "market",
+        "expectations"
       ]
     }
   ],
   "sentences": [
     {
       "id": 1,
-      "korean": "금리는 차입 비용에 영향을 주고, 차입 비용은 소비 지출에 영향을 준다.",
-      "english": "Interest rates influence borrowing costs, and borrowing costs affect consumer spending."
+      "korean": "다음 문장을 영어로 써 보세요.",
+      "english": "These factors are closely connected, and changes in one area can quickly influence the others."
     },
     {
       "id": 2,
-      "korean": "시장은 이미 일어난 일뿐만 아니라 앞으로 일어날 일에 대한 기대를 바탕으로 움직인다.",
-      "english": "Markets often move based on what investors believe will happen next, not only on what has already happened."
+      "korean": "다음 문장을 영어로 써 보세요.",
+      "english": "When central banks adjust interest rates, the cost of borrowing changes, and this affects how people spend, invest, and plan for the future."
     },
     {
       "id": 3,
-      "korean": "인플레이션은 일상생활에 직접적인 영향을 주기 때문에 특히 중요하다.",
-      "english": "Inflation is especially important because it affects everyday life directly."
+      "korean": "다음 문장을 영어로 써 보세요.",
+      "english": "Higher rates make loans more expensive, which can reduce spending and slow economic activity."
     }
   ],
   "newsItems": [
+    {
+      "title": "U.S., Iranian delegations head to Pakistan, renewing hopes for diplomatic end to war",
+      "link": "https://www.pbs.org/newshour/show/u-s-iranian-delegations-head-to-pakistan-renewing-hopes-for-diplomatic-end-to-war",
+      "pubDate": "Fri, 24 Apr 2026 18:55:58 -0400"
+    },
     {
       "title": "News Wrap: DOJ drops criminal probe into Jerome Powell",
       "link": "https://www.pbs.org/newshour/show/news-wrap-doj-drops-criminal-probe-into-jerome-powell",
       "pubDate": "Fri, 24 Apr 2026 18:50:55 -0400"
     },
     {
-      "title": "Companies are paying millions to cross Panama Canal during Strait of Hormuz chokehold",
-      "link": "https://www.pbs.org/newshour/world/companies-are-paying-millions-to-cross-panama-canal-during-strait-of-hormuz-chokehold",
-      "pubDate": "Fri, 24 Apr 2026 17:21:50 -0400"
-    },
-    {
       "title": "Soldier's arrest over Polymarket bet on Maduro raid fuels insider trading concerns",
       "link": "https://www.pbs.org/newshour/show/soldiers-arrest-over-polymarket-bet-on-maduro-raid-fuels-insider-trading-concerns",
       "pubDate": "Fri, 24 Apr 2026 18:45:33 -0400"
+    },
+    {
+      "title": "Southern Lebanon weighs losses from Israeli strikes as ceasefire hangs by a thread",
+      "link": "https://www.pbs.org/newshour/show/southern-lebanon-weighs-losses-from-israeli-strikes-as-ceasefire-hangs-by-a-thread",
+      "pubDate": "Fri, 24 Apr 2026 18:40:28 -0400"
     },
     {
       "title": "Brooks and Capehart on the partisan redistricting battle",
