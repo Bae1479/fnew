@@ -3,9 +3,7 @@ const Parser = require("rss-parser");
 
 const parser = new Parser({
   timeout: 15000,
-  headers: {
-    "User-Agent": "Mozilla/5.0"
-  }
+  headers: { "User-Agent": "Mozilla/5.0" }
 });
 
 const FEEDS = {
@@ -17,108 +15,37 @@ const TOPIC_ROTATION = [
     key: "economy",
     label: "Economy",
     keywords: [
-      "economy",
-      "economic",
-      "market",
-      "markets",
-      "inflation",
-      "interest rate",
-      "federal reserve",
-      "fed",
-      "tariff",
-      "trade",
-      "jobs",
-      "labor",
-      "oil",
-      "stocks",
-      "stock",
-      "bond",
-      "bonds",
-      "consumer",
-      "prices",
-      "gdp",
-      "business",
-      "budget",
-      "bank",
-      "banks",
-      "currency",
-      "crypto",
-      "bitcoin",
-      "exports",
-      "imports"
+      "economy", "economic", "market", "markets", "inflation", "interest rate",
+      "federal reserve", "fed", "tariff", "trade", "jobs", "labor", "oil",
+      "stocks", "stock", "bond", "bonds", "consumer", "prices", "gdp",
+      "business", "budget", "bank", "banks", "currency", "crypto", "bitcoin"
     ]
   },
   {
     key: "society",
-    label: "Society and Politics",
+    label: "Society",
     keywords: [
-      "court",
-      "law",
-      "election",
-      "government",
-      "congress",
-      "senate",
-      "policy",
-      "school",
-      "education",
-      "health",
-      "housing",
-      "immigration",
-      "crime",
-      "police",
-      "community",
-      "rights",
-      "justice",
-      "workers",
-      "families"
+      "court", "law", "election", "government", "congress", "policy",
+      "school", "education", "health", "housing", "immigration", "crime",
+      "police", "community", "rights", "justice", "workers", "families"
     ]
   },
   {
     key: "science",
     label: "Science and Technology",
     keywords: [
-      "science",
-      "technology",
-      "ai",
-      "artificial intelligence",
-      "space",
-      "climate",
-      "energy",
-      "research",
-      "medical",
-      "health",
-      "disease",
-      "study",
-      "nasa",
-      "computer",
-      "data",
-      "robot",
-      "drug",
-      "vaccine"
+      "science", "technology", "ai", "artificial intelligence", "space",
+      "climate", "energy", "research", "medical", "health", "disease",
+      "study", "nasa", "computer", "data", "drug", "vaccine"
     ]
   },
   {
     key: "world",
     label: "World Issues",
     keywords: [
-      "war",
-      "gaza",
-      "ukraine",
-      "russia",
-      "china",
-      "iran",
-      "israel",
-      "europe",
-      "asia",
-      "africa",
-      "united nations",
-      "conflict",
-      "military",
-      "diplomacy",
-      "ceasefire",
-      "border",
-      "refugee",
-      "foreign"
+      "war", "gaza", "ukraine", "russia", "china", "iran", "israel",
+      "europe", "asia", "africa", "conflict", "military", "diplomacy",
+      "ceasefire", "border", "refugee", "foreign"
     ]
   }
 ];
@@ -155,9 +82,9 @@ function removeRepeatedSentences(text = "") {
   const result = [];
 
   for (const sentence of splitSentences(text)) {
-    const normalized = normalizeForCompare(sentence);
-    if (!normalized || seen.has(normalized)) continue;
-    seen.add(normalized);
+    const key = normalizeForCompare(sentence);
+    if (!key || seen.has(key)) continue;
+    seen.add(key);
     result.push(sentence);
   }
 
@@ -179,8 +106,7 @@ function uniqueItems(items) {
 }
 
 function getTodayTopic() {
-  const now = new Date();
-  const dayNumber = Math.floor(now.getTime() / (1000 * 60 * 60 * 24));
+  const dayNumber = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
   return TOPIC_ROTATION[dayNumber % TOPIC_ROTATION.length];
 }
 
@@ -192,26 +118,21 @@ function scoreItemForTopic(item, topic) {
     if (text.includes(keyword)) score += 2;
   }
 
-  if (text.length > 120) score += 1;
+  if ((item.contentSnippet || "").length > 120) score += 1;
   return score;
 }
 
 function chooseTopicItems(items, topic) {
   const scored = items
-    .map((item) => ({
-      item,
-      score: scoreItemForTopic(item, topic)
-    }))
+    .map((item) => ({ item, score: scoreItemForTopic(item, topic) }))
     .sort((a, b) => b.score - a.score);
 
-  const topicMatches = scored
-    .filter((entry) => entry.score > 0)
-    .map((entry) => entry.item);
-
-  const fallback = scored.map((entry) => entry.item);
+  const matched = scored.filter((x) => x.score > 0).map((x) => x.item);
+  const fallback = scored.map((x) => x.item);
 
   const picked = [];
-  for (const item of [...topicMatches, ...fallback]) {
+
+  for (const item of [...matched, ...fallback]) {
     if (picked.length >= 5) break;
     if (!picked.find((p) => p.link === item.link)) picked.push(item);
   }
@@ -221,8 +142,11 @@ function chooseTopicItems(items, topic) {
 
 function getArticleCore(item) {
   const title = cleanText(item.title || "");
-  const sentences = splitSentences(item.contentSnippet || item.content || item.summary || "");
-  const summary = sentences.slice(0, 3).join(" ");
+  const summary = splitSentences(
+    item.contentSnippet || item.content || item.summary || ""
+  )
+    .slice(0, 4)
+    .join(" ");
 
   if (!summary) return title;
 
@@ -236,47 +160,39 @@ function getArticleCore(item) {
   return removeRepeatedSentences(`${title}. ${summary}`);
 }
 
-function topicContextSentence(topic, index) {
-  const economy = [
-    "The economic importance of this report lies in how it may affect prices, investment decisions, consumer confidence, or expectations about future policy.",
-    "For markets and households, the story matters because economic pressure often spreads from one sector to another instead of staying in one place.",
-    "This development also helps explain why investors, businesses, and ordinary consumers watch economic signals closely.",
-    "Seen together with other financial news, it adds another piece to the larger question of where the economy may be heading.",
-    "The longer-term issue is whether this kind of pressure becomes temporary noise or part of a more durable economic trend."
-  ];
-
-  const society = [
-    "The social importance of this report comes from the way it affects public trust, local communities, and the decisions of major institutions.",
-    "Stories like this often become larger debates because they touch everyday life, not only government offices or official statements.",
-    "The issue also shows how social problems can move from local concern to national argument very quickly.",
-    "For readers, the key question is how people and institutions respond when pressure builds in public life.",
-    "The broader meaning depends on whether this event remains isolated or becomes part of a wider social pattern."
-  ];
-
-  const science = [
-    "The scientific or technological importance of this report is that it may change how people understand risk, innovation, health, or the future use of new tools.",
-    "Developments like this often matter beyond the laboratory or the company because they can influence daily life, regulation, and long-term planning.",
-    "The story also reminds readers that science and technology rarely move separately from public policy and social expectations.",
-    "For readers, the important point is not only the discovery or product itself, but also how it may be used and governed.",
-    "The longer-term question is whether this development becomes a narrow technical update or part of a wider shift."
-  ];
-
-  const world = [
-    "The international importance of this report lies in how it may affect diplomacy, security, alliances, or the choices of governments beyond one country.",
-    "World news often develops through connected pressures, where one decision can influence negotiations, markets, and public opinion elsewhere.",
-    "This story also shows why foreign affairs can rarely be understood as a single isolated event.",
-    "For readers, the central issue is how leaders respond when local or regional developments carry wider consequences.",
-    "The larger question is whether this event reduces tension or becomes part of a longer period of uncertainty."
-  ];
-
+function contextSentence(topic, index) {
   const bank = {
-    economy,
-    society,
-    science,
-    world
+    economy: [
+      "The report matters because it may affect prices, market expectations, household budgets, or the way businesses plan for the months ahead.",
+      "It also connects to the larger question of whether economic pressure is easing, spreading, or becoming more difficult for policymakers to manage.",
+      "For investors and consumers, the important point is not only the immediate number or event, but also what it suggests about the next stage of the economy.",
+      "The story shows how one economic signal can influence confidence, spending, and expectations across several parts of the market.",
+      "Seen together with other financial news, it adds another clue about whether the economy is moving toward stability or renewed uncertainty."
+    ],
+    society: [
+      "The report matters because it affects public trust, local communities, and the way institutions respond to pressure.",
+      "It also shows how a social issue can move quickly from a local concern to a wider public debate.",
+      "For ordinary people, the significance often lies in how decisions by officials or institutions change daily life.",
+      "The story raises broader questions about fairness, responsibility, and how communities deal with conflict or uncertainty.",
+      "Seen with related reports, it suggests that social change often develops through many smaller events rather than one single moment."
+    ],
+    science: [
+      "The report matters because scientific or technological change can reshape health, regulation, energy use, or the way people live and work.",
+      "It also shows how research and innovation rarely stay separate from public policy and social expectations.",
+      "For readers, the key issue is not only the discovery or device itself, but also how it may be used, trusted, or controlled.",
+      "The story points to the larger question of whether new knowledge will solve problems, create new risks, or do both at the same time.",
+      "Seen with related reports, it shows how science and technology can gradually change the direction of society."
+    ],
+    world: [
+      "The report matters because international events can affect diplomacy, security, migration, trade, and public opinion far beyond one country.",
+      "It also shows how one decision or conflict can influence negotiations and reactions in other parts of the world.",
+      "For readers, the central issue is how governments respond when local or regional events carry wider consequences.",
+      "The story points to a larger question about whether tension will decrease, spread, or become part of a longer period of uncertainty.",
+      "Seen with related reports, it reminds readers that world affairs are rarely isolated from economic and political pressure."
+    ]
   };
 
-  const list = bank[topic.key] || economy;
+  const list = bank[topic.key] || bank.economy;
   return list[index % list.length];
 }
 
@@ -285,66 +201,55 @@ function buildReadingFromItems(items, topic) {
 
   const opening =
     `${topic.label} is the focus of today’s reading. ` +
-    `The passage follows several related news reports in the same area, so the reading feels like one connected topic rather than a mix of unrelated headlines.`;
+    `The following reports are connected by the same broad theme, so the passage should be read as one longer news reading rather than as separate short items.`;
 
-  const bodyParagraphs = selected.map((item, index) => {
+  const body = selected.map((item, index) => {
     const core = getArticleCore(item);
-    const context = topicContextSentence(topic, index);
-    return removeRepeatedSentences(`${core} ${context}`);
+    return removeRepeatedSentences(`${core} ${contextSentence(topic, index)}`);
   });
 
   const synthesis =
-    `Taken together, these ${topic.label.toLowerCase()} stories show a pattern rather than a single isolated event. ` +
-    `Each report gives one piece of information, but the full reading becomes clearer when the stories are placed side by side. ` +
-    `The shared theme is not only what happened today, but also what these developments suggest about pressure, risk, and change within the same field.`;
+    `Taken together, these reports show a wider pattern within ${topic.label.toLowerCase()}. ` +
+    `One story may show the immediate event, another may show the response, and another may reveal the possible consequence. ` +
+    `Reading them together gives a clearer picture than reading any single headline alone.`;
 
   const closing =
-    `For a careful reader, the most useful approach is to compare the details across the reports. ` +
-    `One story may show the immediate event, another may show the reaction, and another may reveal the broader consequence. ` +
-    `That is why today’s reading should be read as one longer passage about ${topic.label.toLowerCase()}, not as separate short news items.`;
+    `The main point is that today’s topic is developing through several connected signals. ` +
+    `Each report adds detail, but the larger meaning comes from comparing the stories and noticing how pressure, decisions, and public reactions build across the same field.`;
 
-  return [opening, ...bodyParagraphs, synthesis, closing]
-    .filter(Boolean)
-    .join("\n\n");
+  return [opening, ...body, synthesis, closing].filter(Boolean).join("\n\n");
+}
+
+function buildTranslation(reading, topic) {
+  const paragraphs = reading.split(/\n\s*\n/).filter(Boolean);
+
+  const translated = paragraphs.map((p, index) => {
+    if (index === 0) {
+      return `오늘의 리딩은 ${topic.label}을 중심 주제로 다룹니다. 아래의 여러 뉴스는 같은 큰 흐름 안에서 연결되어 있으므로, 각각의 짧은 기사로 따로 보기보다 하나의 긴 뉴스 지문으로 읽는 것이 좋습니다.`;
+    }
+
+    if (index === paragraphs.length - 2) {
+      return `이 뉴스들을 함께 보면 ${topic.label} 분야 안에서 더 큰 흐름이 보입니다. 어떤 기사는 당장의 사건을 보여 주고, 어떤 기사는 그에 대한 반응을 보여 주며, 또 다른 기사는 앞으로의 영향을 드러냅니다. 하나의 헤드라인만 볼 때보다 여러 기사를 함께 읽을 때 전체 그림이 더 분명해집니다.`;
+    }
+
+    if (index === paragraphs.length - 1) {
+      return `핵심은 오늘의 주제가 여러 연결된 신호를 통해 전개되고 있다는 점입니다. 각각의 기사는 세부 정보를 더해 주지만, 더 큰 의미는 여러 이야기들을 비교하고 그 안에서 압력, 결정, 대중의 반응이 어떻게 쌓이는지를 살펴볼 때 드러납니다.`;
+    }
+
+    return `이 문단은 오늘의 ${topic.label} 관련 뉴스 중 하나를 설명합니다. 기사에서 제시된 사건이나 발표는 단순한 개별 소식에 그치지 않고, 앞으로의 결정과 시장 또는 사회적 반응에 영향을 줄 수 있는 흐름으로 읽을 수 있습니다.`;
+  });
+
+  return translated.join("\n\n");
 }
 
 function pickWordsForSummary(reading) {
   const words = cleanText(reading).toLowerCase().match(/[a-z][a-z-]{4,}/g) || [];
-
   const banned = new Set([
-    "about",
-    "after",
-    "again",
-    "because",
-    "before",
-    "between",
-    "could",
-    "every",
-    "first",
-    "from",
-    "have",
-    "important",
-    "major",
-    "more",
-    "other",
-    "rather",
-    "reading",
-    "report",
-    "reports",
-    "several",
-    "should",
-    "story",
-    "stories",
-    "their",
-    "there",
-    "these",
-    "thing",
-    "today",
-    "together",
-    "which",
-    "while",
-    "with",
-    "would"
+    "about", "after", "again", "because", "before", "between", "could",
+    "every", "first", "from", "have", "important", "major", "more",
+    "other", "rather", "reading", "report", "reports", "several",
+    "should", "story", "stories", "their", "there", "these", "today",
+    "together", "which", "while", "with", "would", "following"
   ]);
 
   const freq = new Map();
@@ -360,17 +265,14 @@ function pickWordsForSummary(reading) {
     .slice(0, 16);
 }
 
-function buildSummaryData(reading, topic) {
-  const sentences = splitSentences(reading);
-  const base = sentences.slice(0, 5).join(" ");
+function buildSummaryData(reading) {
+  const base = splitSentences(reading).slice(0, 5).join(" ");
   const words = pickWordsForSummary(base + " " + reading);
-
   const answers = words.slice(0, 3);
-  let text = base;
 
+  let text = base;
   for (const answer of answers) {
-    const regex = new RegExp(`\\b${answer}\\b`, "i");
-    text = text.replace(regex, `(${answer})`);
+    text = text.replace(new RegExp(`\\b${answer}\\b`, "i"), `(${answer})`);
   }
 
   const distractors = words.filter((word) => !answers.includes(word));
@@ -380,9 +282,12 @@ function buildSummaryData(reading, topic) {
     const options = [answer, ...wrongs].slice(0, 4);
 
     while (options.length < 4) {
-      const fallback = ["policy", "market", "public", "change", "pressure", "decision"];
-      const next = fallback.find((word) => !options.includes(word));
-      options.push(next || `choice${options.length + 1}`);
+      for (const fallback of ["policy", "market", "public", "change", "pressure"]) {
+        if (!options.includes(fallback)) {
+          options.push(fallback);
+          break;
+        }
+      }
     }
 
     return {
@@ -392,14 +297,11 @@ function buildSummaryData(reading, topic) {
     };
   });
 
-  return {
-    text,
-    quiz: summaryQuiz
-  };
+  return { text, quiz: summaryQuiz };
 }
 
 function buildBackTranslationSentences(reading) {
-  const candidates = splitSentences(reading).filter((sentence) => sentence.length > 80);
+  const candidates = splitSentences(reading).filter((s) => s.length > 80);
   const selected = [candidates[1], candidates[4], candidates[7]]
     .filter(Boolean)
     .slice(0, 3);
@@ -425,48 +327,33 @@ function buildQuiz(items, topic) {
   return [
     {
       q: "What is the main focus of today’s reading?",
-      options: [
-        topic.label,
-        "A mix of unrelated entertainment stories",
-        "A fictional travel diary",
-        "Grammar rules without news content"
-      ],
+      options: [topic.label, "A fictional diary", "Grammar rules only", "Movie reviews"],
       answer: 0
     },
     {
       q: "Which headline appeared in the reading?",
-      options: [
-        firstTitle,
-        "A restaurant review",
-        "A local school music festival",
-        "A fictional movie release"
-      ],
+      options: [firstTitle, "A restaurant review", "A school concert", "A fantasy novel"],
       answer: 0
     },
     {
       q: "How is the reading organized?",
       options: [
         "Around one topic using several related news reports",
-        "As one short sentence",
-        "As a list of vocabulary only",
+        "As one random sentence",
+        "As vocabulary only",
         "As a fictional dialogue"
       ],
       answer: 0
     },
     {
       q: "Which of these was also included?",
-      options: [
-        secondTitle,
-        "A recipe update",
-        "A sports rumor with no article",
-        "A fantasy story"
-      ],
+      options: [secondTitle, "A recipe update", "A sports rumor", "A travel diary"],
       answer: 0
     },
     {
       q: "What should readers do with the reports?",
       options: [
-        "Compare them to understand the wider pattern",
+        "Compare them to understand a wider pattern",
         "Ignore the details",
         "Read only the title",
         "Treat them as unrelated jokes"
@@ -490,10 +377,7 @@ async function fetchNewsItems() {
     .filter((item) => item.title && item.link)
     .slice(0, 20);
 
-  if (!items.length) {
-    throw new Error("No news found");
-  }
-
+  if (!items.length) throw new Error("No news found");
   return items;
 }
 
@@ -502,9 +386,7 @@ async function build() {
   const items = await fetchNewsItems();
   const selected = chooseTopicItems(items, topic).slice(0, 5);
   const reading = buildReadingFromItems(items, topic);
-  const summaryData = buildSummaryData(reading, topic);
-  const sentences = buildBackTranslationSentences(reading);
-  const quiz = buildQuiz(items, topic);
+  const summaryData = buildSummaryData(reading);
 
   const data = {
     date: new Date().toISOString(),
@@ -513,10 +395,11 @@ async function build() {
     source: "PBS News RSS",
     headline: `${topic.label}: ${cleanText(selected[0]?.title || items[0]?.title || "Daily News")}`,
     reading,
-    quiz,
+    translation: buildTranslation(reading, topic),
+    quiz: buildQuiz(items, topic),
     summary: summaryData.text,
     summaryQuiz: summaryData.quiz,
-    sentences,
+    sentences: buildBackTranslationSentences(reading),
     newsItems: selected.map((item) => ({
       title: cleanText(item.title),
       link: item.link,
