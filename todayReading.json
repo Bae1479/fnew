@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-25T04:58:23.478Z",
+  "date": "2026-04-25T05:02:20.125Z",
   "category": "economy",
   "categoryLabel": "Economy",
   "headline": "Economy Reading",
@@ -8,32 +8,32 @@
     {
       "q": "What is the main idea of today’s reading?",
       "options": [
+        "Consumers no longer respond to changes in prices.",
         "Weather patterns are the main cause of market movement.",
         "Movie reviews can influence central-bank policy.",
-        "Interest rates, inflation, and market expectations are connected.",
-        "Consumers no longer respond to changes in prices."
+        "Interest rates, inflation, and market expectations are connected."
       ],
-      "answer": 2
+      "answer": 3
     },
     {
       "q": "Why do rate expectations matter before an official decision is made?",
       "options": [
         "Markets often react to what investors believe will happen next.",
         "Interest rates only matter after they disappear.",
-        "Central banks do not influence borrowing costs.",
-        "Consumers stop spending whenever markets open."
+        "Consumers stop spending whenever markets open.",
+        "Central banks do not influence borrowing costs."
       ],
       "answer": 0
     },
     {
       "q": "According to the reading, why can strong economic data sometimes worry investors?",
       "options": [
-        "It proves that prices are already falling everywhere.",
-        "It means borrowing costs no longer matter.",
         "It may suggest that inflation pressure could continue.",
-        "It always guarantees immediate rate cuts."
+        "It always guarantees immediate rate cuts.",
+        "It means borrowing costs no longer matter.",
+        "It proves that prices are already falling everywhere."
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "q": "What can be inferred about inflation from the passage?",
@@ -48,44 +48,44 @@
     {
       "q": "How is the reading organized?",
       "options": [
+        "It tells a fictional story about investors.",
         "It explains one economic issue through causes, effects, and expectations.",
         "It lists unrelated entertainment headlines.",
-        "It gives only definitions without examples.",
-        "It tells a fictional story about investors."
+        "It gives only definitions without examples."
       ],
-      "answer": 0
+      "answer": 1
     }
   ],
-  "summary": "(interest) (rates), (inflation), and market expectations are the focus of today’s reading. These factors are closely connected, and changes in one area can quickly influence the others. When central banks adjust interest rates, the cost of borrowing changes, and this affects how people spend, invest, and plan for the future. The central issue is whether inflation is slowing down enough.",
+  "summary": "Interest rates, (inflation), and market expectations are the focus of today’s reading. These factors are (closely) connected, and changes in one area can quickly influence the others. When central banks adjust interest (rates), the cost of borrowing changes, and this affects how people spend, invest, and plan for the future.",
   "summaryQuiz": [
     {
       "blank": 1,
-      "answer": "interest",
+      "answer": "inflation",
       "options": [
+        "market",
+        "connected",
         "inflation",
-        "expectations",
-        "interest",
-        "market"
+        "expectations"
       ]
     },
     {
       "blank": 2,
-      "answer": "rates",
+      "answer": "closely",
       "options": [
-        "expectations",
-        "market",
-        "rates",
-        "closely"
+        "closely",
+        "changes",
+        "quickly",
+        "influence"
       ]
     },
     {
       "blank": 3,
-      "answer": "inflation",
+      "answer": "rates",
       "options": [
-        "connected",
-        "inflation",
-        "expectations",
-        "closely"
+        "affects",
+        "interest",
+        "borrowing",
+        "rates"
       ]
     }
   ],
