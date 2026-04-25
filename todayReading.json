@@ -1,109 +1,93 @@
 {
-  "date": "2026-04-25T05:02:20.125Z",
+  "date": "2026-04-25T07:58:08.244Z",
   "category": "economy",
   "categoryLabel": "Economy",
-  "headline": "Economy Reading",
-  "reading": "Interest rates, inflation, and market expectations are the focus of today’s reading. These factors are closely connected, and changes in one area can quickly influence the others. When central banks adjust interest rates, the cost of borrowing changes, and this affects how people spend, invest, and plan for the future.\n\nThe central issue is whether inflation is slowing down enough. If inflation remains high, policymakers may keep interest rates elevated. Higher rates make loans more expensive, which can reduce spending and slow economic activity. At the same time, markets do not wait for official decisions. Investors often react based on what they expect to happen next.\n\nThis creates a complex situation in which the same data can be interpreted in different ways. Strong economic data may suggest growth, but it may also increase concerns about inflation. Weak data may raise concerns about the economy, but it may also increase expectations for lower rates. As a result, market reactions can appear inconsistent.\n\nInflation is especially important because it directly affects everyday life. Even when inflation slows, prices may remain higher than before, and this can continue to create pressure on consumers. This gap between economic data and daily experience often shapes how people feel about the economy.\n\nThis suggests that markets may remain cautious as long as uncertainty about inflation and interest rates continues.",
+  "subtopic": "markets",
+  "headline": "Economy: Markets and Investor Expectations",
+  "reading": "Market expectations are the focus of today’s reading. Financial markets often move before official decisions are made because investors try to predict what will happen next. Stocks, bonds, and currencies can all react to expectations about inflation, interest rates, growth, and central-bank policy.\n\nThe central issue is that markets do not simply respond to current facts. They respond to changing expectations. A strong economic report may look positive, but investors may worry that it will keep inflation pressure high. A weaker report may raise concerns about growth, but it can also increase hopes for future rate cuts.\n\nThis is why market reactions can seem confusing. Good news can sometimes push markets down, while bad news can sometimes support them. The reaction depends on what investors believe the data means for future policy and economic conditions.\n\nExpectations can also change quickly. A speech from a central banker, a surprise inflation number, or a shift in employment data can alter the mood of the market. This makes financial markets sensitive to both information and interpretation.\n\nThis suggests that investors are not only watching what is happening now, but also trying to price the next stage of the economy.",
   "quiz": [
     {
       "q": "What is the main idea of today’s reading?",
       "options": [
-        "Consumers no longer respond to changes in prices.",
-        "Weather patterns are the main cause of market movement.",
-        "Movie reviews can influence central-bank policy.",
-        "Interest rates, inflation, and market expectations are connected."
+        "The passage focuses only on grammar rules.",
+        "The passage mainly discusses a fictional personal story.",
+        "Economy: Markets and Investor Expectations is the central topic.",
+        "The passage presents unrelated entertainment news."
       ],
-      "answer": 3
-    },
-    {
-      "q": "Why do rate expectations matter before an official decision is made?",
-      "options": [
-        "Markets often react to what investors believe will happen next.",
-        "Interest rates only matter after they disappear.",
-        "Consumers stop spending whenever markets open.",
-        "Central banks do not influence borrowing costs."
-      ],
-      "answer": 0
-    },
-    {
-      "q": "According to the reading, why can strong economic data sometimes worry investors?",
-      "options": [
-        "It may suggest that inflation pressure could continue.",
-        "It always guarantees immediate rate cuts.",
-        "It means borrowing costs no longer matter.",
-        "It proves that prices are already falling everywhere."
-      ],
-      "answer": 0
-    },
-    {
-      "q": "What can be inferred about inflation from the passage?",
-      "options": [
-        "Even slower inflation can still leave consumers feeling pressure.",
-        "Inflation affects only professional investors.",
-        "Lower inflation always means all prices return to old levels.",
-        "Inflation has no connection to daily life."
-      ],
-      "answer": 0
+      "answer": 2
     },
     {
       "q": "How is the reading organized?",
       "options": [
-        "It tells a fictional story about investors.",
-        "It explains one economic issue through causes, effects, and expectations.",
-        "It lists unrelated entertainment headlines.",
-        "It gives only definitions without examples."
+        "It tells a fictional dialogue.",
+        "It gives only vocabulary definitions.",
+        "It lists unrelated facts without explanation.",
+        "It develops one issue across several connected paragraphs."
+      ],
+      "answer": 3
+    },
+    {
+      "q": "What should readers follow while reading?",
+      "options": [
+        "How the central issue develops and affects decisions.",
+        "The order of random headlines.",
+        "A list of unrelated names.",
+        "Only the first word of each paragraph."
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What kind of reading is this?",
+      "options": [
+        "A recipe.",
+        "A poem.",
+        "A news-style reading focused on one topic.",
+        "A travel diary."
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Where does the final analysis appear?",
+      "options": [
+        "Only in the title.",
+        "At the end of the reading.",
+        "In a separate translation section.",
+        "It does not appear anywhere."
       ],
       "answer": 1
     }
   ],
-  "summary": "Interest rates, (inflation), and market expectations are the focus of today’s reading. These factors are (closely) connected, and changes in one area can quickly influence the others. When central banks adjust interest (rates), the cost of borrowing changes, and this affects how people spend, invest, and plan for the future.",
+  "summary": "Market (expectations) are the focus of today’s reading. Financial markets often move before official decisions are made because (investors) try to predict what will happen next. Stocks, bonds, and currencies can all react to expectations about (inflation), interest rates, growth, and central-bank policy.",
   "summaryQuiz": [
     {
       "blank": 1,
-      "answer": "inflation",
+      "answer": "expectations",
       "options": [
+        "markets",
+        "expectations",
         "market",
-        "connected",
-        "inflation",
-        "expectations"
+        "financial"
       ]
     },
     {
       "blank": 2,
-      "answer": "closely",
+      "answer": "investors",
       "options": [
-        "closely",
-        "changes",
-        "quickly",
-        "influence"
+        "economic",
+        "policy",
+        "growth",
+        "investors"
       ]
     },
     {
       "blank": 3,
-      "answer": "rates",
+      "answer": "inflation",
       "options": [
-        "affects",
-        "interest",
-        "borrowing",
-        "rates"
+        "inflation",
+        "report",
+        "before",
+        "sometimes"
       ]
-    }
-  ],
-  "sentences": [
-    {
-      "id": 1,
-      "korean": "이 문장은 오늘 리딩의 핵심 내용을 설명한다.",
-      "english": "These factors are closely connected, and changes in one area can quickly influence the others."
-    },
-    {
-      "id": 2,
-      "korean": "이 문장은 금리, 인플레이션, 시장 기대가 서로 연결되어 있다는 내용을 담고 있다.",
-      "english": "If inflation remains high, policymakers may keep interest rates elevated."
-    },
-    {
-      "id": 3,
-      "korean": "이 문장은 오늘 리딩의 핵심 내용을 설명한다.",
-      "english": "This creates a complex situation in which the same data can be interpreted in different ways."
     }
   ],
   "newsItems": [
