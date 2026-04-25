@@ -14,6 +14,7 @@ const TOPIC_ROTATION = [
   {
     key: "economy",
     label: "Economy",
+    subject: "interest rates, inflation, and market expectations",
     keywords: [
       "economy", "economic", "market", "markets", "inflation", "interest rate",
       "federal reserve", "fed", "tariff", "trade", "jobs", "labor", "oil",
@@ -24,6 +25,7 @@ const TOPIC_ROTATION = [
   {
     key: "society",
     label: "Society",
+    subject: "public pressure, policy decisions, and institutional response",
     keywords: [
       "court", "law", "election", "government", "congress", "policy",
       "school", "education", "health", "housing", "immigration", "crime",
@@ -33,6 +35,7 @@ const TOPIC_ROTATION = [
   {
     key: "science",
     label: "Science and Technology",
+    subject: "new technology, research, and public impact",
     keywords: [
       "science", "technology", "ai", "artificial intelligence", "space",
       "climate", "energy", "research", "medical", "health", "disease",
@@ -42,6 +45,7 @@ const TOPIC_ROTATION = [
   {
     key: "world",
     label: "World Issues",
+    subject: "international tension, diplomacy, and government response",
     keywords: [
       "war", "gaza", "ukraine", "russia", "china", "iran", "israel",
       "europe", "asia", "africa", "conflict", "military", "diplomacy",
@@ -77,20 +81,6 @@ function normalizeForCompare(text = "") {
     .trim();
 }
 
-function uniqueItems(items) {
-  const seen = new Set();
-  const result = [];
-
-  for (const item of items) {
-    const key = normalizeForCompare(item.title || "");
-    if (!key || seen.has(key)) continue;
-    seen.add(key);
-    result.push(item);
-  }
-
-  return result;
-}
-
 function removeRepeatedSentences(text = "") {
   const seen = new Set();
   const result = [];
@@ -103,6 +93,20 @@ function removeRepeatedSentences(text = "") {
   }
 
   return result.join(" ");
+}
+
+function uniqueItems(items) {
+  const seen = new Set();
+  const result = [];
+
+  for (const item of items) {
+    const key = normalizeForCompare(item.title || "");
+    if (!key || seen.has(key)) continue;
+    seen.add(key);
+    result.push(item);
+  }
+
+  return result;
 }
 
 function getTodayTopic() {
@@ -145,7 +149,7 @@ function getArticleCore(item) {
   const summary = splitSentences(
     item.contentSnippet || item.content || item.summary || ""
   )
-    .slice(0, 3)
+    .slice(0, 2)
     .join(" ");
 
   if (!summary) return title;
@@ -163,40 +167,47 @@ function getArticleCore(item) {
 function buildReadingFromItems(items, topic) {
   const selected = chooseTopicItems(items, topic).slice(0, 4);
   const cores = selected.map(getArticleCore).filter(Boolean);
+  const subject = topic.subject;
 
-  const topicName = topic.label.toLowerCase();
+  const sourceText = cores.join(" ");
 
-  const opening =
-    `${topic.label} is the focus of today’s reading. The main story is not one isolated headline, but a broader pattern that appears across several recent reports. Together, these reports show how pressure is building, how institutions are responding, and why the topic may continue to matter in the days ahead.`;
+  const intro =
+    `${topic.label} is the focus of today’s reading, especially the issue of ${subject}. ` +
+    `Recent news points to one main question: how this situation is changing and why people are paying attention to it now.`;
 
-  const background =
-    `The first point to understand is the background behind the issue. ${cores[0] || ""} This gives the reading its starting point because it shows the immediate event or decision that brought the topic into focus. It also gives readers a concrete example before the passage moves into wider analysis.`;
+  const paragraph1 =
+    `The background of the issue is becoming clearer. ${cores[0] || sourceText} ` +
+    `The main point is not that many unrelated events happened, but that the same pressure is appearing in different parts of the same topic. ` +
+    `This gives readers a reason to look beyond a single headline and follow the wider direction of the story.`;
 
-  const development =
-    `The second part of the story shows how the issue is developing. ${cores[1] || ""} This matters because a single report rarely explains the whole situation. When another related report appears, it can reveal whether the issue is spreading, whether pressure is increasing, or whether public and institutional reactions are beginning to change.`;
+  const paragraph2 =
+    `The issue matters because it can influence decisions and expectations. ` +
+    `${cores[1] || ""} ` +
+    `When this kind of development appears, people often begin to adjust their plans, whether they are officials, companies, investors, families, or ordinary citizens. ` +
+    `That is why the topic is important as a continuing news story rather than as a short update.`;
 
-  const consequence =
-    `The third part of the reading is about possible consequences. ${cores[2] || ""} This report helps explain why the topic is not only a short-term news item. It may affect decisions, expectations, and future behavior. In that sense, the story is not just about what happened, but also about what people may do next.`;
+  const paragraph3 =
+    `The recent details also show that the situation is still moving. ` +
+    `${cores[2] || ""} ` +
+    `The central question is whether the pressure will ease, remain stable, or create new problems. ` +
+    `Readers should pay attention to the way each new detail changes the larger picture.`;
 
-  const widerContext =
-    cores[3]
-      ? `A final related report adds wider context. ${cores[3]} This detail helps connect the earlier points and makes the reading feel less like separate news summaries. It suggests that the same theme is appearing in more than one place, which is why the topic deserves a longer reading.`
-      : `A final point is that the issue is still developing. Even when the available reports do not provide every answer, they show enough movement to make the topic worth watching. The important task for readers is to connect the details rather than memorize each headline separately.`;
+  const paragraph4 =
+    `Another useful point is the effect this issue may have beyond the immediate event. ` +
+    `${cores[3] || ""} ` +
+    `Even when the news begins with one decision or one announcement, the consequences can spread through policy, markets, public opinion, or daily life. ` +
+    `This is what makes the topic worth following carefully.`;
 
   const analysis =
-    `Taken together, the reports create one connected article about ${topicName}. One paragraph introduces the event, another shows development, another explains possible consequences, and another adds context. This structure is useful because it helps readers follow the logic of the news instead of jumping from headline to headline.`;
-
-  const closing =
-    `The larger meaning is that ${topicName} should be read as a continuing story. The details may change, but the pattern is what matters most: pressure builds, decisions follow, and people respond. For English practice, this kind of reading is useful because it combines real news with a clear structure, allowing learners to build vocabulary while also following a longer argument.`;
+    `This suggests that ${subject} may remain an important issue in the near term.`;
 
   return [
-    opening,
-    background,
-    development,
-    consequence,
-    widerContext,
-    analysis,
-    closing
+    intro,
+    paragraph1,
+    paragraph2,
+    paragraph3,
+    paragraph4,
+    analysis
   ]
     .map(removeRepeatedSentences)
     .filter(Boolean)
@@ -205,6 +216,7 @@ function buildReadingFromItems(items, topic) {
 
 function pickWordsForSummary(reading) {
   const words = cleanText(reading).toLowerCase().match(/[a-z][a-z-]{4,}/g) || [];
+
   const banned = new Set([
     "about", "after", "again", "because", "before", "between", "could",
     "every", "first", "from", "have", "important", "major", "more",
@@ -212,7 +224,7 @@ function pickWordsForSummary(reading) {
     "should", "story", "stories", "their", "there", "these", "today",
     "together", "which", "while", "with", "would", "following",
     "useful", "point", "points", "topic", "headline", "headlines",
-    "paragraph", "article"
+    "paragraph", "article", "issue", "issues", "main"
   ]);
 
   const freq = new Map();
@@ -230,8 +242,7 @@ function pickWordsForSummary(reading) {
 
 function buildSummaryData(reading) {
   const sentences = splitSentences(reading);
-
-  let summaryText = sentences.slice(0, 6).join(" ");
+  let summaryText = sentences.slice(0, 5).join(" ");
   const candidateWords = pickWordsForSummary(summaryText + " " + reading);
 
   const answers = [];
@@ -260,14 +271,23 @@ function buildSummaryData(reading) {
     );
   }
 
-  const distractors = candidateWords.filter((word) => !finalAnswers.includes(word));
+  const distractors = candidateWords.filter(
+    (word) => !finalAnswers.includes(word)
+  );
 
   const summaryQuiz = finalAnswers.map((answer, index) => {
     const wrongs = distractors.slice(index * 3, index * 3 + 3);
     const options = [answer, ...wrongs].slice(0, 4);
 
     while (options.length < 4) {
-      for (const fallback of ["policy", "market", "public", "change", "pressure"]) {
+      for (const fallback of [
+        "policy",
+        "market",
+        "public",
+        "change",
+        "pressure",
+        "decision"
+      ]) {
         if (!options.includes(fallback)) {
           options.push(fallback);
           break;
@@ -287,14 +307,14 @@ function buildSummaryData(reading) {
 
 function buildBackTranslationSentences(reading) {
   const candidates = splitSentences(reading).filter((s) => s.length > 70);
-  const selected = [candidates[1], candidates[4], candidates[7]]
+  const selected = [candidates[1], candidates[3], candidates[5]]
     .filter(Boolean)
     .slice(0, 3);
 
   const koreanByIndex = [
-    "이 뉴스는 하나의 고립된 사건이 아니라 더 넓은 흐름으로 읽어야 한다.",
-    "관련 보도가 하나 더 나오면 그 문제가 확산되고 있는지 알 수 있다.",
-    "독자는 각각의 헤드라인을 따로 외우기보다 세부 내용을 연결해야 한다."
+    "이 문제는 하나의 고립된 사건이 아니라 더 넓은 흐름으로 보아야 한다.",
+    "사람들은 새로운 변화가 나타나면 자신들의 계획을 조정하기 시작한다.",
+    "독자는 새로운 세부 내용이 전체 그림을 어떻게 바꾸는지 살펴보아야 한다."
   ];
 
   return selected.map((english, index) => ({
@@ -307,23 +327,32 @@ function buildBackTranslationSentences(reading) {
 function buildQuiz(items, topic) {
   const selected = chooseTopicItems(items, topic).slice(0, 4);
   const firstTitle = cleanText(selected[0]?.title || "the first headline");
-  const secondTitle = cleanText(selected[1]?.title || "the second headline");
 
   return [
     {
       q: "What is the main focus of today’s reading?",
-      options: [topic.label, "A fictional diary", "Grammar rules only", "Movie reviews"],
+      options: [
+        topic.label,
+        "A fictional diary",
+        "Grammar rules only",
+        "Movie reviews"
+      ],
       answer: 0
     },
     {
-      q: "Which headline appeared in the reading?",
-      options: [firstTitle, "A restaurant review", "A school concert", "A fantasy novel"],
+      q: "Which headline helped shape today’s reading?",
+      options: [
+        firstTitle,
+        "A restaurant review",
+        "A school concert",
+        "A fantasy novel"
+      ],
       answer: 0
     },
     {
       q: "How is the reading organized?",
       options: [
-        "As one topic developed through related reports",
+        "As one topic developed through related details",
         "As random vocabulary only",
         "As a fictional dialogue",
         "As unrelated jokes"
@@ -331,17 +360,22 @@ function buildQuiz(items, topic) {
       answer: 0
     },
     {
-      q: "Which of these was also included?",
-      options: [secondTitle, "A recipe update", "A sports rumor", "A travel diary"],
+      q: "What should readers pay attention to?",
+      options: [
+        "How new details change the larger picture",
+        "Only the first sentence",
+        "Only the title",
+        "Unrelated entertainment news"
+      ],
       answer: 0
     },
     {
-      q: "What should readers do with the reports?",
+      q: "Where does the analysis appear?",
       options: [
-        "Connect the details to understand the wider pattern",
-        "Ignore the details",
-        "Read only the title",
-        "Treat them as unrelated"
+        "At the end in one sentence",
+        "In every paragraph",
+        "Only in the title",
+        "It does not appear"
       ],
       answer: 0
     }
@@ -378,7 +412,7 @@ async function build() {
     category: topic.key,
     categoryLabel: topic.label,
     source: "PBS News RSS",
-    headline: `${topic.label}: ${cleanText(selected[0]?.title || items[0]?.title || "Daily News")}`,
+    headline: `${topic.label}: ${topic.subject}`,
     reading,
     quiz: buildQuiz(items, topic),
     summary: summaryData.text,
