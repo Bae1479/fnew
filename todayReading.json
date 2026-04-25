@@ -1,90 +1,92 @@
 {
-  "date": "2026-04-24T17:55:59.023Z",
+  "date": "2026-04-25T03:21:23.946Z",
+  "category": "economy",
+  "categoryLabel": "Economy",
   "source": "PBS News RSS",
-  "headline": "Trump administration vows crackdown on Chinese companies 'exploiting' AI models made in U.S.",
-  "reading": "Trump administration vows crackdown on Chinese companies 'exploiting' AI models made in U.S.. The memo arrives at a time when China is challenging U.S. dominance in artificial intelligence, an area where the White House says the U.S. must prevail to set global standards and reap economic and military benefits.\n\nTornado barrels through Oklahoma, damaging 40 homes and shutting down roads. Communities began cleaning up Friday after a powerful tornado in Oklahoma damaged at least 40 homes, ripping roofs off of some and reducing others to rubble in a rural community as emergency crews rescued trapped residents, authorities said.\n\nWATCH: Hegseth calls U.S. war in Iran a 'gift to the world'. Speaking to reporters at the Pentagon, Defense Secretary Pete Hegseth said the U.S. blockade of Iranian shipping will continue \"as long as it takes\" to accomplish America's \"bold and dangerous\" mission to end Iran's threat to global security.",
+  "headline": "Economy: News Wrap: DOJ drops criminal probe into Jerome Powell",
+  "reading": "Economy is the focus of today’s reading. The passage follows several related news reports in the same area, so the reading feels like one connected topic rather than a mix of unrelated headlines.\n\nNews Wrap: DOJ drops criminal probe into Jerome Powell. In our news wrap Friday, the Justice Department is dropping its criminal probe into Federal Reserve Chair Jerome Powell, a federal appeals court ruled that President Trump's executive order banning asylum claims at the U.S. southern border is illegal and the FDA said it will fast-track reviews for three psychedelic drugs aimed at treating mental health conditions. The economic importance of this report lies in how it may affect prices, investment decisions, consumer confidence, or expectations about future policy.\n\nCompanies are paying millions to cross Panama Canal during Strait of Hormuz chokehold. Businesses have doled out as much as $4 million for last-minute plans to move boats through the Panama Canal in recent weeks, the Panama Canal Authority says, as Iran war's effective closure of the Strait of Hormuz generates a seismic shift in global trade flows. For markets and households, the story matters because economic pressure often spreads from one sector to another instead of staying in one place.\n\nWATCH: Trump dispatching Witkoff and Kushner to Pakistan for new Iran talks, White House says. The talks planned for Saturday come as much of the world is on edge over a war that has snarled crucial energy exports through the Strait of Hormuz, clouded the global economic picture and left thousands dead across the Middle East. This development also helps explain why investors, businesses, and ordinary consumers watch economic signals closely.\n\nSoldier's arrest over Polymarket bet on Maduro raid fuels insider trading concerns. A Special Forces soldier who helped plan the capture of Venezuelan President Nicolas Maduro was indicted for allegedly using classified information about the raid to make prediction market bets. It is raising new concerns about insider trading and the need for regulation. Amna Nawaz discussed more with Liz Landers and David Hill, who writes about gambling for Rolling Stone and American Gambler. Seen together with other financial news, it adds another piece to the larger question of where the economy may be heading.\n\nBrooks and Capehart on the partisan redistricting battle. David Brooks of The Atlantic and Jonathan Capehart of MS NOW join Geoff Bennett to discuss the week in politics, including the Justice Department dropping its probe into Fed Chair Jerome Powell after admitting it lacked evidence, voters in Virginia approving a redistricting effort benefiting Democrats and President Trump saying he's in no rush to end the Iran war. The longer-term issue is whether this kind of pressure becomes temporary noise or part of a more durable economic trend.\n\nTaken together, these economy stories show a pattern rather than a single isolated event. Each report gives one piece of information, but the full reading becomes clearer when the stories are placed side by side. The shared theme is not only what happened today, but also what these developments suggest about pressure, risk, and change within the same field.\n\nFor a careful reader, the most useful approach is to compare the details across the reports. One story may show the immediate event, another may show the reaction, and another may reveal the broader consequence. That is why today’s reading should be read as one longer passage about economy, not as separate short news items.",
   "quiz": [
     {
-      "q": "Which headline appeared in today’s reading?",
+      "q": "What is the main focus of today’s reading?",
       "options": [
-        "Trump administration vows crackdown on Chinese companies 'exploiting' AI models made in U.S.",
-        "A local school festival",
+        "Economy",
+        "A mix of unrelated entertainment stories",
+        "A fictional travel diary",
+        "Grammar rules without news content"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Which headline appeared in the reading?",
+      "options": [
+        "News Wrap: DOJ drops criminal probe into Jerome Powell",
         "A restaurant review",
+        "A local school music festival",
         "A fictional movie release"
       ],
       "answer": 0
     },
     {
-      "q": "How many news stories are mainly included in the reading?",
+      "q": "How is the reading organized?",
       "options": [
-        "One",
-        "Two",
-        "Three",
-        "Five"
-      ],
-      "answer": 2
-    },
-    {
-      "q": "Which of the following also appeared in the reading?",
-      "options": [
-        "Tornado barrels through Oklahoma, damaging 40 homes and shutting down roads",
-        "A travel diary entry",
-        "A recipe update",
-        "A sports rumor"
+        "Around one topic using several related news reports",
+        "As one short sentence",
+        "As a list of vocabulary only",
+        "As a fictional dialogue"
       ],
       "answer": 0
     },
     {
-      "q": "What is the reading mainly made of?",
+      "q": "Which of these was also included?",
       "options": [
-        "General commentary",
-        "News summaries",
-        "Grammar explanations",
-        "Fictional scenes"
+        "Companies are paying millions to cross Panama Canal during Strait of Hormuz chokehold",
+        "A recipe update",
+        "A sports rumor with no article",
+        "A fantasy story"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
-      "q": "What kind of article is prioritized among the three stories?",
+      "q": "What should readers do with the reports?",
       "options": [
-        "Entertainment",
-        "Sports",
-        "Economy-related news",
-        "Weather only"
+        "Compare them to understand the wider pattern",
+        "Ignore the details",
+        "Read only the title",
+        "Treat them as unrelated jokes"
       ],
-      "answer": 2
+      "answer": 0
     }
   ],
-  "summary": "(trump) (administration) (vows) crackdown on Chinese companies 'exploiting' AI models made in U.S.. The memo arrives at a time when China is challenging U.S. dominance in artificial intelligence, an area where the White House says the U.S.",
+  "summary": "(economy) is the focus of today’s reading. The passage follows several related news reports in the same area, so the reading feels like one connected topic rather than a mix of unrelated headlines. News Wrap: DOJ drops criminal (probe) into (jerome) Powell. In our news wrap Friday, the Justice Department is dropping its criminal probe into Federal Reserve Chair Jerome Powell, a federal appeals court ruled that President Trump's executive order banning asylum claims at the U.S. southern border is illegal and the FDA said it will fast-track reviews for three psychedelic drugs aimed at treating mental health conditions.",
   "summaryQuiz": [
     {
       "blank": 1,
-      "answer": "trump",
+      "answer": "economy",
       "options": [
-        "oklahoma",
-        "tornado",
-        "global",
-        "trump"
+        "criminal",
+        "economic",
+        "powell",
+        "economy"
       ]
     },
     {
       "blank": 2,
-      "answer": "administration",
+      "answer": "probe",
       "options": [
-        "administration",
-        "homes",
-        "said",
-        "hegseth"
+        "probe",
+        "federal",
+        "trump",
+        "president"
       ]
     },
     {
       "blank": 3,
-      "answer": "vows",
+      "answer": "jerome",
       "options": [
-        "chinese",
-        "crackdown",
-        "iran",
-        "vows"
+        "jerome",
+        "passage",
+        "another",
+        "justice"
       ]
     }
   ],
@@ -92,34 +94,44 @@
     {
       "id": 1,
       "korean": "첫 번째 핵심 뉴스 문장을 영어로 써 보세요.",
-      "english": "Trump administration vows crackdown on Chinese companies 'exploiting' AI models made in U.S.."
+      "english": "In our news wrap Friday, the Justice Department is dropping its criminal probe into Federal Reserve Chair Jerome Powell, a federal appeals court ruled that President Trump's executive order banning asylum claims at the U.S."
     },
     {
       "id": 2,
       "korean": "두 번째 핵심 뉴스 문장을 영어로 써 보세요.",
-      "english": "must prevail to set global standards and reap economic and military benefits."
+      "english": "Companies are paying millions to cross Panama Canal during Strait of Hormuz chokehold."
     },
     {
       "id": 3,
       "korean": "세 번째 핵심 뉴스 문장을 영어로 써 보세요.",
-      "english": "Communities began cleaning up Friday after a powerful tornado in Oklahoma damaged at least 40 homes, ripping roofs off of some and reducing others to rubble in a rural community as emergency crews rescued trapped residents, authorities said."
+      "english": "WATCH: Trump dispatching Witkoff and Kushner to Pakistan for new Iran talks, White House says."
     }
   ],
   "newsItems": [
     {
-      "title": "Trump administration vows crackdown on Chinese companies 'exploiting' AI models made in U.S.",
-      "link": "https://www.pbs.org/newshour/world/trump-administration-vows-crackdown-on-chinese-companies-exploiting-ai-models-made-in-u-s",
-      "pubDate": "Fri, 24 Apr 2026 12:37:58 -0400"
+      "title": "News Wrap: DOJ drops criminal probe into Jerome Powell",
+      "link": "https://www.pbs.org/newshour/show/news-wrap-doj-drops-criminal-probe-into-jerome-powell",
+      "pubDate": "Fri, 24 Apr 2026 18:50:55 -0400"
     },
     {
-      "title": "Tornado barrels through Oklahoma, damaging 40 homes and shutting down roads",
-      "link": "https://www.pbs.org/newshour/nation/tornado-barrels-through-oklahoma-damaging-40-homes-and-shutting-down-roads",
-      "pubDate": "Fri, 24 Apr 2026 13:42:09 -0400"
+      "title": "Companies are paying millions to cross Panama Canal during Strait of Hormuz chokehold",
+      "link": "https://www.pbs.org/newshour/world/companies-are-paying-millions-to-cross-panama-canal-during-strait-of-hormuz-chokehold",
+      "pubDate": "Fri, 24 Apr 2026 17:21:50 -0400"
     },
     {
-      "title": "WATCH: Hegseth calls U.S. war in Iran a 'gift to the world'",
-      "link": "https://www.pbs.org/newshour/world/watch-hegseth-calls-u-s-war-in-iran-a-gift-to-the-world",
-      "pubDate": "Fri, 24 Apr 2026 11:40:57 -0400"
+      "title": "WATCH: Trump dispatching Witkoff and Kushner to Pakistan for new Iran talks, White House says",
+      "link": "https://www.pbs.org/newshour/world/watch-trump-dispatching-witkoff-and-kushner-to-pakistan-for-new-iran-talks-white-house-says",
+      "pubDate": "Fri, 24 Apr 2026 14:52:00 -0400"
+    },
+    {
+      "title": "Soldier's arrest over Polymarket bet on Maduro raid fuels insider trading concerns",
+      "link": "https://www.pbs.org/newshour/show/soldiers-arrest-over-polymarket-bet-on-maduro-raid-fuels-insider-trading-concerns",
+      "pubDate": "Fri, 24 Apr 2026 18:45:33 -0400"
+    },
+    {
+      "title": "Brooks and Capehart on the partisan redistricting battle",
+      "link": "https://www.pbs.org/newshour/show/brooks-and-capehart-on-the-partisan-redistricting-battle",
+      "pubDate": "Fri, 24 Apr 2026 18:35:22 -0400"
     }
   ]
 }
