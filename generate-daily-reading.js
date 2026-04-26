@@ -6,270 +6,165 @@ const parser = new Parser({
   headers: { "User-Agent": "Mozilla/5.0" }
 });
 
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+const OPENAI_MODEL = process.env.OPENAI_MODEL || "gpt-5.5-mini";
+
 const FEEDS = {
-  top: "https://www.pbs.org/newshour/feeds/rss/headlines"
+  pbs: "https://www.pbs.org/newshour/feeds/rss/headlines"
 };
 
 function clean(text = "") {
   return String(text)
     .replace(/<[^>]*>/g, " ")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&amp;/g, "&")
-    .replace(/&quot;/g, '"')
-    .replace(/&#x27;/g, "'")
     .replace(/\s+/g, " ")
     .trim();
 }
 
-function split(text = "") {
-  return clean(text)
-    .split(/(?<=[.!?])\s+/)
-    .map((s) => s.trim())
-    .filter((s) => s.length > 30);
-}
-
 async function fetchNews() {
-  try {
-    const feed = await parser.parseURL(FEEDS.top);
+  const feed = await parser.parseURL(FEEDS.pbs);
 
-    return (feed.items || [])
-      .slice(0, 6)
-      .map((item) => ({
-        title: clean(item.title || ""),
-        link: item.link || "",
-        pubDate: item.pubDate || "",
-        content: clean(item.contentSnippet || item.content || item.summary || "")
-      }))
-      .filter((n) => n.title && n.content.length > 50);
-  } catch {
-    return [];
-  }
+  return (feed.items || [])
+    .slice(0, 6)
+    .map((item) => ({
+      title: clean(item.title || ""),
+      summary: clean(item.contentSnippet || item.content || item.summary || "")
+    }))
+    .filter((n) => n.title && n.summary.length > 50);
 }
 
-function extractCore(news) {
-  const sentences = split(news.content);
-  return sentences.slice(0, 2);
-}
-
-function buildReading(newsItems) {
-  const selected = newsItems.slice(0, 3);
-
-  function makeBlock(news) {
-    const sentences = split(news.content);
-    const main = sentences.slice(0, 2).join(" ");
-    const title = news.title || "";
-
-    const context =
-      title && !main.toLowerCase().includes(title.toLowerCase())
-        ? `The headline, "${title}," gives the main context for this development.`
-        : "";
-
-    return [main, context].filter(Boolean).join(" ");
-  }
-
-  const blocks = selected.map(makeBlock).filter(Boolean);
-
-  return blocks
-    .map(clean)
-    .filter(Boolean)
-    .join("\n\n");
-}
-
-function shuffle(options, correctIndex) {
-  const arr = options.map((text, index) => ({
-    text,
-    correct: index === correctIndex
-  }));
-
-  const shuffled = arr.sort(() => Math.random() - 0.5);
-
-  return {
-    options: shuffled.map((x) => x.text),
-    answer: shuffled.findIndex((x) => x.correct)
-  };
-}
-
-function buildQuiz(reading) {
-  const sentences = split(reading);
-  const detail = sentences[0] || "The passage describes a recent news event.";
-  const mid = sentences[Math.floor(sentences.length / 2)] || detail;
-
-  return [
-    {
-      q: "What is the main idea of the passage?",
-      ...shuffle(
-        [
-          "It explains recent real-world developments.",
-          "It tells a fictional story.",
-          "It teaches grammar rules only.",
-          "It describes a personal diary."
-        ],
-        0
-      )
-    },
-    {
-      q: "According to the passage, what happened?",
-      ...shuffle(
-        [
-          detail,
-          "Nothing significant occurred.",
-          "The event was fictional.",
-          "The passage describes a private conversation."
-        ],
-        0
-      )
-    },
-    {
-      q: "Which statement is best supported by the passage?",
-      ...shuffle(
-        [
-          mid,
-          "The passage gives no factual information.",
-          "The passage is mainly about entertainment.",
-          "The passage avoids current events."
-        ],
-        0
-      )
-    },
-    {
-      q: "What can be inferred from the passage?",
-      ...shuffle(
-        [
-          "The situation may continue to receive attention.",
-          "The story is unrelated to public events.",
-          "The issue has no real-world significance.",
-          "The passage is a fictional narrative."
-        ],
-        0
-      )
-    },
-    {
-      q: "What is the author’s purpose?",
-      ...shuffle(
-        [
-          "To explain a real news event clearly.",
-          "To entertain readers with fiction.",
-          "To teach only vocabulary.",
-          "To describe a personal memory."
-        ],
-        0
-      )
-    }
-  ];
-}
-
-function buildSummary(reading) {
-  const sentences = split(reading);
-
-  const selected = [
-    sentences[0],
-    sentences[Math.floor(sentences.length / 2)],
-    sentences[sentences.length - 1]
-  ].filter(Boolean);
-
-  const banned = new Set([
-    "today",
-    "reading",
-    "because",
-    "which",
-    "their",
-    "there",
-    "these",
-    "those",
-    "about",
-    "after",
-    "before",
-    "while",
-    "where",
-    "would",
-    "could",
-    "should",
-    "people",
-    "readers",
-    "report",
-    "headline",
-    "details",
-    "passage"
-  ]);
-
-  const used = new Set();
-
-  function pickWord(sentence) {
-    const words = sentence.match(/\b[a-zA-Z][a-zA-Z-]{5,}\b/g) || [];
-
-    const word =
-      words
-        .map((w) => w.toLowerCase())
-        .find((w) => !banned.has(w) && !used.has(w)) ||
-      words[0]?.toLowerCase() ||
-      "event";
-
-    used.add(word);
-    return word;
-  }
-
-  const blanks = selected.map((sentence) => {
-    const answer = pickWord(sentence);
-
-    return {
-      answer,
-      sentence: sentence.replace(new RegExp(`\\b${answer}\\b`, "i"), "(____)")
-    };
-  });
-
-  const allWords = [
-    ...new Set(
-      (reading.match(/\b[a-zA-Z][a-zA-Z-]{5,}\b/g) || [])
-        .map((w) => w.toLowerCase())
-        .filter((w) => !banned.has(w))
+/**
+ * 🔥 핵심: 퀄리티를 결정하는 프롬프트
+ */
+function buildPrompt(newsItems) {
+  const newsText = newsItems
+    .map(
+      (item, i) =>
+        `News ${i + 1}:
+Title: ${item.title}
+Summary: ${item.summary}`
     )
-  ];
+    .join("\n\n");
 
-  const summaryQuiz = blanks.map((blank) => {
-    const options = [blank.answer];
+  return `
+You are a professional journalist writing for advanced English learners.
 
-    for (const word of allWords) {
-      if (options.length >= 4) break;
-      if (!options.includes(word)) options.push(word);
+Write ONE high-quality reading passage based on the news below.
+
+STRICT RULES:
+- Must feel like a real news article (BBC / NYT style)
+- No repetition
+- No generic sentences like "this shows broader trends"
+- Use concrete details from the news
+- Smooth logical flow
+
+STRUCTURE:
+1. Strong opening (what happened)
+2. Key details (who, what, where, why)
+3. Develop situation with clarity
+4. End naturally (no vague conclusions)
+
+LENGTH:
+- 4 to 6 paragraphs
+- Each paragraph 2-4 sentences
+
+TONE:
+- Professional
+- Clear
+- Realistic
+- Slightly analytical but grounded in facts
+
+---
+
+ALSO GENERATE:
+
+1. 5 reading comprehension questions:
+- main idea
+- detail
+- inference
+- vocabulary in context
+- author's purpose
+
+2. Summary:
+- One paragraph
+- Exactly 3 blanks using (answer)
+
+3. Summary quiz:
+- 3 questions
+- Each has 4 options
+
+---
+
+RETURN ONLY JSON:
+
+{
+  "headline": "",
+  "reading": "",
+  "quiz": [
+    {
+      "q": "",
+      "options": ["", "", "", ""],
+      "answer": 0
     }
-
-    while (options.length < 4) {
-      const fallback = ["security", "officials", "response", "public", "event"];
-      const next = fallback.find((w) => !options.includes(w));
-      options.push(next || `choice${options.length + 1}`);
+  ],
+  "summary": "",
+  "summaryQuiz": [
+    {
+      "blank": 1,
+      "answer": "",
+      "options": ["", "", "", ""]
     }
+  ]
+}
 
-    return {
-      answer: blank.answer,
-      options: options.sort(() => Math.random() - 0.5)
-    };
+---
+
+News:
+${newsText}
+`;
+}
+
+async function generateWithOpenAI(newsItems) {
+  const response = await fetch("https://api.openai.com/v1/responses", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${OPENAI_API_KEY}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      model: OPENAI_MODEL,
+      input: buildPrompt(newsItems),
+      text: { format: { type: "json_object" } }
+    })
   });
 
-  return {
-    text: blanks.map((b) => b.sentence).join(" "),
-    quiz: summaryQuiz
-  };
+  const data = await response.json();
+
+  return JSON.parse(
+    data.output[0].content[0].text
+      .replace(/```json/g, "")
+      .replace(/```/g, "")
+  );
 }
 
 async function build() {
   const newsItems = await fetchNews();
-  const reading = buildReading(newsItems);
-  const summary = buildSummary(reading);
+  const result = await generateWithOpenAI(newsItems);
 
   const data = {
     date: new Date().toISOString(),
     category: "daily-news",
     categoryLabel: "Daily News",
-    headline: newsItems[0]?.title || "Daily News",
-    reading,
-    quiz: buildQuiz(reading),
-    summary: summary.text,
-    summaryQuiz: summary.quiz,
+    headline: result.headline,
+    reading: result.reading,
+    quiz: result.quiz,
+    summary: result.summary,
+    summaryQuiz: result.summaryQuiz,
     newsItems
   };
 
-  fs.writeFileSync("todayReading.json", JSON.stringify(data, null, 2), "utf8");
-  console.log("✅ DONE");
+  fs.writeFileSync("todayReading.json", JSON.stringify(data, null, 2));
+
+  console.log("✅ DONE:", result.headline);
 }
 
 build().catch((err) => {
