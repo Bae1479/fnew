@@ -1,98 +1,102 @@
 {
-  "date": "2026-04-26T03:44:53.188Z",
+  "date": "2026-04-26T04:21:22.085Z",
   "category": "society",
   "categoryLabel": "Society",
   "headline": "Society Reading",
-  "reading": "Society is the focus of today’s reading. Recent developments reported in the news highlight changes that are shaping this area.\n\nTrump said the suspect was armed with multiple weapons before stopped by Secret Service. One officer was shot, but he was protected by a bulletproof vest.\n\nA man armed with guns and knives stormed the lobby outside a high-profile journalists' dinner attended by President Donald Trump and multiple senior U.S. leaders on Saturday night. The president was uninjured and was hustled away.\n\nA police officer died and another was critically injured after a shooting at a Chicago hospital on Saturday, according to officials.\n\nThese developments are not isolated. They reflect broader structural changes and shifting expectations across systems.\n\nThis suggests that understanding society requires analyzing how individual events interact within a larger context.",
+  "reading": "Society is the focus of today’s reading. Several recent developments reported in the news highlight important changes shaping this area. Rather than isolated events, these developments reflect broader trends.\n\nThe suspect in a shooting incident at Saturday's correspondents' dinner attended by President Donald Trump and other senior U.S. officials was carrying guns and knives and was believed to be acting alone, the mayor of Washington said.\n\nTrump said the suspect was armed with multiple weapons before stopped by Secret Service. One officer was shot, but he was protected by a bulletproof vest.\n\nA man armed with guns and knives stormed the lobby outside a high-profile journalists' dinner attended by President Donald Trump and multiple senior U.S. The president was uninjured and was hustled away.\n\nAlthough these reports focus on different situations, they are connected through underlying structural factors such as policy decisions, expectations, and external pressures.\n\nThis suggests that understanding society requires examining how individual events interact within a larger system rather than viewing them separately.",
   "quiz": [
     {
       "q": "What is the main idea of the passage?",
       "options": [
-        "The passage describes personal experiences.",
-        "The passage focuses only on vocabulary.",
-        "The passage tells a fictional story.",
-        "The passage explains how recent developments are interconnected."
+        "Grammar rules are explained.",
+        "A fictional event is presented.",
+        "A personal story is described.",
+        "Recent developments are interconnected."
       ],
       "answer": 3
     },
     {
-      "q": "What can be inferred about the events described?",
+      "q": "What can be inferred?",
       "options": [
-        "They are fictional examples.",
-        "They are random and unpredictable.",
-        "They occur independently.",
-        "They influence each other through broader factors."
-      ],
-      "answer": 3
-    },
-    {
-      "q": "The word \"Society\" in the passage is closest in meaning to:",
-      "options": [
-        "story",
-        "accident",
-        "structure",
-        "emotion"
+        "Events are fictional.",
+        "Events are unrelated.",
+        "Events influence each other.",
+        "Events are random."
       ],
       "answer": 2
     },
     {
-      "q": "Which of the following is true according to the passage?",
+      "q": "Which is true?",
       "options": [
-        "The passage describes a personal opinion.",
+        "Events are part of a larger system.",
         "Only one event matters.",
-        "Events are completely unrelated.",
-        "Events are connected within a larger context."
+        "Events are independent.",
+        "The passage is opinion-based."
       ],
-      "answer": 3
+      "answer": 0
     },
     {
       "q": "What is the author's purpose?",
       "options": [
-        "To describe personal experiences.",
-        "To entertain with a story.",
-        "To teach grammar rules.",
-        "To explain and analyze real-world developments."
+        "To teach vocabulary.",
+        "To analyze real-world developments.",
+        "To describe a story.",
+        "To entertain readers."
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What is the tone?",
+      "options": [
+        "Narrative",
+        "Humorous",
+        "Emotional",
+        "Analytical"
       ],
       "answer": 3
     }
   ],
-  "summary": "(____) developments reported in the news highlight changes that are shaping this area. leaders on Saturday night. They reflect broader structural changes and shifting expectations across systems.",
+  "summary": "(____) than isolated events, these developments reflect broader trends. One (____) was shot, but he was protected by a bulletproof vest. (____) these reports focus on different situations, they are connected through underlying structural factors such as policy decisions, expectations, and external pressures.",
   "summaryQuiz": [
     {
-      "answer": "society",
+      "answer": "rather",
       "options": [
-        "reading",
-        "chicago",
-        "knives",
-        "society"
+        "system",
+        "market",
+        "change",
+        "rather"
       ]
     },
     {
-      "answer": "reading",
+      "answer": "officer",
       "options": [
-        "reading",
-        "suspect",
-        "shaping",
-        "another"
+        "market",
+        "pressure",
+        "decision",
+        "officer"
       ]
     },
     {
-      "answer": "recent",
+      "answer": "although",
       "options": [
-        "president",
-        "suspect",
-        "recent",
-        "individual"
+        "although",
+        "pressure",
+        "policy",
+        "system"
       ]
     }
   ],
   "newsItems": [
     {
+      "title": "WATCH: D.C. officials share updates on the White House Correspondents' Dinner shooting",
+      "content": "The suspect in a shooting incident at Saturday's correspondents' dinner attended by President Donald Trump and other senior U.S. officials was carrying guns and knives and was believed to be acting alone, the mayor of Washington said."
+    },
+    {
       "title": "WATCH: Trump holds press conference after shooting at White House Correspondents' Dinner",
       "content": "Trump said the suspect was armed with multiple weapons before stopped by Secret Service. One officer was shot, but he was protected by a bulletproof vest."
     },
     {
-      "title": "Trump evacuated after security incident at White House correspondents dinner; no sign of injuries",
+      "title": "Trump unharmed after security incident at White House Correspondents' Dinner",
       "content": "A man armed with guns and knives stormed the lobby outside a high-profile journalists' dinner attended by President Donald Trump and multiple senior U.S. leaders on Saturday night. The president was uninjured and was hustled away."
     },
     {
@@ -102,10 +106,6 @@
     {
       "title": "Mexico says 2 U.S. federal agents who died were not authorized to participate in any local operation",
       "content": "Mexico's government said Saturday that two U.S. federal agents recently killed in a car crash in the country's northern region were not authorized to participate in operations in Mexico."
-    },
-    {
-      "title": "U.S. doctors warn of a potentially bad year for tick-borne diseases",
-      "content": "Tick season seems to be off to a fast start, with an unusually high number of bites already reported across the country."
     }
   ]
 }
