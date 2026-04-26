@@ -10,18 +10,6 @@ const FEEDS = {
   top: "https://www.pbs.org/newshour/feeds/rss/headlines"
 };
 
-const TOPICS = [
-  { key: "economy", label: "Economy" },
-  { key: "society", label: "Society" },
-  { key: "science", label: "Science" },
-  { key: "world", label: "World Issues" }
-];
-
-function getTodayTopic() {
-  const day = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
-  return TOPICS[day % TOPICS.length];
-}
-
 function cleanText(text = "") {
   return String(text)
     .replace(/<[^>]*>/g, " ")
@@ -37,61 +25,93 @@ function splitSentences(text = "") {
   return cleanText(text)
     .split(/(?<=[.!?])\s+/)
     .map((s) => s.trim())
-    .filter((s) => s.length > 40);
+    .filter((s) => s.length > 20);
 }
 
 async function fetchNews() {
   try {
     const feed = await parser.parseURL(FEEDS.top);
 
-    return (feed.items || []).map((item) => ({
-      title: cleanText(item.title || ""),
-      link: item.link || "",
-      pubDate: item.pubDate || "",
-      content: cleanText(
-        item.contentSnippet || item.content || item.summary || ""
-      )
-    }));
+    return (feed.items || [])
+      .map((item) => ({
+        title: cleanText(item.title || ""),
+        link: item.link || "",
+        pubDate: item.pubDate || "",
+        content: cleanText(
+          item.contentSnippet || item.content || item.summary || ""
+        )
+      }))
+      .filter((item) => item.title);
   } catch {
     return [];
   }
 }
 
 function pickMainNews(newsItems) {
+  const usable = newsItems.filter(
+    (item) => item.content && item.content.length > 80
+  );
+
   return (
-    newsItems
-      .filter((n) => n.content && n.content.length > 200)
-      .sort((a, b) => b.content.length - a.content.length)[0] ||
+    usable.sort((a, b) => b.content.length - a.content.length)[0] ||
     newsItems[0] || {
       title: "Daily News Reading",
       content:
-        "Today’s news focuses on a developing issue that affects public life. Officials, institutions, and ordinary people are watching how the situation changes. The details remain important because they help explain how one event can influence broader decisions."
+        "A recent news report describes an important public event. The report includes details about what happened, who was involved, and how officials responded."
     }
   );
 }
 
+function getWhoWhatWhere(title, content) {
+  const text = `${title}. ${content}`;
+  const sentences = splitSentences(text);
+
+  return {
+    first: sentences[0] || title,
+    second: sentences[1] || "",
+    third: sentences[2] || ""
+  };
+}
+
 function buildReading(mainNews) {
-  const sentences = splitSentences(mainNews.content);
+  const { first, second, third } = getWhoWhatWhere(
+    mainNews.title,
+    mainNews.content
+  );
 
-  const p1 = sentences.slice(0, 3).join(" ");
-  const p2 = sentences.slice(3, 6).join(" ");
-  const p3 = sentences.slice(6, 9).join(" ");
-  const p4 = sentences.slice(9, 12).join(" ");
+  const title = mainNews.title;
+  const content = mainNews.content;
 
-  const paragraphs = [p1, p2, p3, p4]
-    .map((p) => p.trim())
-    .filter(Boolean);
+  const p1 = first;
 
-  if (paragraphs.length === 0) {
-    return mainNews.content || mainNews.title;
-  }
+  const p2 = second
+    ? `${second} This detail gives readers more information about the situation described in the report.`
+    : `The report centers on ${title.toLowerCase()}. The event drew attention because it involved specific people, actions, and an immediate response.`;
 
-  return paragraphs.join("\n\n");
+  const p3 = third
+    ? `${third} This part of the report helps explain how the event developed after the first details became clear.`
+    : `The available details show that the situation was not simply a headline. The report describes what happened, how the people involved were affected, and how the response unfolded.`;
+
+  const p4 =
+    `The main facts of the report are connected by the same event: ${content} ` +
+    `For readers, the important task is to follow the order of events and notice how each detail adds to the overall picture.`;
+
+  const p5 =
+    `The headline, "${title}," gives the main subject of the reading. ` +
+    `The body of the report provides the details needed to understand the event more clearly.`;
+
+  return [p1, p2, p3, p4, p5]
+    .map((p) => cleanText(p))
+    .filter(Boolean)
+    .join("\n\n");
+}
+
+function shuffleArray(items) {
+  return [...items].sort(() => Math.random() - 0.5);
 }
 
 function buildSummary(reading) {
   const sentences = splitSentences(reading);
-
   const selected = [
     sentences[0],
     sentences[Math.floor(sentences.length / 2)],
@@ -115,20 +135,30 @@ function buildSummary(reading) {
     "would",
     "could",
     "should",
-    "official",
-    "people"
+    "people",
+    "readers",
+    "report",
+    "headline",
+    "details"
   ]);
 
-  function pickWord(sentence) {
+  function pickWord(sentence, usedWords) {
     const words = sentence.match(/\b[a-zA-Z][a-zA-Z-]{5,}\b/g) || [];
+
     return (
       words
-        .map((w) => w.toLowerCase())
-        .find((w) => !banned.has(w)) || "development"
+        .map((word) => word.toLowerCase())
+        .find((word) => !banned.has(word) && !usedWords.has(word)) ||
+      "event"
     );
   }
 
-  const answers = selected.map(pickWord).slice(0, 3);
+  const usedWords = new Set();
+  const answers = selected.map((sentence) => {
+    const word = pickWord(sentence, usedWords);
+    usedWords.add(word);
+    return word;
+  });
 
   let text = selected.join(" ");
 
@@ -139,8 +169,8 @@ function buildSummary(reading) {
   const allWords = [
     ...new Set(
       (reading.match(/\b[a-zA-Z][a-zA-Z-]{5,}\b/g) || [])
-        .map((w) => w.toLowerCase())
-        .filter((w) => !banned.has(w))
+        .map((word) => word.toLowerCase())
+        .filter((word) => !banned.has(word))
     )
   ];
 
@@ -153,8 +183,8 @@ function buildSummary(reading) {
     }
 
     while (options.length < 4) {
-      const fallback = ["policy", "market", "pressure", "decision", "system"];
-      const next = fallback.find((w) => !options.includes(w));
+      const fallback = ["security", "officials", "response", "event", "public"];
+      const next = fallback.find((word) => !options.includes(word));
       options.push(next || `choice${options.length + 1}`);
     }
 
@@ -171,10 +201,6 @@ function buildSummary(reading) {
   };
 }
 
-function shuffleArray(items) {
-  return [...items].sort(() => Math.random() - 0.5);
-}
-
 function makeQuestion(q, correct, wrongs) {
   const options = shuffleArray([correct, ...wrongs]);
   return {
@@ -187,55 +213,54 @@ function makeQuestion(q, correct, wrongs) {
 function buildQuiz(mainNews) {
   return [
     makeQuestion(
-      "What is the main idea of the passage?",
-      "The passage explains a real news development in detail.",
+      "What is the passage mainly about?",
+      mainNews.title,
       [
-        "The passage tells a fictional story.",
-        "The passage only lists vocabulary words.",
-        "The passage describes a personal diary."
+        "A fictional story about private life",
+        "A grammar explanation with no news content",
+        "A list of unrelated vocabulary words"
       ]
     ),
     makeQuestion(
-      "What can be inferred from the passage?",
-      "The issue may have broader consequences beyond the immediate event.",
+      "What should readers follow while reading?",
+      "The order of events and the details that explain the situation",
       [
-        "The event has no wider meaning.",
-        "The passage is unrelated to current events.",
-        "The issue has already been fully resolved."
+        "Only the title without reading the body",
+        "Random opinions unrelated to the report",
+        "A fictional conversation between characters"
       ]
     ),
     makeQuestion(
-      "Why are the details in the passage important?",
-      "They help readers understand the development more clearly.",
+      "Why are the details important?",
+      "They help explain what happened and how the situation developed",
       [
-        "They are included only for entertainment.",
-        "They replace the main idea.",
-        "They are unrelated to the topic."
+        "They remove the need to understand the event",
+        "They make the report fictional",
+        "They are unrelated to the main subject"
       ]
     ),
     makeQuestion(
       "What is the author’s purpose?",
-      "To explain a real-world issue clearly.",
+      "To explain a real news event clearly",
       [
-        "To write a fictional narrative.",
-        "To teach grammar rules only.",
-        "To describe a private experience."
+        "To entertain with a made-up story",
+        "To teach only grammar rules",
+        "To describe a personal diary"
       ]
     ),
     makeQuestion(
-      `The headline of the source news is closest to which idea?`,
+      "Which source detail is used as the main subject?",
       mainNews.title,
       [
-        "A random entertainment update",
-        "A fictional event",
-        "A grammar lesson"
+        "A random movie title",
+        "A private travel plan",
+        "A fictional school story"
       ]
     )
   ];
 }
 
 async function build() {
-  const topic = getTodayTopic();
   const newsItems = await fetchNews();
   const mainNews = pickMainNews(newsItems);
   const reading = buildReading(mainNews);
@@ -243,8 +268,8 @@ async function build() {
 
   const data = {
     date: new Date().toISOString(),
-    category: topic.key,
-    categoryLabel: topic.label,
+    category: "daily-news",
+    categoryLabel: "Daily News",
     headline: mainNews.title,
     reading,
     quiz: buildQuiz(mainNews),
