@@ -22,218 +22,243 @@ function getTodayTopic() {
   return TOPICS[day % TOPICS.length];
 }
 
-function splitSentences(text = "") {
-  return text
+function cleanText(text = "") {
+  return String(text)
+    .replace(/<[^>]*>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#x27;/g, "'")
     .replace(/\s+/g, " ")
+    .trim();
+}
+
+function splitSentences(text = "") {
+  return cleanText(text)
     .split(/(?<=[.!?])\s+/)
+    .map((s) => s.trim())
     .filter((s) => s.length > 40);
 }
 
-/**
- * 뉴스 가져오기
- */
 async function fetchNews() {
   try {
     const feed = await parser.parseURL(FEEDS.top);
 
     return (feed.items || []).map((item) => ({
-      title: item.title || "",
-      content:
-        item.contentSnippet ||
-        item.content ||
-        item.summary ||
-        ""
+      title: cleanText(item.title || ""),
+      link: item.link || "",
+      pubDate: item.pubDate || "",
+      content: cleanText(
+        item.contentSnippet || item.content || item.summary || ""
+      )
     }));
   } catch {
     return [];
   }
 }
 
-/**
- * 🔥 가장 좋은 뉴스 선택 (핵심)
- */
 function pickMainNews(newsItems) {
-  return newsItems
-    .filter((n) => n.content && n.content.length > 200)
-    .sort((a, b) => b.content.length - a.content.length)[0] || newsItems[0];
+  return (
+    newsItems
+      .filter((n) => n.content && n.content.length > 200)
+      .sort((a, b) => b.content.length - a.content.length)[0] ||
+    newsItems[0] || {
+      title: "Daily News Reading",
+      content:
+        "Today’s news focuses on a developing issue that affects public life. Officials, institutions, and ordinary people are watching how the situation changes. The details remain important because they help explain how one event can influence broader decisions."
+    }
+  );
 }
 
-/**
- * 🔥 하나의 뉴스 → 기사형 리딩
- */
-function buildReading(topic, main) {
-  const sentences = splitSentences(main.content);
+function buildReading(mainNews) {
+  const sentences = splitSentences(mainNews.content);
 
-  const intro = `${topic.label} is the focus of today’s reading. A recent report highlights an important development in this area.`;
+  const p1 = sentences.slice(0, 3).join(" ");
+  const p2 = sentences.slice(3, 6).join(" ");
+  const p3 = sentences.slice(6, 9).join(" ");
+  const p4 = sentences.slice(9, 12).join(" ");
 
-  const p1 = sentences.slice(0, 2).join(" ");
-  const p2 = sentences.slice(2, 4).join(" ");
+  const paragraphs = [p1, p2, p3, p4]
+    .map((p) => p.trim())
+    .filter(Boolean);
 
-  const explanation = `This development is important because it reflects broader changes that may influence decisions and expectations. The situation may continue to evolve depending on how key factors develop over time.`;
+  if (paragraphs.length === 0) {
+    return mainNews.content || mainNews.title;
+  }
 
-  const conclusion = `Overall, this case shows how a single event can provide insight into larger trends within ${topic.label.toLowerCase()}.`;
-
-  return [intro, p1, p2, explanation, conclusion].join("\n\n");
+  return paragraphs.join("\n\n");
 }
 
-/**
- * 🔥 요약 (항상 3 blanks)
- */
 function buildSummary(reading) {
-  const s = splitSentences(reading);
+  const sentences = splitSentences(reading);
 
   const selected = [
-    s[1],
-    s[Math.floor(s.length / 2)],
-    s[s.length - 2]
-  ];
+    sentences[0],
+    sentences[Math.floor(sentences.length / 2)],
+    sentences[sentences.length - 1]
+  ].filter(Boolean);
 
-  const answers = selected.map((sentence) => {
-    const words = sentence.match(/\b[a-zA-Z]{6,}\b/g) || [];
-    return words[0]?.toLowerCase() || "system";
-  });
+  const banned = new Set([
+    "today",
+    "reading",
+    "because",
+    "which",
+    "their",
+    "there",
+    "these",
+    "those",
+    "about",
+    "after",
+    "before",
+    "while",
+    "where",
+    "would",
+    "could",
+    "should",
+    "official",
+    "people"
+  ]);
+
+  function pickWord(sentence) {
+    const words = sentence.match(/\b[a-zA-Z][a-zA-Z-]{5,}\b/g) || [];
+    return (
+      words
+        .map((w) => w.toLowerCase())
+        .find((w) => !banned.has(w)) || "development"
+    );
+  }
+
+  const answers = selected.map(pickWord).slice(0, 3);
 
   let text = selected.join(" ");
 
-  answers.forEach((w) => {
-    text = text.replace(
-      new RegExp(`\\b${w}\\b`, "i"),
-      "(____)"
-    );
+  answers.forEach((answer) => {
+    text = text.replace(new RegExp(`\\b${answer}\\b`, "i"), "(____)");
   });
 
-  const quiz = answers.map((a) => ({
-    answer: a,
-    options: shuffleOptions(a)
-  }));
-
-  return { text, quiz };
-}
-
-function shuffleOptions(answer) {
-  const pool = [
-    "system",
-    "policy",
-    "market",
-    "change",
-    "pressure",
-    "decision"
+  const allWords = [
+    ...new Set(
+      (reading.match(/\b[a-zA-Z][a-zA-Z-]{5,}\b/g) || [])
+        .map((w) => w.toLowerCase())
+        .filter((w) => !banned.has(w))
+    )
   ];
 
-  const opts = [answer];
+  const summaryQuiz = answers.map((answer, index) => {
+    const options = [answer];
 
-  while (opts.length < 4) {
-    const pick = pool[Math.floor(Math.random() * pool.length)];
-    if (!opts.includes(pick)) opts.push(pick);
-  }
+    for (const word of allWords) {
+      if (options.length >= 4) break;
+      if (!options.includes(word)) options.push(word);
+    }
 
-  return opts.sort(() => Math.random() - 0.5);
-}
+    while (options.length < 4) {
+      const fallback = ["policy", "market", "pressure", "decision", "system"];
+      const next = fallback.find((w) => !options.includes(w));
+      options.push(next || `choice${options.length + 1}`);
+    }
 
-/**
- * 🔥 TOEFL 스타일 퀴즈
- */
-function shuffle(q, correct) {
-  const arr = q.map((opt, i) => ({
-    text: opt,
-    correct: i === correct
-  }));
-
-  const s = arr.sort(() => Math.random() - 0.5);
+    return {
+      blank: index + 1,
+      answer,
+      options: shuffleArray(options)
+    };
+  });
 
   return {
-    options: s.map((x) => x.text),
-    answer: s.findIndex((x) => x.correct)
+    text,
+    quiz: summaryQuiz
   };
 }
 
-function buildQuiz() {
+function shuffleArray(items) {
+  return [...items].sort(() => Math.random() - 0.5);
+}
+
+function makeQuestion(q, correct, wrongs) {
+  const options = shuffleArray([correct, ...wrongs]);
+  return {
+    q,
+    options,
+    answer: options.indexOf(correct)
+  };
+}
+
+function buildQuiz(mainNews) {
   return [
-    {
-      q: "What is the main idea of the passage?",
-      ...shuffle(
-        [
-          "The passage explains a real-world development.",
-          "The passage tells a fictional story.",
-          "The passage lists vocabulary.",
-          "The passage describes a personal diary."
-        ],
-        0
-      )
-    },
-    {
-      q: "What can be inferred?",
-      ...shuffle(
-        [
-          "The situation may continue to evolve.",
-          "Nothing will change.",
-          "The event is unrelated to others.",
-          "The event is fictional."
-        ],
-        0
-      )
-    },
-    {
-      q: "Which is true?",
-      ...shuffle(
-        [
-          "The event reflects broader trends.",
-          "The event is isolated.",
-          "The event is random.",
-          "The event is irrelevant."
-        ],
-        0
-      )
-    },
-    {
-      q: "What is the author's purpose?",
-      ...shuffle(
-        [
-          "To explain and analyze a real event.",
-          "To entertain readers.",
-          "To teach grammar.",
-          "To describe a story."
-        ],
-        0
-      )
-    },
-    {
-      q: "What is the tone?",
-      ...shuffle(
-        ["Analytical", "Emotional", "Humorous", "Narrative"],
-        0
-      )
-    }
+    makeQuestion(
+      "What is the main idea of the passage?",
+      "The passage explains a real news development in detail.",
+      [
+        "The passage tells a fictional story.",
+        "The passage only lists vocabulary words.",
+        "The passage describes a personal diary."
+      ]
+    ),
+    makeQuestion(
+      "What can be inferred from the passage?",
+      "The issue may have broader consequences beyond the immediate event.",
+      [
+        "The event has no wider meaning.",
+        "The passage is unrelated to current events.",
+        "The issue has already been fully resolved."
+      ]
+    ),
+    makeQuestion(
+      "Why are the details in the passage important?",
+      "They help readers understand the development more clearly.",
+      [
+        "They are included only for entertainment.",
+        "They replace the main idea.",
+        "They are unrelated to the topic."
+      ]
+    ),
+    makeQuestion(
+      "What is the author’s purpose?",
+      "To explain a real-world issue clearly.",
+      [
+        "To write a fictional narrative.",
+        "To teach grammar rules only.",
+        "To describe a private experience."
+      ]
+    ),
+    makeQuestion(
+      `The headline of the source news is closest to which idea?`,
+      mainNews.title,
+      [
+        "A random entertainment update",
+        "A fictional event",
+        "A grammar lesson"
+      ]
+    )
   ];
 }
 
-/**
- * 실행
- */
 async function build() {
   const topic = getTodayTopic();
   const newsItems = await fetchNews();
-
-  const main = pickMainNews(newsItems);
-
-  const reading = buildReading(topic, main);
+  const mainNews = pickMainNews(newsItems);
+  const reading = buildReading(mainNews);
   const summary = buildSummary(reading);
 
   const data = {
     date: new Date().toISOString(),
     category: topic.key,
     categoryLabel: topic.label,
-    headline: main.title,
+    headline: mainNews.title,
     reading,
-    quiz: buildQuiz(),
+    quiz: buildQuiz(mainNews),
     summary: summary.text,
     summaryQuiz: summary.quiz,
     newsItems
   };
 
-  fs.writeFileSync("todayReading.json", JSON.stringify(data, null, 2));
+  fs.writeFileSync("todayReading.json", JSON.stringify(data, null, 2), "utf8");
 
-  console.log("✅ DONE (final stable version)");
+  console.log("✅ DONE:", mainNews.title);
 }
 
-build();
+build().catch((err) => {
+  console.error("❌ ERROR:", err);
+  process.exit(1);
+});
