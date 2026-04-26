@@ -1,99 +1,99 @@
 {
-  "date": "2026-04-26T03:40:16.121Z",
+  "date": "2026-04-26T03:44:53.188Z",
   "category": "society",
   "categoryLabel": "Society",
   "headline": "Society Reading",
-  "reading": "Society is the focus of today’s reading. Several recent developments highlight important changes in this area.\n\nTrump said the suspect was armed with multiple weapons before stopped by Secret Service. President Donald Trump and other top leaders of the United States were evacuated from an annual dinner of White House correspondents on Saturday night after an unspecified threat. A police officer died and another was critically injured after a shooting at a Chicago hospital on Saturday, according to officials.\n\nThese developments show that the situation is evolving through connected events rather than isolated cases. Understanding how these changes interact is important for interpreting what may happen next.",
+  "reading": "Society is the focus of today’s reading. Recent developments reported in the news highlight changes that are shaping this area.\n\nTrump said the suspect was armed with multiple weapons before stopped by Secret Service. One officer was shot, but he was protected by a bulletproof vest.\n\nA man armed with guns and knives stormed the lobby outside a high-profile journalists' dinner attended by President Donald Trump and multiple senior U.S. leaders on Saturday night. The president was uninjured and was hustled away.\n\nA police officer died and another was critically injured after a shooting at a Chicago hospital on Saturday, according to officials.\n\nThese developments are not isolated. They reflect broader structural changes and shifting expectations across systems.\n\nThis suggests that understanding society requires analyzing how individual events interact within a larger context.",
   "quiz": [
     {
-      "q": "What is the main idea of the reading?",
+      "q": "What is the main idea of the passage?",
       "options": [
-        "It explains recent real-world developments.",
-        "It is a fictional story.",
-        "It teaches grammar rules.",
-        "It describes personal experiences."
+        "The passage describes personal experiences.",
+        "The passage focuses only on vocabulary.",
+        "The passage tells a fictional story.",
+        "The passage explains how recent developments are interconnected."
       ],
-      "answer": 0
+      "answer": 3
     },
     {
-      "q": "What do the events in the passage show?",
+      "q": "What can be inferred about the events described?",
       "options": [
-        "They are connected developments.",
-        "They are unrelated.",
-        "They are random.",
-        "They are fictional."
+        "They are fictional examples.",
+        "They are random and unpredictable.",
+        "They occur independently.",
+        "They influence each other through broader factors."
       ],
-      "answer": 0
+      "answer": 3
     },
     {
-      "q": "What should readers understand?",
+      "q": "The word \"Society\" in the passage is closest in meaning to:",
       "options": [
-        "How events influence each other.",
-        "Only vocabulary meanings.",
-        "Only individual facts.",
-        "Only opinions."
+        "story",
+        "accident",
+        "structure",
+        "emotion"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
-      "q": "What is emphasized in the passage?",
+      "q": "Which of the following is true according to the passage?",
       "options": [
-        "Interpretation of developments.",
-        "Entertainment value.",
-        "Personal feelings.",
-        "Storytelling."
+        "The passage describes a personal opinion.",
+        "Only one event matters.",
+        "Events are completely unrelated.",
+        "Events are connected within a larger context."
       ],
-      "answer": 0
+      "answer": 3
     },
     {
-      "q": "What is the purpose of the reading?",
+      "q": "What is the author's purpose?",
       "options": [
-        "To explain real events clearly.",
-        "To create fiction.",
-        "To list words.",
-        "To describe a diary."
+        "To describe personal experiences.",
+        "To entertain with a story.",
+        "To teach grammar rules.",
+        "To explain and analyze real-world developments."
       ],
-      "answer": 0
+      "answer": 3
     }
   ],
-  "summary": "(____) is the focus of today’s (____). (____) recent developments highlight important changes in this area. Trump said the suspect was armed with multiple weapons before stopped by Secret Service.",
+  "summary": "(____) developments reported in the news highlight changes that are shaping this area. leaders on Saturday night. They reflect broader structural changes and shifting expectations across systems.",
   "summaryQuiz": [
     {
       "answer": "society",
       "options": [
-        "society",
-        "suspect",
-        "states",
-        "officials"
+        "reading",
+        "chicago",
+        "knives",
+        "society"
       ]
     },
     {
       "answer": "reading",
       "options": [
         "reading",
-        "donald",
-        "interact",
-        "shooting"
+        "suspect",
+        "shaping",
+        "another"
       ]
     },
     {
-      "answer": "several",
+      "answer": "recent",
       "options": [
-        "several",
+        "president",
         "suspect",
-        "rather",
-        "correspondents"
+        "recent",
+        "individual"
       ]
     }
   ],
   "newsItems": [
     {
-      "title": "WATCH LIVE: Trump holds press conference after shooting at White House Correspondents' Dinner",
+      "title": "WATCH: Trump holds press conference after shooting at White House Correspondents' Dinner",
       "content": "Trump said the suspect was armed with multiple weapons before stopped by Secret Service. One officer was shot, but he was protected by a bulletproof vest."
     },
     {
       "title": "Trump evacuated after security incident at White House correspondents dinner; no sign of injuries",
-      "content": "President Donald Trump and other top leaders of the United States were evacuated from an annual dinner of White House correspondents on Saturday night after an unspecified threat. There did not immediately appear to be any injuries."
+      "content": "A man armed with guns and knives stormed the lobby outside a high-profile journalists' dinner attended by President Donald Trump and multiple senior U.S. leaders on Saturday night. The president was uninjured and was hustled away."
     },
     {
       "title": "One police officer killed and another critically injured in Chicago hospital shooting, officials say",
