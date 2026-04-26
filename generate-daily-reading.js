@@ -22,9 +22,6 @@ function getTodayTopic() {
   return TOPICS[day % TOPICS.length];
 }
 
-/**
- * 뉴스 가져오기
- */
 async function fetchNews() {
   try {
     const feed = await parser.parseURL(FEEDS.top);
@@ -44,136 +41,152 @@ async function fetchNews() {
   }
 }
 
-/**
- * 문장 나누기
- */
 function splitSentences(text = "") {
   return text
     .replace(/\s+/g, " ")
     .split(/(?<=[.!?])\s+/)
-    .map((s) => s.trim())
     .filter(Boolean);
 }
 
-/**
- * 뉴스 핵심 문장 추출
- */
-function extractKeySentence(news) {
-  const sentences = splitSentences(news.content);
-
-  const valid = sentences.filter((s) => s.length > 80);
-
-  return valid[0] || sentences[0] || news.title;
+function extract(news) {
+  const s = splitSentences(news.content);
+  return [s[0], s[1], s[2]].filter(Boolean).join(" ");
 }
 
 /**
- * 🔥 진짜 뉴스 기반 리딩 생성
+ * 🔥 기사형 리딩
  */
 function buildReading(topic, newsItems) {
   const selected = newsItems.slice(0, 3);
 
-  const intro = `${topic.label} is the focus of today’s reading. Several recent developments highlight important changes in this area.`;
+  const intro = `${topic.label} is the focus of today’s reading. Recent developments reported in the news highlight changes that are shaping this area.`;
 
-  const body = selected
-    .map((news) => extractKeySentence(news))
-    .join(" ");
+  const body = selected.map((n) => extract(n));
 
-  const analysis = `These developments show that the situation is evolving through connected events rather than isolated cases. Understanding how these changes interact is important for interpreting what may happen next.`;
+  const bridge = `These developments are not isolated. They reflect broader structural changes and shifting expectations across systems.`;
 
-  return [intro, body, analysis].join("\n\n");
+  const analysis = `This suggests that understanding ${topic.label.toLowerCase()} requires analyzing how individual events interact within a larger context.`;
+
+  return [intro, ...body, bridge, analysis].join("\n\n");
 }
 
 /**
- * 요약 (빈칸 3개)
+ * 요약 (핵심 문장 + 빈칸 3개)
  */
 function buildSummary(reading) {
-  const sentences = splitSentences(reading).slice(0, 3);
+  const sentences = splitSentences(reading);
+
+  const selected = [
+    sentences[1],
+    sentences[Math.floor(sentences.length / 2)],
+    sentences[sentences.length - 2]
+  ];
 
   const words = reading.match(/\b[a-zA-Z]{6,}\b/g) || [];
   const unique = [...new Set(words.map((w) => w.toLowerCase()))];
 
   const answers = unique.slice(0, 3);
 
-  let summaryText = sentences.join(" ");
+  let text = selected.join(" ");
 
-  answers.forEach((word) => {
-    summaryText = summaryText.replace(
-      new RegExp(`\\b${word}\\b`, "i"),
-      "(____)"
-    );
+  answers.forEach((w) => {
+    text = text.replace(new RegExp(`\\b${w}\\b`, "i"), "(____)");
   });
 
-  const summaryQuiz = answers.map((answer) => {
-    const options = [answer];
+  const quiz = answers.map((a) => {
+    const opts = [a];
 
-    while (options.length < 4) {
+    while (opts.length < 4) {
       const pick = unique[Math.floor(Math.random() * unique.length)];
-      if (!options.includes(pick)) options.push(pick);
+      if (!opts.includes(pick)) opts.push(pick);
     }
 
     return {
-      answer,
-      options: options.sort(() => Math.random() - 0.5)
+      answer: a,
+      options: opts.sort(() => Math.random() - 0.5)
     };
   });
 
-  return { text: summaryText, quiz: summaryQuiz };
+  return { text, quiz };
 }
 
 /**
- * 퀴즈
+ * 🔥 TOEFL 스타일 퀴즈
  */
+function shuffle(options, correct) {
+  const arr = options.map((o, i) => ({
+    text: o,
+    correct: i === correct
+  }));
+
+  const s = arr.sort(() => Math.random() - 0.5);
+
+  return {
+    options: s.map((x) => x.text),
+    answer: s.findIndex((x) => x.correct)
+  };
+}
+
 function buildQuiz(reading) {
+  const sentences = splitSentences(reading);
+
+  const vocabWord = (reading.match(/\b[a-zA-Z]{6,}\b/) || ["system"])[0];
+
   return [
     {
-      q: "What is the main idea of the reading?",
-      options: [
-        "It explains recent real-world developments.",
-        "It is a fictional story.",
-        "It teaches grammar rules.",
-        "It describes personal experiences."
-      ],
-      answer: 0
+      q: "What is the main idea of the passage?",
+      ...shuffle(
+        [
+          "The passage explains how recent developments are interconnected.",
+          "The passage tells a fictional story.",
+          "The passage focuses only on vocabulary.",
+          "The passage describes personal experiences."
+        ],
+        0
+      )
     },
     {
-      q: "What do the events in the passage show?",
-      options: [
-        "They are connected developments.",
-        "They are unrelated.",
-        "They are random.",
-        "They are fictional."
-      ],
-      answer: 0
+      q: "What can be inferred about the events described?",
+      ...shuffle(
+        [
+          "They influence each other through broader factors.",
+          "They occur independently.",
+          "They are random and unpredictable.",
+          "They are fictional examples."
+        ],
+        0
+      )
     },
     {
-      q: "What should readers understand?",
-      options: [
-        "How events influence each other.",
-        "Only vocabulary meanings.",
-        "Only individual facts.",
-        "Only opinions."
-      ],
-      answer: 0
+      q: `The word "${vocabWord}" in the passage is closest in meaning to:`,
+      ...shuffle(
+        ["structure", "story", "emotion", "accident"],
+        0
+      )
     },
     {
-      q: "What is emphasized in the passage?",
-      options: [
-        "Interpretation of developments.",
-        "Entertainment value.",
-        "Personal feelings.",
-        "Storytelling."
-      ],
-      answer: 0
+      q: "Which of the following is true according to the passage?",
+      ...shuffle(
+        [
+          "Events are connected within a larger context.",
+          "Events are completely unrelated.",
+          "Only one event matters.",
+          "The passage describes a personal opinion."
+        ],
+        0
+      )
     },
     {
-      q: "What is the purpose of the reading?",
-      options: [
-        "To explain real events clearly.",
-        "To create fiction.",
-        "To list words.",
-        "To describe a diary."
-      ],
-      answer: 0
+      q: "What is the author's purpose?",
+      ...shuffle(
+        [
+          "To explain and analyze real-world developments.",
+          "To entertain with a story.",
+          "To describe personal experiences.",
+          "To teach grammar rules."
+        ],
+        0
+      )
     }
   ];
 }
@@ -197,12 +210,9 @@ async function build() {
     newsItems
   };
 
-  fs.writeFileSync("todayReading.json", JSON.stringify(data, null, 2), "utf8");
+  fs.writeFileSync("todayReading.json", JSON.stringify(data, null, 2));
 
-  console.log("✅ DONE (real news based)");
+  console.log("✅ DONE: TOEFL-style reading generated");
 }
 
-build().catch((err) => {
-  console.error("❌ ERROR:", err);
-  process.exit(1);
-});
+build();
