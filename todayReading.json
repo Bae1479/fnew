@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-26T05:11:02.103Z",
+  "date": "2026-04-26T05:13:43.442Z",
   "category": "daily-news",
   "categoryLabel": "Daily News",
   "headline": "WATCH: D.C. officials share updates on the White House Correspondents' Dinner shooting",
-  "reading": "The suspect in a shooting incident at Saturday's correspondents' dinner attended by President Donald Trump and other senior U.S. officials was carrying guns and knives and was believed to be acting alone, the mayor of Washington said.\n\nTrump said the suspect was armed with multiple weapons before stopped by Secret Service. One officer was shot, but he was protected by a bulletproof vest.\n\nA man armed with guns and knives stormed the lobby outside a high-profile journalists' dinner attended by President Donald Trump and multiple senior U.S. The president was uninjured and was hustled away.",
+  "reading": "The suspect in a shooting incident at Saturday's correspondents' dinner attended by President Donald Trump and other senior U.S. officials was carrying guns and knives and was believed to be acting alone, the mayor of Washington said. The headline, \"WATCH: D.C. officials share updates on the White House Correspondents' Dinner shooting,\" gives the main context for this development.\n\nTrump said the suspect was armed with multiple weapons before stopped by Secret Service. One officer was shot, but he was protected by a bulletproof vest. The headline, \"WATCH: Trump holds press conference after shooting at White House Correspondents' Dinner,\" gives the main context for this development.\n\nA man armed with guns and knives stormed the lobby outside a high-profile journalists' dinner attended by President Donald Trump and multiple senior U.S. The president was uninjured and was hustled away. The headline, \"Trump unharmed after security incident at White House Correspondents' Dinner,\" gives the main context for this development.",
   "quiz": [
     {
       "q": "What is the main idea of the passage?",
@@ -30,20 +30,20 @@
       "options": [
         "One officer was shot, but he was protected by a bulletproof vest.",
         "The passage gives no factual information.",
-        "The passage is mainly about entertainment.",
-        "The passage avoids current events."
+        "The passage avoids current events.",
+        "The passage is mainly about entertainment."
       ],
       "answer": 0
     },
     {
       "q": "What can be inferred from the passage?",
       "options": [
-        "The issue has no real-world significance.",
         "The story is unrelated to public events.",
         "The situation may continue to receive attention.",
+        "The issue has no real-world significance.",
         "The passage is a fictional narrative."
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "q": "What is the author’s purpose?",
@@ -56,7 +56,7 @@
       "answer": 3
     }
   ],
-  "summary": "The (____) in a shooting incident at Saturday's correspondents' dinner attended by President Donald Trump and other senior U.S. One (____) was shot, but he was protected by a bulletproof vest. The (____) was uninjured and was hustled away.",
+  "summary": "The (____) in a shooting incident at Saturday's correspondents' dinner attended by President Donald Trump and other senior U.S. One (____) was shot, but he was protected by a bulletproof vest. The headline, \"Trump (____) after security incident at White House Correspondents' Dinner,\" gives the main context for this development.",
   "summaryQuiz": [
     {
       "answer": "suspect",
@@ -72,17 +72,17 @@
       "options": [
         "shooting",
         "suspect",
-        "officer",
-        "incident"
+        "incident",
+        "officer"
       ]
     },
     {
-      "answer": "president",
+      "answer": "unharmed",
       "options": [
-        "president",
-        "suspect",
         "shooting",
-        "incident"
+        "suspect",
+        "incident",
+        "unharmed"
       ]
     }
   ],
