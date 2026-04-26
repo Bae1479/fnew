@@ -53,21 +53,23 @@ function extractCore(news) {
 
 function buildReading(newsItems) {
   const selected = newsItems.slice(0, 3);
-  const cores = selected.flatMap(extractCore);
 
-  const seen = new Set();
-  const unique = cores.filter((sentence) => {
-    const key = sentence.toLowerCase().replace(/[^a-z0-9 ]/g, "").trim();
-    if (!key || seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  });
+  function makeBlock(news) {
+    const sentences = split(news.content);
+    const main = sentences.slice(0, 2).join(" ");
+    const title = news.title || "";
 
-  const p1 = unique.slice(0, 2).join(" ");
-  const p2 = unique.slice(2, 4).join(" ");
-  const p3 = unique.slice(4, 6).join(" ");
+    const context =
+      title && !main.toLowerCase().includes(title.toLowerCase())
+        ? `The headline, "${title}," gives the main context for this development.`
+        : "";
 
-  return [p1, p2, p3]
+    return [main, context].filter(Boolean).join(" ");
+  }
+
+  const blocks = selected.map(makeBlock).filter(Boolean);
+
+  return blocks
     .map(clean)
     .filter(Boolean)
     .join("\n\n");
