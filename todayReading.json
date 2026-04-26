@@ -1,120 +1,211 @@
 {
-  "date": "2026-04-25T17:11:26.084Z",
-  "category": "economy",
-  "categoryLabel": "Economy",
-  "subtopic": "consumers",
-  "headline": "Economy: Consumer Spending and Household Pressure",
-  "reading": "Consumer spending is the focus of today’s reading. It matters because household activity is a major part of the economy. When people spend confidently, businesses can grow, hire, and invest. When consumers pull back, companies may become more cautious.\n\nThe central issue is whether households can continue spending while facing high prices and borrowing costs. Many consumers still need to pay for food, housing, transportation, and healthcare. If wages do not rise fast enough, families may feel squeezed even when the broader economy appears stable.\n\nCredit conditions also matter. Higher interest rates make credit cards, car loans, and mortgages more expensive. This can limit how much people are willing or able to borrow. Over time, weaker borrowing can reduce demand and slow economic growth.\n\nBusinesses watch consumer behavior carefully. If shoppers become more selective, companies may adjust prices, reduce inventory, or change hiring plans. This means household pressure can eventually affect the wider economy.\n\nThis suggests that consumer behavior will remain one of the clearest signs of whether the economy is strong or under strain.",
+  "date": "2026-04-26T02:31:34.975Z",
+  "category": "society",
+  "categoryLabel": "Society",
+  "headline": "Society: Public Trust and Institutional Decisions",
+  "reading": "Public trust is the focus of today’s reading. Trust is essential for institutions such as governments, courts, and public agencies to function effectively. When people believe decisions are fair and transparent, they are more likely to accept outcomes even if they disagree.\n\nHowever, trust can weaken when decisions are unclear or appear inconsistent. In such cases, people may question whether institutions are acting responsibly. This can lead to broader social tension and reduce cooperation between the public and decision-makers.\n\nThe process of decision-making is just as important as the outcome. When institutions explain their reasoning clearly, they can maintain credibility. Without clear communication, even reasonable policies may face strong resistance.\n\nSocial issues often become more intense because they affect everyday life. Topics such as housing, education, and public safety are not abstract. They directly influence how people live, which is why responses to these issues can be emotional and immediate.\n\nIn the end, trust depends on both fairness and communication. Institutions must not only make decisions but also ensure that those decisions are understood and accepted by the public.",
   "quiz": [
     {
-      "q": "What is the main idea of today’s reading?",
+      "q": "What is the main idea of the reading?",
       "options": [
-        "The passage focuses only on grammar rules.",
-        "The passage mainly discusses a fictional personal story.",
-        "Economy: Consumer Spending and Household Pressure is the central topic.",
-        "The passage presents unrelated entertainment news."
-      ],
-      "answer": 2
-    },
-    {
-      "q": "How is the reading organized?",
-      "options": [
-        "It develops one issue across several connected paragraphs.",
-        "It tells a fictional dialogue.",
-        "It lists unrelated facts without explanation.",
-        "It gives only vocabulary definitions."
+        "Society: Public Trust and Institutional Decisions",
+        "A personal story about daily life.",
+        "A fictional narrative.",
+        "A list of unrelated facts."
       ],
       "answer": 0
     },
     {
-      "q": "What should readers follow while reading?",
+      "q": "What should readers focus on?",
       "options": [
-        "Only the first word of each paragraph.",
-        "How the central issue develops and affects decisions.",
-        "The order of random headlines.",
-        "A list of unrelated names."
+        "The relationship between key ideas in the passage.",
+        "Only the first sentence of each paragraph.",
+        "Random vocabulary words.",
+        "Irrelevant details."
       ],
-      "answer": 1
+      "answer": 0
     },
     {
-      "q": "What kind of reading is this?",
+      "q": "How is the passage structured?",
       "options": [
-        "A travel diary.",
-        "A poem.",
-        "A recipe.",
-        "A news-style reading focused on one topic."
+        "One central topic developed across paragraphs.",
+        "A series of unrelated topics.",
+        "A dialogue between characters.",
+        "A list of definitions."
       ],
-      "answer": 3
+      "answer": 0
     },
     {
-      "q": "Where does the final analysis appear?",
+      "q": "What is the tone of the passage?",
       "options": [
-        "It does not appear anywhere.",
-        "At the end of the reading.",
-        "Only in the title.",
-        "In a separate translation section."
+        "Analytical and explanatory.",
+        "Humorous and casual.",
+        "Fictional and dramatic.",
+        "Personal and emotional."
       ],
-      "answer": 1
+      "answer": 0
+    },
+    {
+      "q": "What is the purpose of the reading?",
+      "options": [
+        "To explain a real-world issue clearly.",
+        "To entertain with a story.",
+        "To teach grammar rules.",
+        "To describe a fictional event."
+      ],
+      "answer": 0
     }
   ],
-  "summary": "(consumer) spending is the focus of today’s reading. It matters because (household) activity is a major part of the economy. When people spend (confidently), businesses can grow, hire, and invest.",
+  "summary": "Public trust is the focus of today’s reading. (____) is essential for institutions such as governments, courts, and public agencies to function effectively. When people believe decisions are fair and transparent, they are more likely to accept outcomes even if they disagree.\n\nHowever, trust can weaken when decisions are unclear or appear inconsistent",
   "summaryQuiz": [
     {
       "blank": 1,
-      "answer": "consumer",
+      "answer": "key",
       "options": [
-        "consumer",
-        "economy",
-        "spending",
-        "consumers"
-      ]
-    },
-    {
-      "blank": 2,
-      "answer": "household",
-      "options": [
-        "household",
-        "companies",
-        "whether",
-        "become"
-      ]
-    },
-    {
-      "blank": 3,
-      "answer": "confidently",
-      "options": [
-        "confidently",
-        "reduce",
-        "prices",
-        "borrowing"
+        "key",
+        "random",
+        "irrelevant",
+        "fictional"
       ]
     }
   ],
   "newsItems": [
     {
-      "title": "U.S. says it's clearing Iranian mines in latest push to open the Strait of Hormuz",
-      "link": "https://www.pbs.org/newshour/world/u-s-says-its-clearing-iranian-mines-in-latest-push-to-open-the-strait-of-hormuz",
-      "pubDate": "Sat, 25 Apr 2026 12:25:07 -0400"
+      "creator": "Associated Press",
+      "title": "WATCH LIVE: Trump holds press conference after shooting at White House Correspondents' Dinner",
+      "link": "https://www.pbs.org/newshour/nation/watch-live-trump-holds-press-conference-after-shooting-at-white-house-correspondents-dinner",
+      "pubDate": "Sat, 25 Apr 2026 21:57:45 -0400",
+      "dc:creator": "Associated Press",
+      "content": "WASHINGTON (AP) — President Donald Trump was uninjured and other top leaders of the United States were evacuated from an annual dinner of White House correspondents on Saturday night after an unspecified threat. There did not immediately appear to be any injuries, and one law-enforcement official said a shooter had opened fire. Authorities said the incident occurred outside the ballroom where Trump and other guests were seated. It was not immediately clear what happened. The...",
+      "contentSnippet": "WASHINGTON (AP) — President Donald Trump was uninjured and other top leaders of the United States were evacuated from an annual dinner of White House correspondents on Saturday night after an unspecified threat. There did not immediately appear to be any injuries, and one law-enforcement official said a shooter had opened fire. Authorities said the incident occurred outside the ballroom where Trump and other guests were seated. It was not immediately clear what happened. The...",
+      "guid": "https://www.pbs.org/newshour/nation/watch-live-trump-holds-press-conference-after-shooting-at-white-house-correspondents-dinner",
+      "categories": [
+        {
+          "_": "Donald Trump news",
+          "$": {
+            "domain": "https://www.pbs.org/newshour/tag/donald-trump"
+          }
+        },
+        {
+          "_": "White House Correspondents' Dinner",
+          "$": {
+            "domain": "https://www.pbs.org/newshour/tag/white-house-correspondents-dinner"
+          }
+        }
+      ],
+      "isoDate": "2026-04-26T01:57:45.000Z"
     },
     {
-      "title": "Palestinians vote in the first Gaza elections held in more than 20 years",
-      "link": "https://www.pbs.org/newshour/world/palestinians-vote-in-the-first-gaza-elections-held-in-more-than-20-years",
-      "pubDate": "Sat, 25 Apr 2026 11:40:10 -0400"
+      "creator": "David Bauder, Associated Press",
+      "title": "Trump evacuated after security incident at White House correspondents dinner; no sign of injuries",
+      "link": "https://www.pbs.org/newshour/politics/trump-evacuated-after-security-incident-at-white-house-correspondents-dinner-no-sign-of-injuries",
+      "pubDate": "Sat, 25 Apr 2026 20:59:07 -0400",
+      "dc:creator": "David Bauder, Associated Press",
+      "content": "President Donald Trump and other top leaders of the United States were evacuated from an annual dinner of White House correspondents on Saturday night after an unspecified threat. There did not immediately appear to be any injuries.\r\n",
+      "contentSnippet": "President Donald Trump and other top leaders of the United States were evacuated from an annual dinner of White House correspondents on Saturday night after an unspecified threat. There did not immediately appear to be any injuries.",
+      "guid": "https://www.pbs.org/newshour/politics/trump-evacuated-after-security-incident-at-white-house-correspondents-dinner-no-sign-of-injuries",
+      "categories": [
+        {
+          "_": "Donald Trump news",
+          "$": {
+            "domain": "https://www.pbs.org/newshour/tag/donald-trump"
+          }
+        },
+        {
+          "_": "White House Correspondents' Association",
+          "$": {
+            "domain": "https://www.pbs.org/newshour/tag/white-house-correspondents-association"
+          }
+        }
+      ],
+      "isoDate": "2026-04-26T00:59:07.000Z"
     },
     {
-      "title": "U.S., Iranian delegations head to Pakistan, renewing hopes for diplomatic end to war",
-      "link": "https://www.pbs.org/newshour/show/u-s-iranian-delegations-head-to-pakistan-renewing-hopes-for-diplomatic-end-to-war",
-      "pubDate": "Fri, 24 Apr 2026 18:55:58 -0400"
+      "creator": "Associated Press",
+      "title": "One police officer killed and another critically injured in Chicago hospital shooting, officials say",
+      "link": "https://www.pbs.org/newshour/nation/one-police-officer-killed-and-another-critically-injured-in-chicago-hospital-shooting-officials-say",
+      "pubDate": "Sat, 25 Apr 2026 18:55:51 -0400",
+      "dc:creator": "Associated Press",
+      "content": "A police officer died and another was critically injured after a shooting at a Chicago hospital on Saturday, according to officials.",
+      "contentSnippet": "A police officer died and another was critically injured after a shooting at a Chicago hospital on Saturday, according to officials.",
+      "guid": "https://www.pbs.org/newshour/nation/one-police-officer-killed-and-another-critically-injured-in-chicago-hospital-shooting-officials-say",
+      "categories": [
+        {
+          "_": "Chicago",
+          "$": {
+            "domain": "https://www.pbs.org/newshour/tag/chicago"
+          }
+        },
+        {
+          "_": "Hospital",
+          "$": {
+            "domain": "https://www.pbs.org/newshour/tag/hospital"
+          }
+        },
+        {
+          "_": "shooting",
+          "$": {
+            "domain": "https://www.pbs.org/newshour/tag/shooting"
+          }
+        }
+      ],
+      "isoDate": "2026-04-25T22:55:51.000Z"
     },
     {
-      "title": "News Wrap: DOJ drops criminal probe into Jerome Powell",
-      "link": "https://www.pbs.org/newshour/show/news-wrap-doj-drops-criminal-probe-into-jerome-powell",
-      "pubDate": "Fri, 24 Apr 2026 18:50:55 -0400"
+      "creator": "Associated Press",
+      "title": "Mexico says 2 U.S. federal agents who died were not authorized to participate in any local operation",
+      "link": "https://www.pbs.org/newshour/world/mexico-says-2-u-s-federal-agents-who-died-were-not-authorized-to-participate-in-any-local-operation",
+      "pubDate": "Sat, 25 Apr 2026 18:38:00 -0400",
+      "dc:creator": "Associated Press",
+      "content": "Mexico's government said Saturday that two U.S. federal agents recently killed in a car crash in the country's northern region were not authorized to participate in operations in Mexico.",
+      "contentSnippet": "Mexico's government said Saturday that two U.S. federal agents recently killed in a car crash in the country's northern region were not authorized to participate in operations in Mexico.",
+      "guid": "https://www.pbs.org/newshour/world/mexico-says-2-u-s-federal-agents-who-died-were-not-authorized-to-participate-in-any-local-operation",
+      "categories": [
+        {
+          "_": "CIA",
+          "$": {
+            "domain": "https://www.pbs.org/newshour/tag/cia"
+          }
+        },
+        {
+          "_": "federal agents",
+          "$": {
+            "domain": "https://www.pbs.org/newshour/tag/federal-agents"
+          }
+        },
+        {
+          "_": "mexico",
+          "$": {
+            "domain": "https://www.pbs.org/newshour/tag/mexico"
+          }
+        }
+      ],
+      "isoDate": "2026-04-25T22:38:00.000Z"
     },
     {
-      "title": "Soldier's arrest over Polymarket bet on Maduro raid fuels insider trading concerns",
-      "link": "https://www.pbs.org/newshour/show/soldiers-arrest-over-polymarket-bet-on-maduro-raid-fuels-insider-trading-concerns",
-      "pubDate": "Fri, 24 Apr 2026 18:45:33 -0400"
+      "creator": "Mike Stobbe, Associated Press",
+      "title": "U.S. doctors warn of a potentially bad year for tick-borne diseases",
+      "link": "https://www.pbs.org/newshour/health/u-s-doctors-warn-of-a-potentially-bad-year-for-tick-borne-diseases",
+      "pubDate": "Sat, 25 Apr 2026 17:52:08 -0400",
+      "dc:creator": "Mike Stobbe, Associated Press",
+      "content": "Tick season seems to be off to a fast start, with an unusually high number of bites already reported across the country.",
+      "contentSnippet": "Tick season seems to be off to a fast start, with an unusually high number of bites already reported across the country.",
+      "guid": "https://www.pbs.org/newshour/health/u-s-doctors-warn-of-a-potentially-bad-year-for-tick-borne-diseases",
+      "categories": [
+        {
+          "_": "tick season",
+          "$": {
+            "domain": "https://www.pbs.org/newshour/tag/tick-season"
+          }
+        },
+        {
+          "_": "ticks",
+          "$": {
+            "domain": "https://www.pbs.org/newshour/tag/ticks"
+          }
+        }
+      ],
+      "isoDate": "2026-04-25T21:52:08.000Z"
     }
   ]
 }
