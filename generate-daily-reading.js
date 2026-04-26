@@ -36,7 +36,7 @@ async function fetchNews() {
   try {
     const feed = await parser.parseURL(FEEDS.top);
 
-    return (feed.items || []).slice(0, 5).map((item) => ({
+    return (feed.items || []).map((item) => ({
       title: item.title || "",
       content:
         item.contentSnippet ||
@@ -50,54 +50,50 @@ async function fetchNews() {
 }
 
 /**
- * 뉴스 1개 → 안정적으로 2~3문장
+ * 🔥 가장 좋은 뉴스 선택 (핵심)
  */
-function extractNewsBlock(news) {
-  const s = splitSentences(news.content);
-
-  // 👉 최소 5문장 확보 (부족하면 제목으로 보강)
-  const extended = [...s];
-
-  while (extended.length < 5) {
-    extended.push(news.title);
-  }
-
-  return extended.slice(0, 5).join(" ");
+function pickMainNews(newsItems) {
+  return newsItems
+    .filter((n) => n.content && n.content.length > 200)
+    .sort((a, b) => b.content.length - a.content.length)[0] || newsItems[0];
 }
 
 /**
- * 🔥 핵심: 하나의 흐름으로 연결
+ * 🔥 하나의 뉴스 → 기사형 리딩
  */
-function buildReading(topic, newsItems) {
-  const selected = newsItems.slice(0, 3);
+function buildReading(topic, main) {
+  const sentences = splitSentences(main.content);
 
-  const intro = `${topic.label} is the focus of today’s reading. Several recent developments reported in the news highlight important changes in this area.`;
+  const intro = `${topic.label} is the focus of today’s reading. A recent report highlights an important development in this area.`;
 
-  const p1 = extractNewsBlock(selected[0]);
-  const p2 = extractNewsBlock(selected[1]);
-  const p3 = extractNewsBlock(selected[2]);
+  const p1 = sentences.slice(0, 2).join(" ");
+  const p2 = sentences.slice(2, 4).join(" ");
 
-  return [intro, p1, p2, p3].join("\n\n");
+  const explanation = `This development is important because it reflects broader changes that may influence decisions and expectations. The situation may continue to evolve depending on how key factors develop over time.`;
+
+  const conclusion = `Overall, this case shows how a single event can provide insight into larger trends within ${topic.label.toLowerCase()}.`;
+
+  return [intro, p1, p2, explanation, conclusion].join("\n\n");
 }
 
 /**
  * 🔥 요약 (항상 3 blanks)
  */
 function buildSummary(reading) {
-  const sentences = splitSentences(reading);
+  const s = splitSentences(reading);
 
-  const s1 = sentences[1];
-  const s2 = sentences[Math.floor(sentences.length / 2)];
-  const s3 = sentences[sentences.length - 2];
+  const selected = [
+    s[1],
+    s[Math.floor(s.length / 2)],
+    s[s.length - 2]
+  ];
 
-  const targets = [s1, s2, s3];
-
-  const answers = targets.map((s) => {
-    const words = s.match(/\b[a-zA-Z]{6,}\b/g) || [];
+  const answers = selected.map((sentence) => {
+    const words = sentence.match(/\b[a-zA-Z]{6,}\b/g) || [];
     return words[0]?.toLowerCase() || "system";
   });
 
-  let text = `${s1} ${s2} ${s3}`;
+  let text = selected.join(" ");
 
   answers.forEach((w) => {
     text = text.replace(
@@ -157,10 +153,10 @@ function buildQuiz() {
       q: "What is the main idea of the passage?",
       ...shuffle(
         [
-          "Recent developments are interconnected.",
-          "A personal story is described.",
-          "A fictional event is presented.",
-          "Grammar rules are explained."
+          "The passage explains a real-world development.",
+          "The passage tells a fictional story.",
+          "The passage lists vocabulary.",
+          "The passage describes a personal diary."
         ],
         0
       )
@@ -169,10 +165,10 @@ function buildQuiz() {
       q: "What can be inferred?",
       ...shuffle(
         [
-          "Events influence each other.",
-          "Events are unrelated.",
-          "Events are random.",
-          "Events are fictional."
+          "The situation may continue to evolve.",
+          "Nothing will change.",
+          "The event is unrelated to others.",
+          "The event is fictional."
         ],
         0
       )
@@ -181,10 +177,10 @@ function buildQuiz() {
       q: "Which is true?",
       ...shuffle(
         [
-          "Events are part of a larger system.",
-          "Only one event matters.",
-          "Events are independent.",
-          "The passage is opinion-based."
+          "The event reflects broader trends.",
+          "The event is isolated.",
+          "The event is random.",
+          "The event is irrelevant."
         ],
         0
       )
@@ -193,10 +189,10 @@ function buildQuiz() {
       q: "What is the author's purpose?",
       ...shuffle(
         [
-          "To analyze real-world developments.",
+          "To explain and analyze a real event.",
           "To entertain readers.",
-          "To describe a story.",
-          "To teach vocabulary."
+          "To teach grammar.",
+          "To describe a story."
         ],
         0
       )
@@ -204,12 +200,7 @@ function buildQuiz() {
     {
       q: "What is the tone?",
       ...shuffle(
-        [
-          "Analytical",
-          "Emotional",
-          "Humorous",
-          "Narrative"
-        ],
+        ["Analytical", "Emotional", "Humorous", "Narrative"],
         0
       )
     }
@@ -223,14 +214,16 @@ async function build() {
   const topic = getTodayTopic();
   const newsItems = await fetchNews();
 
-  const reading = buildReading(topic, newsItems);
+  const main = pickMainNews(newsItems);
+
+  const reading = buildReading(topic, main);
   const summary = buildSummary(reading);
 
   const data = {
     date: new Date().toISOString(),
     category: topic.key,
     categoryLabel: topic.label,
-    headline: `${topic.label} Reading`,
+    headline: main.title,
     reading,
     quiz: buildQuiz(),
     summary: summary.text,
@@ -240,7 +233,7 @@ async function build() {
 
   fs.writeFileSync("todayReading.json", JSON.stringify(data, null, 2));
 
-  console.log("✅ DONE (stable version)");
+  console.log("✅ DONE (final stable version)");
 }
 
 build();
