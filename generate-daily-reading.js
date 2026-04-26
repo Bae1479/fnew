@@ -1,143 +1,75 @@
 const fs = require("fs");
-const Parser = require("rss-parser");
-
-const parser = new Parser({
-  timeout: 15000,
-  headers: { "User-Agent": "Mozilla/5.0" }
-});
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
-const OPENAI_MODEL = process.env.OPENAI_MODEL || "gpt-5.5-mini";
 
-const FEEDS = {
-  pbs: "https://www.pbs.org/newshour/feeds/rss/headlines"
-};
+const TOPICS = [
+  "Economics",
+  "World History",
+  "Philosophy",
+  "Technology",
+  "Society"
+];
 
-function clean(text = "") {
-  return String(text)
-    .replace(/<[^>]*>/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
+function getTodayTopic() {
+  const day = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
+  return TOPICS[day % TOPICS.length];
 }
 
-async function fetchNews() {
-  const feed = await parser.parseURL(FEEDS.pbs);
-
-  return (feed.items || [])
-    .slice(0, 6)
-    .map((item) => ({
-      title: clean(item.title || ""),
-      summary: clean(item.contentSnippet || item.content || item.summary || "")
-    }))
-    .filter((n) => n.title && n.summary.length > 50);
-}
-
-/**
- * 🔥 핵심: 퀄리티를 결정하는 프롬프트
- */
-function buildPrompt(newsItems) {
-  const newsText = newsItems
-    .map(
-      (item, i) =>
-        `News ${i + 1}:
-Title: ${item.title}
-Summary: ${item.summary}`
-    )
-    .join("\n\n");
-
+function buildPrompt(topic) {
   return `
-You are a professional journalist writing for advanced English learners.
+You are creating an English reading passage for advanced learners.
 
-Write ONE high-quality reading passage based on the news below.
+Topic: ${topic}
 
-STRICT RULES:
-- Must feel like a real news article (BBC / NYT style)
-- No repetition
-- No generic sentences like "this shows broader trends"
-- Use concrete details from the news
-- Smooth logical flow
+Write a high-quality reading passage.
 
-STRUCTURE:
-1. Strong opening (what happened)
-2. Key details (who, what, where, why)
-3. Develop situation with clarity
-4. End naturally (no vague conclusions)
-
-LENGTH:
+Rules:
+- Natural, professional English
+- Clear structure and logical flow
 - 4 to 6 paragraphs
-- Each paragraph 2-4 sentences
+- Each paragraph 2–4 sentences
+- No repetition
+- No generic filler phrases
 
-TONE:
-- Professional
-- Clear
-- Realistic
-- Slightly analytical but grounded in facts
-
----
-
-ALSO GENERATE:
-
+Also create:
 1. 5 reading comprehension questions:
-- main idea
-- detail
-- inference
-- vocabulary in context
-- author's purpose
+   - main idea
+   - detail
+   - inference
+   - vocabulary
+   - purpose
 
 2. Summary:
 - One paragraph
-- Exactly 3 blanks using (answer)
+- Exactly 3 blanks (use format: (answer))
 
-3. Summary quiz:
-- 3 questions
-- Each has 4 options
-
----
-
-RETURN ONLY JSON:
+Return JSON:
 
 {
   "headline": "",
   "reading": "",
-  "quiz": [
-    {
-      "q": "",
-      "options": ["", "", "", ""],
-      "answer": 0
-    }
-  ],
+  "quiz": [],
   "summary": "",
-  "summaryQuiz": [
-    {
-      "blank": 1,
-      "answer": "",
-      "options": ["", "", "", ""]
-    }
-  ]
+  "summaryQuiz": []
 }
-
----
-
-News:
-${newsText}
 `;
 }
 
-async function generateWithOpenAI(newsItems) {
-  const response = await fetch("https://api.openai.com/v1/responses", {
+async function generateReading(topic) {
+  const res = await fetch("https://api.openai.com/v1/responses", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${OPENAI_API_KEY}`,
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      model: OPENAI_MODEL,
-      input: buildPrompt(newsItems),
+      model: "gpt-5.5-mini",
+      input: buildPrompt(topic),
       text: { format: { type: "json_object" } }
     })
   });
 
-  const data = await response.json();
+  const data = await res.json();
 
   return JSON.parse(
     data.output[0].content[0].text
@@ -147,27 +79,19 @@ async function generateWithOpenAI(newsItems) {
 }
 
 async function build() {
-  const newsItems = await fetchNews();
-  const result = await generateWithOpenAI(newsItems);
+  const topic = getTodayTopic();
+  const result = await generateReading(topic);
 
   const data = {
     date: new Date().toISOString(),
-    category: "daily-news",
-    categoryLabel: "Daily News",
-    headline: result.headline,
-    reading: result.reading,
-    quiz: result.quiz,
-    summary: result.summary,
-    summaryQuiz: result.summaryQuiz,
-    newsItems
+    category: topic,
+    categoryLabel: topic,
+    ...result
   };
 
   fs.writeFileSync("todayReading.json", JSON.stringify(data, null, 2));
 
-  console.log("✅ DONE:", result.headline);
+  console.log("✅ DONE:", topic);
 }
 
-build().catch((err) => {
-  console.error("❌ ERROR:", err);
-  process.exit(1);
-});
+build().catch(console.error);
