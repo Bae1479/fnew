@@ -10,280 +10,223 @@ const FEEDS = {
   top: "https://www.pbs.org/newshour/feeds/rss/headlines"
 };
 
-function cleanText(text = "") {
+function clean(text = "") {
   return String(text)
     .replace(/<[^>]*>/g, " ")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&amp;/g, "&")
-    .replace(/&quot;/g, '"')
-    .replace(/&#x27;/g, "'")
     .replace(/\s+/g, " ")
     .trim();
 }
 
-function splitSentences(text = "") {
-  return cleanText(text)
+function split(text = "") {
+  return clean(text)
     .split(/(?<=[.!?])\s+/)
-    .map((s) => s.trim())
-    .filter((s) => s.length > 20);
+    .filter((s) => s.length > 30);
 }
 
+/**
+ * 뉴스 가져오기
+ */
 async function fetchNews() {
   try {
     const feed = await parser.parseURL(FEEDS.top);
 
     return (feed.items || [])
+      .slice(0, 5)
       .map((item) => ({
-        title: cleanText(item.title || ""),
-        link: item.link || "",
-        pubDate: item.pubDate || "",
-        content: cleanText(
+        title: clean(item.title),
+        content: clean(
           item.contentSnippet || item.content || item.summary || ""
         )
       }))
-      .filter((item) => item.title);
+      .filter((n) => n.content.length > 50);
   } catch {
     return [];
   }
 }
 
-function pickMainNews(newsItems) {
-  const usable = newsItems.filter(
-    (item) => item.content && item.content.length > 80
-  );
-
-  return (
-    usable.sort((a, b) => b.content.length - a.content.length)[0] ||
-    newsItems[0] || {
-      title: "Daily News Reading",
-      content:
-        "A recent news report describes an important public event. The report includes details about what happened, who was involved, and how officials responded."
-    }
-  );
+/**
+ * 핵심 문장 추출 (뉴스당 1~2개)
+ */
+function extractCore(news) {
+  const sentences = split(news.content);
+  return sentences.slice(0, 2);
 }
 
-function getWhoWhatWhere(title, content) {
-  const text = `${title}. ${content}`;
-  const sentences = splitSentences(text);
+/**
+ * 🔥 핵심: 요약 → 리딩 생성
+ */
+function buildReading(newsItems) {
+  const selected = newsItems.slice(0, 3);
 
-  return {
-    first: sentences[0] || title,
-    second: sentences[1] || "",
-    third: sentences[2] || ""
-  };
-}
+  const cores = selected.flatMap(extractCore);
 
-function buildReading(mainNews) {
-  const { first, second, third } = getWhoWhatWhere(
-    mainNews.title,
-    mainNews.content
-  );
+  // 중복 제거
+  const seen = new Set();
+  const unique = cores.filter((s) => {
+    const key = s.toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 
-  const title = mainNews.title;
-  const content = mainNews.content;
+  // 👉 핵심 내용을 자연스럽게 재구성
+  const p1 = unique.slice(0, 2).join(" ");
 
-  const p1 = first;
+  const p2 =
+    unique.slice(2, 4).join(" ") ||
+    "Additional reports provide further details about the situation and how it developed.";
 
-  const p2 = second
-    ? `${second} This detail gives readers more information about the situation described in the report.`
-    : `The report centers on ${title.toLowerCase()}. The event drew attention because it involved specific people, actions, and an immediate response.`;
+  const p3 =
+    unique.slice(4, 6).join(" ") ||
+    "These developments show how the situation unfolded through a series of related events.";
 
-  const p3 = third
-    ? `${third} This part of the report helps explain how the event developed after the first details became clear.`
-    : `The available details show that the situation was not simply a headline. The report describes what happened, how the people involved were affected, and how the response unfolded.`;
-
-  const p4 =
-    `The main facts of the report are connected by the same event: ${content} ` +
-    `For readers, the important task is to follow the order of events and notice how each detail adds to the overall picture.`;
-
-  const p5 =
-    `The headline, "${title}," gives the main subject of the reading. ` +
-    `The body of the report provides the details needed to understand the event more clearly.`;
-
-  return [p1, p2, p3, p4, p5]
-    .map((p) => cleanText(p))
+  return [p1, p2, p3]
+    .map((p) => clean(p))
     .filter(Boolean)
     .join("\n\n");
 }
 
-function shuffleArray(items) {
-  return [...items].sort(() => Math.random() - 0.5);
-}
-
+/**
+ * 요약 (빈칸 3개)
+ */
 function buildSummary(reading) {
-  const sentences = splitSentences(reading);
+  const sentences = split(reading);
+
   const selected = [
     sentences[0],
     sentences[Math.floor(sentences.length / 2)],
     sentences[sentences.length - 1]
   ].filter(Boolean);
 
-  const banned = new Set([
-    "today",
-    "reading",
-    "because",
-    "which",
-    "their",
-    "there",
-    "these",
-    "those",
-    "about",
-    "after",
-    "before",
-    "while",
-    "where",
-    "would",
-    "could",
-    "should",
-    "people",
-    "readers",
-    "report",
-    "headline",
-    "details"
-  ]);
+  const words = reading.match(/\b[a-zA-Z]{6,}\b/g) || [];
+  const unique = [...new Set(words.map((w) => w.toLowerCase()))];
 
-  function pickWord(sentence, usedWords) {
-    const words = sentence.match(/\b[a-zA-Z][a-zA-Z-]{5,}\b/g) || [];
-
-    return (
-      words
-        .map((word) => word.toLowerCase())
-        .find((word) => !banned.has(word) && !usedWords.has(word)) ||
-      "event"
-    );
-  }
-
-  const usedWords = new Set();
-  const answers = selected.map((sentence) => {
-    const word = pickWord(sentence, usedWords);
-    usedWords.add(word);
-    return word;
-  });
+  const answers = unique.slice(0, 3);
 
   let text = selected.join(" ");
 
-  answers.forEach((answer) => {
-    text = text.replace(new RegExp(`\\b${answer}\\b`, "i"), "(____)");
+  answers.forEach((w) => {
+    text = text.replace(new RegExp(`\\b${w}\\b`, "i"), "(____)");
   });
 
-  const allWords = [
-    ...new Set(
-      (reading.match(/\b[a-zA-Z][a-zA-Z-]{5,}\b/g) || [])
-        .map((word) => word.toLowerCase())
-        .filter((word) => !banned.has(word))
-    )
-  ];
+  const quiz = answers.map((a) => {
+    const opts = [a];
 
-  const summaryQuiz = answers.map((answer, index) => {
-    const options = [answer];
-
-    for (const word of allWords) {
-      if (options.length >= 4) break;
-      if (!options.includes(word)) options.push(word);
-    }
-
-    while (options.length < 4) {
-      const fallback = ["security", "officials", "response", "event", "public"];
-      const next = fallback.find((word) => !options.includes(word));
-      options.push(next || `choice${options.length + 1}`);
+    while (opts.length < 4) {
+      const pick = unique[Math.floor(Math.random() * unique.length)];
+      if (!opts.includes(pick)) opts.push(pick);
     }
 
     return {
-      blank: index + 1,
-      answer,
-      options: shuffleArray(options)
+      answer: a,
+      options: opts.sort(() => Math.random() - 0.5)
     };
   });
 
+  return { text, quiz };
+}
+
+/**
+ * 퀴즈 (독해형)
+ */
+function shuffle(options, correctIndex) {
+  const arr = options.map((o, i) => ({
+    text: o,
+    correct: i === correctIndex
+  }));
+
+  const s = arr.sort(() => Math.random() - 0.5);
+
   return {
-    text,
-    quiz: summaryQuiz
+    options: s.map((x) => x.text),
+    answer: s.findIndex((x) => x.correct)
   };
 }
 
-function makeQuestion(q, correct, wrongs) {
-  const options = shuffleArray([correct, ...wrongs]);
-  return {
-    q,
-    options,
-    answer: options.indexOf(correct)
-  };
-}
-
-function buildQuiz(mainNews) {
+function buildQuiz() {
   return [
-    makeQuestion(
-      "What is the passage mainly about?",
-      mainNews.title,
-      [
-        "A fictional story about private life",
-        "A grammar explanation with no news content",
-        "A list of unrelated vocabulary words"
-      ]
-    ),
-    makeQuestion(
-      "What should readers follow while reading?",
-      "The order of events and the details that explain the situation",
-      [
-        "Only the title without reading the body",
-        "Random opinions unrelated to the report",
-        "A fictional conversation between characters"
-      ]
-    ),
-    makeQuestion(
-      "Why are the details important?",
-      "They help explain what happened and how the situation developed",
-      [
-        "They remove the need to understand the event",
-        "They make the report fictional",
-        "They are unrelated to the main subject"
-      ]
-    ),
-    makeQuestion(
-      "What is the author’s purpose?",
-      "To explain a real news event clearly",
-      [
-        "To entertain with a made-up story",
-        "To teach only grammar rules",
-        "To describe a personal diary"
-      ]
-    ),
-    makeQuestion(
-      "Which source detail is used as the main subject?",
-      mainNews.title,
-      [
-        "A random movie title",
-        "A private travel plan",
-        "A fictional school story"
-      ]
-    )
+    {
+      q: "What is the main idea of the passage?",
+      ...shuffle(
+        [
+          "The passage explains recent developments using multiple reports.",
+          "The passage tells a fictional story.",
+          "The passage focuses on grammar.",
+          "The passage describes personal experiences."
+        ],
+        0
+      )
+    },
+    {
+      q: "What can be inferred?",
+      ...shuffle(
+        [
+          "The events are connected across different reports.",
+          "The events are unrelated.",
+          "The events are fictional.",
+          "The events are random."
+        ],
+        0
+      )
+    },
+    {
+      q: "How is the passage structured?",
+      ...shuffle(
+        [
+          "It combines information from multiple sources.",
+          "It lists vocabulary only.",
+          "It tells a story.",
+          "It gives instructions."
+        ],
+        0
+      )
+    },
+    {
+      q: "What is the author’s purpose?",
+      ...shuffle(
+        [
+          "To explain real-world developments clearly.",
+          "To entertain readers.",
+          "To describe fiction.",
+          "To teach grammar."
+        ],
+        0
+      )
+    },
+    {
+      q: "What is the tone?",
+      ...shuffle(
+        ["Analytical", "Emotional", "Humorous", "Narrative"],
+        0
+      )
+    }
   ];
 }
 
+/**
+ * 실행
+ */
 async function build() {
   const newsItems = await fetchNews();
-  const mainNews = pickMainNews(newsItems);
-  const reading = buildReading(mainNews);
+
+  const reading = buildReading(newsItems);
   const summary = buildSummary(reading);
 
   const data = {
     date: new Date().toISOString(),
     category: "daily-news",
     categoryLabel: "Daily News",
-    headline: mainNews.title,
+    headline: newsItems[0]?.title || "Daily News",
     reading,
-    quiz: buildQuiz(mainNews),
+    quiz: buildQuiz(),
     summary: summary.text,
     summaryQuiz: summary.quiz,
     newsItems
   };
 
-  fs.writeFileSync("todayReading.json", JSON.stringify(data, null, 2), "utf8");
+  fs.writeFileSync("todayReading.json", JSON.stringify(data, null, 2));
 
-  console.log("✅ DONE:", mainNews.title);
+  console.log("✅ DONE (summary-based reading)");
 }
 
-build().catch((err) => {
-  console.error("❌ ERROR:", err);
-  process.exit(1);
-});
+build();
