@@ -22,79 +22,96 @@ function getTodayTopic() {
   return TOPICS[day % TOPICS.length];
 }
 
+/**
+ * 뉴스 가져오기
+ */
 async function fetchNews() {
   try {
     const feed = await parser.parseURL(FEEDS.top);
-    return (feed.items || []).slice(0, 5);
+
+    return (feed.items || [])
+      .slice(0, 5)
+      .map((item) => ({
+        title: item.title || "",
+        content:
+          item.contentSnippet ||
+          item.content ||
+          item.summary ||
+          ""
+      }));
   } catch {
     return [];
   }
 }
 
 /**
- * 뉴스 기반 리딩 생성 (자연스럽게 연결)
+ * 문장 나누기
+ */
+function splitSentences(text = "") {
+  return text
+    .replace(/\s+/g, " ")
+    .split(/(?<=[.!?])\s+/)
+    .map((s) => s.trim())
+    .filter(Boolean);
+}
+
+/**
+ * 뉴스 핵심 문장 추출
+ */
+function extractKeySentence(news) {
+  const sentences = splitSentences(news.content);
+
+  const valid = sentences.filter((s) => s.length > 80);
+
+  return valid[0] || sentences[0] || news.title;
+}
+
+/**
+ * 🔥 진짜 뉴스 기반 리딩 생성
  */
 function buildReading(topic, newsItems) {
-  const titles = newsItems.map((n) => n.title).filter(Boolean);
+  const selected = newsItems.slice(0, 3);
 
-  const intro = `${topic.label} is the focus of today’s reading. Recent headlines highlight several developments, including ${titles
-    .slice(0, 2)
-    .join(" and ")}. These events reflect broader trends rather than isolated cases.`;
+  const intro = `${topic.label} is the focus of today’s reading. Several recent developments highlight important changes in this area.`;
 
-  const body1 = `These developments are connected through underlying structural factors. Changes in policy, shifting expectations, and external pressures all influence how situations evolve over time. Rather than viewing each headline separately, it is more useful to understand how they interact within a larger system.`;
+  const body = selected
+    .map((news) => extractKeySentence(news))
+    .join(" ");
 
-  const body2 = `Another important aspect is how people and institutions respond. Governments, organizations, and individuals all adjust their behavior based on new information. This creates feedback loops where decisions influence outcomes, and outcomes influence future decisions.`;
+  const analysis = `These developments show that the situation is evolving through connected events rather than isolated cases. Understanding how these changes interact is important for interpreting what may happen next.`;
 
-  const body3 = `At the same time, uncertainty remains a key challenge. Even when data appears clear, interpretations can differ. This is why similar events may lead to different reactions across regions and markets. Expectations often matter as much as actual conditions.`;
-
-  const conclusion = `Overall, these developments suggest that ${topic.label.toLowerCase()} issues should be understood as dynamic processes rather than fixed events. Careful analysis is needed to understand not only what is happening, but why it is happening and what may come next.`;
-
-  return [intro, body1, body2, body3, conclusion].join("\n\n");
+  return [intro, body, analysis].join("\n\n");
 }
 
 /**
  * 요약 (빈칸 3개)
  */
 function buildSummary(reading) {
-  const sentences = reading.split(". ").slice(0, 3);
+  const sentences = splitSentences(reading).slice(0, 3);
 
-  const keyWords = [];
+  const words = reading.match(/\b[a-zA-Z]{6,}\b/g) || [];
+  const unique = [...new Set(words.map((w) => w.toLowerCase()))];
 
-  sentences.forEach((s) => {
-    const words = s.match(/\b[a-zA-Z]{6,}\b/g) || [];
-    if (words.length) keyWords.push(words[0].toLowerCase());
-  });
+  const answers = unique.slice(0, 3);
 
-  const blanks = keyWords.slice(0, 3);
+  let summaryText = sentences.join(" ");
 
-  let summaryText = sentences.join(". ");
-
-  blanks.forEach((word) => {
+  answers.forEach((word) => {
     summaryText = summaryText.replace(
       new RegExp(`\\b${word}\\b`, "i"),
-      `(____)`
+      "(____)"
     );
   });
 
-  const summaryQuiz = blanks.map((answer, i) => {
+  const summaryQuiz = answers.map((answer) => {
     const options = [answer];
 
-    const pool = [
-      "policy",
-      "market",
-      "system",
-      "pressure",
-      "change",
-      "decision"
-    ];
-
     while (options.length < 4) {
-      const pick = pool[Math.floor(Math.random() * pool.length)];
+      const pick = unique[Math.floor(Math.random() * unique.length)];
       if (!options.includes(pick)) options.push(pick);
     }
 
     return {
-      blank: i + 1,
       answer,
       options: options.sort(() => Math.random() - 0.5)
     };
@@ -104,57 +121,57 @@ function buildSummary(reading) {
 }
 
 /**
- * 퀴즈 (리딩 기반)
+ * 퀴즈
  */
-function buildQuiz(topic) {
+function buildQuiz(reading) {
   return [
     {
       q: "What is the main idea of the reading?",
       options: [
-        `${topic.label} developments are interconnected.`,
-        "A fictional story.",
-        "A grammar lesson.",
-        "A personal diary."
+        "It explains recent real-world developments.",
+        "It is a fictional story.",
+        "It teaches grammar rules.",
+        "It describes personal experiences."
       ],
       answer: 0
     },
     {
-      q: "How should the events be understood?",
+      q: "What do the events in the passage show?",
       options: [
-        "As part of a larger system.",
-        "As isolated events.",
-        "As unrelated stories.",
-        "As random changes."
+        "They are connected developments.",
+        "They are unrelated.",
+        "They are random.",
+        "They are fictional."
       ],
       answer: 0
     },
     {
-      q: "What affects decisions in the passage?",
+      q: "What should readers understand?",
       options: [
-        "Expectations and reactions.",
-        "Only past data.",
-        "Random factors.",
-        "Irrelevant opinions."
+        "How events influence each other.",
+        "Only vocabulary meanings.",
+        "Only individual facts.",
+        "Only opinions."
       ],
       answer: 0
     },
     {
-      q: "Why is uncertainty important?",
+      q: "What is emphasized in the passage?",
       options: [
-        "Because interpretations differ.",
-        "Because nothing changes.",
-        "Because data is always wrong.",
-        "Because events are fixed."
+        "Interpretation of developments.",
+        "Entertainment value.",
+        "Personal feelings.",
+        "Storytelling."
       ],
       answer: 0
     },
     {
       q: "What is the purpose of the reading?",
       options: [
-        "To explain real-world developments.",
-        "To entertain readers.",
-        "To teach vocabulary only.",
-        "To describe fiction."
+        "To explain real events clearly.",
+        "To create fiction.",
+        "To list words.",
+        "To describe a diary."
       ],
       answer: 0
     }
@@ -164,6 +181,7 @@ function buildQuiz(topic) {
 async function build() {
   const topic = getTodayTopic();
   const newsItems = await fetchNews();
+
   const reading = buildReading(topic, newsItems);
   const summary = buildSummary(reading);
 
@@ -173,7 +191,7 @@ async function build() {
     categoryLabel: topic.label,
     headline: `${topic.label} Reading`,
     reading,
-    quiz: buildQuiz(topic),
+    quiz: buildQuiz(reading),
     summary: summary.text,
     summaryQuiz: summary.quiz,
     newsItems
@@ -181,7 +199,7 @@ async function build() {
 
   fs.writeFileSync("todayReading.json", JSON.stringify(data, null, 2), "utf8");
 
-  console.log("✅ DONE:", topic.label);
+  console.log("✅ DONE (real news based)");
 }
 
 build().catch((err) => {
