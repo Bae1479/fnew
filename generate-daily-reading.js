@@ -64,17 +64,13 @@ function extractNewsBlock(news) {
 function buildReading(topic, newsItems) {
   const selected = newsItems.slice(0, 3);
 
-  const intro = `${topic.label} is the focus of today’s reading. Several recent developments reported in the news highlight important changes shaping this area. Rather than isolated events, these developments reflect broader trends.`;
+  const intro = `${topic.label} is the focus of today’s reading. Several recent developments reported in the news highlight important changes in this area.`;
 
   const p1 = extractNewsBlock(selected[0]);
   const p2 = extractNewsBlock(selected[1]);
   const p3 = extractNewsBlock(selected[2]);
 
-  const bridge = `Although these reports focus on different situations, they are connected through underlying structural factors such as policy decisions, expectations, and external pressures.`;
-
-  const analysis = `This suggests that understanding ${topic.label.toLowerCase()} requires examining how individual events interact within a larger system rather than viewing them separately.`;
-
-  return [intro, p1, p2, p3, bridge, analysis].join("\n\n");
+  return [intro, p1, p2, p3].join("\n\n");
 }
 
 /**
