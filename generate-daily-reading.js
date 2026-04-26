@@ -1,97 +1,109 @@
 const fs = require("fs");
 
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+/**
+ * 👉 여기다가 리딩 계속 추가
+ */
+const readings = [
+  {
+    category: "Economics",
+    headline: "How Interest Rates Shape Economic Activity",
 
-const TOPICS = [
-  "Economics",
-  "World History",
-  "Philosophy",
-  "Technology",
-  "Society"
+    reading: `Interest rates are one of the most important tools used by central banks to influence economic activity. By adjusting rates, policymakers can encourage or discourage borrowing, which in turn affects spending, investment, and overall growth.
+
+When interest rates are low, borrowing becomes cheaper. Businesses are more likely to invest in new projects, and consumers are more willing to take loans for houses, cars, or other purchases. As a result, economic activity tends to increase during periods of low rates.
+
+However, low rates can also lead to excessive borrowing and rising prices. When too much money flows into the economy, inflation may accelerate, reducing the purchasing power of consumers. This is why central banks monitor inflation closely.
+
+On the other hand, higher interest rates make borrowing more expensive. This can slow down spending and reduce inflationary pressure. While this may stabilize prices, it can also lead to slower economic growth or even recession if rates rise too quickly.
+
+In this way, interest rates act as a balancing mechanism. Policymakers must carefully adjust them to maintain stability without causing unintended consequences in the broader economy.`,
+
+    sentences: [
+      { ko: "금리는 경제 활동을 조절하는 중요한 도구이다.", en: "Interest rates are an important tool used to influence economic activity." },
+      { ko: "금리가 낮아지면 차입과 소비가 증가한다.", en: "When interest rates fall, borrowing and spending tend to increase." },
+      { ko: "높은 금리는 인플레이션을 억제할 수 있다.", en: "Higher interest rates can help reduce inflation." }
+    ],
+
+    quiz: [
+      {
+        q: "What is the main purpose of interest rate adjustments?",
+        options: [
+          "To influence economic activity",
+          "To eliminate all inflation",
+          "To reduce taxes permanently",
+          "To increase government spending"
+        ],
+        answer: 0
+      },
+      {
+        q: "What happens when interest rates are low?",
+        options: [
+          "Borrowing increases",
+          "Spending decreases",
+          "Inflation disappears",
+          "Taxes increase"
+        ],
+        answer: 0
+      },
+      {
+        q: "What risk is associated with low interest rates?",
+        options: [
+          "Rising inflation",
+          "Lower employment",
+          "Reduced investment",
+          "Falling demand"
+        ],
+        answer: 0
+      },
+      {
+        q: "What can higher interest rates lead to?",
+        options: [
+          "Slower economic growth",
+          "Higher consumer spending",
+          "Rapid inflation",
+          "Increased borrowing"
+        ],
+        answer: 0
+      },
+      {
+        q: "What is the tone of the passage?",
+        options: ["Analytical", "Emotional", "Humorous", "Narrative"],
+        answer: 0
+      }
+    ],
+
+    summary: "Interest rates influence economic (____) by affecting borrowing and spending. Low rates encourage economic activity but may increase (____), while high rates can slow growth and stabilize (____).",
+
+    summaryQuiz: [
+      { blank: 1, answer: "activity", options: ["activity", "tax", "trade", "labor"] },
+      { blank: 2, answer: "inflation", options: ["inflation", "exports", "profits", "wages"] },
+      { blank: 3, answer: "prices", options: ["prices", "jobs", "markets", "demand"] }
+    ]
+  }
 ];
 
-function getTodayTopic() {
+/**
+ * 날짜 기반 선택
+ */
+function getTodayReading() {
   const day = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
-  return TOPICS[day % TOPICS.length];
+  return readings[day % readings.length];
 }
 
-function buildPrompt(topic) {
-  return `
-You are creating an English reading passage for advanced learners.
-
-Topic: ${topic}
-
-Write a high-quality reading passage.
-
-Rules:
-- Natural, professional English
-- Clear structure and logical flow
-- 4 to 6 paragraphs
-- Each paragraph 2–4 sentences
-- No repetition
-- No generic filler phrases
-
-Also create:
-1. 5 reading comprehension questions:
-   - main idea
-   - detail
-   - inference
-   - vocabulary
-   - purpose
-
-2. Summary:
-- One paragraph
-- Exactly 3 blanks (use format: (answer))
-
-Return JSON:
-
-{
-  "headline": "",
-  "reading": "",
-  "quiz": [],
-  "summary": "",
-  "summaryQuiz": []
-}
-`;
-}
-
-async function generateReading(topic) {
-  const res = await fetch("https://api.openai.com/v1/responses", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${OPENAI_API_KEY}`,
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      model: "gpt-5.5-mini",
-      input: buildPrompt(topic),
-      text: { format: { type: "json_object" } }
-    })
-  });
-
-  const data = await res.json();
-
-  return JSON.parse(
-    data.output[0].content[0].text
-      .replace(/```json/g, "")
-      .replace(/```/g, "")
-  );
-}
-
-async function build() {
-  const topic = getTodayTopic();
-  const result = await generateReading(topic);
+/**
+ * 실행
+ */
+function build() {
+  const reading = getTodayReading();
 
   const data = {
     date: new Date().toISOString(),
-    category: topic,
-    categoryLabel: topic,
-    ...result
+    ...reading
   };
 
   fs.writeFileSync("todayReading.json", JSON.stringify(data, null, 2));
 
-  console.log("✅ DONE:", topic);
+  console.log("✅ DONE:", reading.headline);
 }
 
-build().catch(console.error);
+build();
