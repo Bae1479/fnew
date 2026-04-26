@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-26T05:05:43.845Z",
+  "date": "2026-04-26T05:11:02.103Z",
   "category": "daily-news",
   "categoryLabel": "Daily News",
   "headline": "WATCH: D.C. officials share updates on the White House Correspondents' Dinner shooting",
@@ -8,80 +8,80 @@
     {
       "q": "What is the main idea of the passage?",
       "options": [
-        "The passage tells a fictional story.",
-        "The passage focuses on grammar.",
-        "The passage explains recent developments using multiple reports.",
-        "The passage describes personal experiences."
+        "It describes a personal diary.",
+        "It teaches grammar rules only.",
+        "It tells a fictional story.",
+        "It explains recent real-world developments."
+      ],
+      "answer": 3
+    },
+    {
+      "q": "According to the passage, what happened?",
+      "options": [
+        "The event was fictional.",
+        "The passage describes a private conversation.",
+        "Nothing significant occurred.",
+        "The suspect in a shooting incident at Saturday's correspondents' dinner attended by President Donald Trump and other senior U.S."
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Which statement is best supported by the passage?",
+      "options": [
+        "One officer was shot, but he was protected by a bulletproof vest.",
+        "The passage gives no factual information.",
+        "The passage is mainly about entertainment.",
+        "The passage avoids current events."
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What can be inferred from the passage?",
+      "options": [
+        "The issue has no real-world significance.",
+        "The story is unrelated to public events.",
+        "The situation may continue to receive attention.",
+        "The passage is a fictional narrative."
       ],
       "answer": 2
     },
     {
-      "q": "What can be inferred?",
-      "options": [
-        "The events are random.",
-        "The events are connected across different reports.",
-        "The events are unrelated.",
-        "The events are fictional."
-      ],
-      "answer": 1
-    },
-    {
-      "q": "How is the passage structured?",
-      "options": [
-        "It lists vocabulary only.",
-        "It tells a story.",
-        "It gives instructions.",
-        "It combines information from multiple sources."
-      ],
-      "answer": 3
-    },
-    {
       "q": "What is the author’s purpose?",
       "options": [
-        "To teach grammar.",
-        "To describe fiction.",
-        "To entertain readers.",
-        "To explain real-world developments clearly."
-      ],
-      "answer": 3
-    },
-    {
-      "q": "What is the tone?",
-      "options": [
-        "Narrative",
-        "Humorous",
-        "Emotional",
-        "Analytical"
+        "To describe a personal memory.",
+        "To teach only vocabulary.",
+        "To entertain readers with fiction.",
+        "To explain a real news event clearly."
       ],
       "answer": 3
     }
   ],
-  "summary": "The (____) in a (____) (____) at Saturday's correspondents' dinner attended by President Donald Trump and other senior U.S. One officer was shot, but he was protected by a bulletproof vest. The president was uninjured and was hustled away.",
+  "summary": "The (____) in a shooting incident at Saturday's correspondents' dinner attended by President Donald Trump and other senior U.S. One (____) was shot, but he was protected by a bulletproof vest. The (____) was uninjured and was hustled away.",
   "summaryQuiz": [
     {
       "answer": "suspect",
       "options": [
-        "senior",
-        "service",
+        "saturday",
         "suspect",
-        "believed"
-      ]
-    },
-    {
-      "answer": "shooting",
-      "options": [
-        "donald",
         "shooting",
-        "uninjured",
-        "service"
+        "incident"
       ]
     },
     {
-      "answer": "incident",
+      "answer": "officer",
       "options": [
-        "weapons",
-        "uninjured",
-        "profile",
+        "shooting",
+        "suspect",
+        "officer",
+        "incident"
+      ]
+    },
+    {
+      "answer": "president",
+      "options": [
+        "president",
+        "suspect",
+        "shooting",
         "incident"
       ]
     }
@@ -89,23 +89,39 @@
   "newsItems": [
     {
       "title": "WATCH: D.C. officials share updates on the White House Correspondents' Dinner shooting",
+      "link": "https://www.pbs.org/newshour/politics/watch-d-c-officials-share-updates-on-the-white-house-correspondents-dinner-shooting",
+      "pubDate": "Sat, 25 Apr 2026 23:49:55 -0400",
       "content": "The suspect in a shooting incident at Saturday's correspondents' dinner attended by President Donald Trump and other senior U.S. officials was carrying guns and knives and was believed to be acting alone, the mayor of Washington said."
     },
     {
       "title": "WATCH: Trump holds press conference after shooting at White House Correspondents' Dinner",
+      "link": "https://www.pbs.org/newshour/nation/watch-live-trump-holds-press-conference-after-shooting-at-white-house-correspondents-dinner",
+      "pubDate": "Sat, 25 Apr 2026 21:57:45 -0400",
       "content": "Trump said the suspect was armed with multiple weapons before stopped by Secret Service. One officer was shot, but he was protected by a bulletproof vest."
     },
     {
       "title": "Trump unharmed after security incident at White House Correspondents' Dinner",
+      "link": "https://www.pbs.org/newshour/politics/trump-evacuated-after-security-incident-at-white-house-correspondents-dinner-no-sign-of-injuries",
+      "pubDate": "Sat, 25 Apr 2026 20:59:07 -0400",
       "content": "A man armed with guns and knives stormed the lobby outside a high-profile journalists' dinner attended by President Donald Trump and multiple senior U.S. leaders on Saturday night. The president was uninjured and was hustled away."
     },
     {
       "title": "One police officer killed and another critically injured in Chicago hospital shooting, officials say",
+      "link": "https://www.pbs.org/newshour/nation/one-police-officer-killed-and-another-critically-injured-in-chicago-hospital-shooting-officials-say",
+      "pubDate": "Sat, 25 Apr 2026 18:55:51 -0400",
       "content": "A police officer died and another was critically injured after a shooting at a Chicago hospital on Saturday, according to officials."
     },
     {
       "title": "Mexico says 2 U.S. federal agents who died were not authorized to participate in any local operation",
+      "link": "https://www.pbs.org/newshour/world/mexico-says-2-u-s-federal-agents-who-died-were-not-authorized-to-participate-in-any-local-operation",
+      "pubDate": "Sat, 25 Apr 2026 18:38:00 -0400",
       "content": "Mexico's government said Saturday that two U.S. federal agents recently killed in a car crash in the country's northern region were not authorized to participate in operations in Mexico."
+    },
+    {
+      "title": "U.S. doctors warn of a potentially bad year for tick-borne diseases",
+      "link": "https://www.pbs.org/newshour/health/u-s-doctors-warn-of-a-potentially-bad-year-for-tick-borne-diseases",
+      "pubDate": "Sat, 25 Apr 2026 17:52:08 -0400",
+      "content": "Tick season seems to be off to a fast start, with an unusually high number of bites already reported across the country."
     }
   ]
 }
