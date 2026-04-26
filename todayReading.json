@@ -1,47 +1,47 @@
 {
-  "date": "2026-04-26T04:21:22.085Z",
+  "date": "2026-04-26T04:25:55.042Z",
   "category": "society",
   "categoryLabel": "Society",
   "headline": "Society Reading",
-  "reading": "Society is the focus of today’s reading. Several recent developments reported in the news highlight important changes shaping this area. Rather than isolated events, these developments reflect broader trends.\n\nThe suspect in a shooting incident at Saturday's correspondents' dinner attended by President Donald Trump and other senior U.S. officials was carrying guns and knives and was believed to be acting alone, the mayor of Washington said.\n\nTrump said the suspect was armed with multiple weapons before stopped by Secret Service. One officer was shot, but he was protected by a bulletproof vest.\n\nA man armed with guns and knives stormed the lobby outside a high-profile journalists' dinner attended by President Donald Trump and multiple senior U.S. The president was uninjured and was hustled away.\n\nAlthough these reports focus on different situations, they are connected through underlying structural factors such as policy decisions, expectations, and external pressures.\n\nThis suggests that understanding society requires examining how individual events interact within a larger system rather than viewing them separately.",
+  "reading": "Society is the focus of today’s reading. Several recent developments reported in the news highlight important changes in this area.\n\nThe suspect in a shooting incident at Saturday's correspondents' dinner attended by President Donald Trump and other senior U.S. officials was carrying guns and knives and was believed to be acting alone, the mayor of Washington said.\n\nTrump said the suspect was armed with multiple weapons before stopped by Secret Service. One officer was shot, but he was protected by a bulletproof vest.\n\nA man armed with guns and knives stormed the lobby outside a high-profile journalists' dinner attended by President Donald Trump and multiple senior U.S. The president was uninjured and was hustled away.",
   "quiz": [
     {
       "q": "What is the main idea of the passage?",
       "options": [
-        "Grammar rules are explained.",
-        "A fictional event is presented.",
+        "Recent developments are interconnected.",
         "A personal story is described.",
-        "Recent developments are interconnected."
-      ],
-      "answer": 3
-    },
-    {
-      "q": "What can be inferred?",
-      "options": [
-        "Events are fictional.",
-        "Events are unrelated.",
-        "Events influence each other.",
-        "Events are random."
-      ],
-      "answer": 2
-    },
-    {
-      "q": "Which is true?",
-      "options": [
-        "Events are part of a larger system.",
-        "Only one event matters.",
-        "Events are independent.",
-        "The passage is opinion-based."
+        "Grammar rules are explained.",
+        "A fictional event is presented."
       ],
       "answer": 0
     },
     {
+      "q": "What can be inferred?",
+      "options": [
+        "Events influence each other.",
+        "Events are unrelated.",
+        "Events are fictional.",
+        "Events are random."
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Which is true?",
+      "options": [
+        "Only one event matters.",
+        "Events are independent.",
+        "The passage is opinion-based.",
+        "Events are part of a larger system."
+      ],
+      "answer": 3
+    },
+    {
       "q": "What is the author's purpose?",
       "options": [
-        "To teach vocabulary.",
+        "To entertain readers.",
         "To analyze real-world developments.",
-        "To describe a story.",
-        "To entertain readers."
+        "To teach vocabulary.",
+        "To describe a story."
       ],
       "answer": 1
     },
@@ -56,33 +56,33 @@
       "answer": 3
     }
   ],
-  "summary": "(____) than isolated events, these developments reflect broader trends. One (____) was shot, but he was protected by a bulletproof vest. (____) these reports focus on different situations, they are connected through underlying structural factors such as policy decisions, expectations, and external pressures.",
+  "summary": "The (____) in a shooting incident at Saturday's correspondents' dinner attended by President Donald Trump and other senior U.S. Trump said the (____) was armed with multiple weapons before stopped by Secret Service. A man armed with guns and (____) stormed the lobby outside a high-profile journalists' dinner attended by President Donald Trump and multiple senior U.S.",
   "summaryQuiz": [
     {
-      "answer": "rather",
+      "answer": "suspect",
       "options": [
-        "system",
-        "market",
-        "change",
-        "rather"
-      ]
-    },
-    {
-      "answer": "officer",
-      "options": [
-        "market",
-        "pressure",
         "decision",
-        "officer"
+        "policy",
+        "change",
+        "suspect"
       ]
     },
     {
-      "answer": "although",
+      "answer": "suspect",
       "options": [
-        "although",
+        "market",
+        "suspect",
         "pressure",
-        "policy",
         "system"
+      ]
+    },
+    {
+      "answer": "knives",
+      "options": [
+        "knives",
+        "decision",
+        "market",
+        "policy"
       ]
     }
   ],
