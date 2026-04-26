@@ -1,91 +1,91 @@
 {
-  "date": "2026-04-26T04:39:20.996Z",
-  "category": "society",
-  "categoryLabel": "Society",
+  "date": "2026-04-26T05:00:04.789Z",
+  "category": "daily-news",
+  "categoryLabel": "Daily News",
   "headline": "Soldier's arrest over Polymarket bet on Maduro raid fuels insider trading concerns",
-  "reading": "A Special Forces soldier who helped plan the capture of Venezuelan President Nicolas Maduro was indicted for allegedly using classified information about the raid to make prediction market bets. It is raising new concerns about insider trading and the need for regulation. Amna Nawaz discussed more with Liz Landers and David Hill, who writes about gambling for Rolling Stone and American Gambler.",
+  "reading": "Soldier's arrest over Polymarket bet on Maduro raid fuels insider trading concerns.\n\nA Special Forces soldier who helped plan the capture of Venezuelan President Nicolas Maduro was indicted for allegedly using classified information about the raid to make prediction market bets. This detail gives readers more information about the situation described in the report.\n\nIt is raising new concerns about insider trading and the need for regulation. This part of the report helps explain how the event developed after the first details became clear.\n\nThe main facts of the report are connected by the same event: A Special Forces soldier who helped plan the capture of Venezuelan President Nicolas Maduro was indicted for allegedly using classified information about the raid to make prediction market bets. It is raising new concerns about insider trading and the need for regulation. Amna Nawaz discussed more with Liz Landers and David Hill, who writes about gambling for Rolling Stone and American Gambler. For readers, the important task is to follow the order of events and notice how each detail adds to the overall picture.\n\nThe headline, \"Soldier's arrest over Polymarket bet on Maduro raid fuels insider trading concerns,\" gives the main subject of the reading. The body of the report provides the details needed to understand the event more clearly.",
   "quiz": [
     {
-      "q": "What is the main idea of the passage?",
+      "q": "What is the passage mainly about?",
       "options": [
-        "The passage describes a personal diary.",
-        "The passage tells a fictional story.",
-        "The passage explains a real news development in detail.",
-        "The passage only lists vocabulary words."
+        "A list of unrelated vocabulary words",
+        "A fictional story about private life",
+        "Soldier's arrest over Polymarket bet on Maduro raid fuels insider trading concerns",
+        "A grammar explanation with no news content"
       ],
       "answer": 2
     },
     {
-      "q": "What can be inferred from the passage?",
+      "q": "What should readers follow while reading?",
       "options": [
-        "The event has no wider meaning.",
-        "The issue may have broader consequences beyond the immediate event.",
-        "The issue has already been fully resolved.",
-        "The passage is unrelated to current events."
+        "A fictional conversation between characters",
+        "Random opinions unrelated to the report",
+        "The order of events and the details that explain the situation",
+        "Only the title without reading the body"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
-      "q": "Why are the details in the passage important?",
+      "q": "Why are the details important?",
       "options": [
-        "They help readers understand the development more clearly.",
-        "They are included only for entertainment.",
-        "They replace the main idea.",
-        "They are unrelated to the topic."
+        "They help explain what happened and how the situation developed",
+        "They remove the need to understand the event",
+        "They make the report fictional",
+        "They are unrelated to the main subject"
       ],
       "answer": 0
     },
     {
       "q": "What is the author’s purpose?",
       "options": [
-        "To explain a real-world issue clearly.",
-        "To write a fictional narrative.",
-        "To teach grammar rules only.",
-        "To describe a private experience."
-      ],
-      "answer": 0
-    },
-    {
-      "q": "The headline of the source news is closest to which idea?",
-      "options": [
-        "A random entertainment update",
-        "A grammar lesson",
-        "Soldier's arrest over Polymarket bet on Maduro raid fuels insider trading concerns",
-        "A fictional event"
+        "To entertain with a made-up story",
+        "To describe a personal diary",
+        "To explain a real news event clearly",
+        "To teach only grammar rules"
       ],
       "answer": 2
+    },
+    {
+      "q": "Which source detail is used as the main subject?",
+      "options": [
+        "Soldier's arrest over Polymarket bet on Maduro raid fuels insider trading concerns",
+        "A random movie title",
+        "A private travel plan",
+        "A fictional school story"
+      ],
+      "answer": 0
     }
   ],
-  "summary": "A (____) Forces soldier who helped plan the capture of Venezuelan President Nicolas Maduro was indicted for allegedly using classified information about the raid to make prediction market bets. It is (____) new concerns about insider trading and the need for regulation. Amna Nawaz (____) more with Liz Landers and David Hill, who writes about gambling for Rolling Stone and American Gambler.",
+  "summary": "(____)'s arrest over Polymarket bet on Maduro raid fuels insider trading concerns. The main facts of the report are (____) by the same event: A Special Forces soldier who helped plan the capture of Venezuelan President Nicolas Maduro was indicted for allegedly using classified information about the raid to make prediction market bets. The body of the report (____) the details needed to understand the event more clearly.",
   "summaryQuiz": [
     {
       "blank": 1,
-      "answer": "special",
+      "answer": "soldier",
       "options": [
-        "forces",
-        "helped",
-        "special",
-        "soldier"
+        "polymarket",
+        "maduro",
+        "soldier",
+        "arrest"
       ]
     },
     {
       "blank": 2,
-      "answer": "raising",
+      "answer": "connected",
       "options": [
+        "arrest",
         "soldier",
-        "special",
-        "raising",
-        "forces"
+        "polymarket",
+        "connected"
       ]
     },
     {
       "blank": 3,
-      "answer": "discussed",
+      "answer": "provides",
       "options": [
-        "special",
+        "provides",
+        "polymarket",
         "soldier",
-        "forces",
-        "discussed"
+        "arrest"
       ]
     }
   ],
