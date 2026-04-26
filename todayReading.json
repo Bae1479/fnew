@@ -1,83 +1,103 @@
 {
-  "date": "2026-04-26T02:31:34.975Z",
+  "date": "2026-04-26T03:33:47.498Z",
   "category": "society",
   "categoryLabel": "Society",
-  "headline": "Society: Public Trust and Institutional Decisions",
-  "reading": "Public trust is the focus of today’s reading. Trust is essential for institutions such as governments, courts, and public agencies to function effectively. When people believe decisions are fair and transparent, they are more likely to accept outcomes even if they disagree.\n\nHowever, trust can weaken when decisions are unclear or appear inconsistent. In such cases, people may question whether institutions are acting responsibly. This can lead to broader social tension and reduce cooperation between the public and decision-makers.\n\nThe process of decision-making is just as important as the outcome. When institutions explain their reasoning clearly, they can maintain credibility. Without clear communication, even reasonable policies may face strong resistance.\n\nSocial issues often become more intense because they affect everyday life. Topics such as housing, education, and public safety are not abstract. They directly influence how people live, which is why responses to these issues can be emotional and immediate.\n\nIn the end, trust depends on both fairness and communication. Institutions must not only make decisions but also ensure that those decisions are understood and accepted by the public.",
+  "headline": "Society Reading",
+  "reading": "Society is the focus of today’s reading. Recent headlines highlight several developments, including WATCH LIVE: Trump holds press conference after shooting at White House Correspondents' Dinner and Trump evacuated after security incident at White House correspondents dinner; no sign of injuries. These events reflect broader trends rather than isolated cases.\n\nThese developments are connected through underlying structural factors. Changes in policy, shifting expectations, and external pressures all influence how situations evolve over time. Rather than viewing each headline separately, it is more useful to understand how they interact within a larger system.\n\nAnother important aspect is how people and institutions respond. Governments, organizations, and individuals all adjust their behavior based on new information. This creates feedback loops where decisions influence outcomes, and outcomes influence future decisions.\n\nAt the same time, uncertainty remains a key challenge. Even when data appears clear, interpretations can differ. This is why similar events may lead to different reactions across regions and markets. Expectations often matter as much as actual conditions.\n\nOverall, these developments suggest that society issues should be understood as dynamic processes rather than fixed events. Careful analysis is needed to understand not only what is happening, but why it is happening and what may come next.",
   "quiz": [
     {
       "q": "What is the main idea of the reading?",
       "options": [
-        "Society: Public Trust and Institutional Decisions",
-        "A personal story about daily life.",
-        "A fictional narrative.",
-        "A list of unrelated facts."
+        "Society developments are interconnected.",
+        "A fictional story.",
+        "A grammar lesson.",
+        "A personal diary."
       ],
       "answer": 0
     },
     {
-      "q": "What should readers focus on?",
+      "q": "How should the events be understood?",
       "options": [
-        "The relationship between key ideas in the passage.",
-        "Only the first sentence of each paragraph.",
-        "Random vocabulary words.",
-        "Irrelevant details."
+        "As part of a larger system.",
+        "As isolated events.",
+        "As unrelated stories.",
+        "As random changes."
       ],
       "answer": 0
     },
     {
-      "q": "How is the passage structured?",
+      "q": "What affects decisions in the passage?",
       "options": [
-        "One central topic developed across paragraphs.",
-        "A series of unrelated topics.",
-        "A dialogue between characters.",
-        "A list of definitions."
+        "Expectations and reactions.",
+        "Only past data.",
+        "Random factors.",
+        "Irrelevant opinions."
       ],
       "answer": 0
     },
     {
-      "q": "What is the tone of the passage?",
+      "q": "Why is uncertainty important?",
       "options": [
-        "Analytical and explanatory.",
-        "Humorous and casual.",
-        "Fictional and dramatic.",
-        "Personal and emotional."
+        "Because interpretations differ.",
+        "Because nothing changes.",
+        "Because data is always wrong.",
+        "Because events are fixed."
       ],
       "answer": 0
     },
     {
       "q": "What is the purpose of the reading?",
       "options": [
-        "To explain a real-world issue clearly.",
-        "To entertain with a story.",
-        "To teach grammar rules.",
-        "To describe a fictional event."
+        "To explain real-world developments.",
+        "To entertain readers.",
+        "To teach vocabulary only.",
+        "To describe fiction."
       ],
       "answer": 0
     }
   ],
-  "summary": "Public trust is the focus of today’s reading. (____) is essential for institutions such as governments, courts, and public agencies to function effectively. When people believe decisions are fair and transparent, they are more likely to accept outcomes even if they disagree.\n\nHowever, trust can weaken when decisions are unclear or appear inconsistent",
+  "summary": "(____) is the focus of today’s reading. (____) headlines highlight several developments, including WATCH LIVE: Trump holds press conference after shooting at White House Correspondents' Dinner and Trump evacuated after security incident at White House correspondents dinner; no sign of injuries. These (____) reflect broader trends rather than isolated cases.\n\nThese developments are connected through underlying structural factors",
   "summaryQuiz": [
     {
       "blank": 1,
-      "answer": "key",
+      "answer": "society",
       "options": [
-        "key",
-        "random",
-        "irrelevant",
-        "fictional"
+        "pressure",
+        "market",
+        "policy",
+        "society"
+      ]
+    },
+    {
+      "blank": 2,
+      "answer": "recent",
+      "options": [
+        "system",
+        "recent",
+        "policy",
+        "pressure"
+      ]
+    },
+    {
+      "blank": 3,
+      "answer": "events",
+      "options": [
+        "decision",
+        "events",
+        "pressure",
+        "change"
       ]
     }
   ],
   "newsItems": [
     {
-      "creator": "Associated Press",
+      "creator": "Collin Binkley, Associated Press",
       "title": "WATCH LIVE: Trump holds press conference after shooting at White House Correspondents' Dinner",
       "link": "https://www.pbs.org/newshour/nation/watch-live-trump-holds-press-conference-after-shooting-at-white-house-correspondents-dinner",
       "pubDate": "Sat, 25 Apr 2026 21:57:45 -0400",
-      "dc:creator": "Associated Press",
-      "content": "WASHINGTON (AP) — President Donald Trump was uninjured and other top leaders of the United States were evacuated from an annual dinner of White House correspondents on Saturday night after an unspecified threat. There did not immediately appear to be any injuries, and one law-enforcement official said a shooter had opened fire. Authorities said the incident occurred outside the ballroom where Trump and other guests were seated. It was not immediately clear what happened. The...",
-      "contentSnippet": "WASHINGTON (AP) — President Donald Trump was uninjured and other top leaders of the United States were evacuated from an annual dinner of White House correspondents on Saturday night after an unspecified threat. There did not immediately appear to be any injuries, and one law-enforcement official said a shooter had opened fire. Authorities said the incident occurred outside the ballroom where Trump and other guests were seated. It was not immediately clear what happened. The...",
+      "dc:creator": "Collin Binkley, Associated Press",
+      "content": "Trump said the suspect was armed with multiple weapons before stopped by Secret Service. One officer was shot, but he was protected by a bulletproof vest.",
+      "contentSnippet": "Trump said the suspect was armed with multiple weapons before stopped by Secret Service. One officer was shot, but he was protected by a bulletproof vest.",
       "guid": "https://www.pbs.org/newshour/nation/watch-live-trump-holds-press-conference-after-shooting-at-white-house-correspondents-dinner",
       "categories": [
         {
