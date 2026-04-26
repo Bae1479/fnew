@@ -1,127 +1,105 @@
 {
-  "date": "2026-04-26T05:13:43.442Z",
-  "category": "daily-news",
-  "categoryLabel": "Daily News",
-  "headline": "WATCH: D.C. officials share updates on the White House Correspondents' Dinner shooting",
-  "reading": "The suspect in a shooting incident at Saturday's correspondents' dinner attended by President Donald Trump and other senior U.S. officials was carrying guns and knives and was believed to be acting alone, the mayor of Washington said. The headline, \"WATCH: D.C. officials share updates on the White House Correspondents' Dinner shooting,\" gives the main context for this development.\n\nTrump said the suspect was armed with multiple weapons before stopped by Secret Service. One officer was shot, but he was protected by a bulletproof vest. The headline, \"WATCH: Trump holds press conference after shooting at White House Correspondents' Dinner,\" gives the main context for this development.\n\nA man armed with guns and knives stormed the lobby outside a high-profile journalists' dinner attended by President Donald Trump and multiple senior U.S. The president was uninjured and was hustled away. The headline, \"Trump unharmed after security incident at White House Correspondents' Dinner,\" gives the main context for this development.",
+  "date": "2026-04-26T23:43:16.424Z",
+  "category": "Economics",
+  "headline": "How Interest Rates Shape Economic Activity",
+  "reading": "Interest rates are one of the most important tools used by central banks to influence economic activity. By adjusting rates, policymakers can encourage or discourage borrowing, which in turn affects spending, investment, and overall growth.\n\nWhen interest rates are low, borrowing becomes cheaper. Businesses are more likely to invest in new projects, and consumers are more willing to take loans for houses, cars, or other purchases. As a result, economic activity tends to increase during periods of low rates.\n\nHowever, low rates can also lead to excessive borrowing and rising prices. When too much money flows into the economy, inflation may accelerate, reducing the purchasing power of consumers. This is why central banks monitor inflation closely.\n\nOn the other hand, higher interest rates make borrowing more expensive. This can slow down spending and reduce inflationary pressure. While this may stabilize prices, it can also lead to slower economic growth or even recession if rates rise too quickly.\n\nIn this way, interest rates act as a balancing mechanism. Policymakers must carefully adjust them to maintain stability without causing unintended consequences in the broader economy.",
+  "sentences": [
+    {
+      "ko": "금리는 경제 활동을 조절하는 중요한 도구이다.",
+      "en": "Interest rates are an important tool used to influence economic activity."
+    },
+    {
+      "ko": "금리가 낮아지면 차입과 소비가 증가한다.",
+      "en": "When interest rates fall, borrowing and spending tend to increase."
+    },
+    {
+      "ko": "높은 금리는 인플레이션을 억제할 수 있다.",
+      "en": "Higher interest rates can help reduce inflation."
+    }
+  ],
   "quiz": [
     {
-      "q": "What is the main idea of the passage?",
+      "q": "What is the main purpose of interest rate adjustments?",
       "options": [
-        "It describes a personal diary.",
-        "It teaches grammar rules only.",
-        "It tells a fictional story.",
-        "It explains recent real-world developments."
-      ],
-      "answer": 3
-    },
-    {
-      "q": "According to the passage, what happened?",
-      "options": [
-        "The event was fictional.",
-        "The passage describes a private conversation.",
-        "Nothing significant occurred.",
-        "The suspect in a shooting incident at Saturday's correspondents' dinner attended by President Donald Trump and other senior U.S."
-      ],
-      "answer": 3
-    },
-    {
-      "q": "Which statement is best supported by the passage?",
-      "options": [
-        "One officer was shot, but he was protected by a bulletproof vest.",
-        "The passage gives no factual information.",
-        "The passage avoids current events.",
-        "The passage is mainly about entertainment."
+        "To influence economic activity",
+        "To eliminate all inflation",
+        "To reduce taxes permanently",
+        "To increase government spending"
       ],
       "answer": 0
     },
     {
-      "q": "What can be inferred from the passage?",
+      "q": "What happens when interest rates are low?",
       "options": [
-        "The story is unrelated to public events.",
-        "The situation may continue to receive attention.",
-        "The issue has no real-world significance.",
-        "The passage is a fictional narrative."
+        "Borrowing increases",
+        "Spending decreases",
+        "Inflation disappears",
+        "Taxes increase"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
-      "q": "What is the author’s purpose?",
+      "q": "What risk is associated with low interest rates?",
       "options": [
-        "To describe a personal memory.",
-        "To teach only vocabulary.",
-        "To entertain readers with fiction.",
-        "To explain a real news event clearly."
+        "Rising inflation",
+        "Lower employment",
+        "Reduced investment",
+        "Falling demand"
       ],
-      "answer": 3
+      "answer": 0
+    },
+    {
+      "q": "What can higher interest rates lead to?",
+      "options": [
+        "Slower economic growth",
+        "Higher consumer spending",
+        "Rapid inflation",
+        "Increased borrowing"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is the tone of the passage?",
+      "options": [
+        "Analytical",
+        "Emotional",
+        "Humorous",
+        "Narrative"
+      ],
+      "answer": 0
     }
   ],
-  "summary": "The (____) in a shooting incident at Saturday's correspondents' dinner attended by President Donald Trump and other senior U.S. One (____) was shot, but he was protected by a bulletproof vest. The headline, \"Trump (____) after security incident at White House Correspondents' Dinner,\" gives the main context for this development.",
+  "summary": "Interest rates influence economic (____) by affecting borrowing and spending. Low rates encourage economic activity but may increase (____), while high rates can slow growth and stabilize (____).",
   "summaryQuiz": [
     {
-      "answer": "suspect",
+      "blank": 1,
+      "answer": "activity",
       "options": [
-        "saturday",
-        "suspect",
-        "shooting",
-        "incident"
+        "activity",
+        "tax",
+        "trade",
+        "labor"
       ]
     },
     {
-      "answer": "officer",
+      "blank": 2,
+      "answer": "inflation",
       "options": [
-        "shooting",
-        "suspect",
-        "incident",
-        "officer"
+        "inflation",
+        "exports",
+        "profits",
+        "wages"
       ]
     },
     {
-      "answer": "unharmed",
+      "blank": 3,
+      "answer": "prices",
       "options": [
-        "shooting",
-        "suspect",
-        "incident",
-        "unharmed"
+        "prices",
+        "jobs",
+        "markets",
+        "demand"
       ]
-    }
-  ],
-  "newsItems": [
-    {
-      "title": "WATCH: D.C. officials share updates on the White House Correspondents' Dinner shooting",
-      "link": "https://www.pbs.org/newshour/politics/watch-d-c-officials-share-updates-on-the-white-house-correspondents-dinner-shooting",
-      "pubDate": "Sat, 25 Apr 2026 23:49:55 -0400",
-      "content": "The suspect in a shooting incident at Saturday's correspondents' dinner attended by President Donald Trump and other senior U.S. officials was carrying guns and knives and was believed to be acting alone, the mayor of Washington said."
-    },
-    {
-      "title": "WATCH: Trump holds press conference after shooting at White House Correspondents' Dinner",
-      "link": "https://www.pbs.org/newshour/nation/watch-live-trump-holds-press-conference-after-shooting-at-white-house-correspondents-dinner",
-      "pubDate": "Sat, 25 Apr 2026 21:57:45 -0400",
-      "content": "Trump said the suspect was armed with multiple weapons before stopped by Secret Service. One officer was shot, but he was protected by a bulletproof vest."
-    },
-    {
-      "title": "Trump unharmed after security incident at White House Correspondents' Dinner",
-      "link": "https://www.pbs.org/newshour/politics/trump-evacuated-after-security-incident-at-white-house-correspondents-dinner-no-sign-of-injuries",
-      "pubDate": "Sat, 25 Apr 2026 20:59:07 -0400",
-      "content": "A man armed with guns and knives stormed the lobby outside a high-profile journalists' dinner attended by President Donald Trump and multiple senior U.S. leaders on Saturday night. The president was uninjured and was hustled away."
-    },
-    {
-      "title": "One police officer killed and another critically injured in Chicago hospital shooting, officials say",
-      "link": "https://www.pbs.org/newshour/nation/one-police-officer-killed-and-another-critically-injured-in-chicago-hospital-shooting-officials-say",
-      "pubDate": "Sat, 25 Apr 2026 18:55:51 -0400",
-      "content": "A police officer died and another was critically injured after a shooting at a Chicago hospital on Saturday, according to officials."
-    },
-    {
-      "title": "Mexico says 2 U.S. federal agents who died were not authorized to participate in any local operation",
-      "link": "https://www.pbs.org/newshour/world/mexico-says-2-u-s-federal-agents-who-died-were-not-authorized-to-participate-in-any-local-operation",
-      "pubDate": "Sat, 25 Apr 2026 18:38:00 -0400",
-      "content": "Mexico's government said Saturday that two U.S. federal agents recently killed in a car crash in the country's northern region were not authorized to participate in operations in Mexico."
-    },
-    {
-      "title": "U.S. doctors warn of a potentially bad year for tick-borne diseases",
-      "link": "https://www.pbs.org/newshour/health/u-s-doctors-warn-of-a-potentially-bad-year-for-tick-borne-diseases",
-      "pubDate": "Sat, 25 Apr 2026 17:52:08 -0400",
-      "content": "Tick season seems to be off to a fast start, with an unusually high number of bites already reported across the country."
     }
   ]
 }
