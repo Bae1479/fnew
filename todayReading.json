@@ -1,9 +1,9 @@
 {
-  "date": "2026-04-26T04:25:55.042Z",
+  "date": "2026-04-26T04:28:25.704Z",
   "category": "society",
   "categoryLabel": "Society",
   "headline": "Society Reading",
-  "reading": "Society is the focus of today’s reading. Several recent developments reported in the news highlight important changes in this area.\n\nThe suspect in a shooting incident at Saturday's correspondents' dinner attended by President Donald Trump and other senior U.S. officials was carrying guns and knives and was believed to be acting alone, the mayor of Washington said.\n\nTrump said the suspect was armed with multiple weapons before stopped by Secret Service. One officer was shot, but he was protected by a bulletproof vest.\n\nA man armed with guns and knives stormed the lobby outside a high-profile journalists' dinner attended by President Donald Trump and multiple senior U.S. The president was uninjured and was hustled away.",
+  "reading": "Society is the focus of today’s reading. Several recent developments reported in the news highlight important changes in this area.\n\nThe suspect in a shooting incident at Saturday's correspondents' dinner attended by President Donald Trump and other senior U.S. officials was carrying guns and knives and was believed to be acting alone, the mayor of Washington said. WATCH: D.C. officials share updates on the White House Correspondents' Dinner shooting WATCH: D.C. officials share updates on the White House Correspondents' Dinner shooting WATCH: D.C. officials share updates on the White House Correspondents' Dinner shooting\n\nTrump said the suspect was armed with multiple weapons before stopped by Secret Service. One officer was shot, but he was protected by a bulletproof vest. WATCH: Trump holds press conference after shooting at White House Correspondents' Dinner WATCH: Trump holds press conference after shooting at White House Correspondents' Dinner WATCH: Trump holds press conference after shooting at White House Correspondents' Dinner\n\nA man armed with guns and knives stormed the lobby outside a high-profile journalists' dinner attended by President Donald Trump and multiple senior U.S. The president was uninjured and was hustled away. Trump unharmed after security incident at White House Correspondents' Dinner Trump unharmed after security incident at White House Correspondents' Dinner Trump unharmed after security incident at White House Correspondents' Dinner",
   "quiz": [
     {
       "q": "What is the main idea of the passage?",
@@ -20,16 +20,16 @@
       "options": [
         "Events influence each other.",
         "Events are unrelated.",
-        "Events are fictional.",
-        "Events are random."
+        "Events are random.",
+        "Events are fictional."
       ],
       "answer": 0
     },
     {
       "q": "Which is true?",
       "options": [
-        "Only one event matters.",
         "Events are independent.",
+        "Only one event matters.",
         "The passage is opinion-based.",
         "Events are part of a larger system."
       ],
@@ -38,51 +38,51 @@
     {
       "q": "What is the author's purpose?",
       "options": [
-        "To entertain readers.",
         "To analyze real-world developments.",
         "To teach vocabulary.",
+        "To entertain readers.",
         "To describe a story."
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "q": "What is the tone?",
       "options": [
-        "Narrative",
-        "Humorous",
         "Emotional",
-        "Analytical"
+        "Analytical",
+        "Narrative",
+        "Humorous"
       ],
-      "answer": 3
+      "answer": 1
     }
   ],
-  "summary": "The (____) in a shooting incident at Saturday's correspondents' dinner attended by President Donald Trump and other senior U.S. Trump said the (____) was armed with multiple weapons before stopped by Secret Service. A man armed with guns and (____) stormed the lobby outside a high-profile journalists' dinner attended by President Donald Trump and multiple senior U.S.",
+  "summary": "The (____) in a shooting incident at Saturday's correspondents' dinner attended by (____) Donald Trump and other senior U.S. (____) share updates on the White House Correspondents' Dinner shooting Trump said the suspect was armed with multiple weapons before stopped by Secret Service. The president was uninjured and was hustled away.",
   "summaryQuiz": [
     {
       "answer": "suspect",
       "options": [
-        "decision",
-        "policy",
-        "change",
-        "suspect"
-      ]
-    },
-    {
-      "answer": "suspect",
-      "options": [
-        "market",
         "suspect",
         "pressure",
-        "system"
+        "market",
+        "decision"
       ]
     },
     {
-      "answer": "knives",
+      "answer": "officials",
       "options": [
-        "knives",
-        "decision",
-        "market",
-        "policy"
+        "officials",
+        "change",
+        "policy",
+        "market"
+      ]
+    },
+    {
+      "answer": "president",
+      "options": [
+        "change",
+        "system",
+        "president",
+        "decision"
       ]
     }
   ],
