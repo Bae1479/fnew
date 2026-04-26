@@ -1,231 +1,111 @@
 {
-  "date": "2026-04-26T03:33:47.498Z",
+  "date": "2026-04-26T03:40:16.121Z",
   "category": "society",
   "categoryLabel": "Society",
   "headline": "Society Reading",
-  "reading": "Society is the focus of today’s reading. Recent headlines highlight several developments, including WATCH LIVE: Trump holds press conference after shooting at White House Correspondents' Dinner and Trump evacuated after security incident at White House correspondents dinner; no sign of injuries. These events reflect broader trends rather than isolated cases.\n\nThese developments are connected through underlying structural factors. Changes in policy, shifting expectations, and external pressures all influence how situations evolve over time. Rather than viewing each headline separately, it is more useful to understand how they interact within a larger system.\n\nAnother important aspect is how people and institutions respond. Governments, organizations, and individuals all adjust their behavior based on new information. This creates feedback loops where decisions influence outcomes, and outcomes influence future decisions.\n\nAt the same time, uncertainty remains a key challenge. Even when data appears clear, interpretations can differ. This is why similar events may lead to different reactions across regions and markets. Expectations often matter as much as actual conditions.\n\nOverall, these developments suggest that society issues should be understood as dynamic processes rather than fixed events. Careful analysis is needed to understand not only what is happening, but why it is happening and what may come next.",
+  "reading": "Society is the focus of today’s reading. Several recent developments highlight important changes in this area.\n\nTrump said the suspect was armed with multiple weapons before stopped by Secret Service. President Donald Trump and other top leaders of the United States were evacuated from an annual dinner of White House correspondents on Saturday night after an unspecified threat. A police officer died and another was critically injured after a shooting at a Chicago hospital on Saturday, according to officials.\n\nThese developments show that the situation is evolving through connected events rather than isolated cases. Understanding how these changes interact is important for interpreting what may happen next.",
   "quiz": [
     {
       "q": "What is the main idea of the reading?",
       "options": [
-        "Society developments are interconnected.",
-        "A fictional story.",
-        "A grammar lesson.",
-        "A personal diary."
+        "It explains recent real-world developments.",
+        "It is a fictional story.",
+        "It teaches grammar rules.",
+        "It describes personal experiences."
       ],
       "answer": 0
     },
     {
-      "q": "How should the events be understood?",
+      "q": "What do the events in the passage show?",
       "options": [
-        "As part of a larger system.",
-        "As isolated events.",
-        "As unrelated stories.",
-        "As random changes."
+        "They are connected developments.",
+        "They are unrelated.",
+        "They are random.",
+        "They are fictional."
       ],
       "answer": 0
     },
     {
-      "q": "What affects decisions in the passage?",
+      "q": "What should readers understand?",
       "options": [
-        "Expectations and reactions.",
-        "Only past data.",
-        "Random factors.",
-        "Irrelevant opinions."
+        "How events influence each other.",
+        "Only vocabulary meanings.",
+        "Only individual facts.",
+        "Only opinions."
       ],
       "answer": 0
     },
     {
-      "q": "Why is uncertainty important?",
+      "q": "What is emphasized in the passage?",
       "options": [
-        "Because interpretations differ.",
-        "Because nothing changes.",
-        "Because data is always wrong.",
-        "Because events are fixed."
+        "Interpretation of developments.",
+        "Entertainment value.",
+        "Personal feelings.",
+        "Storytelling."
       ],
       "answer": 0
     },
     {
       "q": "What is the purpose of the reading?",
       "options": [
-        "To explain real-world developments.",
-        "To entertain readers.",
-        "To teach vocabulary only.",
-        "To describe fiction."
+        "To explain real events clearly.",
+        "To create fiction.",
+        "To list words.",
+        "To describe a diary."
       ],
       "answer": 0
     }
   ],
-  "summary": "(____) is the focus of today’s reading. (____) headlines highlight several developments, including WATCH LIVE: Trump holds press conference after shooting at White House Correspondents' Dinner and Trump evacuated after security incident at White House correspondents dinner; no sign of injuries. These (____) reflect broader trends rather than isolated cases.\n\nThese developments are connected through underlying structural factors",
+  "summary": "(____) is the focus of today’s (____). (____) recent developments highlight important changes in this area. Trump said the suspect was armed with multiple weapons before stopped by Secret Service.",
   "summaryQuiz": [
     {
-      "blank": 1,
       "answer": "society",
       "options": [
-        "pressure",
-        "market",
-        "policy",
-        "society"
+        "society",
+        "suspect",
+        "states",
+        "officials"
       ]
     },
     {
-      "blank": 2,
-      "answer": "recent",
+      "answer": "reading",
       "options": [
-        "system",
-        "recent",
-        "policy",
-        "pressure"
+        "reading",
+        "donald",
+        "interact",
+        "shooting"
       ]
     },
     {
-      "blank": 3,
-      "answer": "events",
+      "answer": "several",
       "options": [
-        "decision",
-        "events",
-        "pressure",
-        "change"
+        "several",
+        "suspect",
+        "rather",
+        "correspondents"
       ]
     }
   ],
   "newsItems": [
     {
-      "creator": "Collin Binkley, Associated Press",
       "title": "WATCH LIVE: Trump holds press conference after shooting at White House Correspondents' Dinner",
-      "link": "https://www.pbs.org/newshour/nation/watch-live-trump-holds-press-conference-after-shooting-at-white-house-correspondents-dinner",
-      "pubDate": "Sat, 25 Apr 2026 21:57:45 -0400",
-      "dc:creator": "Collin Binkley, Associated Press",
-      "content": "Trump said the suspect was armed with multiple weapons before stopped by Secret Service. One officer was shot, but he was protected by a bulletproof vest.",
-      "contentSnippet": "Trump said the suspect was armed with multiple weapons before stopped by Secret Service. One officer was shot, but he was protected by a bulletproof vest.",
-      "guid": "https://www.pbs.org/newshour/nation/watch-live-trump-holds-press-conference-after-shooting-at-white-house-correspondents-dinner",
-      "categories": [
-        {
-          "_": "Donald Trump news",
-          "$": {
-            "domain": "https://www.pbs.org/newshour/tag/donald-trump"
-          }
-        },
-        {
-          "_": "White House Correspondents' Dinner",
-          "$": {
-            "domain": "https://www.pbs.org/newshour/tag/white-house-correspondents-dinner"
-          }
-        }
-      ],
-      "isoDate": "2026-04-26T01:57:45.000Z"
+      "content": "Trump said the suspect was armed with multiple weapons before stopped by Secret Service. One officer was shot, but he was protected by a bulletproof vest."
     },
     {
-      "creator": "David Bauder, Associated Press",
       "title": "Trump evacuated after security incident at White House correspondents dinner; no sign of injuries",
-      "link": "https://www.pbs.org/newshour/politics/trump-evacuated-after-security-incident-at-white-house-correspondents-dinner-no-sign-of-injuries",
-      "pubDate": "Sat, 25 Apr 2026 20:59:07 -0400",
-      "dc:creator": "David Bauder, Associated Press",
-      "content": "President Donald Trump and other top leaders of the United States were evacuated from an annual dinner of White House correspondents on Saturday night after an unspecified threat. There did not immediately appear to be any injuries.\r\n",
-      "contentSnippet": "President Donald Trump and other top leaders of the United States were evacuated from an annual dinner of White House correspondents on Saturday night after an unspecified threat. There did not immediately appear to be any injuries.",
-      "guid": "https://www.pbs.org/newshour/politics/trump-evacuated-after-security-incident-at-white-house-correspondents-dinner-no-sign-of-injuries",
-      "categories": [
-        {
-          "_": "Donald Trump news",
-          "$": {
-            "domain": "https://www.pbs.org/newshour/tag/donald-trump"
-          }
-        },
-        {
-          "_": "White House Correspondents' Association",
-          "$": {
-            "domain": "https://www.pbs.org/newshour/tag/white-house-correspondents-association"
-          }
-        }
-      ],
-      "isoDate": "2026-04-26T00:59:07.000Z"
+      "content": "President Donald Trump and other top leaders of the United States were evacuated from an annual dinner of White House correspondents on Saturday night after an unspecified threat. There did not immediately appear to be any injuries."
     },
     {
-      "creator": "Associated Press",
       "title": "One police officer killed and another critically injured in Chicago hospital shooting, officials say",
-      "link": "https://www.pbs.org/newshour/nation/one-police-officer-killed-and-another-critically-injured-in-chicago-hospital-shooting-officials-say",
-      "pubDate": "Sat, 25 Apr 2026 18:55:51 -0400",
-      "dc:creator": "Associated Press",
-      "content": "A police officer died and another was critically injured after a shooting at a Chicago hospital on Saturday, according to officials.",
-      "contentSnippet": "A police officer died and another was critically injured after a shooting at a Chicago hospital on Saturday, according to officials.",
-      "guid": "https://www.pbs.org/newshour/nation/one-police-officer-killed-and-another-critically-injured-in-chicago-hospital-shooting-officials-say",
-      "categories": [
-        {
-          "_": "Chicago",
-          "$": {
-            "domain": "https://www.pbs.org/newshour/tag/chicago"
-          }
-        },
-        {
-          "_": "Hospital",
-          "$": {
-            "domain": "https://www.pbs.org/newshour/tag/hospital"
-          }
-        },
-        {
-          "_": "shooting",
-          "$": {
-            "domain": "https://www.pbs.org/newshour/tag/shooting"
-          }
-        }
-      ],
-      "isoDate": "2026-04-25T22:55:51.000Z"
+      "content": "A police officer died and another was critically injured after a shooting at a Chicago hospital on Saturday, according to officials."
     },
     {
-      "creator": "Associated Press",
       "title": "Mexico says 2 U.S. federal agents who died were not authorized to participate in any local operation",
-      "link": "https://www.pbs.org/newshour/world/mexico-says-2-u-s-federal-agents-who-died-were-not-authorized-to-participate-in-any-local-operation",
-      "pubDate": "Sat, 25 Apr 2026 18:38:00 -0400",
-      "dc:creator": "Associated Press",
-      "content": "Mexico's government said Saturday that two U.S. federal agents recently killed in a car crash in the country's northern region were not authorized to participate in operations in Mexico.",
-      "contentSnippet": "Mexico's government said Saturday that two U.S. federal agents recently killed in a car crash in the country's northern region were not authorized to participate in operations in Mexico.",
-      "guid": "https://www.pbs.org/newshour/world/mexico-says-2-u-s-federal-agents-who-died-were-not-authorized-to-participate-in-any-local-operation",
-      "categories": [
-        {
-          "_": "CIA",
-          "$": {
-            "domain": "https://www.pbs.org/newshour/tag/cia"
-          }
-        },
-        {
-          "_": "federal agents",
-          "$": {
-            "domain": "https://www.pbs.org/newshour/tag/federal-agents"
-          }
-        },
-        {
-          "_": "mexico",
-          "$": {
-            "domain": "https://www.pbs.org/newshour/tag/mexico"
-          }
-        }
-      ],
-      "isoDate": "2026-04-25T22:38:00.000Z"
+      "content": "Mexico's government said Saturday that two U.S. federal agents recently killed in a car crash in the country's northern region were not authorized to participate in operations in Mexico."
     },
     {
-      "creator": "Mike Stobbe, Associated Press",
       "title": "U.S. doctors warn of a potentially bad year for tick-borne diseases",
-      "link": "https://www.pbs.org/newshour/health/u-s-doctors-warn-of-a-potentially-bad-year-for-tick-borne-diseases",
-      "pubDate": "Sat, 25 Apr 2026 17:52:08 -0400",
-      "dc:creator": "Mike Stobbe, Associated Press",
-      "content": "Tick season seems to be off to a fast start, with an unusually high number of bites already reported across the country.",
-      "contentSnippet": "Tick season seems to be off to a fast start, with an unusually high number of bites already reported across the country.",
-      "guid": "https://www.pbs.org/newshour/health/u-s-doctors-warn-of-a-potentially-bad-year-for-tick-borne-diseases",
-      "categories": [
-        {
-          "_": "tick season",
-          "$": {
-            "domain": "https://www.pbs.org/newshour/tag/tick-season"
-          }
-        },
-        {
-          "_": "ticks",
-          "$": {
-            "domain": "https://www.pbs.org/newshour/tag/ticks"
-          }
-        }
-      ],
-      "isoDate": "2026-04-25T21:52:08.000Z"
+      "content": "Tick season seems to be off to a fast start, with an unusually high number of bites already reported across the country."
     }
   ]
 }
