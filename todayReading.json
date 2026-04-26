@@ -1,170 +1,213 @@
 {
-  "date": "2026-04-26T04:34:16.420Z",
+  "date": "2026-04-26T04:39:20.996Z",
   "category": "society",
   "categoryLabel": "Society",
   "headline": "Soldier's arrest over Polymarket bet on Maduro raid fuels insider trading concerns",
-  "reading": "Society is the focus of today’s reading. A recent report highlights an important development in this area.\n\nA Special Forces soldier who helped plan the capture of Venezuelan President Nicolas Maduro was indicted for allegedly using classified information about the raid to make prediction market bets. It is raising new concerns about insider trading and the need for regulation.\n\nAmna Nawaz discussed more with Liz Landers and David Hill, who writes about gambling for Rolling Stone and American Gambler.\n\nThis development is important because it reflects broader changes that may influence decisions and expectations. The situation may continue to evolve depending on how key factors develop over time.\n\nOverall, this case shows how a single event can provide insight into larger trends within society.",
+  "reading": "A Special Forces soldier who helped plan the capture of Venezuelan President Nicolas Maduro was indicted for allegedly using classified information about the raid to make prediction market bets. It is raising new concerns about insider trading and the need for regulation. Amna Nawaz discussed more with Liz Landers and David Hill, who writes about gambling for Rolling Stone and American Gambler.",
   "quiz": [
     {
       "q": "What is the main idea of the passage?",
       "options": [
-        "The passage lists vocabulary.",
-        "The passage tells a fictional story.",
         "The passage describes a personal diary.",
-        "The passage explains a real-world development."
+        "The passage tells a fictional story.",
+        "The passage explains a real news development in detail.",
+        "The passage only lists vocabulary words."
       ],
-      "answer": 3
+      "answer": 2
     },
     {
-      "q": "What can be inferred?",
+      "q": "What can be inferred from the passage?",
       "options": [
-        "The event is unrelated to others.",
-        "Nothing will change.",
-        "The event is fictional.",
-        "The situation may continue to evolve."
+        "The event has no wider meaning.",
+        "The issue may have broader consequences beyond the immediate event.",
+        "The issue has already been fully resolved.",
+        "The passage is unrelated to current events."
       ],
-      "answer": 3
+      "answer": 1
     },
     {
-      "q": "Which is true?",
+      "q": "Why are the details in the passage important?",
       "options": [
-        "The event reflects broader trends.",
-        "The event is isolated.",
-        "The event is random.",
-        "The event is irrelevant."
+        "They help readers understand the development more clearly.",
+        "They are included only for entertainment.",
+        "They replace the main idea.",
+        "They are unrelated to the topic."
       ],
       "answer": 0
     },
     {
-      "q": "What is the author's purpose?",
+      "q": "What is the author’s purpose?",
       "options": [
-        "To describe a story.",
-        "To teach grammar.",
-        "To entertain readers.",
-        "To explain and analyze a real event."
-      ],
-      "answer": 3
-    },
-    {
-      "q": "What is the tone?",
-      "options": [
-        "Analytical",
-        "Emotional",
-        "Humorous",
-        "Narrative"
+        "To explain a real-world issue clearly.",
+        "To write a fictional narrative.",
+        "To teach grammar rules only.",
+        "To describe a private experience."
       ],
       "answer": 0
+    },
+    {
+      "q": "The headline of the source news is closest to which idea?",
+      "options": [
+        "A random entertainment update",
+        "A grammar lesson",
+        "Soldier's arrest over Polymarket bet on Maduro raid fuels insider trading concerns",
+        "A fictional event"
+      ],
+      "answer": 2
     }
   ],
-  "summary": "A (____) Forces soldier who helped plan the capture of Venezuelan President Nicolas Maduro was indicted for allegedly using classified information about the raid to make prediction market bets. Amna Nawaz (____) more with Liz Landers and David Hill, who writes about gambling for Rolling Stone and American Gambler. The (____) may continue to evolve depending on how key factors develop over time.",
+  "summary": "A (____) Forces soldier who helped plan the capture of Venezuelan President Nicolas Maduro was indicted for allegedly using classified information about the raid to make prediction market bets. It is (____) new concerns about insider trading and the need for regulation. Amna Nawaz (____) more with Liz Landers and David Hill, who writes about gambling for Rolling Stone and American Gambler.",
   "summaryQuiz": [
     {
+      "blank": 1,
       "answer": "special",
       "options": [
-        "policy",
-        "system",
-        "decision",
-        "special"
+        "forces",
+        "helped",
+        "special",
+        "soldier"
       ]
     },
     {
+      "blank": 2,
+      "answer": "raising",
+      "options": [
+        "soldier",
+        "special",
+        "raising",
+        "forces"
+      ]
+    },
+    {
+      "blank": 3,
       "answer": "discussed",
       "options": [
-        "pressure",
-        "discussed",
-        "change",
-        "market"
-      ]
-    },
-    {
-      "answer": "situation",
-      "options": [
-        "situation",
-        "policy",
-        "system",
-        "decision"
+        "special",
+        "soldier",
+        "forces",
+        "discussed"
       ]
     }
   ],
   "newsItems": [
     {
       "title": "WATCH: D.C. officials share updates on the White House Correspondents' Dinner shooting",
+      "link": "https://www.pbs.org/newshour/politics/watch-d-c-officials-share-updates-on-the-white-house-correspondents-dinner-shooting",
+      "pubDate": "Sat, 25 Apr 2026 23:49:55 -0400",
       "content": "The suspect in a shooting incident at Saturday's correspondents' dinner attended by President Donald Trump and other senior U.S. officials was carrying guns and knives and was believed to be acting alone, the mayor of Washington said."
     },
     {
       "title": "WATCH: Trump holds press conference after shooting at White House Correspondents' Dinner",
+      "link": "https://www.pbs.org/newshour/nation/watch-live-trump-holds-press-conference-after-shooting-at-white-house-correspondents-dinner",
+      "pubDate": "Sat, 25 Apr 2026 21:57:45 -0400",
       "content": "Trump said the suspect was armed with multiple weapons before stopped by Secret Service. One officer was shot, but he was protected by a bulletproof vest."
     },
     {
       "title": "Trump unharmed after security incident at White House Correspondents' Dinner",
+      "link": "https://www.pbs.org/newshour/politics/trump-evacuated-after-security-incident-at-white-house-correspondents-dinner-no-sign-of-injuries",
+      "pubDate": "Sat, 25 Apr 2026 20:59:07 -0400",
       "content": "A man armed with guns and knives stormed the lobby outside a high-profile journalists' dinner attended by President Donald Trump and multiple senior U.S. leaders on Saturday night. The president was uninjured and was hustled away."
     },
     {
       "title": "One police officer killed and another critically injured in Chicago hospital shooting, officials say",
+      "link": "https://www.pbs.org/newshour/nation/one-police-officer-killed-and-another-critically-injured-in-chicago-hospital-shooting-officials-say",
+      "pubDate": "Sat, 25 Apr 2026 18:55:51 -0400",
       "content": "A police officer died and another was critically injured after a shooting at a Chicago hospital on Saturday, according to officials."
     },
     {
       "title": "Mexico says 2 U.S. federal agents who died were not authorized to participate in any local operation",
+      "link": "https://www.pbs.org/newshour/world/mexico-says-2-u-s-federal-agents-who-died-were-not-authorized-to-participate-in-any-local-operation",
+      "pubDate": "Sat, 25 Apr 2026 18:38:00 -0400",
       "content": "Mexico's government said Saturday that two U.S. federal agents recently killed in a car crash in the country's northern region were not authorized to participate in operations in Mexico."
     },
     {
       "title": "U.S. doctors warn of a potentially bad year for tick-borne diseases",
+      "link": "https://www.pbs.org/newshour/health/u-s-doctors-warn-of-a-potentially-bad-year-for-tick-borne-diseases",
+      "pubDate": "Sat, 25 Apr 2026 17:52:08 -0400",
       "content": "Tick season seems to be off to a fast start, with an unusually high number of bites already reported across the country."
     },
     {
       "title": "What to know if your flight is canceled as jet fuel costs rise",
+      "link": "https://www.pbs.org/newshour/economy/what-to-know-if-your-flight-is-canceled-as-jet-fuel-costs-rise",
+      "pubDate": "Sat, 25 Apr 2026 16:38:06 -0400",
       "content": "With airlines worldwide canceling flights as the war in the Middle East strains jet fuel supplies and pushes up prices, here's what to know if your flight is canceled."
     },
     {
       "title": "Wildfires in southeastern Georgia continue to threaten residents",
+      "link": "https://www.pbs.org/newshour/nation/wildfires-in-southeastern-georgia-continue-to-threaten-residents",
+      "pubDate": "Sat, 25 Apr 2026 15:57:58 -0400",
       "content": "Two wildfires in southeastern Georgia continued to threaten homes and lives on Saturday as officials warned that strong winds could spread the flames."
     },
     {
       "title": "Analysis: 'Just war' has guided Catholic thinking on conflict for centuries &ndash; including criticism of Iran war",
+      "link": "https://www.pbs.org/newshour/world/analysis-just-war-has-guided-catholic-thinking-on-conflict-for-centuries-including-criticism-of-iran-war",
+      "pubDate": "Sat, 25 Apr 2026 15:09:20 -0400",
       "content": "A growing choir of Catholic voices has criticized the Iran conflict by invoking the concept of \"just war\" – an evolving tradition that has guided Christian thinking about war and peace for 1,500 years."
     },
     {
       "title": "Latest ceasefire talks fail as Iran's top diplomat leaves Pakistan and Trump tells envoys not to go",
+      "link": "https://www.pbs.org/newshour/world/latest-ceasefire-talks-fail-as-irans-top-diplomat-leaves-pakistan-and-trump-tells-envoys-not-to-go",
+      "pubDate": "Sat, 25 Apr 2026 14:43:29 -0400",
       "content": "The latest ceasefire talks between the U.S. and Iran appeared to have failed Saturday after Tehran's top diplomat left Pakistan and President Trump said he told envoys not to go."
     },
     {
       "title": "Islamic militants and separatists attack several locations in Mali's capital and other cities",
-      "content": "Islamic militants and separatists said they attacked several locations in Mali's capital, Bamako, and other cities on Saturday in one of the largest coordinated attacks in the West African country in recent years."
+      "link": "https://www.pbs.org/newshour/world/islamic-militants-and-separatists-attack-several-locations-in-malis-capital-and-other-cities",
+      "pubDate": "Sat, 25 Apr 2026 13:51:27 -0400",
+      "content": "Islamic militants and separatists said they attacked several locations in Mali's capital, Bamako, and other cities on Saturday in one of the largest coordinated attacks in the West African country in recent years."
     },
     {
       "title": "ICE arrests drop nearly 12% following Minneapolis killings",
-      "content": "In the weeks that followed the January Minneapolis killings of two American citizens by immigration officers, ICE arrests across the country dropped on average by nearly 12%."
+      "link": "https://www.pbs.org/newshour/nation/ice-arrests-drop-nearly-12-following-minneapolis-killings",
+      "pubDate": "Sat, 25 Apr 2026 13:08:56 -0400",
+      "content": "In the weeks that followed the January Minneapolis killings of two American citizens by immigration officers, ICE arrests across the country dropped on average by nearly 12%."
     },
     {
       "title": "U.S. says it's clearing Iranian mines in latest push to open the Strait of Hormuz",
-      "content": "Seeking out mines is one of the latest tactics announced by the Trump administration to get traffic moving again through the strait as rising energy prices and wider economic effects pose a political risk."
+      "link": "https://www.pbs.org/newshour/world/u-s-says-its-clearing-iranian-mines-in-latest-push-to-open-the-strait-of-hormuz",
+      "pubDate": "Sat, 25 Apr 2026 12:25:07 -0400",
+      "content": "Seeking out mines is one of the latest tactics announced by the Trump administration to get traffic moving again through the strait as rising energy prices and wider economic effects pose a political risk."
     },
     {
       "title": "Palestinians vote in the first Gaza elections held in more than 20 years",
-      "content": "Palestinians voted on Saturday in the first elections held in part of Gaza in more than two decades, while tens of thousands of Palestinians cast ballots in the Israeli-occupied West Bank."
+      "link": "https://www.pbs.org/newshour/world/palestinians-vote-in-the-first-gaza-elections-held-in-more-than-20-years",
+      "pubDate": "Sat, 25 Apr 2026 11:40:10 -0400",
+      "content": "Palestinians voted on Saturday in the first elections held in part of Gaza in more than two decades, while tens of thousands of Palestinians cast ballots in the Israeli-occupied West Bank."
     },
     {
       "title": "U.S., Iranian delegations head to Pakistan, renewing hopes for diplomatic end to war",
+      "link": "https://www.pbs.org/newshour/show/u-s-iranian-delegations-head-to-pakistan-renewing-hopes-for-diplomatic-end-to-war",
+      "pubDate": "Fri, 24 Apr 2026 18:55:58 -0400",
       "content": "An American delegation is headed to Pakistan to continue talks geared toward ending the two-month war with Iran. One of the focal points of any discussion will be the Strait of Hormuz, where vital maritime traffic remains largely frozen. While Iran's foreign minister is already in the Pakistani capital, his spokesman said there is no meeting planned with the Americans. Stephanie Sy reports."
     },
     {
       "title": "News Wrap: DOJ drops criminal probe into Jerome Powell",
+      "link": "https://www.pbs.org/newshour/show/news-wrap-doj-drops-criminal-probe-into-jerome-powell",
+      "pubDate": "Fri, 24 Apr 2026 18:50:55 -0400",
       "content": "In our news wrap Friday, the Justice Department is dropping its criminal probe into Federal Reserve Chair Jerome Powell, a federal appeals court ruled that President Trump's executive order banning asylum claims at the U.S. southern border is illegal and the FDA said it will fast-track reviews for three psychedelic drugs aimed at treating mental health conditions."
     },
     {
       "title": "Soldier's arrest over Polymarket bet on Maduro raid fuels insider trading concerns",
+      "link": "https://www.pbs.org/newshour/show/soldiers-arrest-over-polymarket-bet-on-maduro-raid-fuels-insider-trading-concerns",
+      "pubDate": "Fri, 24 Apr 2026 18:45:33 -0400",
       "content": "A Special Forces soldier who helped plan the capture of Venezuelan President Nicolas Maduro was indicted for allegedly using classified information about the raid to make prediction market bets. It is raising new concerns about insider trading and the need for regulation. Amna Nawaz discussed more with Liz Landers and David Hill, who writes about gambling for Rolling Stone and American Gambler."
     },
     {
       "title": "Southern Lebanon weighs losses from Israeli strikes as ceasefire hangs by a thread",
+      "link": "https://www.pbs.org/newshour/show/southern-lebanon-weighs-losses-from-israeli-strikes-as-ceasefire-hangs-by-a-thread",
+      "pubDate": "Fri, 24 Apr 2026 18:40:28 -0400",
       "content": "During a meeting in the Oval Office on Thursday, Israel and Lebanon agreed to extend their ceasefire by three weeks. But on the ground, the truce has been unravelling, with multiple violations by both Israel and Hezbollah, the Iran-backed militant group. Special correspondent Simona Foltyn reports from southern Lebanon."
     },
     {
       "title": "Brooks and Capehart on the partisan redistricting battle",
+      "link": "https://www.pbs.org/newshour/show/brooks-and-capehart-on-the-partisan-redistricting-battle",
+      "pubDate": "Fri, 24 Apr 2026 18:35:22 -0400",
       "content": "David Brooks of The Atlantic and Jonathan Capehart of MS NOW join Geoff Bennett to discuss the week in politics, including the Justice Department dropping its probe into Fed Chair Jerome Powell after admitting it lacked evidence, voters in Virginia approving a redistricting effort benefiting Democrats and President Trump saying he's in no rush to end the Iran war."
     },
     {
       "title": "Inside Chornobyl, 40 years after the world's worst nuclear disaster",
+      "link": "https://www.pbs.org/newshour/show/inside-chernobyl-40-years-after-the-worlds-worst-nuclear-disaster",
+      "pubDate": "Fri, 24 Apr 2026 18:30:23 -0400",
       "content": "Forty years ago, the world's worst nuclear power disaster exploded into history at the Soviet Union's Chornobyl nuclear plant in what is now Ukraine. The ensuing cover-up and clean-up operation made Chornobyl a byword for dereliction and mismanagement. Special correspondent Simon Ostrovsky and cinematographer Amanda Bailly report from the Chornobyl exclusion zone."
     }
   ]
