@@ -55,7 +55,14 @@ async function fetchNews() {
 function extractNewsBlock(news) {
   const s = splitSentences(news.content);
 
-  return s.slice(0, 3).join(" ");
+  // 👉 최소 5문장 확보 (부족하면 제목으로 보강)
+  const extended = [...s];
+
+  while (extended.length < 5) {
+    extended.push(news.title);
+  }
+
+  return extended.slice(0, 5).join(" ");
 }
 
 /**
