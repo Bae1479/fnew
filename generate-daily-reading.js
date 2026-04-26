@@ -22,100 +22,121 @@ function getTodayTopic() {
   return TOPICS[day % TOPICS.length];
 }
 
+function splitSentences(text = "") {
+  return text
+    .replace(/\s+/g, " ")
+    .split(/(?<=[.!?])\s+/)
+    .filter((s) => s.length > 40);
+}
+
+/**
+ * 뉴스 가져오기
+ */
 async function fetchNews() {
   try {
     const feed = await parser.parseURL(FEEDS.top);
 
-    return (feed.items || [])
-      .slice(0, 5)
-      .map((item) => ({
-        title: item.title || "",
-        content:
-          item.contentSnippet ||
-          item.content ||
-          item.summary ||
-          ""
-      }));
+    return (feed.items || []).slice(0, 5).map((item) => ({
+      title: item.title || "",
+      content:
+        item.contentSnippet ||
+        item.content ||
+        item.summary ||
+        ""
+    }));
   } catch {
     return [];
   }
 }
 
-function splitSentences(text = "") {
-  return text
-    .replace(/\s+/g, " ")
-    .split(/(?<=[.!?])\s+/)
-    .filter(Boolean);
-}
-
-function extract(news) {
+/**
+ * 뉴스 1개 → 안정적으로 2~3문장
+ */
+function extractNewsBlock(news) {
   const s = splitSentences(news.content);
-  return [s[0], s[1], s[2]].filter(Boolean).join(" ");
+
+  return s.slice(0, 3).join(" ");
 }
 
 /**
- * 🔥 기사형 리딩
+ * 🔥 핵심: 하나의 흐름으로 연결
  */
 function buildReading(topic, newsItems) {
   const selected = newsItems.slice(0, 3);
 
-  const intro = `${topic.label} is the focus of today’s reading. Recent developments reported in the news highlight changes that are shaping this area.`;
+  const intro = `${topic.label} is the focus of today’s reading. Several recent developments reported in the news highlight important changes shaping this area. Rather than isolated events, these developments reflect broader trends.`;
 
-  const body = selected.map((n) => extract(n));
+  const p1 = extractNewsBlock(selected[0]);
+  const p2 = extractNewsBlock(selected[1]);
+  const p3 = extractNewsBlock(selected[2]);
 
-  const bridge = `These developments are not isolated. They reflect broader structural changes and shifting expectations across systems.`;
+  const bridge = `Although these reports focus on different situations, they are connected through underlying structural factors such as policy decisions, expectations, and external pressures.`;
 
-  const analysis = `This suggests that understanding ${topic.label.toLowerCase()} requires analyzing how individual events interact within a larger context.`;
+  const analysis = `This suggests that understanding ${topic.label.toLowerCase()} requires examining how individual events interact within a larger system rather than viewing them separately.`;
 
-  return [intro, ...body, bridge, analysis].join("\n\n");
+  return [intro, p1, p2, p3, bridge, analysis].join("\n\n");
 }
 
 /**
- * 요약 (핵심 문장 + 빈칸 3개)
+ * 🔥 요약 (항상 3 blanks)
  */
 function buildSummary(reading) {
   const sentences = splitSentences(reading);
 
-  const selected = [
-    sentences[1],
-    sentences[Math.floor(sentences.length / 2)],
-    sentences[sentences.length - 2]
-  ];
+  const s1 = sentences[1];
+  const s2 = sentences[Math.floor(sentences.length / 2)];
+  const s3 = sentences[sentences.length - 2];
 
-  const words = reading.match(/\b[a-zA-Z]{6,}\b/g) || [];
-  const unique = [...new Set(words.map((w) => w.toLowerCase()))];
+  const targets = [s1, s2, s3];
 
-  const answers = unique.slice(0, 3);
+  const answers = targets.map((s) => {
+    const words = s.match(/\b[a-zA-Z]{6,}\b/g) || [];
+    return words[0]?.toLowerCase() || "system";
+  });
 
-  let text = selected.join(" ");
+  let text = `${s1} ${s2} ${s3}`;
 
   answers.forEach((w) => {
-    text = text.replace(new RegExp(`\\b${w}\\b`, "i"), "(____)");
+    text = text.replace(
+      new RegExp(`\\b${w}\\b`, "i"),
+      "(____)"
+    );
   });
 
-  const quiz = answers.map((a) => {
-    const opts = [a];
-
-    while (opts.length < 4) {
-      const pick = unique[Math.floor(Math.random() * unique.length)];
-      if (!opts.includes(pick)) opts.push(pick);
-    }
-
-    return {
-      answer: a,
-      options: opts.sort(() => Math.random() - 0.5)
-    };
-  });
+  const quiz = answers.map((a) => ({
+    answer: a,
+    options: shuffleOptions(a)
+  }));
 
   return { text, quiz };
+}
+
+function shuffleOptions(answer) {
+  const pool = [
+    "system",
+    "policy",
+    "market",
+    "change",
+    "pressure",
+    "decision"
+  ];
+
+  const opts = [answer];
+
+  while (opts.length < 4) {
+    const pick = pool[Math.floor(Math.random() * pool.length)];
+    if (!opts.includes(pick)) opts.push(pick);
+  }
+
+  return opts.sort(() => Math.random() - 0.5);
 }
 
 /**
  * 🔥 TOEFL 스타일 퀴즈
  */
-function shuffle(options, correct) {
-  const arr = options.map((o, i) => ({
-    text: o,
+function shuffle(q, correct) {
+  const arr = q.map((opt, i) => ({
+    text: opt,
     correct: i === correct
   }));
 
@@ -127,51 +148,40 @@ function shuffle(options, correct) {
   };
 }
 
-function buildQuiz(reading) {
-  const sentences = splitSentences(reading);
-
-  const vocabWord = (reading.match(/\b[a-zA-Z]{6,}\b/) || ["system"])[0];
-
+function buildQuiz() {
   return [
     {
       q: "What is the main idea of the passage?",
       ...shuffle(
         [
-          "The passage explains how recent developments are interconnected.",
-          "The passage tells a fictional story.",
-          "The passage focuses only on vocabulary.",
-          "The passage describes personal experiences."
+          "Recent developments are interconnected.",
+          "A personal story is described.",
+          "A fictional event is presented.",
+          "Grammar rules are explained."
         ],
         0
       )
     },
     {
-      q: "What can be inferred about the events described?",
+      q: "What can be inferred?",
       ...shuffle(
         [
-          "They influence each other through broader factors.",
-          "They occur independently.",
-          "They are random and unpredictable.",
-          "They are fictional examples."
+          "Events influence each other.",
+          "Events are unrelated.",
+          "Events are random.",
+          "Events are fictional."
         ],
         0
       )
     },
     {
-      q: `The word "${vocabWord}" in the passage is closest in meaning to:`,
-      ...shuffle(
-        ["structure", "story", "emotion", "accident"],
-        0
-      )
-    },
-    {
-      q: "Which of the following is true according to the passage?",
+      q: "Which is true?",
       ...shuffle(
         [
-          "Events are connected within a larger context.",
-          "Events are completely unrelated.",
+          "Events are part of a larger system.",
           "Only one event matters.",
-          "The passage describes a personal opinion."
+          "Events are independent.",
+          "The passage is opinion-based."
         ],
         0
       )
@@ -180,10 +190,22 @@ function buildQuiz(reading) {
       q: "What is the author's purpose?",
       ...shuffle(
         [
-          "To explain and analyze real-world developments.",
-          "To entertain with a story.",
-          "To describe personal experiences.",
-          "To teach grammar rules."
+          "To analyze real-world developments.",
+          "To entertain readers.",
+          "To describe a story.",
+          "To teach vocabulary."
+        ],
+        0
+      )
+    },
+    {
+      q: "What is the tone?",
+      ...shuffle(
+        [
+          "Analytical",
+          "Emotional",
+          "Humorous",
+          "Narrative"
         ],
         0
       )
@@ -191,6 +213,9 @@ function buildQuiz(reading) {
   ];
 }
 
+/**
+ * 실행
+ */
 async function build() {
   const topic = getTodayTopic();
   const newsItems = await fetchNews();
@@ -204,7 +229,7 @@ async function build() {
     categoryLabel: topic.label,
     headline: `${topic.label} Reading`,
     reading,
-    quiz: buildQuiz(reading),
+    quiz: buildQuiz(),
     summary: summary.text,
     summaryQuiz: summary.quiz,
     newsItems
@@ -212,7 +237,7 @@ async function build() {
 
   fs.writeFileSync("todayReading.json", JSON.stringify(data, null, 2));
 
-  console.log("✅ DONE: TOEFL-style reading generated");
+  console.log("✅ DONE (stable version)");
 }
 
 build();
