@@ -1,106 +1,106 @@
 {
-  "date": "2026-04-27T07:34:41.231Z",
-  "category": "Technology",
-  "categoryLabel": "Technology | Intermediate",
-  "headline": "Artificial Intelligence in Daily Life",
-  "reading": "Artificial intelligence is widely used in daily life. It helps people complete tasks efficiently.\n\nAI processes large amounts of data quickly. However, it depends on the quality of data.\n\nIn workplaces, AI automates routine tasks. This allows people to focus on complex work.\n\nDespite benefits, AI raises concerns about bias and privacy.\n\nUnderstanding AI is important for adapting to technological change.",
+  "date": "2026-04-27T07:57:02.804Z",
+  "category": "Economics",
+  "categoryLabel": "Economics | TOEFL",
+  "headline": "Inflation, Purchasing Power, and Economic Pressure",
+  "reading": "Inflation is one of the most important concepts in modern economics because it affects almost every part of daily life. When inflation rises, the general level of prices increases, meaning that the same amount of money buys fewer goods and services than before. This loss of purchasing power can be especially difficult for households whose income does not rise at the same speed as prices.\n\nThe effects of inflation are often felt most clearly in essential areas such as food, housing, transportation, and energy. Even if official statistics show that inflation is slowing, consumers may still feel pressure because prices remain higher than they were in the past. This creates a gap between economic data and personal experience. A government report may suggest improvement, while families continue to struggle with monthly expenses.\n\nInflation also influences the behavior of businesses. When production costs rise, companies may increase prices to protect their profits. However, raising prices too much can reduce demand if customers begin to spend less or search for cheaper alternatives. In this way, inflation forces businesses to balance cost pressures with consumer behavior.\n\nCentral banks usually respond to high inflation by raising interest rates. Higher rates make borrowing more expensive, which can reduce spending and slow the economy. This may help control inflation, but it can also create new risks, such as weaker investment and slower job growth. Policymakers must therefore decide how strongly to act without damaging the broader economy.\n\nUnderstanding inflation requires more than simply watching price numbers. It involves examining wages, expectations, business costs, consumer confidence, and monetary policy. For English learners, the topic is useful because it combines abstract economic vocabulary with real-life consequences. Inflation is not just a technical term; it is a force that shapes decisions made by households, companies, and governments.",
   "sentences": [
     {
-      "ko": "AI는 일상에서 사용된다.",
-      "en": "AI is used in daily life."
+      "ko": "인플레이션은 돈의 구매력을 약화시킨다.",
+      "en": "Inflation reduces the purchasing power of money."
     },
     {
-      "ko": "AI는 데이터를 기반으로 작동한다.",
-      "en": "AI works based on data."
+      "ko": "물가가 오르면 가계는 지출 압박을 느낄 수 있다.",
+      "en": "When prices rise, households may feel pressure on their spending."
     },
     {
-      "ko": "AI는 기회와 위험을 가진다.",
-      "en": "AI has both opportunities and risks."
+      "ko": "중앙은행은 높은 인플레이션에 대응하기 위해 금리를 올릴 수 있다.",
+      "en": "Central banks may raise interest rates to respond to high inflation."
     }
   ],
-  "summary": "AI uses (data) to improve efficiency but may create (bias). It offers opportunities and (risks).",
+  "summary": "Inflation weakens the (purchasing power) of money by raising prices across the economy. It affects households, businesses, and central banks because price changes influence (spending), profits, and monetary (policy).",
   "summaryQuiz": [
     {
       "blank": 1,
-      "answer": "data",
+      "answer": "purchasing power",
       "options": [
-        "data",
-        "time",
-        "money",
-        "labor"
+        "purchasing power",
+        "market share",
+        "tax revenue",
+        "labor supply"
       ]
     },
     {
       "blank": 2,
-      "answer": "bias",
+      "answer": "spending",
       "options": [
-        "bias",
-        "growth",
-        "speed",
-        "trade"
+        "spending",
+        "weather",
+        "population",
+        "geography"
       ]
     },
     {
       "blank": 3,
-      "answer": "risks",
+      "answer": "policy",
       "options": [
-        "risks",
-        "profits",
-        "jobs",
-        "markets"
+        "policy",
+        "culture",
+        "language",
+        "memory"
       ]
     }
   ],
   "quiz": [
     {
-      "q": "Main idea?",
+      "q": "What is the main idea of the passage?",
       "options": [
-        "AI affects daily life",
-        "AI is useless",
-        "AI replaces all humans",
-        "AI is perfect"
-      ],
-      "answer": 0
-    },
-    {
-      "q": "Limitation?",
-      "options": [
-        "Size",
-        "Bias",
-        "Cost",
-        "Speed"
+        "Inflation only affects luxury goods.",
+        "Inflation affects purchasing power, behavior, and policy decisions.",
+        "Inflation is unrelated to household spending.",
+        "Inflation always improves business profits."
       ],
       "answer": 1
     },
     {
-      "q": "Work effect?",
+      "q": "Why can people still feel pressure when inflation slows?",
       "options": [
-        "None",
-        "Reduction",
-        "Automation",
-        "Stopping"
-      ],
-      "answer": 2
-    },
-    {
-      "q": "Concern?",
-      "options": [
-        "Privacy",
-        "Population",
-        "Weather",
-        "Geography"
+        "Prices may remain higher than they were before.",
+        "Wages always rise faster than prices.",
+        "Central banks stop monitoring inflation.",
+        "Businesses stop changing prices."
       ],
       "answer": 0
     },
     {
-      "q": "Tone?",
+      "q": "What can businesses do when production costs rise?",
       "options": [
-        "Balanced",
-        "Emotional",
-        "Funny",
-        "Story"
+        "They may raise prices to protect profits.",
+        "They ignore consumer behavior.",
+        "They stop responding to demand.",
+        "They always lower prices immediately."
       ],
       "answer": 0
+    },
+    {
+      "q": "What is a possible risk of raising interest rates?",
+      "options": [
+        "Slower investment and job growth",
+        "Permanent price stability",
+        "A complete end to inflation",
+        "Unlimited consumer spending"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "The word 'purchasing power' is closest in meaning to:",
+      "options": [
+        "the amount of goods a company produces",
+        "the ability of money to buy goods and services",
+        "the legal authority of a government",
+        "the total number of banks in an economy"
+      ],
+      "answer": 1
     }
   ]
 }
