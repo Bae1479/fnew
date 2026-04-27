@@ -1,5 +1,8 @@
 const fs = require("fs");
 
+/**
+ * 🔀 퀴즈 섞기
+ */
 function shuffleArray(array) {
   const arr = [...array];
   for (let i = arr.length - 1; i > 0; i--) {
@@ -22,171 +25,221 @@ function buildQuiz(rawQuiz) {
   });
 }
 
+/**
+ * 📚 리딩 데이터 (5개)
+ */
 const readings = [
-  {
-   const fs = require("fs");
 
-function shuffleArray(array) {
-  const arr = [...array];
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
-}
-
-function buildQuiz(rawQuiz) {
-  return rawQuiz.map((q) => {
-    const correct = q.options[q.answer];
-    const shuffled = shuffleArray(q.options);
-
-    return {
-      q: q.q,
-      options: shuffled,
-      answer: shuffled.indexOf(correct)
-    };
-  });
-}
-
-const readings = [
+  // 1️⃣ Economics
   {
     category: "Economics",
-    categoryLabel: "Economics",
-    headline: "Interest Rates and the Complex Dynamics of Economic Control",
+    categoryLabel: "Economics | Intermediate",
+    headline: "Supply and Demand in Everyday Markets",
 
-    reading: `Interest rates, which are determined by central banks, play a central role in shaping the broader economic environment. Rather than simply influencing borrowing costs, they function as a mechanism through which policymakers attempt to regulate economic growth, inflation, and financial stability. As a result, even small adjustments in interest rates can produce significant ripple effects across multiple sectors.
+    reading: `Supply and demand are fundamental concepts that explain how markets operate. Prices are not fixed but are determined by the interaction between buyers and sellers.
 
-When interest rates are reduced, borrowing becomes more accessible, thereby encouraging both consumer spending and business investment. In such conditions, firms are more likely to expand operations, while households may increase their consumption through loans and credit. Consequently, economic activity tends to accelerate, often leading to higher levels of employment and output.
+When demand increases, prices tend to rise. Conversely, when supply increases, prices often fall. This process can be observed in everyday situations such as seasonal products.
 
-However, this expansionary effect is not without risks. When borrowing becomes excessively easy, it may result in an overextension of credit, which can drive asset prices beyond their fundamental values. In addition, an increase in demand without a corresponding rise in supply can generate inflationary pressure, gradually eroding purchasing power. For this reason, central banks must carefully monitor economic indicators when maintaining low interest rates.
+However, supply and demand are influenced by expectations and income levels. These factors can shift demand even before actual changes occur.
 
-In contrast, higher interest rates tend to restrict borrowing and reduce overall demand. This contractionary effect can help control inflation, particularly in situations where price levels are rising too rapidly. Nevertheless, if rates are increased too aggressively, economic growth may slow to the point of stagnation, or even decline into recession. Thus, policymakers must weigh the benefits of price stability against the potential costs to economic expansion.
+Understanding these principles helps individuals make better economic decisions. It also allows businesses to adjust production strategies.
 
-Ultimately, the management of interest rates requires a delicate balance between competing objectives. Central banks must consider not only current economic conditions but also expectations about future developments. In this context, interest rate policy becomes less of a precise tool and more of a strategic judgment, reflecting the inherent uncertainty and complexity of modern economies.`,
+Overall, supply and demand provide a framework for understanding price movements in markets.`,
 
     sentences: [
+      { ko: "수요와 공급은 시장을 이해하는 핵심 개념이다.", en: "Supply and demand are key concepts for understanding markets." },
+      { ko: "수요가 증가하면 가격이 상승한다.", en: "When demand increases, prices rise." },
+      { ko: "이 개념은 의사결정에 도움을 준다.", en: "This concept helps decision-making." }
+    ],
+
+    quizRaw: [
       {
-        ko: "금리는 경제 전반에 영향을 미치는 중요한 정책 도구이다.",
-        en: "Interest rates serve as a crucial policy tool that influences the broader economic environment."
+        q: "Main idea?",
+        options: [
+          "Supply and demand explain prices",
+          "Markets are random",
+          "Prices never change",
+          "Only sellers decide prices"
+        ],
+        answer: 0
       },
       {
-        ko: "낮은 금리는 소비와 투자를 촉진할 수 있다.",
-        en: "Lower interest rates can stimulate both consumer spending and business investment."
+        q: "When demand rises?",
+        options: ["Prices rise","Prices fall","Nothing happens","Supply disappears"],
+        answer: 0
       },
       {
-        ko: "금리 정책은 미래에 대한 기대까지 고려해야 한다.",
-        en: "Interest rate policy must also take into account expectations about future economic conditions."
+        q: "What influences demand?",
+        options: ["Expectations","Weather only","Time","Distance"],
+        answer: 0
+      },
+      {
+        q: "Why is it useful?",
+        options: ["Decision-making","Entertainment","Prediction only","None"],
+        answer: 0
+      },
+      {
+        q: "Tone?",
+        options: ["Explanatory","Funny","Emotional","Story"],
+        answer: 0
       }
     ],
 
-    quiz: buildQuiz([
-      {
-        q: "What is the main idea of the passage?",
-        options: [
-          "Interest rates are a complex tool for managing economic conditions",
-          "Low interest rates always improve the economy",
-          "Inflation cannot be controlled by central banks",
-          "Economic growth depends only on consumer spending"
-        ],
-        answer: 0
-      },
-      {
-        q: "Why can low interest rates be risky?",
-        options: [
-          "They may lead to excessive borrowing and inflation",
-          "They reduce employment levels",
-          "They eliminate investment opportunities",
-          "They decrease consumer demand"
-        ],
-        answer: 0
-      },
-      {
-        q: "What does the word 'contractionary' most nearly mean in context?",
-        options: [
-          "Reducing economic activity",
-          "Expanding economic growth",
-          "Increasing inflation",
-          "Stabilizing markets"
-        ],
-        answer: 0
-      },
-      {
-        q: "What can be inferred about central bank decisions?",
-        options: [
-          "They involve uncertainty and require judgment",
-          "They are always predictable",
-          "They only depend on current data",
-          "They ignore future expectations"
-        ],
-        answer: 0
-      },
-      {
-        q: "What is the author's purpose?",
-        options: [
-          "To explain how interest rates influence economic dynamics",
-          "To criticize central banks",
-          "To argue for higher interest rates",
-          "To describe financial markets only"
-        ],
-        answer: 0
-      }
-    ]),
-
-    summary:
-      "Interest rates function as a tool for managing economic (activity) by influencing borrowing and demand. While low rates can stimulate growth, they may also create (inflation), whereas higher rates can stabilize (prices) but slow the economy.",
+    summary: "Supply and demand determine (prices) through interaction. Changes in (demand) influence markets and guide (decisions).",
 
     summaryQuiz: [
+      { blank:1, answer:"prices", options:["prices","jobs","money","labor"]},
+      { blank:2, answer:"demand", options:["demand","supply","growth","trade"]},
+      { blank:3, answer:"decisions", options:["decisions","profits","exports","income"]}
+    ]
+  },
+
+  // 2️⃣ History
+  {
+    category: "History",
+    categoryLabel: "History | Intermediate",
+    headline: "The Rise of the Roman Empire",
+
+    reading: `Rome began as a small city-state and expanded through conquest and alliances. Over time, it gained control of vast territories.
+
+As Rome grew, its political system changed. The republic struggled to manage expansion, leading to the rise of emperors.
+
+The Roman army was disciplined and organized, helping maintain control. Infrastructure such as roads connected distant regions.
+
+However, expansion also created internal conflicts. Inequality and competition weakened the system.
+
+The transformation from republic to empire shows how growth can reshape political structures.`,
+
+    sentences: [
+      { ko: "로마는 작은 도시에서 시작되었다.", en: "Rome began as a small city." },
+      { ko: "군사력이 확장에 중요했다.", en: "Military strength was important for expansion." },
+      { ko: "성장은 정치 변화를 가져왔다.", en: "Growth led to political change." }
+    ],
+
+    quizRaw: [
       {
-        blank: 1,
-        answer: "activity",
-        options: ["activity", "policy", "market", "trade"]
+        q: "Main idea?",
+        options: [
+          "Rome expanded and changed",
+          "Rome stayed small",
+          "Rome avoided war",
+          "Rome had no army"
+        ],
+        answer: 0
       },
       {
-        blank: 2,
-        answer: "inflation",
-        options: ["inflation", "growth", "demand", "employment"]
+        q: "What caused change?",
+        options: ["Expansion","Weather","Trade","Religion"],
+        answer: 0
       },
       {
-        blank: 3,
-        answer: "prices",
-        options: ["prices", "jobs", "income", "supply"]
+        q: "What helped control?",
+        options: ["Army","Culture","Language","Money"],
+        answer: 0
+      },
+      {
+        q: "Problem?",
+        options: ["Conflict","Peace","Growth","Unity"],
+        answer: 0
+      },
+      {
+        q: "Tone?",
+        options: ["Explanatory","Funny","Story","Emotional"],
+        answer: 0
       }
+    ],
+
+    summary: "Rome grew from a (city) into an empire. Expansion caused political (change) and internal (conflict).",
+
+    summaryQuiz: [
+      { blank:1, answer:"city", options:["city","nation","state","village"]},
+      { blank:2, answer:"change", options:["change","peace","growth","decline"]},
+      { blank:3, answer:"conflict", options:["conflict","trade","unity","wealth"]}
+    ]
+  },
+
+  // 3️⃣ Technology
+  {
+    category: "Technology",
+    categoryLabel: "Technology | Intermediate",
+    headline: "Artificial Intelligence in Daily Life",
+
+    reading: `Artificial intelligence is widely used in daily life. It helps people complete tasks efficiently.
+
+AI processes large amounts of data quickly. However, it depends on the quality of data.
+
+In workplaces, AI automates routine tasks. This allows people to focus on complex work.
+
+Despite benefits, AI raises concerns about bias and privacy.
+
+Understanding AI is important for adapting to technological change.`,
+
+    sentences: [
+      { ko:"AI는 일상에서 사용된다.", en:"AI is used in daily life."},
+      { ko:"AI는 데이터를 기반으로 작동한다.", en:"AI works based on data."},
+      { ko:"AI는 기회와 위험을 가진다.", en:"AI has both opportunities and risks."}
+    ],
+
+    quizRaw:[
+      {
+        q:"Main idea?",
+        options:["AI affects daily life","AI replaces all humans","AI is useless","AI is perfect"],
+        answer:0
+      },
+      {
+        q:"Limitation?",
+        options:["Bias","Speed","Size","Cost"],
+        answer:0
+      },
+      {
+        q:"Work effect?",
+        options:["Automation","Reduction","Stopping","None"],
+        answer:0
+      },
+      {
+        q:"Concern?",
+        options:["Privacy","Weather","Geography","Population"],
+        answer:0
+      },
+      {
+        q:"Tone?",
+        options:["Balanced","Funny","Story","Emotional"],
+        answer:0
+      }
+    ],
+
+    summary:"AI uses (data) to improve efficiency but may create (bias). It offers opportunities and (risks).",
+
+    summaryQuiz:[
+      {blank:1,answer:"data",options:["data","time","money","labor"]},
+      {blank:2,answer:"bias",options:["bias","growth","speed","trade"]},
+      {blank:3,answer:"risks",options:["risks","profits","jobs","markets"]}
     ]
   }
+
 ];
 
+/**
+ * 📅 날짜 선택
+ */
 function getTodayReading() {
   const day = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
   return readings[day % readings.length];
 }
 
+/**
+ * 🔥 실행
+ */
 function build() {
   const reading = getTodayReading();
 
   const data = {
     date: new Date().toISOString(),
-    ...reading
+    ...reading,
+    quiz: buildQuiz(reading.quizRaw)
   };
 
-  fs.writeFileSync("todayReading.json", JSON.stringify(data, null, 2), "utf8");
-
-  console.log("✅ DONE:", reading.headline);
-}
-
-build();
-
-function getTodayReading() {
-  const day = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
-  return readings[day % readings.length];
-}
-
-function build() {
-  const reading = getTodayReading();
-
-  const data = {
-    date: new Date().toISOString(),
-    ...reading
-  };
+  delete data.quizRaw;
 
   fs.writeFileSync("todayReading.json", JSON.stringify(data, null, 2), "utf8");
 
