@@ -1,144 +1,102 @@
-const fs = require("fs");
+{
+  category: "Economics",
+  headline: "Interest Rates and the Complex Dynamics of Economic Control",
 
-function shuffleArray(array) {
-  const arr = [...array];
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
+  reading: `Interest rates, which are determined by central banks, play a central role in shaping the broader economic environment. Rather than simply influencing borrowing costs, they function as a mechanism through which policymakers attempt to regulate economic growth, inflation, and financial stability. As a result, even small adjustments in interest rates can produce significant ripple effects across multiple sectors.
+
+When interest rates are reduced, borrowing becomes more accessible, thereby encouraging both consumer spending and business investment. In such conditions, firms are more likely to expand operations, while households may increase their consumption through loans and credit. Consequently, economic activity tends to accelerate, often leading to higher levels of employment and output.
+
+However, this expansionary effect is not without risks. When borrowing becomes excessively easy, it may result in an overextension of credit, which can drive asset prices beyond their fundamental values. In addition, an increase in demand without a corresponding rise in supply can generate inflationary pressure, gradually eroding purchasing power. For this reason, central banks must carefully monitor economic indicators when maintaining low interest rates.
+
+In contrast, higher interest rates tend to restrict borrowing and reduce overall demand. This contractionary effect can help control inflation, particularly in situations where price levels are rising too rapidly. Nevertheless, if rates are increased too aggressively, economic growth may slow to the point of stagnation, or even decline into recession. Thus, policymakers must weigh the benefits of price stability against the potential costs to economic expansion.
+
+Ultimately, the management of interest rates requires a delicate balance between competing objectives. Central banks must consider not only current economic conditions but also expectations about future developments. In this context, interest rate policy becomes less of a precise tool and more of a strategic judgment, reflecting the inherent uncertainty and complexity of modern economies.`,
+
+  sentences: [
+    {
+      ko: "금리는 경제 전반에 영향을 미치는 중요한 정책 도구이다.",
+      en: "Interest rates serve as a crucial policy tool that influences the broader economic environment."
+    },
+    {
+      ko: "낮은 금리는 소비와 투자를 촉진할 수 있다.",
+      en: "Lower interest rates can stimulate both consumer spending and business investment."
+    },
+    {
+      ko: "금리 정책은 미래에 대한 기대까지 고려해야 한다.",
+      en: "Interest rate policy must also take into account expectations about future economic conditions."
+    }
+  ],
+
+  quiz: [
+    {
+      q: "What is the main idea of the passage?",
+      options: [
+        "Interest rates are a complex tool for managing economic conditions",
+        "Low interest rates always improve the economy",
+        "Inflation cannot be controlled by central banks",
+        "Economic growth depends only on consumer spending"
+      ],
+      answer: 0
+    },
+    {
+      q: "Why can low interest rates be risky?",
+      options: [
+        "They may lead to excessive borrowing and inflation",
+        "They reduce employment levels",
+        "They eliminate investment opportunities",
+        "They decrease consumer demand"
+      ],
+      answer: 0
+    },
+    {
+      q: "What does the word 'contractionary' most nearly mean in context?",
+      options: [
+        "Reducing economic activity",
+        "Expanding economic growth",
+        "Increasing inflation",
+        "Stabilizing markets"
+      ],
+      answer: 0
+    },
+    {
+      q: "What can be inferred about central bank decisions?",
+      options: [
+        "They involve uncertainty and require judgment",
+        "They are always predictable",
+        "They only depend on current data",
+        "They ignore future expectations"
+      ],
+      answer: 0
+    },
+    {
+      q: "What is the author's purpose?",
+      options: [
+        "To explain how interest rates influence economic dynamics",
+        "To criticize central banks",
+        "To argue for higher interest rates",
+        "To describe financial markets only"
+      ],
+      answer: 0
+    }
+  ],
+
+  summary: "Interest rates function as a tool for managing economic (activity) by influencing borrowing and demand. While low rates can stimulate growth, they may also create (inflation), whereas higher rates can stabilize (prices) but slow the economy.",
+
+  summaryQuiz: [
+    {
+      blank: 1,
+      answer: "activity",
+      options: ["activity", "policy", "market", "trade"]
+    },
+    {
+      blank: 2,
+      answer: "inflation",
+      options: ["inflation", "growth", "demand", "employment"]
+    },
+    {
+      blank: 3,
+      answer: "prices",
+      options: ["prices", "jobs", "income", "supply"]
+    }
+  ]
 }
-
-function buildQuiz(rawQuiz) {
-  return rawQuiz.map((q) => {
-    const correct = q.options[q.answer];
-    const shuffled = shuffleArray(q.options);
-
-    return {
-      q: q.q,
-      options: shuffled,
-      answer: shuffled.indexOf(correct)
-    };
-  });
-}
-
-const readings = [
-  {
-    category: "Economics",
-    headline: "How Interest Rates Shape Economic Activity",
-
-    reading: `Interest rates are one of the most important tools used by central banks to influence economic activity. By adjusting rates, policymakers can encourage or discourage borrowing, which in turn affects spending, investment, and overall growth.
-
-When interest rates are low, borrowing becomes cheaper. Businesses are more likely to invest in new projects, and consumers are more willing to take loans for houses, cars, or other purchases. As a result, economic activity tends to increase.
-
-However, low rates can also lead to excessive borrowing and rising prices. When too much money flows into the economy, inflation may accelerate.
-
-On the other hand, higher interest rates make borrowing more expensive. This can slow down spending and reduce inflationary pressure.
-
-In this way, interest rates act as a balancing mechanism in the economy.`,
-
-    sentences: [
-      {
-        ko: "금리는 경제 활동을 조절하는 중요한 도구이다.",
-        en: "Interest rates are an important tool used to influence economic activity."
-      },
-      {
-        ko: "금리가 낮아지면 차입과 소비가 증가한다.",
-        en: "When interest rates fall, borrowing and spending increase."
-      },
-      {
-        ko: "높은 금리는 인플레이션을 억제할 수 있다.",
-        en: "Higher interest rates can reduce inflation."
-      }
-    ],
-
-    quiz: buildQuiz([
-      {
-        q: "What is the main function of interest rates?",
-        options: [
-          "To influence economic activity",
-          "To eliminate inflation completely",
-          "To increase taxes",
-          "To control population"
-        ],
-        answer: 0
-      },
-      {
-        q: "What happens when interest rates are low?",
-        options: [
-          "Borrowing increases",
-          "Spending decreases",
-          "Inflation stops",
-          "Exports fall"
-        ],
-        answer: 0
-      },
-      {
-        q: "What risk comes from low interest rates?",
-        options: [
-          "Rising inflation",
-          "Lower demand",
-          "Reduced investment",
-          "Economic collapse"
-        ],
-        answer: 0
-      },
-      {
-        q: "What do high interest rates do?",
-        options: [
-          "Slow economic growth",
-          "Increase spending",
-          "Boost borrowing",
-          "Raise wages"
-        ],
-        answer: 0
-      },
-      {
-        q: "What best describes the passage?",
-        options: ["Analytical", "Narrative", "Emotional", "Humorous"],
-        answer: 0
-      }
-    ]),
-
-    summary:
-      "Interest rates affect economic (activity) by influencing borrowing and spending. Low rates can increase (inflation), while high rates help stabilize (prices).",
-
-    summaryQuiz: [
-      {
-        blank: 1,
-        answer: "activity",
-        options: ["activity", "tax", "market", "trade"]
-      },
-      {
-        blank: 2,
-        answer: "inflation",
-        options: ["inflation", "growth", "demand", "exports"]
-      },
-      {
-        blank: 3,
-        answer: "prices",
-        options: ["prices", "jobs", "income", "supply"]
-      }
-    ]
-  }
-];
-
-function getTodayReading() {
-  const day = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
-  return readings[day % readings.length];
-}
-
-function build() {
-  const reading = getTodayReading();
-
-  const data = {
-    date: new Date().toISOString(),
-    ...reading
-  };
-
-  fs.writeFileSync("todayReading.json", JSON.stringify(data, null, 2));
-
-  console.log("✅ DONE:", reading.headline);
-}
-
-build();
