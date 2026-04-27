@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-27T07:57:02.804Z",
+  "date": "2026-04-27T07:58:40.037Z",
   "category": "Economics",
   "categoryLabel": "Economics | TOEFL",
   "headline": "Inflation, Purchasing Power, and Economic Pressure",
@@ -55,52 +55,52 @@
     {
       "q": "What is the main idea of the passage?",
       "options": [
+        "Inflation always improves business profits.",
         "Inflation only affects luxury goods.",
         "Inflation affects purchasing power, behavior, and policy decisions.",
-        "Inflation is unrelated to household spending.",
-        "Inflation always improves business profits."
+        "Inflation is unrelated to household spending."
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "q": "Why can people still feel pressure when inflation slows?",
       "options": [
-        "Prices may remain higher than they were before.",
         "Wages always rise faster than prices.",
         "Central banks stop monitoring inflation.",
+        "Prices may remain higher than they were before.",
         "Businesses stop changing prices."
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "q": "What can businesses do when production costs rise?",
       "options": [
+        "They always lower prices immediately.",
         "They may raise prices to protect profits.",
-        "They ignore consumer behavior.",
         "They stop responding to demand.",
-        "They always lower prices immediately."
+        "They ignore consumer behavior."
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "q": "What is a possible risk of raising interest rates?",
       "options": [
+        "Unlimited consumer spending",
         "Slower investment and job growth",
         "Permanent price stability",
-        "A complete end to inflation",
-        "Unlimited consumer spending"
+        "A complete end to inflation"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "q": "The word 'purchasing power' is closest in meaning to:",
       "options": [
-        "the amount of goods a company produces",
         "the ability of money to buy goods and services",
         "the legal authority of a government",
-        "the total number of banks in an economy"
+        "the total number of banks in an economy",
+        "the amount of goods a company produces"
       ],
-      "answer": 1
+      "answer": 0
     }
   ]
 }
