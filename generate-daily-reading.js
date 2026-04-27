@@ -24,6 +24,32 @@ function buildQuiz(rawQuiz) {
 
 const readings = [
   {
+   const fs = require("fs");
+
+function shuffleArray(array) {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function buildQuiz(rawQuiz) {
+  return rawQuiz.map((q) => {
+    const correct = q.options[q.answer];
+    const shuffled = shuffleArray(q.options);
+
+    return {
+      q: q.q,
+      options: shuffled,
+      answer: shuffled.indexOf(correct)
+    };
+  });
+}
+
+const readings = [
+  {
     category: "Economics",
     categoryLabel: "Economics",
     headline: "Interest Rates and the Complex Dynamics of Economic Control",
@@ -128,6 +154,26 @@ Ultimately, the management of interest rates requires a delicate balance between
     ]
   }
 ];
+
+function getTodayReading() {
+  const day = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
+  return readings[day % readings.length];
+}
+
+function build() {
+  const reading = getTodayReading();
+
+  const data = {
+    date: new Date().toISOString(),
+    ...reading
+  };
+
+  fs.writeFileSync("todayReading.json", JSON.stringify(data, null, 2), "utf8");
+
+  console.log("✅ DONE:", reading.headline);
+}
+
+build();
 
 function getTodayReading() {
   const day = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
