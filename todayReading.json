@@ -1,8 +1,8 @@
 {
-  "date": "2026-04-26T23:43:16.424Z",
+  "date": "2026-04-27T00:02:19.593Z",
   "category": "Economics",
   "headline": "How Interest Rates Shape Economic Activity",
-  "reading": "Interest rates are one of the most important tools used by central banks to influence economic activity. By adjusting rates, policymakers can encourage or discourage borrowing, which in turn affects spending, investment, and overall growth.\n\nWhen interest rates are low, borrowing becomes cheaper. Businesses are more likely to invest in new projects, and consumers are more willing to take loans for houses, cars, or other purchases. As a result, economic activity tends to increase during periods of low rates.\n\nHowever, low rates can also lead to excessive borrowing and rising prices. When too much money flows into the economy, inflation may accelerate, reducing the purchasing power of consumers. This is why central banks monitor inflation closely.\n\nOn the other hand, higher interest rates make borrowing more expensive. This can slow down spending and reduce inflationary pressure. While this may stabilize prices, it can also lead to slower economic growth or even recession if rates rise too quickly.\n\nIn this way, interest rates act as a balancing mechanism. Policymakers must carefully adjust them to maintain stability without causing unintended consequences in the broader economy.",
+  "reading": "Interest rates are one of the most important tools used by central banks to influence economic activity. By adjusting rates, policymakers can encourage or discourage borrowing, which in turn affects spending, investment, and overall growth.\n\nWhen interest rates are low, borrowing becomes cheaper. Businesses are more likely to invest in new projects, and consumers are more willing to take loans for houses, cars, or other purchases. As a result, economic activity tends to increase.\n\nHowever, low rates can also lead to excessive borrowing and rising prices. When too much money flows into the economy, inflation may accelerate.\n\nOn the other hand, higher interest rates make borrowing more expensive. This can slow down spending and reduce inflationary pressure.\n\nIn this way, interest rates act as a balancing mechanism in the economy.",
   "sentences": [
     {
       "ko": "금리는 경제 활동을 조절하는 중요한 도구이다.",
@@ -10,66 +10,66 @@
     },
     {
       "ko": "금리가 낮아지면 차입과 소비가 증가한다.",
-      "en": "When interest rates fall, borrowing and spending tend to increase."
+      "en": "When interest rates fall, borrowing and spending increase."
     },
     {
       "ko": "높은 금리는 인플레이션을 억제할 수 있다.",
-      "en": "Higher interest rates can help reduce inflation."
+      "en": "Higher interest rates can reduce inflation."
     }
   ],
   "quiz": [
     {
-      "q": "What is the main purpose of interest rate adjustments?",
+      "q": "What is the main function of interest rates?",
       "options": [
+        "To increase taxes",
+        "To control population",
         "To influence economic activity",
-        "To eliminate all inflation",
-        "To reduce taxes permanently",
-        "To increase government spending"
+        "To eliminate inflation completely"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "q": "What happens when interest rates are low?",
       "options": [
-        "Borrowing increases",
         "Spending decreases",
-        "Inflation disappears",
-        "Taxes increase"
+        "Borrowing increases",
+        "Inflation stops",
+        "Exports fall"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
-      "q": "What risk is associated with low interest rates?",
+      "q": "What risk comes from low interest rates?",
       "options": [
         "Rising inflation",
-        "Lower employment",
+        "Economic collapse",
         "Reduced investment",
-        "Falling demand"
+        "Lower demand"
       ],
       "answer": 0
     },
     {
-      "q": "What can higher interest rates lead to?",
+      "q": "What do high interest rates do?",
       "options": [
-        "Slower economic growth",
-        "Higher consumer spending",
-        "Rapid inflation",
-        "Increased borrowing"
+        "Boost borrowing",
+        "Increase spending",
+        "Slow economic growth",
+        "Raise wages"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
-      "q": "What is the tone of the passage?",
+      "q": "What best describes the passage?",
       "options": [
-        "Analytical",
+        "Narrative",
         "Emotional",
         "Humorous",
-        "Narrative"
+        "Analytical"
       ],
-      "answer": 0
+      "answer": 3
     }
   ],
-  "summary": "Interest rates influence economic (____) by affecting borrowing and spending. Low rates encourage economic activity but may increase (____), while high rates can slow growth and stabilize (____).",
+  "summary": "Interest rates affect economic (activity) by influencing borrowing and spending. Low rates can increase (inflation), while high rates help stabilize (prices).",
   "summaryQuiz": [
     {
       "blank": 1,
@@ -77,8 +77,8 @@
       "options": [
         "activity",
         "tax",
-        "trade",
-        "labor"
+        "market",
+        "trade"
       ]
     },
     {
@@ -86,9 +86,9 @@
       "answer": "inflation",
       "options": [
         "inflation",
-        "exports",
-        "profits",
-        "wages"
+        "growth",
+        "demand",
+        "exports"
       ]
     },
     {
@@ -97,8 +97,8 @@
       "options": [
         "prices",
         "jobs",
-        "markets",
-        "demand"
+        "income",
+        "supply"
       ]
     }
   ]
