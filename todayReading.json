@@ -1,106 +1,106 @@
 {
-  "date": "2026-04-27T07:58:40.037Z",
-  "category": "Economics",
-  "categoryLabel": "Economics | TOEFL",
-  "headline": "Inflation, Purchasing Power, and Economic Pressure",
-  "reading": "Inflation is one of the most important concepts in modern economics because it affects almost every part of daily life. When inflation rises, the general level of prices increases, meaning that the same amount of money buys fewer goods and services than before. This loss of purchasing power can be especially difficult for households whose income does not rise at the same speed as prices.\n\nThe effects of inflation are often felt most clearly in essential areas such as food, housing, transportation, and energy. Even if official statistics show that inflation is slowing, consumers may still feel pressure because prices remain higher than they were in the past. This creates a gap between economic data and personal experience. A government report may suggest improvement, while families continue to struggle with monthly expenses.\n\nInflation also influences the behavior of businesses. When production costs rise, companies may increase prices to protect their profits. However, raising prices too much can reduce demand if customers begin to spend less or search for cheaper alternatives. In this way, inflation forces businesses to balance cost pressures with consumer behavior.\n\nCentral banks usually respond to high inflation by raising interest rates. Higher rates make borrowing more expensive, which can reduce spending and slow the economy. This may help control inflation, but it can also create new risks, such as weaker investment and slower job growth. Policymakers must therefore decide how strongly to act without damaging the broader economy.\n\nUnderstanding inflation requires more than simply watching price numbers. It involves examining wages, expectations, business costs, consumer confidence, and monetary policy. For English learners, the topic is useful because it combines abstract economic vocabulary with real-life consequences. Inflation is not just a technical term; it is a force that shapes decisions made by households, companies, and governments.",
+  "date": "2026-04-28T23:20:38.407Z",
+  "category": "World History",
+  "categoryLabel": "World History | TOEFL",
+  "headline": "Why the Fall of Rome Still Matters",
+  "reading": "For centuries, the Roman Empire was one of the most powerful political systems in the world. It controlled vast territories, built advanced infrastructure, and influenced law, language, and culture. Yet despite its strength, the empire eventually collapsed in the West. This raises an important question: how can a powerful system fail?\n\nThe fall of Rome was not caused by a single event. Instead, it was the result of many overlapping problems. Economic pressure, military challenges, political instability, and administrative complexity all weakened the system over time. As the empire expanded, it became more difficult to manage distant regions effectively.\n\nAnother key factor was internal division. Power struggles among leaders reduced stability, while economic inequality increased dissatisfaction among citizens. These internal weaknesses made the empire less able to respond to external threats.\n\nAt the same time, Rome faced pressure from outside groups. These groups did not destroy the empire instantly, but they exposed its vulnerabilities. A system that had once seemed strong was no longer able to adapt.\n\nThe fall of Rome remains important because it shows that power alone does not guarantee stability. Complex systems can fail when internal and external pressures combine. This lesson continues to shape how people think about governments and institutions today.",
   "sentences": [
     {
-      "ko": "인플레이션은 돈의 구매력을 약화시킨다.",
-      "en": "Inflation reduces the purchasing power of money."
+      "ko": "로마 제국은 매우 강력한 체제였다.",
+      "en": "The Roman Empire was a powerful system."
     },
     {
-      "ko": "물가가 오르면 가계는 지출 압박을 느낄 수 있다.",
-      "en": "When prices rise, households may feel pressure on their spending."
+      "ko": "붕괴는 여러 요인이 결합된 결과였다.",
+      "en": "Its collapse was caused by multiple factors."
     },
     {
-      "ko": "중앙은행은 높은 인플레이션에 대응하기 위해 금리를 올릴 수 있다.",
-      "en": "Central banks may raise interest rates to respond to high inflation."
+      "ko": "강력함이 항상 안정성을 보장하지는 않는다.",
+      "en": "Power does not always guarantee stability."
     }
   ],
-  "summary": "Inflation weakens the (purchasing power) of money by raising prices across the economy. It affects households, businesses, and central banks because price changes influence (spending), profits, and monetary (policy).",
+  "summary": "Rome fell due to multiple (factors), including internal weakness and external pressure. The case shows that power does not guarantee (stability) in complex (systems).",
   "summaryQuiz": [
     {
       "blank": 1,
-      "answer": "purchasing power",
+      "answer": "factors",
       "options": [
-        "purchasing power",
-        "market share",
-        "tax revenue",
-        "labor supply"
+        "factors",
+        "people",
+        "events",
+        "cities"
       ]
     },
     {
       "blank": 2,
-      "answer": "spending",
+      "answer": "stability",
       "options": [
-        "spending",
-        "weather",
-        "population",
-        "geography"
+        "stability",
+        "growth",
+        "wealth",
+        "trade"
       ]
     },
     {
       "blank": 3,
-      "answer": "policy",
+      "answer": "systems",
       "options": [
-        "policy",
-        "culture",
-        "language",
-        "memory"
+        "systems",
+        "roads",
+        "laws",
+        "armies"
       ]
     }
   ],
   "quiz": [
     {
-      "q": "What is the main idea of the passage?",
+      "q": "Why did Rome fall?",
       "options": [
-        "Inflation always improves business profits.",
-        "Inflation only affects luxury goods.",
-        "Inflation affects purchasing power, behavior, and policy decisions.",
-        "Inflation is unrelated to household spending."
+        "Because of population growth",
+        "Because of weather changes",
+        "Because of one sudden event",
+        "Because of multiple combined factors"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "What weakened Rome internally?",
+      "options": [
+        "Strong leadership",
+        "Stable economy",
+        "Unified power",
+        "Political conflict and inequality"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "What role did external groups play?",
+      "options": [
+        "They supported Rome",
+        "They improved stability",
+        "They exposed weaknesses",
+        "They had no effect"
       ],
       "answer": 2
     },
     {
-      "q": "Why can people still feel pressure when inflation slows?",
+      "q": "Main lesson?",
       "options": [
-        "Wages always rise faster than prices.",
-        "Central banks stop monitoring inflation.",
-        "Prices may remain higher than they were before.",
-        "Businesses stop changing prices."
+        "Growth always helps",
+        "Power does not ensure stability",
+        "Conflict is unnecessary",
+        "Empires never fall"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Tone?",
+      "options": [
+        "Funny",
+        "Emotional",
+        "Analytical",
+        "Narrative"
       ],
       "answer": 2
-    },
-    {
-      "q": "What can businesses do when production costs rise?",
-      "options": [
-        "They always lower prices immediately.",
-        "They may raise prices to protect profits.",
-        "They stop responding to demand.",
-        "They ignore consumer behavior."
-      ],
-      "answer": 1
-    },
-    {
-      "q": "What is a possible risk of raising interest rates?",
-      "options": [
-        "Unlimited consumer spending",
-        "Slower investment and job growth",
-        "Permanent price stability",
-        "A complete end to inflation"
-      ],
-      "answer": 1
-    },
-    {
-      "q": "The word 'purchasing power' is closest in meaning to:",
-      "options": [
-        "the ability of money to buy goods and services",
-        "the legal authority of a government",
-        "the total number of banks in an economy",
-        "the amount of goods a company produces"
-      ],
-      "answer": 0
     }
   ]
 }
