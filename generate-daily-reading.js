@@ -377,7 +377,7 @@ Trust is important because it supports cooperation. Without it, even simple deci
     { blank:3, answer:"stability", options:["stability","movement","heat","light"] }
   ]
 }
-
+ ],
 /**
  * 날짜 기준으로 리딩 선택
  */
