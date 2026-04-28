@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-28T23:20:38.407Z",
+  "date": "2026-04-28T23:41:08.666Z",
   "category": "World History",
   "categoryLabel": "World History | TOEFL",
   "headline": "Why the Fall of Rome Still Matters",
@@ -55,22 +55,22 @@
     {
       "q": "Why did Rome fall?",
       "options": [
-        "Because of population growth",
+        "Because of multiple combined factors",
         "Because of weather changes",
-        "Because of one sudden event",
-        "Because of multiple combined factors"
+        "Because of population growth",
+        "Because of one sudden event"
       ],
-      "answer": 3
+      "answer": 0
     },
     {
       "q": "What weakened Rome internally?",
       "options": [
-        "Strong leadership",
+        "Political conflict and inequality",
         "Stable economy",
         "Unified power",
-        "Political conflict and inequality"
+        "Strong leadership"
       ],
-      "answer": 3
+      "answer": 0
     },
     {
       "q": "What role did external groups play?",
@@ -85,22 +85,22 @@
     {
       "q": "Main lesson?",
       "options": [
-        "Growth always helps",
-        "Power does not ensure stability",
         "Conflict is unnecessary",
-        "Empires never fall"
+        "Empires never fall",
+        "Growth always helps",
+        "Power does not ensure stability"
       ],
-      "answer": 1
+      "answer": 3
     },
     {
       "q": "Tone?",
       "options": [
-        "Funny",
+        "Narrative",
         "Emotional",
-        "Analytical",
-        "Narrative"
+        "Funny",
+        "Analytical"
       ],
-      "answer": 2
+      "answer": 3
     }
   ]
 }
