@@ -1,106 +1,106 @@
 {
-  "date": "2026-04-28T23:41:08.666Z",
-  "category": "World History",
-  "categoryLabel": "World History | TOEFL",
-  "headline": "Why the Fall of Rome Still Matters",
-  "reading": "For centuries, the Roman Empire was one of the most powerful political systems in the world. It controlled vast territories, built advanced infrastructure, and influenced law, language, and culture. Yet despite its strength, the empire eventually collapsed in the West. This raises an important question: how can a powerful system fail?\n\nThe fall of Rome was not caused by a single event. Instead, it was the result of many overlapping problems. Economic pressure, military challenges, political instability, and administrative complexity all weakened the system over time. As the empire expanded, it became more difficult to manage distant regions effectively.\n\nAnother key factor was internal division. Power struggles among leaders reduced stability, while economic inequality increased dissatisfaction among citizens. These internal weaknesses made the empire less able to respond to external threats.\n\nAt the same time, Rome faced pressure from outside groups. These groups did not destroy the empire instantly, but they exposed its vulnerabilities. A system that had once seemed strong was no longer able to adapt.\n\nThe fall of Rome remains important because it shows that power alone does not guarantee stability. Complex systems can fail when internal and external pressures combine. This lesson continues to shape how people think about governments and institutions today.",
+  "date": "2026-04-29T09:41:27.816Z",
+  "category": "Society",
+  "categoryLabel": "Society | TOEFL",
+  "headline": "Why Trust in Institutions Is Hard to Rebuild",
+  "reading": "Trust in institutions does not disappear suddenly. It usually declines gradually as people begin to question fairness, transparency, or competence. Small doubts accumulate over time until confidence weakens.\n\nOnce trust is lost, rebuilding it becomes difficult. People no longer interpret actions in a neutral way. Instead, they view decisions through suspicion. Even positive changes may be questioned.\n\nCommunication plays a key role in this process. Clear explanations can maintain trust, while confusion can damage it. In modern societies, information spreads quickly, making it harder to control public perception.\n\nInstitutions must therefore act consistently. If rules appear to change depending on the situation, people may believe the system is unfair. Consistency helps restore credibility.\n\nTrust is important because it supports cooperation. Without it, even simple decisions can become conflicts. For this reason, trust is not just a social value—it is a foundation for stability.",
   "sentences": [
     {
-      "ko": "로마 제국은 매우 강력한 체제였다.",
-      "en": "The Roman Empire was a powerful system."
+      "ko": "신뢰는 점진적으로 약해진다.",
+      "en": "Trust declines gradually."
     },
     {
-      "ko": "붕괴는 여러 요인이 결합된 결과였다.",
-      "en": "Its collapse was caused by multiple factors."
+      "ko": "신뢰를 회복하는 것은 어렵다.",
+      "en": "Rebuilding trust is difficult."
     },
     {
-      "ko": "강력함이 항상 안정성을 보장하지는 않는다.",
-      "en": "Power does not always guarantee stability."
+      "ko": "신뢰는 협력을 가능하게 한다.",
+      "en": "Trust enables cooperation."
     }
   ],
-  "summary": "Rome fell due to multiple (factors), including internal weakness and external pressure. The case shows that power does not guarantee (stability) in complex (systems).",
+  "summary": "Trust declines gradually and is difficult to rebuild because people interpret actions with (suspicion). It depends on clear communication and supports social (cooperation) and (stability).",
   "summaryQuiz": [
     {
       "blank": 1,
-      "answer": "factors",
+      "answer": "suspicion",
       "options": [
-        "factors",
-        "people",
-        "events",
-        "cities"
+        "suspicion",
+        "growth",
+        "money",
+        "speed"
       ]
     },
     {
       "blank": 2,
-      "answer": "stability",
+      "answer": "cooperation",
       "options": [
-        "stability",
-        "growth",
-        "wealth",
-        "trade"
+        "cooperation",
+        "competition",
+        "travel",
+        "storage"
       ]
     },
     {
       "blank": 3,
-      "answer": "systems",
+      "answer": "stability",
       "options": [
-        "systems",
-        "roads",
-        "laws",
-        "armies"
+        "stability",
+        "movement",
+        "heat",
+        "light"
       ]
     }
   ],
   "quiz": [
     {
-      "q": "Why did Rome fall?",
+      "q": "Why is trust hard to rebuild?",
       "options": [
-        "Because of multiple combined factors",
-        "Because of weather changes",
-        "Because of population growth",
-        "Because of one sudden event"
-      ],
-      "answer": 0
-    },
-    {
-      "q": "What weakened Rome internally?",
-      "options": [
-        "Political conflict and inequality",
-        "Stable economy",
-        "Unified power",
-        "Strong leadership"
-      ],
-      "answer": 0
-    },
-    {
-      "q": "What role did external groups play?",
-      "options": [
-        "They supported Rome",
-        "They improved stability",
-        "They exposed weaknesses",
-        "They had no effect"
-      ],
-      "answer": 2
-    },
-    {
-      "q": "Main lesson?",
-      "options": [
-        "Conflict is unnecessary",
-        "Empires never fall",
-        "Growth always helps",
-        "Power does not ensure stability"
+        "Trust never changes",
+        "Communication disappears",
+        "Institutions stop working",
+        "People interpret actions with suspicion"
       ],
       "answer": 3
+    },
+    {
+      "q": "What weakens trust?",
+      "options": [
+        "Consistency",
+        "Unclear communication",
+        "Transparency",
+        "Clear rules"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Why is trust important?",
+      "options": [
+        "It supports cooperation",
+        "It increases conflict",
+        "It stops systems",
+        "It removes decisions"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Main idea?",
+      "options": [
+        "Trust is fixed",
+        "Trust is fragile and essential",
+        "Trust cannot change",
+        "Trust is unnecessary"
+      ],
+      "answer": 1
     },
     {
       "q": "Tone?",
       "options": [
-        "Narrative",
-        "Emotional",
+        "Analytical",
         "Funny",
-        "Analytical"
+        "Emotional",
+        "Story"
       ],
-      "answer": 3
+      "answer": 0
     }
   ]
 }
