@@ -259,7 +259,7 @@ In this way, Rome’s political transformation reflects a broader principle: whe
     { blank:2, answer:"conflict", options:["conflict","peace","growth","trade"] },
     { blank:3, answer:"system", options:["system","city","road","culture"] }
   ]
-}
+},
 {
   category: "World History",
   categoryLabel: "World History | TOEFL+",
