@@ -182,7 +182,7 @@ In this sense, Rome’s rise was not simply a story of conquest, but of adaptati
     { blank:2, answer:"risks", options:["risks","benefits","peace","control"] },
     { blank:3, answer:"system", options:["system","city","army","leader"] }
   ]
-}
+},
   {
   category: "World History",
   categoryLabel: "World History | TOEFL+",
