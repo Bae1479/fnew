@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-29T09:41:27.816Z",
+  "date": "2026-04-29T20:02:48.396Z",
   "category": "Society",
   "categoryLabel": "Society | TOEFL",
   "headline": "Why Trust in Institutions Is Hard to Rebuild",
@@ -55,9 +55,9 @@
     {
       "q": "Why is trust hard to rebuild?",
       "options": [
-        "Trust never changes",
-        "Communication disappears",
         "Institutions stop working",
+        "Communication disappears",
+        "Trust never changes",
         "People interpret actions with suspicion"
       ],
       "answer": 3
@@ -65,42 +65,42 @@
     {
       "q": "What weakens trust?",
       "options": [
-        "Consistency",
-        "Unclear communication",
         "Transparency",
-        "Clear rules"
+        "Clear rules",
+        "Unclear communication",
+        "Consistency"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "q": "Why is trust important?",
       "options": [
-        "It supports cooperation",
-        "It increases conflict",
         "It stops systems",
-        "It removes decisions"
+        "It increases conflict",
+        "It removes decisions",
+        "It supports cooperation"
       ],
-      "answer": 0
+      "answer": 3
     },
     {
       "q": "Main idea?",
       "options": [
+        "Trust cannot change",
         "Trust is fixed",
         "Trust is fragile and essential",
-        "Trust cannot change",
         "Trust is unnecessary"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "q": "Tone?",
       "options": [
-        "Analytical",
         "Funny",
+        "Analytical",
         "Emotional",
         "Story"
       ],
-      "answer": 0
+      "answer": 1
     }
   ]
 }
