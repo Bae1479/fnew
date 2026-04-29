@@ -110,81 +110,233 @@ Understanding this process helps explain why economic recovery can feel slow. Da
 // 2️⃣ World History
 {
   category: "World History",
-  categoryLabel: "World History | TOEFL",
-  headline: "Why the Fall of Rome Still Matters",
+  categoryLabel: "World History | TOEFL+",
+  headline: "The Rise of Rome (1): Expansion Beyond Control",
 
-  reading: `For centuries, the Roman Empire was one of the most powerful political systems in the world. It controlled vast territories, built advanced infrastructure, and influenced law, language, and culture. Yet despite its strength, the empire eventually collapsed in the West. This raises an important question: how can a powerful system fail?
+  reading: `At first, Rome was not an empire but a small city surrounded by rival communities. Its early survival depended not on overwhelming strength, but on careful strategy. Rather than destroying every enemy, Rome often offered alliances, gradually building a network of controlled territories. This flexible approach allowed it to expand without immediately overextending its resources.
 
-The fall of Rome was not caused by a single event. Instead, it was the result of many overlapping problems. Economic pressure, military challenges, political instability, and administrative complexity all weakened the system over time. As the empire expanded, it became more difficult to manage distant regions effectively.
+However, as Rome grew, expansion became both an advantage and a risk. Each new territory brought wealth, soldiers, and influence, but it also required administration and defense. The very success that made Rome powerful began to create structural pressure. Governing distant regions demanded coordination that the original system had not been designed to handle.
 
-Another key factor was internal division. Power struggles among leaders reduced stability, while economic inequality increased dissatisfaction among citizens. These internal weaknesses made the empire less able to respond to external threats.
+This tension reveals an important pattern in history: growth can produce its own limitations. Rome did not fall because it failed to expand, but because expansion changed the conditions under which it operated. What once strengthened the system gradually made it more complex and harder to control.
 
-At the same time, Rome faced pressure from outside groups. These groups did not destroy the empire instantly, but they exposed its vulnerabilities. A system that had once seemed strong was no longer able to adapt.
-
-The fall of Rome remains important because it shows that power alone does not guarantee stability. Complex systems can fail when internal and external pressures combine. This lesson continues to shape how people think about governments and institutions today.`,
+In this sense, Rome’s rise was not simply a story of conquest, but of adaptation. The methods that ensured survival at a small scale had to be transformed as the state grew. Whether those changes were sufficient would determine the empire’s future.`,
 
   sentences: [
-    { ko: "로마 제국은 매우 강력한 체제였다.", en: "The Roman Empire was a powerful system." },
-    { ko: "붕괴는 여러 요인이 결합된 결과였다.", en: "Its collapse was caused by multiple factors." },
-    { ko: "강력함이 항상 안정성을 보장하지는 않는다.", en: "Power does not always guarantee stability." }
+    { ko: "로마는 작은 도시에서 시작되었다.", en: "Rome began as a small city." },
+    { ko: "확장은 힘이자 위험이었다.", en: "Expansion was both strength and risk." },
+    { ko: "성장은 시스템을 더 복잡하게 만든다.", en: "Growth makes systems more complex." }
   ],
 
   quizRaw: [
     {
-      q: "Why did Rome fall?",
+      q: "What is the main idea?",
       options: [
-        "Because of multiple combined factors",
-        "Because of one sudden event",
-        "Because of weather changes",
-        "Because of population growth"
+        "Rome’s expansion created both power and structural challenges",
+        "Rome avoided alliances",
+        "Rome remained small",
+        "Expansion had no effect"
       ],
       answer: 0
     },
     {
-      q: "What weakened Rome internally?",
+      q: "Why was expansion risky?",
       options: [
-        "Political conflict and inequality",
-        "Strong leadership",
-        "Stable economy",
-        "Unified power"
+        "It increased complexity and control problems",
+        "It reduced wealth",
+        "It eliminated soldiers",
+        "It ended alliances"
       ],
       answer: 0
     },
     {
-      q: "What role did external groups play?",
+      q: "What can be inferred?",
       options: [
-        "They exposed weaknesses",
-        "They had no effect",
-        "They improved stability",
-        "They supported Rome"
+        "Growth can create new limitations",
+        "Growth always solves problems",
+        "Expansion reduces complexity",
+        "Rome controlled everything easily"
       ],
       answer: 0
     },
     {
-      q: "Main lesson?",
+      q: "Author’s purpose?",
       options: [
-        "Power does not ensure stability",
-        "Empires never fall",
-        "Growth always helps",
-        "Conflict is unnecessary"
+        "To explain how expansion changed Rome",
+        "To describe a battle",
+        "To compare empires",
+        "To argue against growth"
       ],
       answer: 0
     },
     {
       q: "Tone?",
-      options: ["Analytical","Emotional","Funny","Narrative"],
+      options: ["Analytical","Emotional","Narrative","Humorous"],
       answer: 0
     }
   ],
 
-  summary: "Rome fell due to multiple (factors), including internal weakness and external pressure. The case shows that power does not guarantee (stability) in complex (systems).",
+  summary: "Rome expanded through alliances and strategy, but growth increased (complexity) and created new (risks), showing that expansion can reshape a (system).",
 
   summaryQuiz: [
-    { blank:1, answer:"factors", options:["factors","people","events","cities"] },
-    { blank:2, answer:"stability", options:["stability","growth","wealth","trade"] },
-    { blank:3, answer:"systems", options:["systems","roads","laws","armies"] }
+    { blank:1, answer:"complexity", options:["complexity","wealth","power","trade"] },
+    { blank:2, answer:"risks", options:["risks","benefits","peace","control"] },
+    { blank:3, answer:"system", options:["system","city","army","leader"] }
   ]
-},
+}
+  {
+  category: "World History",
+  categoryLabel: "World History | TOEFL+",
+  headline: "The Rise of Rome (2): Power Without Balance",
+
+  reading: `As Rome expanded, its political system began to change. The original republic had been designed for a relatively small community, where power was shared among elected officials. However, as territories grew, decision-making became slower and more complicated. This created opportunities for individuals to gain more influence.
+
+Military leaders played a key role in this shift. Successful generals gained loyalty from their soldiers, not just authority from the state. This loyalty allowed them to challenge traditional political structures. Over time, personal power began to compete with institutional authority.
+
+This imbalance weakened the system. The republic depended on cooperation and shared responsibility, but competition for power led to conflict. Political decisions were no longer made solely for the stability of the state, but increasingly for personal advantage.
+
+The transition from republic to empire did not happen suddenly. It was the result of gradual change, where existing structures could no longer manage growing pressures. Rome did not simply choose to become an empire; it became one because its system could not remain as it was.
+
+In this way, Rome’s political transformation reflects a broader principle: when institutions fail to adapt, individuals often fill the gap, sometimes at the cost of stability.`,
+
+  sentences: [
+    { ko: "공화정은 작은 사회를 위해 설계되었다.", en: "The republic was designed for a small society." },
+    { ko: "군사 지도자들은 개인적 권력을 얻었다.", en: "Military leaders gained personal power." },
+    { ko: "균형의 붕괴는 갈등을 초래했다.", en: "The loss of balance led to conflict." }
+  ],
+
+  quizRaw: [
+    {
+      q: "Main idea?",
+      options: [
+        "Rome’s political system became unstable as power shifted",
+        "Rome strengthened its republic",
+        "Leaders avoided conflict",
+        "The system remained balanced"
+      ],
+      answer: 0
+    },
+    {
+      q: "Why did generals gain power?",
+      options: [
+        "Soldiers were loyal to them",
+        "They avoided war",
+        "They reduced influence",
+        "They followed the system"
+      ],
+      answer: 0
+    },
+    {
+      q: "What caused instability?",
+      options: [
+        "Competition for personal power",
+        "Strong cooperation",
+        "Equal authority",
+        "Balanced leadership"
+      ],
+      answer: 0
+    },
+    {
+      q: "What can be inferred?",
+      options: [
+        "Institutions must adapt to survive",
+        "Power always stays stable",
+        "Individuals weaken systems",
+        "Growth reduces pressure"
+      ],
+      answer: 0
+    },
+    {
+      q: "Tone?",
+      options: ["Analytical","Emotional","Narrative","Humorous"],
+      answer: 0
+    }
+  ],
+
+  summary: "Rome’s republic struggled as leaders gained personal (power), creating imbalance and political (conflict), which eventually transformed the (system).",
+
+  summaryQuiz: [
+    { blank:1, answer:"power", options:["power","wealth","land","army"] },
+    { blank:2, answer:"conflict", options:["conflict","peace","growth","trade"] },
+    { blank:3, answer:"system", options:["system","city","road","culture"] }
+  ]
+}
+{
+  category: "World History",
+  categoryLabel: "World History | TOEFL+",
+  headline: "The Fall of Rome (3): When Stability Breaks Down",
+
+  reading: `By the later stages of the Roman Empire, the system had become increasingly difficult to maintain. Economic strain, military pressure, and administrative complexity combined to weaken stability. These challenges did not appear all at once, but accumulated over time.
+
+One critical issue was the cost of maintaining the empire. Defending vast borders required significant resources, while internal economic problems limited revenue. As financial pressure increased, the government struggled to meet its obligations.
+
+At the same time, external threats became more serious. These threats alone did not destroy Rome, but they exposed the system’s inability to respond effectively. A strong structure might have adapted, but Rome’s weakened condition made recovery difficult.
+
+Internal division also played a role. As trust in leadership declined, coordination became harder. Without unity, even small problems became larger crises.
+
+The fall of Rome illustrates that collapse is rarely caused by a single factor. Instead, it occurs when multiple pressures exceed a system’s ability to adapt. Stability is not lost instantly—it erodes gradually until the system can no longer function.`,
+
+  sentences: [
+    { ko: "로마의 붕괴는 점진적으로 일어났다.", en: "Rome’s collapse occurred gradually." },
+    { ko: "여러 요인이 결합되어 시스템을 약화시켰다.", en: "Multiple factors weakened the system." },
+    { ko: "적응하지 못하면 시스템은 무너진다.", en: "Without adaptation, systems collapse." }
+  ],
+
+  quizRaw: [
+    {
+      q: "Main idea?",
+      options: [
+        "Rome fell due to combined pressures and weak adaptation",
+        "Rome collapsed instantly",
+        "External threats alone caused collapse",
+        "The system remained stable"
+      ],
+      answer: 0
+    },
+    {
+      q: "What was a key issue?",
+      options: [
+        "High cost of maintaining the empire",
+        "Lack of territory",
+        "Too much unity",
+        "Low population"
+      ],
+      answer: 0
+    },
+    {
+      q: "What can be inferred?",
+      options: [
+        "Collapse happens when systems cannot adapt",
+        "Collapse is sudden",
+        "External threats always destroy systems",
+        "Unity weakens stability"
+      ],
+      answer: 0
+    },
+    {
+      q: "Why were external threats effective?",
+      options: [
+        "They exposed internal weakness",
+        "They were stronger alone",
+        "They replaced leadership",
+        "They controlled economy"
+      ],
+      answer: 0
+    },
+    {
+      q: "Tone?",
+      options: ["Analytical","Emotional","Narrative","Humorous"],
+      answer: 0
+    }
+  ],
+
+  summary: "Rome collapsed due to multiple (pressures), including economic and military challenges, showing that systems fail when they cannot (adapt) to increasing (complexity).",
+
+  summaryQuiz: [
+    { blank:1, answer:"pressures", options:["pressures","leaders","roads","cities"] },
+    { blank:2, answer:"adapt", options:["adapt","expand","fight","build"] },
+    { blank:3, answer:"complexity", options:["complexity","simplicity","speed","power"] }
+  ]
+}
 
 // 3️⃣ Humanities
 {
