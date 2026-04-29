@@ -336,7 +336,7 @@ The fall of Rome illustrates that collapse is rarely caused by a single factor. 
     { blank:2, answer:"adapt", options:["adapt","expand","fight","build"] },
     { blank:3, answer:"complexity", options:["complexity","simplicity","speed","power"] }
   ]
-}
+},
 
 // 3️⃣ Humanities
 {
