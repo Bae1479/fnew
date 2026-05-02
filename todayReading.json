@@ -1,43 +1,43 @@
 {
-  "date": "2026-05-01T18:14:16.304Z",
+  "date": "2026-05-02T17:32:45.281Z",
   "category": "World History",
   "categoryLabel": "World History | TOEFL+",
-  "headline": "The Rise of Rome (1): Expansion Beyond Control",
-  "reading": "At first, Rome was not an empire but a small city surrounded by rival communities. Its early survival depended not on overwhelming strength, but on careful strategy. Rather than destroying every enemy, Rome often offered alliances, gradually building a network of controlled territories. This flexible approach allowed it to expand without immediately overextending its resources.\n\nHowever, as Rome grew, expansion became both an advantage and a risk. Each new territory brought wealth, soldiers, and influence, but it also required administration and defense. The very success that made Rome powerful began to create structural pressure. Governing distant regions demanded coordination that the original system had not been designed to handle.\n\nThis tension reveals an important pattern in history: growth can produce its own limitations. Rome did not fall because it failed to expand, but because expansion changed the conditions under which it operated. What once strengthened the system gradually made it more complex and harder to control.\n\nIn this sense, Rome’s rise was not simply a story of conquest, but of adaptation. The methods that ensured survival at a small scale had to be transformed as the state grew. Whether those changes were sufficient would determine the empire’s future.",
+  "headline": "The Rise of Rome (2): Power Without Balance",
+  "reading": "As Rome expanded, its political system began to change. The original republic had been designed for a relatively small community, where power was shared among elected officials. However, as territories grew, decision-making became slower and more complicated. This created opportunities for individuals to gain more influence.\n\nMilitary leaders played a key role in this shift. Successful generals gained loyalty from their soldiers, not just authority from the state. This loyalty allowed them to challenge traditional political structures. Over time, personal power began to compete with institutional authority.\n\nThis imbalance weakened the system. The republic depended on cooperation and shared responsibility, but competition for power led to conflict. Political decisions were no longer made solely for the stability of the state, but increasingly for personal advantage.\n\nThe transition from republic to empire did not happen suddenly. It was the result of gradual change, where existing structures could no longer manage growing pressures. Rome did not simply choose to become an empire; it became one because its system could not remain as it was.\n\nIn this way, Rome’s political transformation reflects a broader principle: when institutions fail to adapt, individuals often fill the gap, sometimes at the cost of stability.",
   "sentences": [
     {
-      "ko": "로마는 작은 도시에서 시작되었다.",
-      "en": "Rome began as a small city."
+      "ko": "공화정은 작은 사회를 위해 설계되었다.",
+      "en": "The republic was designed for a small society."
     },
     {
-      "ko": "확장은 힘이자 위험이었다.",
-      "en": "Expansion was both strength and risk."
+      "ko": "군사 지도자들은 개인적 권력을 얻었다.",
+      "en": "Military leaders gained personal power."
     },
     {
-      "ko": "성장은 시스템을 더 복잡하게 만든다.",
-      "en": "Growth makes systems more complex."
+      "ko": "균형의 붕괴는 갈등을 초래했다.",
+      "en": "The loss of balance led to conflict."
     }
   ],
-  "summary": "Rome expanded through alliances and strategy, but growth increased (complexity) and created new (risks), showing that expansion can reshape a (system).",
+  "summary": "Rome’s republic struggled as leaders gained personal (power), creating imbalance and political (conflict), which eventually transformed the (system).",
   "summaryQuiz": [
     {
       "blank": 1,
-      "answer": "complexity",
+      "answer": "power",
       "options": [
-        "complexity",
-        "wealth",
         "power",
-        "trade"
+        "wealth",
+        "land",
+        "army"
       ]
     },
     {
       "blank": 2,
-      "answer": "risks",
+      "answer": "conflict",
       "options": [
-        "risks",
-        "benefits",
+        "conflict",
         "peace",
-        "control"
+        "growth",
+        "trade"
       ]
     },
     {
@@ -46,61 +46,61 @@
       "options": [
         "system",
         "city",
-        "army",
-        "leader"
+        "road",
+        "culture"
       ]
     }
   ],
   "quiz": [
     {
-      "q": "What is the main idea?",
+      "q": "Main idea?",
       "options": [
-        "Rome avoided alliances",
-        "Rome remained small",
-        "Rome’s expansion created both power and structural challenges",
-        "Expansion had no effect"
+        "Rome’s political system became unstable as power shifted",
+        "Leaders avoided conflict",
+        "Rome strengthened its republic",
+        "The system remained balanced"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
-      "q": "Why was expansion risky?",
+      "q": "Why did generals gain power?",
       "options": [
-        "It ended alliances",
-        "It eliminated soldiers",
-        "It increased complexity and control problems",
-        "It reduced wealth"
+        "Soldiers were loyal to them",
+        "They avoided war",
+        "They reduced influence",
+        "They followed the system"
       ],
-      "answer": 2
+      "answer": 0
+    },
+    {
+      "q": "What caused instability?",
+      "options": [
+        "Strong cooperation",
+        "Competition for personal power",
+        "Balanced leadership",
+        "Equal authority"
+      ],
+      "answer": 1
     },
     {
       "q": "What can be inferred?",
       "options": [
-        "Growth can create new limitations",
-        "Rome controlled everything easily",
-        "Growth always solves problems",
-        "Expansion reduces complexity"
+        "Institutions must adapt to survive",
+        "Individuals weaken systems",
+        "Power always stays stable",
+        "Growth reduces pressure"
       ],
       "answer": 0
-    },
-    {
-      "q": "Author’s purpose?",
-      "options": [
-        "To argue against growth",
-        "To describe a battle",
-        "To explain how expansion changed Rome",
-        "To compare empires"
-      ],
-      "answer": 2
     },
     {
       "q": "Tone?",
       "options": [
-        "Analytical",
         "Narrative",
-        "Humorous",
-        "Emotional"
+        "Emotional",
+        "Analytical",
+        "Humorous"
       ],
-      "answer": 0
+      "answer": 2
     }
   ]
 }
