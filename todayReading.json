@@ -1,53 +1,53 @@
 {
-  "date": "2026-05-02T17:32:45.281Z",
+  "date": "2026-05-03T17:34:29.795Z",
   "category": "World History",
   "categoryLabel": "World History | TOEFL+",
-  "headline": "The Rise of Rome (2): Power Without Balance",
-  "reading": "As Rome expanded, its political system began to change. The original republic had been designed for a relatively small community, where power was shared among elected officials. However, as territories grew, decision-making became slower and more complicated. This created opportunities for individuals to gain more influence.\n\nMilitary leaders played a key role in this shift. Successful generals gained loyalty from their soldiers, not just authority from the state. This loyalty allowed them to challenge traditional political structures. Over time, personal power began to compete with institutional authority.\n\nThis imbalance weakened the system. The republic depended on cooperation and shared responsibility, but competition for power led to conflict. Political decisions were no longer made solely for the stability of the state, but increasingly for personal advantage.\n\nThe transition from republic to empire did not happen suddenly. It was the result of gradual change, where existing structures could no longer manage growing pressures. Rome did not simply choose to become an empire; it became one because its system could not remain as it was.\n\nIn this way, Rome’s political transformation reflects a broader principle: when institutions fail to adapt, individuals often fill the gap, sometimes at the cost of stability.",
+  "headline": "The Fall of Rome (3): When Stability Breaks Down",
+  "reading": "By the later stages of the Roman Empire, the system had become increasingly difficult to maintain. Economic strain, military pressure, and administrative complexity combined to weaken stability. These challenges did not appear all at once, but accumulated over time.\n\nOne critical issue was the cost of maintaining the empire. Defending vast borders required significant resources, while internal economic problems limited revenue. As financial pressure increased, the government struggled to meet its obligations.\n\nAt the same time, external threats became more serious. These threats alone did not destroy Rome, but they exposed the system’s inability to respond effectively. A strong structure might have adapted, but Rome’s weakened condition made recovery difficult.\n\nInternal division also played a role. As trust in leadership declined, coordination became harder. Without unity, even small problems became larger crises.\n\nThe fall of Rome illustrates that collapse is rarely caused by a single factor. Instead, it occurs when multiple pressures exceed a system’s ability to adapt. Stability is not lost instantly—it erodes gradually until the system can no longer function.",
   "sentences": [
     {
-      "ko": "공화정은 작은 사회를 위해 설계되었다.",
-      "en": "The republic was designed for a small society."
+      "ko": "로마의 붕괴는 점진적으로 일어났다.",
+      "en": "Rome’s collapse occurred gradually."
     },
     {
-      "ko": "군사 지도자들은 개인적 권력을 얻었다.",
-      "en": "Military leaders gained personal power."
+      "ko": "여러 요인이 결합되어 시스템을 약화시켰다.",
+      "en": "Multiple factors weakened the system."
     },
     {
-      "ko": "균형의 붕괴는 갈등을 초래했다.",
-      "en": "The loss of balance led to conflict."
+      "ko": "적응하지 못하면 시스템은 무너진다.",
+      "en": "Without adaptation, systems collapse."
     }
   ],
-  "summary": "Rome’s republic struggled as leaders gained personal (power), creating imbalance and political (conflict), which eventually transformed the (system).",
+  "summary": "Rome collapsed due to multiple (pressures), including economic and military challenges, showing that systems fail when they cannot (adapt) to increasing (complexity).",
   "summaryQuiz": [
     {
       "blank": 1,
-      "answer": "power",
+      "answer": "pressures",
       "options": [
-        "power",
-        "wealth",
-        "land",
-        "army"
+        "pressures",
+        "leaders",
+        "roads",
+        "cities"
       ]
     },
     {
       "blank": 2,
-      "answer": "conflict",
+      "answer": "adapt",
       "options": [
-        "conflict",
-        "peace",
-        "growth",
-        "trade"
+        "adapt",
+        "expand",
+        "fight",
+        "build"
       ]
     },
     {
       "blank": 3,
-      "answer": "system",
+      "answer": "complexity",
       "options": [
-        "system",
-        "city",
-        "road",
-        "culture"
+        "complexity",
+        "simplicity",
+        "speed",
+        "power"
       ]
     }
   ],
@@ -55,52 +55,52 @@
     {
       "q": "Main idea?",
       "options": [
-        "Rome’s political system became unstable as power shifted",
-        "Leaders avoided conflict",
-        "Rome strengthened its republic",
-        "The system remained balanced"
+        "Rome collapsed instantly",
+        "Rome fell due to combined pressures and weak adaptation",
+        "External threats alone caused collapse",
+        "The system remained stable"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
-      "q": "Why did generals gain power?",
+      "q": "What was a key issue?",
       "options": [
-        "Soldiers were loyal to them",
-        "They avoided war",
-        "They reduced influence",
-        "They followed the system"
-      ],
-      "answer": 0
-    },
-    {
-      "q": "What caused instability?",
-      "options": [
-        "Strong cooperation",
-        "Competition for personal power",
-        "Balanced leadership",
-        "Equal authority"
+        "Low population",
+        "High cost of maintaining the empire",
+        "Lack of territory",
+        "Too much unity"
       ],
       "answer": 1
     },
     {
       "q": "What can be inferred?",
       "options": [
-        "Institutions must adapt to survive",
-        "Individuals weaken systems",
-        "Power always stays stable",
-        "Growth reduces pressure"
+        "Unity weakens stability",
+        "Collapse is sudden",
+        "Collapse happens when systems cannot adapt",
+        "External threats always destroy systems"
       ],
-      "answer": 0
+      "answer": 2
+    },
+    {
+      "q": "Why were external threats effective?",
+      "options": [
+        "They controlled economy",
+        "They were stronger alone",
+        "They exposed internal weakness",
+        "They replaced leadership"
+      ],
+      "answer": 2
     },
     {
       "q": "Tone?",
       "options": [
-        "Narrative",
-        "Emotional",
         "Analytical",
-        "Humorous"
+        "Narrative",
+        "Humorous",
+        "Emotional"
       ],
-      "answer": 2
+      "answer": 0
     }
   ]
 }
