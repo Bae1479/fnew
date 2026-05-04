@@ -1,104 +1,104 @@
 {
-  "date": "2026-05-03T17:34:29.795Z",
-  "category": "World History",
-  "categoryLabel": "World History | TOEFL+",
-  "headline": "The Fall of Rome (3): When Stability Breaks Down",
-  "reading": "By the later stages of the Roman Empire, the system had become increasingly difficult to maintain. Economic strain, military pressure, and administrative complexity combined to weaken stability. These challenges did not appear all at once, but accumulated over time.\n\nOne critical issue was the cost of maintaining the empire. Defending vast borders required significant resources, while internal economic problems limited revenue. As financial pressure increased, the government struggled to meet its obligations.\n\nAt the same time, external threats became more serious. These threats alone did not destroy Rome, but they exposed the system’s inability to respond effectively. A strong structure might have adapted, but Rome’s weakened condition made recovery difficult.\n\nInternal division also played a role. As trust in leadership declined, coordination became harder. Without unity, even small problems became larger crises.\n\nThe fall of Rome illustrates that collapse is rarely caused by a single factor. Instead, it occurs when multiple pressures exceed a system’s ability to adapt. Stability is not lost instantly—it erodes gradually until the system can no longer function.",
+  "date": "2026-05-04T20:05:55.425Z",
+  "category": "Humanities",
+  "categoryLabel": "Humanities | TOEFL",
+  "headline": "Why People Remember Stories More Than Facts",
+  "reading": "Think about the last time you tried to remember a list of facts. Now compare that to remembering a story. For most people, stories are easier to recall. This difference reveals something important about how the human mind works.\n\nStories organize information into a sequence. Instead of isolated details, they provide connections between events. A beginning creates context, a middle introduces tension, and an ending provides resolution. This structure helps the brain store and retrieve information more efficiently.\n\nStories also involve emotion. When people feel curiosity, surprise, or empathy, they pay closer attention. This emotional engagement strengthens memory. In contrast, information without context or feeling is more likely to be forgotten.\n\nHowever, stories can also shape understanding in misleading ways. A simple narrative may ignore complexity or leave out important details. People may accept a story because it feels true, not because it is complete.\n\nFor this reason, learning requires both narrative understanding and critical thinking. Stories help us remember, but analysis helps us evaluate. Together, they allow us to understand information more deeply.",
   "sentences": [
     {
-      "ko": "로마의 붕괴는 점진적으로 일어났다.",
-      "en": "Rome’s collapse occurred gradually."
+      "ko": "이야기는 사실보다 기억하기 쉽다.",
+      "en": "Stories are easier to remember than facts."
     },
     {
-      "ko": "여러 요인이 결합되어 시스템을 약화시켰다.",
-      "en": "Multiple factors weakened the system."
+      "ko": "이야기는 정보를 구조화한다.",
+      "en": "Stories organize information."
     },
     {
-      "ko": "적응하지 못하면 시스템은 무너진다.",
-      "en": "Without adaptation, systems collapse."
+      "ko": "감정은 기억을 강화한다.",
+      "en": "Emotion strengthens memory."
     }
   ],
-  "summary": "Rome collapsed due to multiple (pressures), including economic and military challenges, showing that systems fail when they cannot (adapt) to increasing (complexity).",
+  "summary": "Stories help memory by organizing (information) and using (emotion), but they can oversimplify reality, so critical (thinking) is needed.",
   "summaryQuiz": [
     {
       "blank": 1,
-      "answer": "pressures",
+      "answer": "information",
       "options": [
-        "pressures",
-        "leaders",
-        "roads",
-        "cities"
+        "information",
+        "money",
+        "labor",
+        "policy"
       ]
     },
     {
       "blank": 2,
-      "answer": "adapt",
+      "answer": "emotion",
       "options": [
-        "adapt",
-        "expand",
-        "fight",
-        "build"
+        "emotion",
+        "logic",
+        "speed",
+        "data"
       ]
     },
     {
       "blank": 3,
-      "answer": "complexity",
+      "answer": "thinking",
       "options": [
-        "complexity",
-        "simplicity",
-        "speed",
-        "power"
+        "thinking",
+        "movement",
+        "growth",
+        "change"
       ]
     }
   ],
   "quiz": [
     {
+      "q": "Why are stories easier to remember?",
+      "options": [
+        "They avoid emotion",
+        "They simplify memory completely",
+        "They organize information and create connections",
+        "They remove all details"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What strengthens memory?",
+      "options": [
+        "Silence",
+        "Distance",
+        "Emotion",
+        "Time"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What is a risk of stories?",
+      "options": [
+        "They prevent memory",
+        "They can oversimplify reality",
+        "They avoid meaning",
+        "They remove emotion"
+      ],
+      "answer": 1
+    },
+    {
       "q": "Main idea?",
       "options": [
-        "Rome collapsed instantly",
-        "Rome fell due to combined pressures and weak adaptation",
-        "External threats alone caused collapse",
-        "The system remained stable"
+        "Stories aid memory but require critical thinking",
+        "Memory is fixed",
+        "Facts are useless",
+        "Stories replace facts"
       ],
-      "answer": 1
-    },
-    {
-      "q": "What was a key issue?",
-      "options": [
-        "Low population",
-        "High cost of maintaining the empire",
-        "Lack of territory",
-        "Too much unity"
-      ],
-      "answer": 1
-    },
-    {
-      "q": "What can be inferred?",
-      "options": [
-        "Unity weakens stability",
-        "Collapse is sudden",
-        "Collapse happens when systems cannot adapt",
-        "External threats always destroy systems"
-      ],
-      "answer": 2
-    },
-    {
-      "q": "Why were external threats effective?",
-      "options": [
-        "They controlled economy",
-        "They were stronger alone",
-        "They exposed internal weakness",
-        "They replaced leadership"
-      ],
-      "answer": 2
+      "answer": 0
     },
     {
       "q": "Tone?",
       "options": [
-        "Analytical",
-        "Narrative",
-        "Humorous",
-        "Emotional"
+        "Explanatory",
+        "Emotional",
+        "Story",
+        "Funny"
       ],
       "answer": 0
     }
