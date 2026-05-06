@@ -1,106 +1,106 @@
 {
-  "date": "2026-05-05T18:59:26.256Z",
-  "category": "Science & Technology",
-  "categoryLabel": "Science & Technology | TOEFL",
-  "headline": "Why AI Feels Smart Even When It Is Wrong",
-  "reading": "Artificial intelligence systems often produce answers that sound confident and fluent. This creates the impression that the system truly understands the information it provides. However, the reality is more complex.\n\nAI models generate responses by predicting patterns in language. They do not “know” facts in the way humans do. Instead, they rely on probability, selecting words that are most likely to follow previous ones. This allows them to produce natural-sounding sentences.\n\nThe problem is that fluency can hide mistakes. An answer may sound correct even when it contains errors or incomplete reasoning. Because of this, users may trust information too quickly without checking its accuracy.\n\nThis creates a new kind of skill requirement. Instead of only gathering information, people must learn to evaluate it. Critical thinking becomes more important than simple access to knowledge.\n\nUnderstanding how AI works helps reduce overconfidence in its outputs. It reminds users that technology can assist thinking, but it should not replace it. In the end, human judgment remains essential.",
+  "date": "2026-05-06T20:13:26.100Z",
+  "category": "Society",
+  "categoryLabel": "Society | TOEFL",
+  "headline": "Why Trust in Institutions Is Hard to Rebuild",
+  "reading": "Trust in institutions does not disappear suddenly. It usually declines gradually as people begin to question fairness, transparency, or competence. Small doubts accumulate over time until confidence weakens.\n\nOnce trust is lost, rebuilding it becomes difficult. People no longer interpret actions in a neutral way. Instead, they view decisions through suspicion. Even positive changes may be questioned.\n\nCommunication plays a key role in this process. Clear explanations can maintain trust, while confusion can damage it. In modern societies, information spreads quickly, making it harder to control public perception.\n\nInstitutions must therefore act consistently. If rules appear to change depending on the situation, people may believe the system is unfair. Consistency helps restore credibility.\n\nTrust is important because it supports cooperation. Without it, even simple decisions can become conflicts. For this reason, trust is not just a social value—it is a foundation for stability.",
   "sentences": [
     {
-      "ko": "AI는 종종 자신감 있게 보인다.",
-      "en": "AI often appears confident."
+      "ko": "신뢰는 점진적으로 약해진다.",
+      "en": "Trust declines gradually."
     },
     {
-      "ko": "AI는 패턴을 기반으로 작동한다.",
-      "en": "AI operates based on patterns."
+      "ko": "신뢰를 회복하는 것은 어렵다.",
+      "en": "Rebuilding trust is difficult."
     },
     {
-      "ko": "비판적 사고가 중요해진다.",
-      "en": "Critical thinking becomes important."
+      "ko": "신뢰는 협력을 가능하게 한다.",
+      "en": "Trust enables cooperation."
     }
   ],
-  "summary": "AI appears intelligent because of fluent (language), but it relies on patterns and may produce (errors), making critical (thinking) essential.",
+  "summary": "Trust declines gradually and is difficult to rebuild because people interpret actions with (suspicion). It depends on clear communication and supports social (cooperation) and (stability).",
   "summaryQuiz": [
     {
       "blank": 1,
-      "answer": "language",
+      "answer": "suspicion",
       "options": [
-        "language",
-        "data",
+        "suspicion",
+        "growth",
         "money",
-        "power"
+        "speed"
       ]
     },
     {
       "blank": 2,
-      "answer": "errors",
+      "answer": "cooperation",
       "options": [
-        "errors",
-        "growth",
-        "speed",
-        "memory"
+        "cooperation",
+        "competition",
+        "travel",
+        "storage"
       ]
     },
     {
       "blank": 3,
-      "answer": "thinking",
+      "answer": "stability",
       "options": [
-        "thinking",
-        "running",
-        "buying",
-        "selling"
+        "stability",
+        "movement",
+        "heat",
+        "light"
       ]
     }
   ],
   "quiz": [
     {
-      "q": "Why does AI seem intelligent?",
+      "q": "Why is trust hard to rebuild?",
       "options": [
-        "It never makes mistakes",
-        "It produces fluent language",
-        "It understands everything",
-        "It avoids patterns"
+        "Institutions stop working",
+        "Communication disappears",
+        "People interpret actions with suspicion",
+        "Trust never changes"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What weakens trust?",
+      "options": [
+        "Transparency",
+        "Unclear communication",
+        "Consistency",
+        "Clear rules"
       ],
       "answer": 1
     },
     {
-      "q": "What is a limitation?",
+      "q": "Why is trust important?",
       "options": [
-        "It stops responding",
-        "It avoids language",
-        "It deletes data",
-        "It can sound correct while being wrong"
-      ],
-      "answer": 3
-    },
-    {
-      "q": "What skill is needed?",
-      "options": [
-        "Critical thinking",
-        "Memory",
-        "Speed",
-        "Repetition"
+        "It supports cooperation",
+        "It removes decisions",
+        "It stops systems",
+        "It increases conflict"
       ],
       "answer": 0
     },
     {
       "q": "Main idea?",
       "options": [
-        "AI avoids mistakes",
-        "AI is perfect",
-        "AI replaces humans",
-        "AI sounds smart but requires evaluation"
+        "Trust is fixed",
+        "Trust is unnecessary",
+        "Trust cannot change",
+        "Trust is fragile and essential"
       ],
       "answer": 3
     },
     {
       "q": "Tone?",
       "options": [
-        "Emotional",
         "Analytical",
-        "Funny",
-        "Narrative"
+        "Emotional",
+        "Story",
+        "Funny"
       ],
-      "answer": 1
+      "answer": 0
     }
   ]
 }
