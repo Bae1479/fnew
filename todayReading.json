@@ -1,43 +1,43 @@
 {
-  "date": "2026-05-11T20:56:01.866Z",
-  "category": "Humanities",
-  "categoryLabel": "Humanities | TOEFL",
-  "headline": "Why People Remember Stories More Than Facts",
-  "reading": "Think about the last time you tried to remember a list of facts. Now compare that to remembering a story. For most people, stories are easier to recall. This difference reveals something important about how the human mind works.\n\nStories organize information into a sequence. Instead of isolated details, they provide connections between events. A beginning creates context, a middle introduces tension, and an ending provides resolution. This structure helps the brain store and retrieve information more efficiently.\n\nStories also involve emotion. When people feel curiosity, surprise, or empathy, they pay closer attention. This emotional engagement strengthens memory. In contrast, information without context or feeling is more likely to be forgotten.\n\nHowever, stories can also shape understanding in misleading ways. A simple narrative may ignore complexity or leave out important details. People may accept a story because it feels true, not because it is complete.\n\nFor this reason, learning requires both narrative understanding and critical thinking. Stories help us remember, but analysis helps us evaluate. Together, they allow us to understand information more deeply.",
+  "date": "2026-05-12T20:52:20.597Z",
+  "category": "Science & Technology",
+  "categoryLabel": "Science & Technology | TOEFL",
+  "headline": "Why AI Feels Smart Even When It Is Wrong",
+  "reading": "Artificial intelligence systems often produce answers that sound confident and fluent. This creates the impression that the system truly understands the information it provides. However, the reality is more complex.\n\nAI models generate responses by predicting patterns in language. They do not “know” facts in the way humans do. Instead, they rely on probability, selecting words that are most likely to follow previous ones. This allows them to produce natural-sounding sentences.\n\nThe problem is that fluency can hide mistakes. An answer may sound correct even when it contains errors or incomplete reasoning. Because of this, users may trust information too quickly without checking its accuracy.\n\nThis creates a new kind of skill requirement. Instead of only gathering information, people must learn to evaluate it. Critical thinking becomes more important than simple access to knowledge.\n\nUnderstanding how AI works helps reduce overconfidence in its outputs. It reminds users that technology can assist thinking, but it should not replace it. In the end, human judgment remains essential.",
   "sentences": [
     {
-      "ko": "이야기는 사실보다 기억하기 쉽다.",
-      "en": "Stories are easier to remember than facts."
+      "ko": "AI는 종종 자신감 있게 보인다.",
+      "en": "AI often appears confident."
     },
     {
-      "ko": "이야기는 정보를 구조화한다.",
-      "en": "Stories organize information."
+      "ko": "AI는 패턴을 기반으로 작동한다.",
+      "en": "AI operates based on patterns."
     },
     {
-      "ko": "감정은 기억을 강화한다.",
-      "en": "Emotion strengthens memory."
+      "ko": "비판적 사고가 중요해진다.",
+      "en": "Critical thinking becomes important."
     }
   ],
-  "summary": "Stories help memory by organizing (information) and using (emotion), but they can oversimplify reality, so critical (thinking) is needed.",
+  "summary": "AI appears intelligent because of fluent (language), but it relies on patterns and may produce (errors), making critical (thinking) essential.",
   "summaryQuiz": [
     {
       "blank": 1,
-      "answer": "information",
+      "answer": "language",
       "options": [
-        "information",
+        "language",
+        "data",
         "money",
-        "labor",
-        "policy"
+        "power"
       ]
     },
     {
       "blank": 2,
-      "answer": "emotion",
+      "answer": "errors",
       "options": [
-        "emotion",
-        "logic",
+        "errors",
+        "growth",
         "speed",
-        "data"
+        "memory"
       ]
     },
     {
@@ -45,62 +45,62 @@
       "answer": "thinking",
       "options": [
         "thinking",
-        "movement",
-        "growth",
-        "change"
+        "running",
+        "buying",
+        "selling"
       ]
     }
   ],
   "quiz": [
     {
-      "q": "Why are stories easier to remember?",
+      "q": "Why does AI seem intelligent?",
       "options": [
-        "They organize information and create connections",
-        "They remove all details",
-        "They simplify memory completely",
-        "They avoid emotion"
+        "It avoids patterns",
+        "It never makes mistakes",
+        "It produces fluent language",
+        "It understands everything"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What is a limitation?",
+      "options": [
+        "It deletes data",
+        "It avoids language",
+        "It can sound correct while being wrong",
+        "It stops responding"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What skill is needed?",
+      "options": [
+        "Critical thinking",
+        "Repetition",
+        "Memory",
+        "Speed"
       ],
       "answer": 0
     },
     {
-      "q": "What strengthens memory?",
-      "options": [
-        "Silence",
-        "Emotion",
-        "Distance",
-        "Time"
-      ],
-      "answer": 1
-    },
-    {
-      "q": "What is a risk of stories?",
-      "options": [
-        "They prevent memory",
-        "They can oversimplify reality",
-        "They avoid meaning",
-        "They remove emotion"
-      ],
-      "answer": 1
-    },
-    {
       "q": "Main idea?",
       "options": [
-        "Facts are useless",
-        "Memory is fixed",
-        "Stories replace facts",
-        "Stories aid memory but require critical thinking"
+        "AI avoids mistakes",
+        "AI is perfect",
+        "AI replaces humans",
+        "AI sounds smart but requires evaluation"
       ],
       "answer": 3
     },
     {
       "q": "Tone?",
       "options": [
+        "Narrative",
+        "Analytical",
         "Funny",
-        "Emotional",
-        "Story",
-        "Explanatory"
+        "Emotional"
       ],
-      "answer": 3
+      "answer": 1
     }
   ]
 }
