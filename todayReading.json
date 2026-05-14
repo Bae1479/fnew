@@ -1,106 +1,106 @@
 {
-  "date": "2026-05-13T21:00:07.361Z",
-  "category": "Society",
-  "categoryLabel": "Society | TOEFL",
-  "headline": "Why Trust in Institutions Is Hard to Rebuild",
-  "reading": "Trust in institutions does not disappear suddenly. It usually declines gradually as people begin to question fairness, transparency, or competence. Small doubts accumulate over time until confidence weakens.\n\nOnce trust is lost, rebuilding it becomes difficult. People no longer interpret actions in a neutral way. Instead, they view decisions through suspicion. Even positive changes may be questioned.\n\nCommunication plays a key role in this process. Clear explanations can maintain trust, while confusion can damage it. In modern societies, information spreads quickly, making it harder to control public perception.\n\nInstitutions must therefore act consistently. If rules appear to change depending on the situation, people may believe the system is unfair. Consistency helps restore credibility.\n\nTrust is important because it supports cooperation. Without it, even simple decisions can become conflicts. For this reason, trust is not just a social value—it is a foundation for stability.",
+  "date": "2026-05-14T20:26:58.795Z",
+  "category": "Economics",
+  "categoryLabel": "Economics | TOEFL",
+  "headline": "Why Prices Feel Higher Even When Inflation Slows",
+  "reading": "Last year, many people noticed that everyday items—coffee, groceries, transportation—became more expensive. Months later, news reports began to say that inflation was “slowing.” Yet for most consumers, nothing felt cheaper. This gap between economic data and personal experience is one of the most confusing aspects of inflation.\n\nThe key is to understand that inflation measures the rate of change in prices, not the price level itself. When inflation slows, prices are still rising—they are just rising more slowly. For example, if prices increased by 10 percent last year and 5 percent this year, inflation has declined, but prices are still higher than before.\n\nThis creates a psychological effect. People remember past prices and compare them to current ones. Even if wages increase, the memory of lower prices makes current costs feel unusually high. As a result, people may feel financially worse off even when economic indicators show improvement.\n\nBusinesses respond to this environment carefully. If they lower prices too quickly, profits may fall. If they keep prices high, customers may reduce spending. This tension explains why prices rarely return to earlier levels once they have increased significantly.\n\nUnderstanding this process helps explain why economic recovery can feel slow. Data may suggest progress, but lived experience changes more gradually. In this sense, inflation is not just an economic concept—it is something people feel in their daily decisions.",
   "sentences": [
     {
-      "ko": "신뢰는 점진적으로 약해진다.",
-      "en": "Trust declines gradually."
+      "ko": "인플레이션이 둔화되어도 가격은 여전히 오를 수 있다.",
+      "en": "Even when inflation slows, prices can still rise."
     },
     {
-      "ko": "신뢰를 회복하는 것은 어렵다.",
-      "en": "Rebuilding trust is difficult."
+      "ko": "사람들은 과거 가격과 현재 가격을 비교한다.",
+      "en": "People compare past prices with current ones."
     },
     {
-      "ko": "신뢰는 협력을 가능하게 한다.",
-      "en": "Trust enables cooperation."
+      "ko": "경제 회복은 체감적으로 더 느리게 느껴질 수 있다.",
+      "en": "Economic recovery can feel slower in real life."
     }
   ],
-  "summary": "Trust declines gradually and is difficult to rebuild because people interpret actions with (suspicion). It depends on clear communication and supports social (cooperation) and (stability).",
+  "summary": "Inflation measures the rate of (change), not price levels. Even when inflation slows, (prices) remain high, which explains why recovery feels (slow).",
   "summaryQuiz": [
     {
       "blank": 1,
-      "answer": "suspicion",
+      "answer": "change",
       "options": [
-        "suspicion",
-        "growth",
+        "change",
         "money",
-        "speed"
+        "growth",
+        "trade"
       ]
     },
     {
       "blank": 2,
-      "answer": "cooperation",
+      "answer": "prices",
       "options": [
-        "cooperation",
-        "competition",
-        "travel",
-        "storage"
+        "prices",
+        "jobs",
+        "exports",
+        "income"
       ]
     },
     {
       "blank": 3,
-      "answer": "stability",
+      "answer": "slow",
       "options": [
-        "stability",
-        "movement",
-        "heat",
-        "light"
+        "slow",
+        "fast",
+        "stable",
+        "easy"
       ]
     }
   ],
   "quiz": [
     {
-      "q": "Why is trust hard to rebuild?",
+      "q": "Why do people feel prices are still high?",
       "options": [
-        "Trust never changes",
-        "Communication disappears",
-        "People interpret actions with suspicion",
-        "Institutions stop working"
-      ],
-      "answer": 2
-    },
-    {
-      "q": "What weakens trust?",
-      "options": [
-        "Unclear communication",
-        "Clear rules",
-        "Consistency",
-        "Transparency"
-      ],
-      "answer": 0
-    },
-    {
-      "q": "Why is trust important?",
-      "options": [
-        "It stops systems",
-        "It supports cooperation",
-        "It removes decisions",
-        "It increases conflict"
-      ],
-      "answer": 1
-    },
-    {
-      "q": "Main idea?",
-      "options": [
-        "Trust is unnecessary",
-        "Trust cannot change",
-        "Trust is fixed",
-        "Trust is fragile and essential"
+        "Because inflation has stopped completely",
+        "Because prices are falling rapidly",
+        "Because wages always decrease",
+        "Because prices continue to rise even when inflation slows"
       ],
       "answer": 3
     },
     {
-      "q": "Tone?",
+      "q": "What does inflation measure?",
       "options": [
-        "Funny",
-        "Analytical",
-        "Emotional",
-        "Story"
+        "The amount of wages",
+        "The size of the economy",
+        "The total number of products",
+        "The rate of price change"
       ],
-      "answer": 1
+      "answer": 3
+    },
+    {
+      "q": "What causes the psychological effect?",
+      "options": [
+        "Government policy",
+        "Business profits",
+        "Comparing past prices with current prices",
+        "Ignoring economic data"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Why don’t prices fall easily?",
+      "options": [
+        "Production increases",
+        "Wages decrease",
+        "Consumers stop buying",
+        "Businesses try to protect profits"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Main idea?",
+      "options": [
+        "Businesses ignore markets",
+        "Prices always return to normal",
+        "Consumers control inflation",
+        "Inflation slowing does not mean prices fall"
+      ],
+      "answer": 3
     }
   ]
 }
