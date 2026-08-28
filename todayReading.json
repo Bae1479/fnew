@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-28T00:11:02.396Z",
+  "date": "2026-08-28T23:48:09.450Z",
   "category": "World History",
   "categoryLabel": "World History | TOEFL+",
   "headline": "The Rise of Rome (1): Expansion Beyond Control",
@@ -55,52 +55,52 @@
     {
       "q": "What is the main idea?",
       "options": [
-        "Expansion had no effect",
         "Rome’s expansion created both power and structural challenges",
         "Rome avoided alliances",
+        "Expansion had no effect",
         "Rome remained small"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "q": "Why was expansion risky?",
       "options": [
-        "It increased complexity and control problems",
-        "It ended alliances",
+        "It reduced wealth",
         "It eliminated soldiers",
-        "It reduced wealth"
+        "It ended alliances",
+        "It increased complexity and control problems"
       ],
-      "answer": 0
+      "answer": 3
     },
     {
       "q": "What can be inferred?",
       "options": [
-        "Growth can create new limitations",
         "Expansion reduces complexity",
+        "Rome controlled everything easily",
         "Growth always solves problems",
-        "Rome controlled everything easily"
+        "Growth can create new limitations"
       ],
-      "answer": 0
+      "answer": 3
     },
     {
       "q": "Author’s purpose?",
       "options": [
         "To describe a battle",
-        "To argue against growth",
+        "To explain how expansion changed Rome",
         "To compare empires",
-        "To explain how expansion changed Rome"
+        "To argue against growth"
       ],
-      "answer": 3
+      "answer": 1
     },
     {
       "q": "Tone?",
       "options": [
-        "Narrative",
-        "Analytical",
         "Humorous",
-        "Emotional"
+        "Emotional",
+        "Narrative",
+        "Analytical"
       ],
-      "answer": 1
+      "answer": 3
     }
   ]
 }
