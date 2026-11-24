@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-24T01:57:47.348Z",
+  "date": "2026-11-24T23:42:02.225Z",
   "category": "Science & Technology",
   "categoryLabel": "Science & Technology | TOEFL",
   "headline": "Why AI Feels Smart Even When It Is Wrong",
@@ -56,8 +56,8 @@
       "q": "Why does AI seem intelligent?",
       "options": [
         "It produces fluent language",
-        "It never makes mistakes",
         "It understands everything",
+        "It never makes mistakes",
         "It avoids patterns"
       ],
       "answer": 0
@@ -65,42 +65,42 @@
     {
       "q": "What is a limitation?",
       "options": [
+        "It deletes data",
         "It stops responding",
         "It can sound correct while being wrong",
-        "It avoids language",
-        "It deletes data"
+        "It avoids language"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "q": "What skill is needed?",
       "options": [
-        "Critical thinking",
-        "Speed",
         "Repetition",
-        "Memory"
+        "Memory",
+        "Speed",
+        "Critical thinking"
       ],
-      "answer": 0
+      "answer": 3
     },
     {
       "q": "Main idea?",
       "options": [
-        "AI replaces humans",
         "AI sounds smart but requires evaluation",
+        "AI replaces humans",
         "AI avoids mistakes",
         "AI is perfect"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "q": "Tone?",
       "options": [
+        "Funny",
         "Analytical",
         "Emotional",
-        "Funny",
         "Narrative"
       ],
-      "answer": 0
+      "answer": 1
     }
   ]
 }
