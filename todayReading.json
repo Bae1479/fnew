@@ -1,94 +1,94 @@
 {
-  "date": "2026-11-22T20:53:25.928Z",
-  "category": "World History",
-  "categoryLabel": "World History | TOEFL+",
-  "headline": "The Fall of Rome (3): When Stability Breaks Down",
-  "reading": "By the later stages of the Roman Empire, the system had become increasingly difficult to maintain. Economic strain, military pressure, and administrative complexity combined to weaken stability. These challenges did not appear all at once, but accumulated over time.\n\nOne critical issue was the cost of maintaining the empire. Defending vast borders required significant resources, while internal economic problems limited revenue. As financial pressure increased, the government struggled to meet its obligations.\n\nAt the same time, external threats became more serious. These threats alone did not destroy Rome, but they exposed the system’s inability to respond effectively. A strong structure might have adapted, but Rome’s weakened condition made recovery difficult.\n\nInternal division also played a role. As trust in leadership declined, coordination became harder. Without unity, even small problems became larger crises.\n\nThe fall of Rome illustrates that collapse is rarely caused by a single factor. Instead, it occurs when multiple pressures exceed a system’s ability to adapt. Stability is not lost instantly—it erodes gradually until the system can no longer function.",
+  "date": "2026-11-24T01:57:47.348Z",
+  "category": "Science & Technology",
+  "categoryLabel": "Science & Technology | TOEFL",
+  "headline": "Why AI Feels Smart Even When It Is Wrong",
+  "reading": "Artificial intelligence systems often produce answers that sound confident and fluent. This creates the impression that the system truly understands the information it provides. However, the reality is more complex.\n\nAI models generate responses by predicting patterns in language. They do not “know” facts in the way humans do. Instead, they rely on probability, selecting words that are most likely to follow previous ones. This allows them to produce natural-sounding sentences.\n\nThe problem is that fluency can hide mistakes. An answer may sound correct even when it contains errors or incomplete reasoning. Because of this, users may trust information too quickly without checking its accuracy.\n\nThis creates a new kind of skill requirement. Instead of only gathering information, people must learn to evaluate it. Critical thinking becomes more important than simple access to knowledge.\n\nUnderstanding how AI works helps reduce overconfidence in its outputs. It reminds users that technology can assist thinking, but it should not replace it. In the end, human judgment remains essential.",
   "sentences": [
     {
-      "ko": "로마의 붕괴는 점진적으로 일어났다.",
-      "en": "Rome’s collapse occurred gradually."
+      "ko": "AI는 종종 자신감 있게 보인다.",
+      "en": "AI often appears confident."
     },
     {
-      "ko": "여러 요인이 결합되어 시스템을 약화시켰다.",
-      "en": "Multiple factors weakened the system."
+      "ko": "AI는 패턴을 기반으로 작동한다.",
+      "en": "AI operates based on patterns."
     },
     {
-      "ko": "적응하지 못하면 시스템은 무너진다.",
-      "en": "Without adaptation, systems collapse."
+      "ko": "비판적 사고가 중요해진다.",
+      "en": "Critical thinking becomes important."
     }
   ],
-  "summary": "Rome collapsed due to multiple (pressures), including economic and military challenges, showing that systems fail when they cannot (adapt) to increasing (complexity).",
+  "summary": "AI appears intelligent because of fluent (language), but it relies on patterns and may produce (errors), making critical (thinking) essential.",
   "summaryQuiz": [
     {
       "blank": 1,
-      "answer": "pressures",
+      "answer": "language",
       "options": [
-        "pressures",
-        "leaders",
-        "roads",
-        "cities"
+        "language",
+        "data",
+        "money",
+        "power"
       ]
     },
     {
       "blank": 2,
-      "answer": "adapt",
+      "answer": "errors",
       "options": [
-        "adapt",
-        "expand",
-        "fight",
-        "build"
+        "errors",
+        "growth",
+        "speed",
+        "memory"
       ]
     },
     {
       "blank": 3,
-      "answer": "complexity",
+      "answer": "thinking",
       "options": [
-        "complexity",
-        "simplicity",
-        "speed",
-        "power"
+        "thinking",
+        "running",
+        "buying",
+        "selling"
       ]
     }
   ],
   "quiz": [
     {
+      "q": "Why does AI seem intelligent?",
+      "options": [
+        "It produces fluent language",
+        "It never makes mistakes",
+        "It understands everything",
+        "It avoids patterns"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is a limitation?",
+      "options": [
+        "It stops responding",
+        "It can sound correct while being wrong",
+        "It avoids language",
+        "It deletes data"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What skill is needed?",
+      "options": [
+        "Critical thinking",
+        "Speed",
+        "Repetition",
+        "Memory"
+      ],
+      "answer": 0
+    },
+    {
       "q": "Main idea?",
       "options": [
-        "The system remained stable",
-        "Rome fell due to combined pressures and weak adaptation",
-        "Rome collapsed instantly",
-        "External threats alone caused collapse"
-      ],
-      "answer": 1
-    },
-    {
-      "q": "What was a key issue?",
-      "options": [
-        "Low population",
-        "Too much unity",
-        "High cost of maintaining the empire",
-        "Lack of territory"
-      ],
-      "answer": 2
-    },
-    {
-      "q": "What can be inferred?",
-      "options": [
-        "Unity weakens stability",
-        "Collapse happens when systems cannot adapt",
-        "Collapse is sudden",
-        "External threats always destroy systems"
-      ],
-      "answer": 1
-    },
-    {
-      "q": "Why were external threats effective?",
-      "options": [
-        "They were stronger alone",
-        "They exposed internal weakness",
-        "They replaced leadership",
-        "They controlled economy"
+        "AI replaces humans",
+        "AI sounds smart but requires evaluation",
+        "AI avoids mistakes",
+        "AI is perfect"
       ],
       "answer": 1
     },
@@ -96,9 +96,9 @@
       "q": "Tone?",
       "options": [
         "Analytical",
-        "Humorous",
-        "Narrative",
-        "Emotional"
+        "Emotional",
+        "Funny",
+        "Narrative"
       ],
       "answer": 0
     }
